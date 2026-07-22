@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs><linearGradient id="b" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#f5dfeb"/><stop offset="1" stop-color="#e0eaf8"/></linearGradient></defs>
+  <rect width="1200" height="800" fill="url(#b)"/>
+  <rect x="260" y="260" width="680" height="360" rx="38" fill="#654f3e" transform="rotate(-2 600 440)"/>
+  <rect x="305" y="290" width="590" height="295" rx="25" fill="#dca85d"/>
+  <path d="M350 355c110-45 212 20 300-16s160-22 205 12v177c-75-24-152 18-237-5s-172 26-268-7z" fill="#eccd8d"/>
+  <g fill="#b94747"><circle cx="450" cy="410" r="25"/><circle cx="720" cy="460" r="27"/><circle cx="585" cy="510" r="22"/></g>
+  <g fill="#f8f2e6"><circle cx="420" cy="335" r="8"/><circle cx="700" cy="370" r="8"/><circle cx="790" cy="520" r="8"/></g>
+  <text x="600" y="115" text-anchor="middle" fill="#586f9e" font-family="Georgia" font-size="62">Pannukakku</text>
+  <text x="600" y="168" text-anchor="middle" fill="#74788c" font-family="Arial" font-size="27">Finnish oven pancake</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dceafa"/><stop offset="1" stop-color="#f2dce8"/></linearGradient></defs>
+  <rect width="1200" height="800" fill="url(#b)"/>
+  <ellipse cx="600" cy="475" rx="380" ry="205" fill="#f9f4e9"/>
+  <ellipse cx="600" cy="450" rx="325" ry="150" fill="#e5bc83"/>
+  <g fill="#efdfae"><circle cx="470" cy="430" r="58"/><circle cx="670" cy="500" r="68"/><circle cx="760" cy="405" r="48"/></g>
+  <g fill="#dd7966"><path d="M520 365c65-35 120-20 145 25-45 32-95 47-151 27z"/><path d="M622 465c52-26 105-15 133 25-41 30-85 39-135 20z"/></g>
+  <g fill="#7d9dcc"><path d="M420 310c60 40 85 80 82 125-42-17-74-56-82-125z"/><path d="M810 305c-65 32-95 69-100 114 44-12 81-47 100-114z"/></g>
+  <text x="600" y="110" text-anchor="middle" fill="#586f9e" font-family="Georgia" font-size="64">Lohikeitto</text>
+  <text x="600" y="165" text-anchor="middle" fill="#74788c" font-family="Arial" font-size="27">Finnish salmon soup</text>
+</svg>

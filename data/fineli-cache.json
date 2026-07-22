@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "updatedAt": "2026-07-22T17:08:21.158Z",
+  "foods": {
+    "11060": {
+      "food": {
+        "id": 11060,
+        "name": "Omena, kotimainen, kuorittu",
+        "type": "Raaka-aine",
+        "baseAmountGrams": 100,
+        "measures": [
+          {
+            "code": "DL",
+            "name": "desilitra",
+            "abbreviation": "dl",
+            "grams": 65
+          },
+          {
+            "code": "PORTS",
+            "name": "pieni annos",
+            "abbreviation": "pieni annos",
+            "grams": 90
+          },
+          {
+            "code": "PORTM",
+            "name": "keskikokoinen annos",
+            "abbreviation": "keskikokoinen annos",
+            "grams": 180
+          },
+          {
+            "code": "PORTL",
+            "name": "iso annos",
+            "abbreviation": "iso annos",
+            "grams": 260
+          },
+          {
+            "code": "G",
+            "name": "gramma",
+            "abbreviation": "g",
+            "grams": 1
+          }
+        ],
+        "nutritionPer100g": {
+          "kcal": 40.5,
+          "protein": 0.2,
+          "carbs": 8.3,
+          "fat": 0.1,
+          "fibre": 0
+        }
+      },
+      "cachedAt": "2026-07-22T00:00:00.000Z",
+      "refreshedAt": "2026-07-22T00:00:00.000Z",
+      "lastAccessedAt": "2026-07-22T00:00:00.000Z"
+    }
+  },
+  "queries": {
+    "bean": {
+      "query": "bean",
+      "results": [],
+      "cachedAt": "2026-07-22T17:08:21.158Z",
+      "lastAccessedAt": "2026-07-22T17:08:21.158Z"
+    },
+    "oats": {
+      "query": "oats",
+      "results": [],
+      "cachedAt": "2026-07-22T17:07:38.865Z",
+      "lastAccessedAt": "2026-07-22T17:07:38.865Z"
+    },
+    "rolled oats": {
+      "query": "Rolled oats",
+      "results": [],
+      "cachedAt": "2026-07-22T17:07:36.141Z",
+      "lastAccessedAt": "2026-07-22T17:07:36.141Z"
+    },
+    "oat": {
+      "query": "oat",
+      "results": [
+        {
+          "id": 35199,
+          "name": "Kasvislevite, rasvaa 20 %, oatly påmackan",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 30210,
+          "name": "Kaurajuoma, maidoton, oat drink",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33901,
+          "name": "Kaurajuoma, oatly, lisätty kalsiumia ja vitamiineja, alkaen 09/12",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34876,
+          "name": "Kaurajuoma, oatly ikaffe, lisätty kalsiumia ja vitamiineja",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33900,
+          "name": "Kaurajuoma, oatly suklaa, lisätty kalsiumia ja vitamiineja, alkaen 09/12",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 35634,
+          "name": "Kauravalmiste, hapatettu, oatly havregurt, maustamaton, vitaminoitu",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 35636,
+          "name": "Kauravalmiste, hapatettu, oatly havregurt, maustettu, vitaminoitu",
+          "type": "Raaka-aine"
+        }
+      ],
+      "cachedAt": "2026-07-22T17:07:30.252Z",
+      "lastAccessedAt": "2026-07-22T17:07:30.252Z"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs><linearGradient id="b" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#f4dce9"/><stop offset="1" stop-color="#dce9f8"/></linearGradient></defs>
+  <rect width="1200" height="800" fill="url(#b)"/>
+  <ellipse cx="600" cy="485" rx="390" ry="195" fill="#f8f0e2"/>
+  <ellipse cx="600" cy="460" rx="335" ry="145" fill="#b85c45"/>
+  <g fill="#df9a49"><circle cx="455" cy="425" r="22"/><circle cx="530" cy="490" r="20"/><circle cx="660" cy="415" r="24"/><circle cx="750" cy="500" r="20"/><circle cx="820" cy="430" r="19"/></g>
+  <g fill="#7d9dcc"><path d="M415 345c55 13 88 39 100 80-47 3-82-23-100-80z"/><path d="M760 335c-48 21-72 51-73 90 40-5 69-34 73-90z"/></g>
+  <text x="600" y="112" text-anchor="middle" fill="#586f9e" font-family="Georgia" font-size="61">Red lentil soup</text>
+  <text x="600" y="164" text-anchor="middle" fill="#74788c" font-family="Arial" font-size="27">Tomato, cumin &amp; lemon</text>
+</svg>

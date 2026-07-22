@@ -1,0 +1,15 @@
+{
+  "name": "Home Recipes",
+  "short_name": "Recipes",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8f2f8",
+  "theme_color": "#7d9dcc",
+  "icons": [
+    {
+      "src": "/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
