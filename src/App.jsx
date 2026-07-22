@@ -9,6 +9,7 @@ import RoutinePage from './components/RoutinePage';
 import NutritionGuide from './components/NutritionGuide';
 import SubstitutionsPage from './components/SubstitutionsPage';
 import GroceryCart from './components/GroceryCart';
+import IngredientLibrary from './components/IngredientLibrary';
 import { useRecipes } from './hooks/useRecipes';
 import { useShoppingCart } from './hooks/useShoppingCart';
 import { recipeNutrition } from './utils/nutrition';
@@ -30,11 +31,12 @@ export default function App() {
   const [notice, setNotice] = useState('');
 
   const categories = useMemo(() => ['All', ...new Set(recipes.map((recipe) => recipe.category).filter(Boolean))], [recipes]);
+  const difficulties = useMemo(() => ['All', ...new Set(recipes.map((recipe) => recipe.difficulty).filter(Boolean))], [recipes]);
 
   const filtered = useMemo(() => {
     const needle = search.trim().toLowerCase();
     const result = recipes.filter((recipe) => {
-      const haystack = [recipe.title, recipe.description, recipe.category, recipe.cuisine, ...(recipe.tags || []), ...(recipe.ingredients || []).map((ingredient) => ingredient.name)].join(' ').toLowerCase();
+      const haystack = [recipe.title, recipe.titleEn, recipe.description, recipe.descriptionEn, recipe.category, recipe.categoryEn, recipe.cuisine, recipe.cuisineEn, ...(recipe.tags || []), ...(recipe.tagsEn || []), ...(recipe.ingredients || []).flatMap((ingredient) => [ingredient.name, ingredient.nameEn])].join(' ').toLowerCase();
       return (!needle || haystack.includes(needle))
         && (category === 'All' || recipe.category === category)
         && (difficulty === 'All' || recipe.difficulty === difficulty)
@@ -115,8 +117,9 @@ export default function App() {
   }
 
   function renderView() {
+    if (view === 'ingredients') return <IngredientLibrary onIngredientsUpdated={refresh} />;
     if (view === 'routine') return <RoutinePage recipes={recipes} onOpenRecipe={setSelected} onBuildCart={buildRoutineCart} />;
-    if (view === 'guide') return <NutritionGuide />;
+    if (view === 'guide') return <NutritionGuide onRecipesUpdated={refresh} />;
     if (view === 'substitutions') return <SubstitutionsPage />;
     if (view === 'cart') return <GroceryCart cart={shoppingCart.cart} loading={shoppingCart.loading} error={shoppingCart.error} onRefresh={shoppingCart.refresh} onToggle={shoppingCart.toggle} onRemove={shoppingCart.remove} onClearChecked={shoppingCart.clearChecked} onClearAll={shoppingCart.clearAll} />;
     if (view === 'stats') return <StatsDashboard recipes={recipes} />;
@@ -145,7 +148,7 @@ export default function App() {
           <div className="toolbar-label"><Icon name="filter" size={18} /><span>Filter your library</span></div>
           <div className="toolbar-controls">
             <label><span>Category</span><select value={category} onChange={(event) => setCategory(event.target.value)}>{categories.map((item) => <option key={item}>{item}</option>)}</select></label>
-            <label><span>Difficulty</span><select value={difficulty} onChange={(event) => setDifficulty(event.target.value)}><option>All</option><option>Easy</option><option>Medium</option><option>Advanced</option></select></label>
+            <label><span>Difficulty</span><select value={difficulty} onChange={(event) => setDifficulty(event.target.value)}>{difficulties.map((item) => <option key={item}>{item}</option>)}</select></label>
             <label><span>Sort</span><select value={sort} onChange={(event) => setSort(event.target.value)}><option value="newest">Recently updated</option><option value="title">Title A–Z</option><option value="quickest">Quickest first</option><option value="calories">Lowest calories</option></select></label>
             <button className={`favourite-filter ${favouritesOnly ? 'is-active' : ''}`} type="button" onClick={() => setFavouritesOnly((value) => !value)}><Icon name="heart" size={17} /> Favourites</button>
           </div>

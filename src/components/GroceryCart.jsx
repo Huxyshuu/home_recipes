@@ -56,6 +56,10 @@ export default function GroceryCart({ cart, loading, error, onRefresh, onToggle,
                     <strong>{formatCartQuantity(item.quantity)} {item.unit}</strong>
                     <span>{item.name}{item.sources?.length ? <small>{item.sources.slice(0, 2).join(' · ')}{item.sources.length > 2 ? ` +${item.sources.length - 2}` : ''}</small> : null}</span>
                   </button>
+                  <div className="cart-retail-links">
+                    {item.retail?.sKaupatUrl ? <a href={item.retail.sKaupatUrl} target="_blank" rel="noreferrer" aria-label={`Open ${item.name} in S-kaupat`}>S</a> : null}
+                    {item.retail?.kRuokaUrl ? <a href={item.retail.kRuokaUrl} target="_blank" rel="noreferrer" aria-label={`Open ${item.name} in K-Ruoka`}>K</a> : null}
+                  </div>
                   <button className="icon-button danger" type="button" onClick={() => onRemove(item.id)} aria-label={`Remove ${item.name}`}><Icon name="trash" size={16} /></button>
                 </div>
               ))}

@@ -1,9 +1,9 @@
 {
   "name": "home-recipes",
-  "version": "0.3.0",
+  "version": "0.4.1",
   "private": true,
   "type": "module",
-  "description": "Home Recipes: a local-network recipe library, weekly meal routine and shared grocery cart with Finnish nutrition data.",
+  "description": "Home Recipes: Finnish recipe data, live Fineli nutrition sync, retailer links, recipe pricing and a shared grocery cart.",
   "scripts": {
     "dev": "concurrently -k -n API,WEB -c auto \"npm:dev:server\" \"npm:dev:web\"",
     "dev:server": "node --watch server/index.js",
@@ -11,7 +11,9 @@
     "build": "vite build",
     "start": "node server/index.js",
     "lan": "npm run build && npm start",
-    "test": "node --test tests/*.test.js"
+    "test": "node --test tests/*.test.js",
+    "sync:fineli": "node scripts/sync-fineli-recipes.js",
+    "sync:fineli:fresh": "node scripts/sync-fineli-recipes.js --refresh"
   },
   "dependencies": {
     "compression": "1.7.5",

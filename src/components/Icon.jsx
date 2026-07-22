@@ -22,6 +22,7 @@ const paths = {
   calendar: <><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></>,
   cart: <><path d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.6L20.5 8H6"/><circle cx="10" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></>,
   guide: <><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V4H6.5A2.5 2.5 0 0 0 4 6.5z"/><path d="M8 8h8M8 12h6"/></>,
+  ingredients: <><path d="M8 5h12M8 12h12M8 19h12"/><circle cx="4" cy="5" r="1.5"/><circle cx="4" cy="12" r="1.5"/><circle cx="4" cy="19" r="1.5"/></>,
   swap: <><path d="M7 7h11l-3-3M17 17H6l3 3"/></>,
   arrow: <><path d="M5 12h14M15 8l4 4-4 4"/></>,
   chevron: <><path d="m9 18 6-6-6-6"/></>,

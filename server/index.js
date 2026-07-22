@@ -8,9 +8,12 @@ import {
   createRecipe,
   deleteRecipe,
   readRecipes,
+  readRawRecipes,
   updateRecipe,
 } from './recipeStore.js';
+import { createIngredient, readIngredients, updateIngredient } from './ingredientStore.js';
 import { getFineliFood, listCachedFineliFoods, searchFineli } from './fineli.js';
+import { syncRecipesWithFineli } from './fineliRecipeSync.js';
 import { readCart, writeCart } from './cartStore.js';
 
 const app = express();
@@ -59,6 +62,49 @@ app.use('/api/nutrition', (_request, response, next) => {
 
 app.get('/api/health', (_request, response) => {
   response.json({ status: 'ok', service: 'Home Recipes', time: new Date().toISOString() });
+});
+
+app.get('/api/ingredients', async (_request, response, next) => {
+  try {
+    const [ingredients, recipes] = await Promise.all([readIngredients(), readRawRecipes()]);
+    const usage = new Map();
+    recipes.forEach((recipe) => {
+      (recipe.ingredients || []).forEach((item) => {
+        if (!item.catalogId) return;
+        if (!usage.has(item.catalogId)) usage.set(item.catalogId, []);
+        const list = usage.get(item.catalogId);
+        if (!list.some((entry) => entry.id === recipe.id)) list.push({ id: recipe.id, title: recipe.title, slug: recipe.slug });
+      });
+    });
+    response.json(ingredients.map((ingredient) => ({
+      ...ingredient,
+      usedInRecipes: usage.get(ingredient.id) || [],
+      usageCount: (usage.get(ingredient.id) || []).length,
+    })));
+  } catch (error) {
+    next(error);
+  }
+});
+
+app.post('/api/ingredients', async (request, response, next) => {
+  try {
+    response.status(201).json(await createIngredient(request.body));
+  } catch (error) {
+    next(error);
+  }
+});
+
+app.put('/api/ingredients/:id', async (request, response, next) => {
+  try {
+    const ingredient = await updateIngredient(request.params.id, request.body);
+    if (!ingredient) {
+      response.status(404).json({ error: 'Ingredient not found.' });
+      return;
+    }
+    response.json(ingredient);
+  } catch (error) {
+    next(error);
+  }
 });
 
 app.get('/api/recipes', async (_request, response, next) => {
@@ -154,6 +200,14 @@ app.get('/api/nutrition/search', async (request, response, next) => {
 app.get('/api/nutrition/foods/:id', async (request, response, next) => {
   try {
     response.json(await getFineliFood(request.params.id, { forceRefresh: request.query.refresh === '1' }));
+  } catch (error) {
+    next(error);
+  }
+});
+
+app.post('/api/nutrition/sync-recipes', async (request, response, next) => {
+  try {
+    response.json(await syncRecipesWithFineli({ forceRefresh: Boolean(request.body?.forceRefresh) }));
   } catch (error) {
     next(error);
   }

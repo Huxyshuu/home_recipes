@@ -39,11 +39,27 @@ function normaliseItem(item = {}) {
     name: cleanText(item.name, 'Ingredient'),
     quantity: Math.max(0, cleanNumber(item.quantity, 0)),
     unit: cleanText(item.unit, 'g'),
-    category: cleanText(item.category, 'Other'),
+    category: cleanText(item.category, 'Muut'),
     checked: Boolean(item.checked),
     sources: Array.isArray(item.sources)
       ? [...new Set(item.sources.map((source) => cleanText(source)).filter(Boolean))]
       : [],
+    retail: item.retail && typeof item.retail === 'object' ? {
+      sKaupatUrl: cleanText(item.retail.sKaupatUrl),
+      kRuokaUrl: cleanText(item.retail.kRuokaUrl),
+      selectedPrice: item.retail.selectedPrice && typeof item.retail.selectedPrice === 'object' ? {
+        retailer: cleanText(item.retail.selectedPrice.retailer),
+        productName: cleanText(item.retail.selectedPrice.productName),
+        sourceUrl: cleanText(item.retail.selectedPrice.sourceUrl),
+        unitPriceEur: Math.max(0, cleanNumber(item.retail.selectedPrice.unitPriceEur, 0)),
+        priceUnit: cleanText(item.retail.selectedPrice.priceUnit),
+        packagePriceEur: Math.max(0, cleanNumber(item.retail.selectedPrice.packagePriceEur, 0)),
+        packageSize: Math.max(0, cleanNumber(item.retail.selectedPrice.packageSize, 0)),
+        packageUnit: cleanText(item.retail.selectedPrice.packageUnit),
+        store: cleanText(item.retail.selectedPrice.store),
+        observedAt: cleanText(item.retail.selectedPrice.observedAt),
+      } : null,
+    } : null,
   };
 }
 

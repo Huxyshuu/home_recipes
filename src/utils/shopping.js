@@ -1,39 +1,40 @@
 import { quickMeals, shoppingWindows, weeklyRoutine } from '../data/mealPlan.js';
 
 export const shoppingCategoryOrder = [
-  'Produce',
-  'Meat & fish',
-  'Plant protein',
-  'Dairy & chilled',
-  'Frozen',
-  'Bakery',
-  'Grains',
-  'Nuts & seeds',
-  'Pantry',
-  'Other',
+  'Hedelmät ja vihannekset',
+  'Liha ja kala',
+  'Kasviproteiinit',
+  'Maitotuotteet ja kylmätuotteet',
+  'Pakasteet',
+  'Leivät',
+  'Viljat ja kuiva-aineet',
+  'Pähkinät ja siemenet',
+  'Kuivakaappi',
+  'Muut',
 ];
 
 const nameAliases = {
-  egg: 'Eggs',
-  eggs: 'Eggs',
-  banana: 'Bananas',
-  bananas: 'Bananas',
-  'frozen pea': 'Frozen peas',
-  peas: 'Frozen peas',
-  'frozen peas': 'Frozen peas',
-  skyr: 'Skyr',
-  'rolled oats': 'Rolled oats',
-  'unsweetened muesli or rolled oats': 'Unsweetened muesli or rolled oats',
-  'quark or rahka': 'Quark or rahka',
-  'low-fat cottage cheese': 'Low-fat cottage cheese',
-  'greek yogurt': 'Greek yogurt',
-  'whole-wheat pasta, dry': 'Whole-wheat pasta, dry',
-  'rice, dry': 'Rice, dry',
+  kananmuna: 'Kananmuna',
+  kananmunat: 'Kananmuna',
+  banaani: 'Banaani, kuorittu',
+  banaanit: 'Banaani, kuorittu',
+  herne: 'Herne, pakaste',
+  herneet: 'Herne, pakaste',
+  'herne, pakaste': 'Herne, pakaste',
+  skyr: 'Skyr, maustamaton',
+  'skyr, maustamaton': 'Skyr, maustamaton',
+  kaurahiutale: 'Kaurahiutale',
+  kaurahiutaleet: 'Kaurahiutale',
+  'maitorahka, rasvaton': 'Maitorahka, rasvaton',
+  'raejuusto, vähärasvainen': 'Raejuusto, vähärasvainen',
+  'kreikkalainen jogurtti, vähärasvainen': 'Kreikkalainen jogurtti, vähärasvainen',
+  'täysjyväpasta, kuiva': 'Täysjyväpasta, kuiva',
+  'riisi, pitkäjyväinen, raaka': 'Riisi, pitkäjyväinen, raaka',
 };
 
 export function normaliseUnit(unit) {
   const value = String(unit || 'g').trim().toLowerCase();
-  if (['pc', 'pcs', 'piece', 'pieces'].includes(value)) return 'pcs';
+  if (['pc', 'pcs', 'piece', 'pieces', 'kpl'].includes(value)) return 'kpl';
   if (['slice', 'slices'].includes(value)) return 'slices';
   if (['tablespoon', 'tablespoons'].includes(value)) return 'tbsp';
   if (['teaspoon', 'teaspoons'].includes(value)) return 'tsp';
@@ -61,6 +62,7 @@ export function mergeShoppingItems(items) {
     if (existing) {
       existing.quantity += Number(item.quantity || 0);
       existing.sources = [...new Set([...(existing.sources || []), ...(item.sources || [])])];
+      existing.retail = existing.retail || item.retail || null;
       return;
     }
     merged.set(key, {
@@ -68,9 +70,10 @@ export function mergeShoppingItems(items) {
       name,
       quantity: Number(item.quantity || 0),
       unit,
-      category: item.category || item.shoppingCategory || 'Other',
+      category: item.category || item.shoppingCategory || 'Muut',
       checked: Boolean(item.checked),
       sources: [...new Set(item.sources || [])],
+      retail: item.retail || null,
     });
   });
   return [...merged.values()].sort((a, b) => {
@@ -85,7 +88,8 @@ export function recipeShoppingItems(recipe, multiplier = 1, source = '') {
     name: ingredient.name,
     quantity: Number(ingredient.quantity || 0) * multiplier,
     unit: ingredient.unit,
-    category: ingredient.shoppingCategory || 'Other',
+    category: ingredient.shoppingCategory || 'Muut',
+    retail: ingredient.retail || null,
     checked: false,
     sources: source ? [source] : [recipe.title],
   }));
@@ -112,7 +116,8 @@ export function buildShoppingWindowItems(recipes, windowId) {
         name: ingredient.name,
         quantity: Number(ingredient.quantity || 0),
         unit: ingredient.unit,
-        category: ingredient.shoppingCategory || 'Other',
+        category: ingredient.shoppingCategory || 'Muut',
+    retail: ingredient.retail || null,
         checked: false,
         sources: [`${day.weekday}: ${quickMeal.title}`],
       }));

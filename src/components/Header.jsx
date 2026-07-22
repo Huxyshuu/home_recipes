@@ -4,6 +4,7 @@ import Icon from './Icon';
 const navItems = [
   { id: 'library', label: 'Recipes', icon: 'book' },
   { id: 'routine', label: 'Routine', icon: 'calendar' },
+  { id: 'ingredients', label: 'Ingredients', icon: 'ingredients' },
   { id: 'guide', label: 'Guide', icon: 'guide' },
   { id: 'substitutions', label: 'Swaps', icon: 'swap' },
   { id: 'cart', label: 'Cart', icon: 'cart' },

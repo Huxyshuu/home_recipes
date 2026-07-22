@@ -15,3 +15,13 @@ test('cooking mode renders every step and includes an audible timer alarm', asyn
   assert.match(source, /createOscillator/);
   assert.match(source, /Time's up!/);
 });
+
+
+test('ingredient library exposes one shared editor and recipe editor links catalog records', async () => {
+  const library = await readFile(new URL('../src/components/IngredientLibrary.jsx', import.meta.url), 'utf8');
+  const editor = await readFile(new URL('../src/components/RecipeEditor.jsx', import.meta.url), 'utf8');
+  assert.match(library, /Every linked recipe now uses this information/);
+  assert.match(library, /api\.updateIngredient/);
+  assert.match(editor, /Shared ingredient record/);
+  assert.match(editor, /catalogId/);
+});

@@ -2,127 +2,96 @@
 
 ## Runtime model
 
-A single Node/Express process serves:
-
-1. the production React bundle;
-2. recipe CRUD and image uploads;
-3. the Fineli proxy/cache;
-4. the shared grocery cart.
-
-The tablet, PC and phone are browser clients on the same trusted local network.
+A single Node/Express process serves the React bundle, recipe and shared-ingredient APIs, image uploads, the Fineli proxy/cache and the shared grocery cart. Browser clients run on the same trusted local network.
 
 ```text
 Browser clients
-  ├─ Recipes / cooking progress
+  ├─ Recipes / cooking mode
+  ├─ Shared ingredient library
   ├─ Routine / guides / substitutions
   └─ Grocery cart
           │ HTTP on LAN
           ▼
 Express server :8787
   ├─ data/recipes.json
+  ├─ data/ingredients.json
   ├─ data/shopping-cart.json
   ├─ data/fineli-cache.json
   ├─ uploads/
   └─ Fineli upstream API
 ```
 
+## Normalised ingredient model
+
+Ingredient information is split deliberately into a shared definition and recipe-specific usage.
+
+`data/ingredients.json` is the single source of truth for fields that should propagate globally:
+
+```json
+{
+  "id": "ingredient-kaurahiutale",
+  "name": "Kaurahiutale",
+  "fineliFoodId": 1234,
+  "nutritionPer100g": {},
+  "retail": {}
+}
+```
+
+`data/recipes.json` stores only how the recipe uses that shared ingredient:
+
+```json
+{
+  "id": "protein-overnight-oats-i1",
+  "catalogId": "ingredient-kaurahiutale",
+  "quantity": 60,
+  "unit": "g",
+  "grams": 60,
+  "note": ""
+}
+```
+
+`server/recipeStore.js` hydrates API responses by joining each usage to its catalog record. Therefore one update to a catalog item changes every recipe response, nutrition calculation, retailer link and price calculation that uses it. Recipe quantities and preparation notes are never overwritten by a global ingredient update.
+
+Older ingredient snapshots are migrated automatically on first read: unique definitions are created, recipes receive `catalogId` links and the normalised JSON is written atomically.
+
 ## Frontend
 
-`src/App.jsx` owns top-level navigation and overlays. Main views are deliberately separate components:
+`src/App.jsx` owns top-level navigation. Main views are:
 
-- `RecipeGrid` and `RecipeDetail`
-- `RoutinePage`
-- `NutritionGuide`
-- `SubstitutionsPage`
-- `GroceryCart`
-- `StatsDashboard`
+- `RecipeGrid` and `RecipeDetail`;
+- `IngredientLibrary`;
+- `RoutinePage`;
+- `NutritionGuide`;
+- `SubstitutionsPage`;
+- `GroceryCart`;
+- `StatsDashboard`.
 
-Static researched content lives in `src/data/mealPlan.js`. This keeps the routine and source library independent from mutable recipe CRUD while still resolving routine recipe slugs against `data/recipes.json`.
+The recipe editor loads the ingredient catalog. A row can select an existing shared definition or create a new one. Shared fields are saved through `/api/ingredients`; the recipe itself stores the resulting `catalogId` and recipe-specific usage fields.
 
-## Recipe model
-
-Meal-plan recipes use the normal recipe schema plus:
-
-```json
-{
-  "slug": "protein-overnight-oats",
-  "plannedNutritionPerServing": {
-    "kcal": 560,
-    "protein": 47,
-    "carbs": 58,
-    "fat": 14,
-    "fibre": 11
-  },
-  "useIngredientNutrition": false
-}
-```
-
-Each ingredient may also contain:
-
-```json
-{
-  "shoppingCategory": "Dairy & chilled"
-}
-```
-
-`recipeNutrition()` returns the fixed weekly-plan estimate when present, unless `useIngredientNutrition` is true. It also retains the computed ingredient result so the distinction remains explicit.
-
-## Grocery cart
-
-The cart is server-backed rather than localStorage-backed because the intended workflow crosses devices.
-
-`server/cartStore.js` provides:
-
-- store initialization;
-- input normalization;
-- serialized writes;
-- temporary-file + rename atomic persistence.
-
-The API surface is:
+## API surface
 
 ```text
-GET /api/cart
-PUT /api/cart
+GET  /api/ingredients
+POST /api/ingredients
+PUT  /api/ingredients/:id
+GET  /api/recipes
+POST /api/recipes
+PUT  /api/recipes/:id
+DELETE /api/recipes/:id
+GET  /api/cart
+PUT  /api/cart
 ```
 
-`src/utils/shopping.js` handles:
+`GET /api/ingredients` also reports the recipes using each ingredient, which powers the usage count and recipe chips in the Ingredients view.
 
-- canonical ingredient names;
-- unit normalization;
-- repeated-ingredient aggregation;
-- grocery-category ordering;
-- Sunday/Wednesday window expansion.
+## Fineli synchronisation
 
-A list generated on one device becomes available to another after refresh.
+Bulk Fineli sync now operates on the 47 unique catalog records instead of duplicated recipe occurrences. It updates `data/ingredients.json` once, then updates recipe-level sync status. API recipe reads immediately expose the new values through hydration.
 
-## Meal-plan shopping windows
+## Grocery cart and pricing
 
-Routine meals use either a `recipeSlug` or `quickMealId`. The two shopping windows select day/slot combinations rather than maintaining separate hard-coded ingredient lists. This avoids drift when recipe ingredients change.
+Frontend shopping and pricing utilities receive hydrated recipes, so aggregation and cost calculations use the latest shared ingredient names, categories, retailer links and prices. Amounts still come from each recipe usage.
 
-Sunday covers Monday–Wednesday plus Thursday breakfast, lunch and daytime snacks. Wednesday covers Thursday dinner through Sunday.
+## Persistence and compatibility
 
-## Nutrition sources
-
-The in-app guide stores source metadata with stable public URLs. Assertions are linked to:
-
-- the joint sports-nutrition position paper;
-- Nordic Nutrition Recommendations 2023;
-- Finnish Food Authority adult guidance;
-- Finnish salt/iodine/vitamin-D guidance;
-- THL Fineli open-data information.
-
-The recipes themselves are original plan recipes, not copied from recipe websites.
-
-## Compatibility
-
-- Vite legacy plugin targets Android 4.4 and Chrome 49.
-- Core layouts use flexbox rather than CSS Grid.
-- Recipe covers are local SVG files.
-- The server proxies Fineli so the tablet does not make direct cross-origin or modern-TLS requests.
-- Cooking progress remains localStorage-based because it is device/session interaction state; the grocery cart is shared server state.
-
-## Persistence and concurrency
-
-Recipe and cart stores use independent mutation queues. Each write is serialized and performed through a temporary file followed by rename. This protects against partially written JSON and reduces lost updates from nearly simultaneous requests.
-
-The cart is not real-time push synchronized. Clients explicitly refresh to load changes made elsewhere.
+Recipe, ingredient and cart stores have independent serialised mutation queues and use temporary-file + rename writes. Vite's legacy bundle targets Android 4.4 / Chrome 49, and core layouts continue to use flexbox rather than CSS Grid.

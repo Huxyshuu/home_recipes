@@ -53,33 +53,33 @@ export const researchSources = [
 export const quickMeals = {
   'skyr-berry-almond-cup': {
     id: 'skyr-berry-almond-cup',
-    title: 'Skyr Berry Almond Cup',
+    title: 'Skyr-marja-mantelikulho',
     kind: 'quick',
     nutrition: { kcal: 330, protein: 31, carbs: 29, fat: 10, fibre: 7 },
     ingredients: [
-      { name: 'Skyr', quantity: 250, unit: 'g', shoppingCategory: 'Dairy & chilled' },
-      { name: 'Frozen berries', quantity: 150, unit: 'g', shoppingCategory: 'Frozen' },
-      { name: 'Almonds', quantity: 20, unit: 'g', shoppingCategory: 'Nuts & seeds' },
+      { name: 'Skyr, maustamaton', quantity: 250, unit: 'g', shoppingCategory: 'Maitotuotteet ja kylmätuotteet' },
+      { name: 'Marjasekoitus, pakaste', quantity: 150, unit: 'g', shoppingCategory: 'Pakasteet' },
+      { name: 'Manteli', quantity: 20, unit: 'g', shoppingCategory: 'Pähkinät ja siemenet' },
     ],
-    note: 'Stir together or keep the almonds separate until eating.',
+    note: 'Sekoita ainekset tai pidä mantelit erillään syömiseen asti.',
   },
   'whey-banana': {
     id: 'whey-banana',
-    title: 'Whey + Banana',
+    title: 'Heraproteiini ja banaani',
     kind: 'quick',
     nutrition: { kcal: 225, protein: 25, carbs: 30, fat: 2, fibre: 3 },
     ingredients: [
-      { name: 'Whey protein', quantity: 30, unit: 'g', shoppingCategory: 'Pantry' },
-      { name: 'Banana', quantity: 1, unit: 'pc', shoppingCategory: 'Produce' },
+      { name: 'Heraproteiinijauhe', quantity: 30, unit: 'g', shoppingCategory: 'Kuivakaappi' },
+      { name: 'Banaani, kuorittu', quantity: 1, unit: 'kpl', shoppingCategory: 'Hedelmät ja vihannekset' },
     ],
-    note: 'Place before or after lifting. On a non-training day, this is the first item to remove when appetite is low.',
+    note: 'Nauti ennen voimaharjoittelua tai sen jälkeen. Lepopäivänä tämä on ensimmäinen pois jätettävä välipala, jos nälkä on vähäinen.',
   },
 };
 
 export const weeklyRoutine = [
   {
     day: 1,
-    weekday: 'Monday',
+    weekday: 'Maanantai',
     meals: [
       { slot: 'Breakfast', recipeSlug: 'protein-overnight-oats' },
       { slot: 'Lunch', recipeSlug: 'chicken-rice-broccoli-box' },
@@ -91,7 +91,7 @@ export const weeklyRoutine = [
   },
   {
     day: 2,
-    weekday: 'Tuesday',
+    weekday: 'Tiistai',
     meals: [
       { slot: 'Breakfast', recipeSlug: 'savory-egg-rye-plate' },
       { slot: 'Lunch', recipeSlug: 'turkey-tomato-pasta' },
@@ -103,7 +103,7 @@ export const weeklyRoutine = [
   },
   {
     day: 3,
-    weekday: 'Wednesday',
+    weekday: 'Keskiviikko',
     meals: [
       { slot: 'Breakfast', recipeSlug: 'quark-oat-pancakes' },
       { slot: 'Lunch', recipeSlug: 'chicken-rice-broccoli-box' },
@@ -115,7 +115,7 @@ export const weeklyRoutine = [
   },
   {
     day: 4,
-    weekday: 'Thursday',
+    weekday: 'Torstai',
     meals: [
       { slot: 'Breakfast', recipeSlug: 'protein-overnight-oats' },
       { slot: 'Lunch', recipeSlug: 'tuna-potato-cottage-cheese-bake' },
@@ -127,7 +127,7 @@ export const weeklyRoutine = [
   },
   {
     day: 5,
-    weekday: 'Friday',
+    weekday: 'Perjantai',
     meals: [
       { slot: 'Breakfast', recipeSlug: 'savory-egg-rye-plate' },
       { slot: 'Lunch', recipeSlug: 'oven-salmon-potatoes-peas' },
@@ -139,7 +139,7 @@ export const weeklyRoutine = [
   },
   {
     day: 6,
-    weekday: 'Saturday',
+    weekday: 'Lauantai',
     meals: [
       { slot: 'Breakfast', recipeSlug: 'skyr-muesli-fruit-bowl' },
       { slot: 'Lunch', recipeSlug: 'beef-bean-chili-rice' },
@@ -151,7 +151,7 @@ export const weeklyRoutine = [
   },
   {
     day: 7,
-    weekday: 'Sunday',
+    weekday: 'Sunnuntai',
     meals: [
       { slot: 'Breakfast', recipeSlug: 'quark-oat-pancakes' },
       { slot: 'Lunch', recipeSlug: 'red-lentil-chicken-soup' },
@@ -166,8 +166,8 @@ export const weeklyRoutine = [
 export const shoppingWindows = {
   sunday: {
     id: 'sunday',
-    title: 'Sunday shop',
-    subtitle: 'Monday through Wednesday, plus Thursday breakfast, lunch and daytime snacks.',
+    title: 'Sunnuntain ostoslista',
+    subtitle: 'Maanantaista keskiviikkoon sekä torstain aamiainen, lounas ja välipalat.',
     selections: [
       { day: 1, slots: ['Breakfast', 'Lunch', 'Dinner', 'Protein snack', 'Training snack'] },
       { day: 2, slots: ['Breakfast', 'Lunch', 'Dinner', 'Protein snack', 'Training snack'] },
@@ -177,8 +177,8 @@ export const shoppingWindows = {
   },
   wednesday: {
     id: 'wednesday',
-    title: 'Wednesday shop',
-    subtitle: 'Thursday dinner through Sunday. This keeps the later-week fish and vegetables fresher.',
+    title: 'Keskiviikon ostoslista',
+    subtitle: 'Torstain päivällisestä sunnuntaihin. Näin loppuviikon kala ja kasvikset pysyvät tuoreempina.',
     selections: [
       { day: 4, slots: ['Dinner'] },
       { day: 5, slots: ['Breakfast', 'Lunch', 'Dinner', 'Protein snack', 'Training snack'] },

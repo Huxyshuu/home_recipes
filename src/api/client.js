@@ -20,6 +20,9 @@ async function request(url, options = {}) {
 }
 
 export const api = {
+  listIngredients: () => request('/api/ingredients'),
+  createIngredient: (ingredient) => request('/api/ingredients', { method: 'POST', body: JSON.stringify(ingredient) }),
+  updateIngredient: (id, ingredient) => request(`/api/ingredients/${id}`, { method: 'PUT', body: JSON.stringify(ingredient) }),
   listRecipes: () => request('/api/recipes'),
   createRecipe: (recipe) => request('/api/recipes', { method: 'POST', body: JSON.stringify(recipe) }),
   updateRecipe: (id, recipe) => request(`/api/recipes/${id}`, { method: 'PUT', body: JSON.stringify(recipe) }),
@@ -34,4 +37,5 @@ export const api = {
   listNutritionCache: (query = '') => request(`/api/nutrition/cache?q=${encodeURIComponent(query)}&limit=100`),
   searchNutrition: (query, { refresh = false } = {}) => request(`/api/nutrition/search?q=${encodeURIComponent(query)}${refresh ? '&refresh=1' : ''}`),
   getNutritionFood: (id, { refresh = false } = {}) => request(`/api/nutrition/foods/${encodeURIComponent(id)}${refresh ? '?refresh=1' : ''}`),
+  syncRecipeNutrition: ({ forceRefresh = false } = {}) => request('/api/nutrition/sync-recipes', { method: 'POST', body: JSON.stringify({ forceRefresh }) }),
 };

@@ -2,20 +2,20 @@
   {
     "id": "mealplan-protein-overnight-oats",
     "slug": "protein-overnight-oats",
-    "title": "Protein Overnight Oats",
-    "description": "A five-minute make-ahead breakfast with oats, skyr, whey, berries and seeds.",
-    "category": "Breakfast",
-    "cuisine": "Everyday fitness",
-    "difficulty": "Easy",
+    "title": "Proteiinipitoinen tuorepuuro",
+    "description": "Viidessä minuutissa koottava aamiainen kaurasta, skyristä, heraproteiinista, marjoista ja siemenistä.",
+    "category": "Aamiainen",
+    "cuisine": "Arjen fitness-ruoka",
+    "difficulty": "Helppo",
     "prepMinutes": 5,
     "cookMinutes": 0,
     "servings": 1,
     "tags": [
-      "breakfast",
-      "high-protein",
-      "meal-prep",
-      "quick",
-      "weekly-plan"
+      "aamiainen",
+      "runsasproteiininen",
+      "ateriankokoaminen",
+      "nopea",
+      "viikkosuunnitelma"
     ],
     "image": "/meal-plan-covers/protein-overnight-oats.svg",
     "sourceUrl": "",
@@ -27,169 +27,139 @@
       "fat": 14,
       "fibre": 11
     },
-    "notes": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace skyr with lactose-free rahka/quark; use fortified soy yogurt plus a little extra whey for a dairy-free option; swap berries for chopped apple or pear.",
+    "notes": "Lähde: Home Recipes -sovellusta varten laadittu alkuperäinen ateriasuunnitelmaresepti; reseptiä ei ole kopioitu yhdestä verkkolähteestä. Suunnitelman ravintoarvo on tavoitearvio. Raaka-ainekohtaiset arvot voidaan päivittää suoraan THL:n Fineli-rajapinnasta. Korvaavat vaihtoehdot: Vaihda skyr laktoosittomaan maitorahkaan. Maidottomassa versiossa käytä proteiinilla täydennettyä soijajogurttia ja tarvittaessa hieman enemmän heraproteiinia. Marjat voi vaihtaa pilkottuun omenaan tai päärynään.",
     "ingredients": [
       {
         "id": "protein-overnight-oats-i1",
-        "name": "Rolled oats",
+        "catalogId": "ingredient-kaurahiutale",
         "quantity": 60,
         "unit": "g",
+        "unitEn": "g",
         "grams": 60,
         "note": "",
-        "shoppingCategory": "Grains",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 370,
-          "protein": 13.5,
-          "carbs": 60,
-          "fat": 7,
-          "fibre": 10
-        }
+        "noteEn": ""
       },
       {
         "id": "protein-overnight-oats-i2",
-        "name": "Skyr",
+        "catalogId": "ingredient-skyr-maustamaton",
         "quantity": 200,
         "unit": "g",
+        "unitEn": "g",
         "grams": 200,
-        "note": "plain, low-fat",
-        "shoppingCategory": "Dairy & chilled",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 63,
-          "protein": 11,
-          "carbs": 4,
-          "fat": 0.2,
-          "fibre": 0
-        }
+        "note": "maustamaton ja vähärasvainen",
+        "noteEn": "plain, low-fat"
       },
       {
         "id": "protein-overnight-oats-i3",
-        "name": "Whey protein",
+        "catalogId": "ingredient-heraproteiinijauhe",
         "quantity": 30,
         "unit": "g",
+        "unitEn": "g",
         "grams": 30,
-        "note": "plain or vanilla",
-        "shoppingCategory": "Pantry",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 390,
-          "protein": 78,
-          "carbs": 8,
-          "fat": 6,
-          "fibre": 1
-        }
+        "note": "maustamaton tai vanilja",
+        "noteEn": "plain or vanilla"
       },
       {
         "id": "protein-overnight-oats-i4",
-        "name": "Frozen berries",
+        "catalogId": "ingredient-marjasekoitus-pakaste",
         "quantity": 150,
         "unit": "g",
+        "unitEn": "g",
         "grams": 150,
         "note": "",
-        "shoppingCategory": "Frozen",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 45,
-          "protein": 1,
-          "carbs": 8,
-          "fat": 0.5,
-          "fibre": 4
-        }
+        "noteEn": ""
       },
       {
         "id": "protein-overnight-oats-i5",
-        "name": "Chia seeds",
+        "catalogId": "ingredient-chiansiemen",
         "quantity": 10,
         "unit": "g",
+        "unitEn": "g",
         "grams": 10,
         "note": "",
-        "shoppingCategory": "Nuts & seeds",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 486,
-          "protein": 17,
-          "carbs": 42,
-          "fat": 31,
-          "fibre": 34
-        }
+        "noteEn": ""
       },
       {
         "id": "protein-overnight-oats-i6",
-        "name": "Milk or fortified soy drink",
+        "catalogId": "ingredient-maito-rasvaton",
         "quantity": 150,
         "unit": "ml",
+        "unitEn": "ml",
         "grams": 150,
         "note": "",
-        "shoppingCategory": "Dairy & chilled",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 46,
-          "protein": 3.4,
-          "carbs": 4.8,
-          "fat": 1.5,
-          "fibre": 0
-        }
+        "noteEn": ""
       }
     ],
     "steps": [
       {
         "id": "protein-overnight-oats-s1",
-        "title": "Combine the dry ingredients",
-        "text": "Add the oats, whey protein and chia seeds to a jar or lidded bowl.",
-        "timerMinutes": 0
+        "title": "Yhdistä kuivat aineet",
+        "text": "Lisää kaurahiutaleet, heraproteiinijauhe ja chiansiemenet kannelliseen purkkiin tai kulhoon.",
+        "timerMinutes": 0,
+        "titleEn": "Combine the dry ingredients",
+        "textEn": "Add the oats, whey protein and chia seeds to a jar or lidded bowl."
       },
       {
         "id": "protein-overnight-oats-s2",
-        "title": "Add the chilled ingredients",
-        "text": "Add skyr, milk or fortified soy drink, and the frozen berries. Stir until no dry whey pockets remain.",
-        "timerMinutes": 0
+        "title": "Lisää kylmät ainekset",
+        "text": "Lisää skyr, rasvaton maito ja pakastemarjat. Sekoita huolellisesti, kunnes heraproteiinijauhetta ei jää kuiviksi paakuiksi.",
+        "timerMinutes": 0,
+        "titleEn": "Add the chilled ingredients",
+        "textEn": "Add skyr, milk or fortified soy drink, and the frozen berries. Stir until no dry whey pockets remain."
       },
       {
         "id": "protein-overnight-oats-s3",
-        "title": "Chill",
-        "text": "Cover and refrigerate for at least 4 hours, preferably overnight.",
-        "timerMinutes": 240
+        "title": "Anna tekeytyä",
+        "text": "Peitä ja nosta jääkaappiin vähintään neljäksi tunniksi, mieluiten yön yli.",
+        "timerMinutes": 240,
+        "titleEn": "Chill",
+        "textEn": "Cover and refrigerate for at least 4 hours, preferably overnight."
       },
       {
         "id": "protein-overnight-oats-s4",
-        "title": "Finish and eat",
-        "text": "Stir well. Add a splash of milk if it is too thick. Eat cold or microwave briefly in a microwave-safe bowl.",
-        "timerMinutes": 0
+        "title": "Viimeistele ja nauti",
+        "text": "Sekoita hyvin. Lisää tilkka maitoa, jos puuro on liian paksua. Syö kylmänä tai lämmitä lyhyesti mikroaaltouunin kestävässä kulhossa.",
+        "timerMinutes": 0,
+        "titleEn": "Finish and eat",
+        "textEn": "Stir well. Add a splash of milk if it is too thick. Eat cold or microwave briefly in a microwave-safe bowl."
       }
     ],
     "createdAt": "2026-07-22T12:00:00.000Z",
-    "updatedAt": "2026-07-22T12:00:00.000Z"
+    "updatedAt": "2026-07-22T18:00:00.000Z",
+    "titleEn": "Protein Overnight Oats",
+    "descriptionEn": "A five-minute make-ahead breakfast with oats, skyr, whey, berries and seeds.",
+    "categoryEn": "Breakfast",
+    "cuisineEn": "Everyday fitness",
+    "difficultyEn": "Easy",
+    "tagsEn": [
+      "breakfast",
+      "high-protein",
+      "meal-prep",
+      "quick",
+      "weekly-plan"
+    ],
+    "useIngredientNutrition": false,
+    "nutritionStatus": "fineli-sync-required",
+    "nutritionDisclaimerFi": "Suunnitelman ravintoarvo näytetään siihen asti, kunnes raaka-aineet on synkronoitu Finelin avoimesta rajapinnasta. Tuotemerkit, kypsennyshävikki ja annospainot voivat muuttaa toteutunutta arvoa.",
+    "notesEn": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace skyr with lactose-free rahka/quark; use fortified soy yogurt plus a little extra whey for a dairy-free option; swap berries for chopped apple or pear."
   },
   {
     "id": "mealplan-savory-egg-rye-plate",
     "slug": "savory-egg-rye-plate",
-    "title": "Savory Egg Rye Plate",
-    "description": "Eggs, rye bread, cottage cheese and raw vegetables for a fast protein-rich breakfast.",
-    "category": "Breakfast",
-    "cuisine": "Everyday fitness",
-    "difficulty": "Easy",
+    "title": "Suolainen kananmuna-ruisleipälautanen",
+    "description": "Kananmunia, ruisleipää, raejuustoa ja tuoreita kasviksia nopeaksi proteiinipitoiseksi aamiaiseksi.",
+    "category": "Aamiainen",
+    "cuisine": "Arjen fitness-ruoka",
+    "difficulty": "Helppo",
     "prepMinutes": 10,
     "cookMinutes": 8,
     "servings": 1,
     "tags": [
-      "breakfast",
-      "high-protein",
-      "quick",
-      "Finnish-staples",
-      "weekly-plan"
+      "aamiainen",
+      "runsasproteiininen",
+      "nopea",
+      "suomalaiset-perusraaka-aineet",
+      "viikkosuunnitelma"
     ],
     "image": "/meal-plan-covers/savory-egg-rye-plate.svg",
     "sourceUrl": "",
@@ -201,163 +171,131 @@
       "fat": 21,
       "fibre": 9
     },
-    "notes": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Use 250 g egg whites plus one whole egg for less fat; replace cottage cheese with skyr or rahka; replace rye bread with another whole-grain bread.",
+    "notes": "Lähde: Home Recipes -sovellusta varten laadittu alkuperäinen ateriasuunnitelmaresepti; reseptiä ei ole kopioitu yhdestä verkkolähteestä. Suunnitelman ravintoarvo on tavoitearvio. Raaka-ainekohtaiset arvot voidaan päivittää suoraan THL:n Fineli-rajapinnasta. Korvaavat vaihtoehdot: Kevennä annosta käyttämällä 250 g valkuaisia ja yhtä kokonaista kananmunaa. Raejuuston voi vaihtaa skyriin tai rahkaan ja ruisleivän muuhun täysjyväleipään.",
     "ingredients": [
       {
         "id": "savory-egg-rye-plate-i1",
-        "name": "Eggs",
+        "catalogId": "ingredient-kananmuna",
         "quantity": 3,
-        "unit": "pcs",
+        "unit": "kpl",
+        "unitEn": "pcs",
         "grams": 180,
         "note": "",
-        "shoppingCategory": "Dairy & chilled",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 143,
-          "protein": 12.6,
-          "carbs": 0.7,
-          "fat": 9.5,
-          "fibre": 0
-        }
+        "noteEn": ""
       },
       {
         "id": "savory-egg-rye-plate-i2",
-        "name": "Whole-grain rye bread",
+        "catalogId": "ingredient-taysjyvaruisleipa",
         "quantity": 3,
-        "unit": "slices",
+        "unit": "viipaletta",
+        "unitEn": "slices",
         "grams": 105,
         "note": "",
-        "shoppingCategory": "Bakery",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 240,
-          "protein": 8.5,
-          "carbs": 43,
-          "fat": 3.5,
-          "fibre": 10
-        }
+        "noteEn": ""
       },
       {
         "id": "savory-egg-rye-plate-i3",
-        "name": "Low-fat cottage cheese",
+        "catalogId": "ingredient-raejuusto-vaharasvainen",
         "quantity": 150,
         "unit": "g",
+        "unitEn": "g",
         "grams": 150,
         "note": "",
-        "shoppingCategory": "Dairy & chilled",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 80,
-          "protein": 13,
-          "carbs": 3,
-          "fat": 1.5,
-          "fibre": 0
-        }
+        "noteEn": ""
       },
       {
         "id": "savory-egg-rye-plate-i4",
-        "name": "Tomato",
+        "catalogId": "ingredient-tomaatti",
         "quantity": 150,
         "unit": "g",
+        "unitEn": "g",
         "grams": 150,
-        "note": "sliced",
-        "shoppingCategory": "Produce",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 18,
-          "protein": 0.9,
-          "carbs": 3.9,
-          "fat": 0.2,
-          "fibre": 1.2
-        }
+        "note": "viipaloituna",
+        "noteEn": "sliced"
       },
       {
         "id": "savory-egg-rye-plate-i5",
-        "name": "Cucumber",
+        "catalogId": "ingredient-kurkku",
         "quantity": 100,
         "unit": "g",
+        "unitEn": "g",
         "grams": 100,
-        "note": "sliced",
-        "shoppingCategory": "Produce",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 15,
-          "protein": 0.7,
-          "carbs": 3.6,
-          "fat": 0.1,
-          "fibre": 0.5
-        }
+        "note": "viipaloituna",
+        "noteEn": "sliced"
       },
       {
         "id": "savory-egg-rye-plate-i6",
-        "name": "Apple",
+        "catalogId": "ingredient-omena",
         "quantity": 1,
-        "unit": "pc",
+        "unit": "kpl",
+        "unitEn": "pc",
         "grams": 180,
         "note": "",
-        "shoppingCategory": "Produce",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 52,
-          "protein": 0.3,
-          "carbs": 14,
-          "fat": 0.2,
-          "fibre": 2.4
-        }
+        "noteEn": ""
       }
     ],
     "steps": [
       {
         "id": "savory-egg-rye-plate-s1",
-        "title": "Cook the eggs",
-        "text": "Boil the eggs for 7–8 minutes, or fry them in a non-stick pan until the whites are set.",
-        "timerMinutes": 8
+        "title": "Kypsennä kananmunat",
+        "text": "Keitä kananmunia 7–8 minuuttia tai paista ne tarttumattomalla pannulla, kunnes valkuaiset ovat hyytyneet.",
+        "timerMinutes": 8,
+        "titleEn": "Cook the eggs",
+        "textEn": "Boil the eggs for 7–8 minutes, or fry them in a non-stick pan until the whites are set."
       },
       {
         "id": "savory-egg-rye-plate-s2",
-        "title": "Prepare the plate",
-        "text": "Toast the rye bread if preferred. Slice the tomato, cucumber and apple.",
-        "timerMinutes": 0
+        "title": "Valmistele lautanen",
+        "text": "Paahda ruisleipä halutessasi. Viipaloi tomaatti, kurkku ja omena.",
+        "timerMinutes": 0,
+        "titleEn": "Prepare the plate",
+        "textEn": "Toast the rye bread if preferred. Slice the tomato, cucumber and apple."
       },
       {
         "id": "savory-egg-rye-plate-s3",
-        "title": "Assemble",
-        "text": "Serve the eggs with rye bread, cottage cheese, vegetables and apple. Season with pepper and only a small amount of iodised salt if needed.",
-        "timerMinutes": 0
+        "title": "Kokoa annos",
+        "text": "Tarjoa kananmunat ruisleivän, raejuuston, kasvisten ja omenan kanssa. Mausta pippurilla ja tarvittaessa vain pienellä määrällä jodioitua suolaa.",
+        "timerMinutes": 0,
+        "titleEn": "Assemble",
+        "textEn": "Serve the eggs with rye bread, cottage cheese, vegetables and apple. Season with pepper and only a small amount of iodised salt if needed."
       }
     ],
     "createdAt": "2026-07-22T12:00:00.000Z",
-    "updatedAt": "2026-07-22T12:00:00.000Z"
+    "updatedAt": "2026-07-22T18:00:00.000Z",
+    "titleEn": "Savory Egg Rye Plate",
+    "descriptionEn": "Eggs, rye bread, cottage cheese and raw vegetables for a fast protein-rich breakfast.",
+    "categoryEn": "Breakfast",
+    "cuisineEn": "Everyday fitness",
+    "difficultyEn": "Easy",
+    "tagsEn": [
+      "breakfast",
+      "high-protein",
+      "quick",
+      "Finnish-staples",
+      "weekly-plan"
+    ],
+    "useIngredientNutrition": false,
+    "nutritionStatus": "fineli-sync-required",
+    "nutritionDisclaimerFi": "Suunnitelman ravintoarvo näytetään siihen asti, kunnes raaka-aineet on synkronoitu Finelin avoimesta rajapinnasta. Tuotemerkit, kypsennyshävikki ja annospainot voivat muuttaa toteutunutta arvoa.",
+    "notesEn": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Use 250 g egg whites plus one whole egg for less fat; replace cottage cheese with skyr or rahka; replace rye bread with another whole-grain bread."
   },
   {
     "id": "mealplan-quark-oat-pancakes",
     "slug": "quark-oat-pancakes",
-    "title": "Quark Oat Pancakes",
-    "description": "Simple blender pancakes using rahka, oats, eggs and banana, served with berries.",
-    "category": "Breakfast",
-    "cuisine": "Everyday fitness",
-    "difficulty": "Easy",
+    "title": "Rahka-kaurapannukakut",
+    "description": "Helpot tehosekoitinletut rahkasta, kaurasta, kananmunista ja banaanista, marjojen kanssa tarjoiltuna.",
+    "category": "Aamiainen",
+    "cuisine": "Arjen fitness-ruoka",
+    "difficulty": "Helppo",
     "prepMinutes": 5,
     "cookMinutes": 10,
     "servings": 1,
     "tags": [
-      "breakfast",
-      "high-protein",
-      "quick",
-      "pan-fry",
-      "weekly-plan"
+      "aamiainen",
+      "runsasproteiininen",
+      "nopea",
+      "paistinpannu",
+      "viikkosuunnitelma"
     ],
     "image": "/meal-plan-covers/quark-oat-pancakes.svg",
     "sourceUrl": "",
@@ -369,156 +307,137 @@
       "fat": 13,
       "fibre": 7
     },
-    "notes": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace rahka with skyr or blended cottage cheese; replace banana with 100 g apple purée; use gluten-free oats when required.",
+    "notes": "Lähde: Home Recipes -sovellusta varten laadittu alkuperäinen ateriasuunnitelmaresepti; reseptiä ei ole kopioitu yhdestä verkkolähteestä. Suunnitelman ravintoarvo on tavoitearvio. Raaka-ainekohtaiset arvot voidaan päivittää suoraan THL:n Fineli-rajapinnasta. Korvaavat vaihtoehdot: Rahka voidaan vaihtaa skyriin tai soseutettuun raejuustoon. Banaanin tilalla voi käyttää 100 g omenasosetta. Käytä gluteenittomia kaurahiutaleita tarvittaessa.",
     "ingredients": [
       {
         "id": "quark-oat-pancakes-i1",
-        "name": "Quark or rahka",
+        "catalogId": "ingredient-maitorahka-rasvaton",
         "quantity": 250,
         "unit": "g",
+        "unitEn": "g",
         "grams": 250,
-        "note": "plain, low-fat",
-        "shoppingCategory": "Dairy & chilled",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 68,
-          "protein": 12,
-          "carbs": 4,
-          "fat": 0.3,
-          "fibre": 0
-        }
+        "note": "maustamaton ja vähärasvainen",
+        "noteEn": "plain, low-fat"
       },
       {
         "id": "quark-oat-pancakes-i2",
-        "name": "Rolled oats",
+        "catalogId": "ingredient-kaurahiutale",
         "quantity": 60,
         "unit": "g",
+        "unitEn": "g",
         "grams": 60,
         "note": "",
-        "shoppingCategory": "Grains",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 370,
-          "protein": 13.5,
-          "carbs": 60,
-          "fat": 7,
-          "fibre": 10
-        }
+        "noteEn": ""
       },
       {
         "id": "quark-oat-pancakes-i3",
-        "name": "Eggs",
+        "catalogId": "ingredient-kananmuna",
         "quantity": 2,
-        "unit": "pcs",
+        "unit": "kpl",
+        "unitEn": "pcs",
         "grams": 120,
         "note": "",
-        "shoppingCategory": "Dairy & chilled",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 143,
-          "protein": 12.6,
-          "carbs": 0.7,
-          "fat": 9.5,
-          "fibre": 0
-        }
+        "noteEn": ""
       },
       {
         "id": "quark-oat-pancakes-i4",
-        "name": "Banana",
+        "catalogId": "ingredient-banaani-kuorittu",
         "quantity": 1,
-        "unit": "pc",
+        "unit": "kpl",
+        "unitEn": "pc",
         "grams": 120,
-        "note": "ripe",
-        "shoppingCategory": "Produce",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 89,
-          "protein": 1.1,
-          "carbs": 23,
-          "fat": 0.3,
-          "fibre": 2.6
-        }
+        "note": "kypsä",
+        "noteEn": "ripe"
       },
       {
         "id": "quark-oat-pancakes-i5",
-        "name": "Frozen berries",
+        "catalogId": "ingredient-marjasekoitus-pakaste",
         "quantity": 100,
         "unit": "g",
+        "unitEn": "g",
         "grams": 100,
         "note": "",
-        "shoppingCategory": "Frozen",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 45,
-          "protein": 1,
-          "carbs": 8,
-          "fat": 0.5,
-          "fibre": 4
-        }
+        "noteEn": ""
       }
     ],
     "steps": [
       {
         "id": "quark-oat-pancakes-s1",
-        "title": "Make the batter",
-        "text": "Blend or mash the quark, oats, eggs and banana until mostly smooth. Let the mixture stand for 2 minutes.",
-        "timerMinutes": 0
+        "title": "Valmista taikina",
+        "text": "Sekoita tehosekoittimessa tai soseuta rahka, kaurahiutaleet, kananmunat ja banaani melko tasaiseksi. Anna taikinan seistä kaksi minuuttia.",
+        "timerMinutes": 0,
+        "titleEn": "Make the batter",
+        "textEn": "Blend or mash the quark, oats, eggs and banana until mostly smooth. Let the mixture stand for 2 minutes."
       },
       {
         "id": "quark-oat-pancakes-s2",
-        "title": "Heat the pan",
-        "text": "Warm a non-stick pan over medium heat. Add a very light coating of rapeseed oil only if needed.",
-        "timerMinutes": 0
+        "title": "Kuumenna pannu",
+        "text": "Kuumenna tarttumaton pannu keskilämmölle. Lisää vain hyvin ohut kerros rypsiöljyä tarvittaessa.",
+        "timerMinutes": 0,
+        "titleEn": "Heat the pan",
+        "textEn": "Warm a non-stick pan over medium heat. Add a very light coating of rapeseed oil only if needed."
       },
       {
         "id": "quark-oat-pancakes-s3",
-        "title": "Cook the first side",
-        "text": "Spoon the batter into 3–4 small pancakes. Cook until the edges look set and bubbles appear, about 3–4 minutes.",
-        "timerMinutes": 4
+        "title": "Paista ensimmäinen puoli",
+        "text": "Nostele taikinasta 3–4 pientä pannukakkua. Paista 3–4 minuuttia, kunnes reunat näyttävät hyytyneiltä ja pinnalle muodostuu kuplia.",
+        "timerMinutes": 4,
+        "titleEn": "Cook the first side",
+        "textEn": "Spoon the batter into 3–4 small pancakes. Cook until the edges look set and bubbles appear, about 3–4 minutes."
       },
       {
         "id": "quark-oat-pancakes-s4",
-        "title": "Flip and finish",
-        "text": "Turn carefully and cook the second side for 2–3 minutes.",
-        "timerMinutes": 3
+        "title": "Käännä ja kypsennä",
+        "text": "Käännä varovasti ja paista toista puolta 2–3 minuuttia.",
+        "timerMinutes": 3,
+        "titleEn": "Flip and finish",
+        "textEn": "Turn carefully and cook the second side for 2–3 minutes."
       },
       {
         "id": "quark-oat-pancakes-s5",
-        "title": "Serve",
-        "text": "Microwave or thaw the berries and spoon them over the pancakes.",
-        "timerMinutes": 0
+        "title": "Tarjoa",
+        "text": "Sulata marjat mikroaaltouunissa tai huoneenlämmössä ja lusikoi pannukakkujen päälle.",
+        "timerMinutes": 0,
+        "titleEn": "Serve",
+        "textEn": "Microwave or thaw the berries and spoon them over the pancakes."
       }
     ],
     "createdAt": "2026-07-22T12:00:00.000Z",
-    "updatedAt": "2026-07-22T12:00:00.000Z"
+    "updatedAt": "2026-07-22T18:00:00.000Z",
+    "titleEn": "Quark Oat Pancakes",
+    "descriptionEn": "Simple blender pancakes using rahka, oats, eggs and banana, served with berries.",
+    "categoryEn": "Breakfast",
+    "cuisineEn": "Everyday fitness",
+    "difficultyEn": "Easy",
+    "tagsEn": [
+      "breakfast",
+      "high-protein",
+      "quick",
+      "pan-fry",
+      "weekly-plan"
+    ],
+    "useIngredientNutrition": false,
+    "nutritionStatus": "fineli-sync-required",
+    "nutritionDisclaimerFi": "Suunnitelman ravintoarvo näytetään siihen asti, kunnes raaka-aineet on synkronoitu Finelin avoimesta rajapinnasta. Tuotemerkit, kypsennyshävikki ja annospainot voivat muuttaa toteutunutta arvoa.",
+    "notesEn": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace rahka with skyr or blended cottage cheese; replace banana with 100 g apple purée; use gluten-free oats when required."
   },
   {
     "id": "mealplan-skyr-muesli-fruit-bowl",
     "slug": "skyr-muesli-fruit-bowl",
-    "title": "Skyr Muesli Fruit Bowl",
-    "description": "A no-cook breakfast bowl with skyr, oats or unsweetened muesli, fruit, berries and seeds.",
-    "category": "Breakfast",
-    "cuisine": "Everyday fitness",
-    "difficulty": "Easy",
+    "title": "Skyr-mysli-hedelmäkulho",
+    "description": "Kypsentämätön aamiaiskulho, jossa on skyriä, makeuttamatonta mysliä, hedelmää, marjoja ja siemeniä.",
+    "category": "Aamiainen",
+    "cuisine": "Arjen fitness-ruoka",
+    "difficulty": "Helppo",
     "prepMinutes": 5,
     "cookMinutes": 0,
     "servings": 1,
     "tags": [
-      "breakfast",
-      "high-protein",
-      "no-cook",
-      "quick",
-      "weekly-plan"
+      "aamiainen",
+      "runsasproteiininen",
+      "ei-kypsennystä",
+      "nopea",
+      "viikkosuunnitelma"
     ],
     "image": "/meal-plan-covers/skyr-muesli-fruit-bowl.svg",
     "sourceUrl": "",
@@ -530,144 +449,121 @@
       "fat": 12,
       "fibre": 8
     },
-    "notes": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Use rahka or cottage cheese instead of skyr; use an apple or pear instead of banana; replace pumpkin seeds with 15–20 g walnuts or almonds.",
+    "notes": "Lähde: Home Recipes -sovellusta varten laadittu alkuperäinen ateriasuunnitelmaresepti; reseptiä ei ole kopioitu yhdestä verkkolähteestä. Suunnitelman ravintoarvo on tavoitearvio. Raaka-ainekohtaiset arvot voidaan päivittää suoraan THL:n Fineli-rajapinnasta. Korvaavat vaihtoehdot: Skyrin voi vaihtaa rahkaan tai raejuustoon. Banaanin voi vaihtaa omenaan tai päärynään. Kurpitsansiemenet voi vaihtaa 15–20 grammaan saksanpähkinöitä tai manteleita.",
     "ingredients": [
       {
         "id": "skyr-muesli-fruit-bowl-i1",
-        "name": "Skyr",
+        "catalogId": "ingredient-skyr-maustamaton",
         "quantity": 250,
         "unit": "g",
+        "unitEn": "g",
         "grams": 250,
-        "note": "plain, low-fat",
-        "shoppingCategory": "Dairy & chilled",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 63,
-          "protein": 11,
-          "carbs": 4,
-          "fat": 0.2,
-          "fibre": 0
-        }
+        "note": "maustamaton ja vähärasvainen",
+        "noteEn": "plain, low-fat"
       },
       {
         "id": "skyr-muesli-fruit-bowl-i2",
-        "name": "Unsweetened muesli or rolled oats",
+        "catalogId": "ingredient-mysli-makeuttamaton",
         "quantity": 50,
         "unit": "g",
+        "unitEn": "g",
         "grams": 50,
         "note": "",
-        "shoppingCategory": "Grains",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 370,
-          "protein": 13.5,
-          "carbs": 60,
-          "fat": 7,
-          "fibre": 10
-        }
+        "noteEn": ""
       },
       {
         "id": "skyr-muesli-fruit-bowl-i3",
-        "name": "Banana",
+        "catalogId": "ingredient-banaani-kuorittu",
         "quantity": 1,
-        "unit": "pc",
+        "unit": "kpl",
+        "unitEn": "pc",
         "grams": 120,
         "note": "",
-        "shoppingCategory": "Produce",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 89,
-          "protein": 1.1,
-          "carbs": 23,
-          "fat": 0.3,
-          "fibre": 2.6
-        }
+        "noteEn": ""
       },
       {
         "id": "skyr-muesli-fruit-bowl-i4",
-        "name": "Frozen berries",
+        "catalogId": "ingredient-marjasekoitus-pakaste",
         "quantity": 100,
         "unit": "g",
+        "unitEn": "g",
         "grams": 100,
         "note": "",
-        "shoppingCategory": "Frozen",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 45,
-          "protein": 1,
-          "carbs": 8,
-          "fat": 0.5,
-          "fibre": 4
-        }
+        "noteEn": ""
       },
       {
         "id": "skyr-muesli-fruit-bowl-i5",
-        "name": "Pumpkin seeds",
+        "catalogId": "ingredient-kurpitsansiemen",
         "quantity": 15,
         "unit": "g",
+        "unitEn": "g",
         "grams": 15,
         "note": "",
-        "shoppingCategory": "Nuts & seeds",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 559,
-          "protein": 30,
-          "carbs": 11,
-          "fat": 49,
-          "fibre": 6
-        }
+        "noteEn": ""
       }
     ],
     "steps": [
       {
         "id": "skyr-muesli-fruit-bowl-s1",
-        "title": "Prepare the fruit",
-        "text": "Slice the banana. Thaw the berries briefly in the microwave if you do not want them frozen.",
-        "timerMinutes": 0
+        "title": "Valmistele hedelmät",
+        "text": "Viipaloi banaani. Sulata marjoja hetki mikroaaltouunissa, jos et halua syödä niitä jäisinä.",
+        "timerMinutes": 0,
+        "titleEn": "Prepare the fruit",
+        "textEn": "Slice the banana. Thaw the berries briefly in the microwave if you do not want them frozen."
       },
       {
         "id": "skyr-muesli-fruit-bowl-s2",
-        "title": "Build the bowl",
-        "text": "Add skyr to a bowl and top with muesli or oats, banana, berries and pumpkin seeds.",
-        "timerMinutes": 0
+        "title": "Kokoa kulho",
+        "text": "Lisää skyr kulhoon ja annostele päälle mysli, banaani, marjat ja kurpitsansiemenet.",
+        "timerMinutes": 0,
+        "titleEn": "Build the bowl",
+        "textEn": "Add skyr to a bowl and top with muesli or oats, banana, berries and pumpkin seeds."
       },
       {
         "id": "skyr-muesli-fruit-bowl-s3",
-        "title": "Adjust the texture",
-        "text": "Add a small splash of milk or fortified soy drink if you prefer a looser consistency.",
-        "timerMinutes": 0
+        "title": "Säädä koostumus",
+        "text": "Lisää pieni tilkka maitoa tai täydennettyä soijajuomaa, jos haluat juoksevamman koostumuksen.",
+        "timerMinutes": 0,
+        "titleEn": "Adjust the texture",
+        "textEn": "Add a small splash of milk or fortified soy drink if you prefer a looser consistency."
       }
     ],
     "createdAt": "2026-07-22T12:00:00.000Z",
-    "updatedAt": "2026-07-22T12:00:00.000Z"
+    "updatedAt": "2026-07-22T18:00:00.000Z",
+    "titleEn": "Skyr Muesli Fruit Bowl",
+    "descriptionEn": "A no-cook breakfast bowl with skyr, oats or unsweetened muesli, fruit, berries and seeds.",
+    "categoryEn": "Breakfast",
+    "cuisineEn": "Everyday fitness",
+    "difficultyEn": "Easy",
+    "tagsEn": [
+      "breakfast",
+      "high-protein",
+      "no-cook",
+      "quick",
+      "weekly-plan"
+    ],
+    "useIngredientNutrition": false,
+    "nutritionStatus": "fineli-sync-required",
+    "nutritionDisclaimerFi": "Suunnitelman ravintoarvo näytetään siihen asti, kunnes raaka-aineet on synkronoitu Finelin avoimesta rajapinnasta. Tuotemerkit, kypsennyshävikki ja annospainot voivat muuttaa toteutunutta arvoa.",
+    "notesEn": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Use rahka or cottage cheese instead of skyr; use an apple or pear instead of banana; replace pumpkin seeds with 15–20 g walnuts or almonds."
   },
   {
     "id": "mealplan-chicken-rice-broccoli-box",
     "slug": "chicken-rice-broccoli-box",
-    "title": "Chicken Rice Broccoli Box",
-    "description": "The basic meal-prep box: lean chicken, rice, broccoli, carrot and rapeseed oil.",
-    "category": "Lunch & dinner",
-    "cuisine": "Everyday fitness",
-    "difficulty": "Easy",
+    "title": "Broileri-riisi-parsakaaliateria",
+    "description": "Helppo ateriarasia: vähärasvaista broileria, riisiä, parsakaalia, porkkanaa ja rypsiöljyä.",
+    "category": "Lounas ja päivällinen",
+    "cuisine": "Arjen fitness-ruoka",
+    "difficulty": "Helppo",
     "prepMinutes": 10,
     "cookMinutes": 20,
     "servings": 1,
     "tags": [
-      "lunch",
-      "dinner",
-      "meal-prep",
-      "high-protein",
-      "weekly-plan"
+      "lounas",
+      "päivällinen",
+      "ateriankokoaminen",
+      "runsasproteiininen",
+      "viikkosuunnitelma"
     ],
     "image": "/meal-plan-covers/chicken-rice-broccoli-box.svg",
     "sourceUrl": "",
@@ -679,175 +575,147 @@
       "fat": 16,
       "fibre": 9
     },
-    "notes": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace chicken with turkey, lean pork tenderloin or 200–250 g firm tofu; replace rice with 90 g dry whole-wheat pasta or about 350–400 g potatoes; use any frozen vegetable mix.",
+    "notes": "Lähde: Home Recipes -sovellusta varten laadittu alkuperäinen ateriasuunnitelmaresepti; reseptiä ei ole kopioitu yhdestä verkkolähteestä. Suunnitelman ravintoarvo on tavoitearvio. Raaka-ainekohtaiset arvot voidaan päivittää suoraan THL:n Fineli-rajapinnasta. Korvaavat vaihtoehdot: Broilerin voi vaihtaa kalkkunaan, vähärasvaiseen porsaan sisäfileeseen tai 200–250 g kiinteää tofua. Riisin voi vaihtaa 90 g kuivaa täysjyväpastaa tai noin 350–400 g perunaa. Kasvikset voi vaihtaa mihin tahansa pakastekasvissekoitukseen.",
     "ingredients": [
       {
         "id": "chicken-rice-broccoli-box-i1",
-        "name": "Chicken breast",
+        "catalogId": "ingredient-broilerin-rintafilee-nahaton",
         "quantity": 200,
         "unit": "g",
+        "unitEn": "g",
         "grams": 200,
-        "note": "cut into bite-size pieces",
-        "shoppingCategory": "Meat & fish",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 110,
-          "protein": 23,
-          "carbs": 0,
-          "fat": 1.5,
-          "fibre": 0
-        }
+        "note": "suupaloiksi leikattuna",
+        "noteEn": "cut into bite-size pieces"
       },
       {
         "id": "chicken-rice-broccoli-box-i2",
-        "name": "Rice, dry",
+        "catalogId": "ingredient-riisi-pitkajyvainen-raaka",
         "quantity": 90,
         "unit": "g",
+        "unitEn": "g",
         "grams": 90,
         "note": "",
-        "shoppingCategory": "Grains",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 360,
-          "protein": 7,
-          "carbs": 79,
-          "fat": 0.7,
-          "fibre": 1.3
-        }
+        "noteEn": ""
       },
       {
         "id": "chicken-rice-broccoli-box-i3",
-        "name": "Broccoli",
+        "catalogId": "ingredient-parsakaali",
         "quantity": 250,
         "unit": "g",
+        "unitEn": "g",
         "grams": 250,
-        "note": "fresh or frozen",
-        "shoppingCategory": "Produce",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 34,
-          "protein": 2.8,
-          "carbs": 7,
-          "fat": 0.4,
-          "fibre": 2.6
-        }
+        "note": "tuore tai pakaste",
+        "noteEn": "fresh or frozen"
       },
       {
         "id": "chicken-rice-broccoli-box-i4",
-        "name": "Carrot",
+        "catalogId": "ingredient-porkkana",
         "quantity": 100,
         "unit": "g",
+        "unitEn": "g",
         "grams": 100,
-        "note": "sliced",
-        "shoppingCategory": "Produce",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 41,
-          "protein": 0.9,
-          "carbs": 9.6,
-          "fat": 0.2,
-          "fibre": 2.8
-        }
+        "note": "viipaloituna",
+        "noteEn": "sliced"
       },
       {
         "id": "chicken-rice-broccoli-box-i5",
-        "name": "Rapeseed oil",
+        "catalogId": "ingredient-rypsioljy",
         "quantity": 10,
         "unit": "g",
+        "unitEn": "g",
         "grams": 10,
         "note": "",
-        "shoppingCategory": "Pantry",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 884,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 100,
-          "fibre": 0
-        }
+        "noteEn": ""
       },
       {
         "id": "chicken-rice-broccoli-box-i6",
-        "name": "Low-salt soy sauce",
+        "catalogId": "ingredient-soijakastike-vahasuolainen",
         "quantity": 10,
         "unit": "g",
+        "unitEn": "g",
         "grams": 10,
-        "note": "optional",
-        "shoppingCategory": "Pantry",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 53,
-          "protein": 8.1,
-          "carbs": 4.9,
-          "fat": 0.6,
-          "fibre": 0.8
-        }
+        "note": "valinnainen",
+        "noteEn": "optional"
       }
     ],
     "steps": [
       {
         "id": "chicken-rice-broccoli-box-s1",
-        "title": "Cook the rice",
-        "text": "Rinse the rice. Cook it according to the package instructions, usually 12–15 minutes.",
-        "timerMinutes": 15
+        "title": "Keitä riisi",
+        "text": "Huuhtele riisi ja kypsennä pakkauksen ohjeen mukaan, yleensä 12–15 minuuttia.",
+        "timerMinutes": 15,
+        "titleEn": "Cook the rice",
+        "textEn": "Rinse the rice. Cook it according to the package instructions, usually 12–15 minutes."
       },
       {
         "id": "chicken-rice-broccoli-box-s2",
-        "title": "Season the chicken",
-        "text": "Mix the chicken with pepper, garlic powder and half of the soy sauce.",
-        "timerMinutes": 0
+        "title": "Mausta broileri",
+        "text": "Sekoita broilerin joukkoon pippuria, valkosipulijauhetta ja puolet soijakastikkeesta.",
+        "timerMinutes": 0,
+        "titleEn": "Season the chicken",
+        "textEn": "Mix the chicken with pepper, garlic powder and half of the soy sauce."
       },
       {
         "id": "chicken-rice-broccoli-box-s3",
-        "title": "Cook the chicken",
-        "text": "Heat half the rapeseed oil in a pan. Cook the chicken, stirring, until browned and fully cooked through, about 8–10 minutes.",
-        "timerMinutes": 9
+        "title": "Kypsennä broileri",
+        "text": "Kuumenna puolet rypsiöljystä pannulla. Paista broileria sekoitellen 8–10 minuuttia, kunnes se on ruskistunut ja läpikypsää.",
+        "timerMinutes": 9,
+        "titleEn": "Cook the chicken",
+        "textEn": "Heat half the rapeseed oil in a pan. Cook the chicken, stirring, until browned and fully cooked through, about 8–10 minutes."
       },
       {
         "id": "chicken-rice-broccoli-box-s4",
-        "title": "Cook the vegetables",
-        "text": "Steam or microwave the broccoli and carrot until tender but not mushy, about 5–7 minutes.",
-        "timerMinutes": 6
+        "title": "Kypsennä kasvikset",
+        "text": "Höyrytä tai kypsennä parsakaali ja porkkana mikroaaltouunissa 5–7 minuuttia, kunnes ne ovat kypsiä mutta eivät pehmeitä.",
+        "timerMinutes": 6,
+        "titleEn": "Cook the vegetables",
+        "textEn": "Steam or microwave the broccoli and carrot until tender but not mushy, about 5–7 minutes."
       },
       {
         "id": "chicken-rice-broccoli-box-s5",
-        "title": "Pack the box",
-        "text": "Combine rice, chicken and vegetables. Add the remaining oil and soy sauce. Cool before covering if preparing ahead.",
-        "timerMinutes": 0
+        "title": "Kokoa rasia",
+        "text": "Yhdistä riisi, broileri ja kasvikset. Lisää loppu öljy ja soijakastike. Anna jäähtyä ennen kannen sulkemista, jos valmistat annoksen etukäteen.",
+        "timerMinutes": 0,
+        "titleEn": "Pack the box",
+        "textEn": "Combine rice, chicken and vegetables. Add the remaining oil and soy sauce. Cool before covering if preparing ahead."
       }
     ],
     "createdAt": "2026-07-22T12:00:00.000Z",
-    "updatedAt": "2026-07-22T12:00:00.000Z"
+    "updatedAt": "2026-07-22T18:00:00.000Z",
+    "titleEn": "Chicken Rice Broccoli Box",
+    "descriptionEn": "The basic meal-prep box: lean chicken, rice, broccoli, carrot and rapeseed oil.",
+    "categoryEn": "Lunch & dinner",
+    "cuisineEn": "Everyday fitness",
+    "difficultyEn": "Easy",
+    "tagsEn": [
+      "lunch",
+      "dinner",
+      "meal-prep",
+      "high-protein",
+      "weekly-plan"
+    ],
+    "useIngredientNutrition": false,
+    "nutritionStatus": "fineli-sync-required",
+    "nutritionDisclaimerFi": "Suunnitelman ravintoarvo näytetään siihen asti, kunnes raaka-aineet on synkronoitu Finelin avoimesta rajapinnasta. Tuotemerkit, kypsennyshävikki ja annospainot voivat muuttaa toteutunutta arvoa.",
+    "notesEn": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace chicken with turkey, lean pork tenderloin or 200–250 g firm tofu; replace rice with 90 g dry whole-wheat pasta or about 350–400 g potatoes; use any frozen vegetable mix."
   },
   {
     "id": "mealplan-oven-salmon-potatoes-peas",
     "slug": "oven-salmon-potatoes-peas",
-    "title": "Oven Salmon Potatoes Peas Tray",
-    "description": "A straightforward salmon tray with potatoes, peas and a dill-yogurt sauce.",
-    "category": "Lunch & dinner",
-    "cuisine": "Everyday fitness",
-    "difficulty": "Easy",
+    "title": "Uunilohi, perunat ja herneet",
+    "description": "Helppo uunipellillinen lohta, perunaa ja herneitä tilli-jogurttikastikkeen kanssa.",
+    "category": "Lounas ja päivällinen",
+    "cuisine": "Arjen fitness-ruoka",
+    "difficulty": "Helppo",
     "prepMinutes": 10,
     "cookMinutes": 25,
     "servings": 1,
     "tags": [
-      "lunch",
-      "dinner",
-      "fish",
-      "tray-bake",
-      "weekly-plan"
+      "lounas",
+      "päivällinen",
+      "kala",
+      "pellillä",
+      "viikkosuunnitelma"
     ],
     "image": "/meal-plan-covers/oven-salmon-potatoes-peas.svg",
     "sourceUrl": "",
@@ -859,194 +727,157 @@
       "fat": 28,
       "fibre": 10
     },
-    "notes": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace salmon with rainbow trout, Arctic char or another oily fish; use 150–180 g white fish plus 10 g extra rapeseed oil; replace potatoes with 80–90 g dry barley or rice.",
+    "notes": "Lähde: Home Recipes -sovellusta varten laadittu alkuperäinen ateriasuunnitelmaresepti; reseptiä ei ole kopioitu yhdestä verkkolähteestä. Suunnitelman ravintoarvo on tavoitearvio. Raaka-ainekohtaiset arvot voidaan päivittää suoraan THL:n Fineli-rajapinnasta. Korvaavat vaihtoehdot: Lohen voi vaihtaa kirjoloheen, nieriään tai muuhun rasvaiseen kalaan. Valkoisen kalan kanssa lisää noin 10 g rypsiöljyä. Perunat voi vaihtaa 80–90 g kuivaan ohraan tai riisiin.",
     "ingredients": [
       {
         "id": "oven-salmon-potatoes-peas-i1",
-        "name": "Salmon fillet",
+        "catalogId": "ingredient-lohifilee-raaka",
         "quantity": 180,
         "unit": "g",
+        "unitEn": "g",
         "grams": 180,
         "note": "",
-        "shoppingCategory": "Meat & fish",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 208,
-          "protein": 20,
-          "carbs": 0,
-          "fat": 13,
-          "fibre": 0
-        }
+        "noteEn": ""
       },
       {
         "id": "oven-salmon-potatoes-peas-i2",
-        "name": "Potatoes",
+        "catalogId": "ingredient-peruna-kuorittu",
         "quantity": 350,
         "unit": "g",
+        "unitEn": "g",
         "grams": 350,
-        "note": "cut into 2 cm pieces",
-        "shoppingCategory": "Produce",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 77,
-          "protein": 2,
-          "carbs": 17,
-          "fat": 0.1,
-          "fibre": 2.2
-        }
+        "note": "leikattuna noin 2 cm paloiksi",
+        "noteEn": "cut into 2 cm pieces"
       },
       {
         "id": "oven-salmon-potatoes-peas-i3",
-        "name": "Frozen peas",
+        "catalogId": "ingredient-herne-pakaste",
         "quantity": 150,
         "unit": "g",
+        "unitEn": "g",
         "grams": 150,
         "note": "",
-        "shoppingCategory": "Frozen",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 81,
-          "protein": 5.4,
-          "carbs": 14.5,
-          "fat": 0.4,
-          "fibre": 5.1
-        }
+        "noteEn": ""
       },
       {
         "id": "oven-salmon-potatoes-peas-i4",
-        "name": "Greek yogurt",
+        "catalogId": "ingredient-kreikkalainen-jogurtti-vaharasvainen",
         "quantity": 50,
         "unit": "g",
+        "unitEn": "g",
         "grams": 50,
-        "note": "plain, low-fat",
-        "shoppingCategory": "Dairy & chilled",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 60,
-          "protein": 10,
-          "carbs": 4,
-          "fat": 0.4,
-          "fibre": 0
-        }
+        "note": "maustamaton ja vähärasvainen",
+        "noteEn": "plain, low-fat"
       },
       {
         "id": "oven-salmon-potatoes-peas-i5",
-        "name": "Rapeseed oil",
+        "catalogId": "ingredient-rypsioljy",
         "quantity": 5,
         "unit": "g",
+        "unitEn": "g",
         "grams": 5,
         "note": "",
-        "shoppingCategory": "Pantry",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 884,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 100,
-          "fibre": 0
-        }
+        "noteEn": ""
       },
       {
         "id": "oven-salmon-potatoes-peas-i6",
-        "name": "Dill",
+        "catalogId": "ingredient-tilli",
         "quantity": 1,
-        "unit": "tsp",
+        "unit": "tl",
+        "unitEn": "tsp",
         "grams": 2,
-        "note": "fresh or dried",
-        "shoppingCategory": "Produce",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 43,
-          "protein": 3.5,
-          "carbs": 7,
-          "fat": 1.1,
-          "fibre": 2.1
-        }
+        "note": "tuore tai kuivattu",
+        "noteEn": "fresh or dried"
       },
       {
         "id": "oven-salmon-potatoes-peas-i7",
-        "name": "Lemon juice",
+        "catalogId": "ingredient-sitruunamehu",
         "quantity": 1,
-        "unit": "tbsp",
+        "unit": "rkl",
+        "unitEn": "tbsp",
         "grams": 15,
         "note": "",
-        "shoppingCategory": "Produce",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 22,
-          "protein": 0.4,
-          "carbs": 6.9,
-          "fat": 0.2,
-          "fibre": 0.3
-        }
+        "noteEn": ""
       }
     ],
     "steps": [
       {
         "id": "oven-salmon-potatoes-peas-s1",
-        "title": "Heat the oven",
-        "text": "Heat the oven to 220 °C conventional or 200 °C fan.",
-        "timerMinutes": 0
+        "title": "Kuumenna uuni",
+        "text": "Kuumenna uuni 220 °C:seen ylä- ja alalämmöllä tai 200 °C:seen kiertoilmalla.",
+        "timerMinutes": 0,
+        "titleEn": "Heat the oven",
+        "textEn": "Heat the oven to 220 °C conventional or 200 °C fan."
       },
       {
         "id": "oven-salmon-potatoes-peas-s2",
-        "title": "Start the potatoes",
-        "text": "Toss the potato pieces with rapeseed oil, pepper and a small pinch of iodised salt. Roast for 15 minutes.",
-        "timerMinutes": 15
+        "title": "Esikypsennä perunat",
+        "text": "Sekoita perunapalojen joukkoon rypsiöljy, pippuri ja pieni ripaus jodioitua suolaa. Paahda 15 minuuttia.",
+        "timerMinutes": 15,
+        "titleEn": "Start the potatoes",
+        "textEn": "Toss the potato pieces with rapeseed oil, pepper and a small pinch of iodised salt. Roast for 15 minutes."
       },
       {
         "id": "oven-salmon-potatoes-peas-s3",
-        "title": "Add the salmon",
-        "text": "Move the potatoes aside. Add the salmon, season with pepper, half the dill and half the lemon juice, and bake for another 10–12 minutes until it flakes easily.",
-        "timerMinutes": 11
+        "title": "Lisää lohi",
+        "text": "Siirrä perunoita sivuun. Lisää lohi, mausta pippurilla, puolella tillistä ja puolella sitruunamehusta. Kypsennä vielä 10–12 minuuttia, kunnes lohi lohkeaa helposti.",
+        "timerMinutes": 11,
+        "titleEn": "Add the salmon",
+        "textEn": "Move the potatoes aside. Add the salmon, season with pepper, half the dill and half the lemon juice, and bake for another 10–12 minutes until it flakes easily."
       },
       {
         "id": "oven-salmon-potatoes-peas-s4",
-        "title": "Heat the peas",
-        "text": "Microwave or simmer the peas for 3–4 minutes, then drain.",
-        "timerMinutes": 4
+        "title": "Kuumenna herneet",
+        "text": "Kypsennä herneitä mikroaaltouunissa tai keitä niitä 3–4 minuuttia ja valuta.",
+        "timerMinutes": 4,
+        "titleEn": "Heat the peas",
+        "textEn": "Microwave or simmer the peas for 3–4 minutes, then drain."
       },
       {
         "id": "oven-salmon-potatoes-peas-s5",
-        "title": "Make the sauce",
-        "text": "Mix Greek yogurt with the remaining dill and lemon juice. Serve with the salmon, potatoes and peas.",
-        "timerMinutes": 0
+        "title": "Valmista kastike",
+        "text": "Sekoita jogurttiin loppu tilli ja sitruunamehu. Tarjoa lohen, perunoiden ja herneiden kanssa.",
+        "timerMinutes": 0,
+        "titleEn": "Make the sauce",
+        "textEn": "Mix Greek yogurt with the remaining dill and lemon juice. Serve with the salmon, potatoes and peas."
       }
     ],
     "createdAt": "2026-07-22T12:00:00.000Z",
-    "updatedAt": "2026-07-22T12:00:00.000Z"
+    "updatedAt": "2026-07-22T18:00:00.000Z",
+    "titleEn": "Oven Salmon Potatoes Peas Tray",
+    "descriptionEn": "A straightforward salmon tray with potatoes, peas and a dill-yogurt sauce.",
+    "categoryEn": "Lunch & dinner",
+    "cuisineEn": "Everyday fitness",
+    "difficultyEn": "Easy",
+    "tagsEn": [
+      "lunch",
+      "dinner",
+      "fish",
+      "tray-bake",
+      "weekly-plan"
+    ],
+    "useIngredientNutrition": false,
+    "nutritionStatus": "fineli-sync-required",
+    "nutritionDisclaimerFi": "Suunnitelman ravintoarvo näytetään siihen asti, kunnes raaka-aineet on synkronoitu Finelin avoimesta rajapinnasta. Tuotemerkit, kypsennyshävikki ja annospainot voivat muuttaa toteutunutta arvoa.",
+    "notesEn": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace salmon with rainbow trout, Arctic char or another oily fish; use 150–180 g white fish plus 10 g extra rapeseed oil; replace potatoes with 80–90 g dry barley or rice."
   },
   {
     "id": "mealplan-turkey-tomato-pasta",
     "slug": "turkey-tomato-pasta",
-    "title": "Turkey Mince Tomato Pasta",
-    "description": "Lean turkey mince, whole-wheat pasta, tomato and spinach in one fast pan sauce.",
-    "category": "Lunch & dinner",
-    "cuisine": "Everyday fitness",
-    "difficulty": "Easy",
+    "title": "Kalkkunajauheliha-tomaattipasta",
+    "description": "Vähärasvainen kalkkunajauheliha, täysjyväpasta, tomaatti ja pinaatti nopeassa pannukastikkeessa.",
+    "category": "Lounas ja päivällinen",
+    "cuisine": "Arjen fitness-ruoka",
+    "difficulty": "Helppo",
     "prepMinutes": 10,
     "cookMinutes": 15,
     "servings": 1,
     "tags": [
-      "lunch",
-      "dinner",
+      "lounas",
+      "päivällinen",
       "pasta",
-      "high-protein",
-      "weekly-plan"
+      "runsasproteiininen",
+      "viikkosuunnitelma"
     ],
     "image": "/meal-plan-covers/turkey-tomato-pasta.svg",
     "sourceUrl": "",
@@ -1058,176 +889,148 @@
       "fat": 18,
       "fibre": 11
     },
-    "notes": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace turkey mince with chicken mince, lean beef mince or crumbled tofu; use lentil/chickpea pasta for more fibre and protein; use frozen spinach instead of fresh.",
+    "notes": "Lähde: Home Recipes -sovellusta varten laadittu alkuperäinen ateriasuunnitelmaresepti; reseptiä ei ole kopioitu yhdestä verkkolähteestä. Suunnitelman ravintoarvo on tavoitearvio. Raaka-ainekohtaiset arvot voidaan päivittää suoraan THL:n Fineli-rajapinnasta. Korvaavat vaihtoehdot: Kalkkunajauhelihan voi vaihtaa broilerijauhelihaan, vähärasvaiseen naudan jauhelihaan tai murennettuun tofuun. Linssi- tai kikhernepasta lisää kuitua ja proteiinia. Tuoreen pinaatin sijaan voi käyttää pakastepinaattia.",
     "ingredients": [
       {
         "id": "turkey-tomato-pasta-i1",
-        "name": "Turkey mince",
+        "catalogId": "ingredient-kalkkunajauheliha-vaharasvainen",
         "quantity": 200,
         "unit": "g",
+        "unitEn": "g",
         "grams": 200,
-        "note": "prefer a lean product",
-        "shoppingCategory": "Meat & fish",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 140,
-          "protein": 21,
-          "carbs": 0,
-          "fat": 6,
-          "fibre": 0
-        }
+        "note": "valitse vähärasvainen tuote",
+        "noteEn": "prefer a lean product"
       },
       {
         "id": "turkey-tomato-pasta-i2",
-        "name": "Whole-wheat pasta, dry",
+        "catalogId": "ingredient-taysjyvapasta-kuiva",
         "quantity": 90,
         "unit": "g",
+        "unitEn": "g",
         "grams": 90,
         "note": "",
-        "shoppingCategory": "Grains",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 350,
-          "protein": 13,
-          "carbs": 67,
-          "fat": 2.5,
-          "fibre": 8
-        }
+        "noteEn": ""
       },
       {
         "id": "turkey-tomato-pasta-i3",
-        "name": "Passata",
+        "catalogId": "ingredient-paseerattu-tomaatti",
         "quantity": 200,
         "unit": "g",
+        "unitEn": "g",
         "grams": 200,
         "note": "",
-        "shoppingCategory": "Pantry",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 30,
-          "protein": 1.4,
-          "carbs": 5,
-          "fat": 0.2,
-          "fibre": 1.5
-        }
+        "noteEn": ""
       },
       {
         "id": "turkey-tomato-pasta-i4",
-        "name": "Onion",
+        "catalogId": "ingredient-sipuli",
         "quantity": 100,
         "unit": "g",
+        "unitEn": "g",
         "grams": 100,
-        "note": "chopped",
-        "shoppingCategory": "Produce",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 40,
-          "protein": 1.1,
-          "carbs": 9.3,
-          "fat": 0.1,
-          "fibre": 1.7
-        }
+        "note": "hienonnettuna",
+        "noteEn": "chopped"
       },
       {
         "id": "turkey-tomato-pasta-i5",
-        "name": "Spinach",
+        "catalogId": "ingredient-pinaatti",
         "quantity": 100,
         "unit": "g",
+        "unitEn": "g",
         "grams": 100,
-        "note": "fresh or frozen",
-        "shoppingCategory": "Produce",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 23,
-          "protein": 2.9,
-          "carbs": 3.6,
-          "fat": 0.4,
-          "fibre": 2.2
-        }
+        "note": "tuore tai pakaste",
+        "noteEn": "fresh or frozen"
       },
       {
         "id": "turkey-tomato-pasta-i6",
-        "name": "Rapeseed oil",
+        "catalogId": "ingredient-rypsioljy",
         "quantity": 5,
         "unit": "g",
+        "unitEn": "g",
         "grams": 5,
         "note": "",
-        "shoppingCategory": "Pantry",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 884,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 100,
-          "fibre": 0
-        }
+        "noteEn": ""
       }
     ],
     "steps": [
       {
         "id": "turkey-tomato-pasta-s1",
-        "title": "Cook the pasta",
-        "text": "Boil the whole-wheat pasta until just tender. Reserve a small cup of pasta water, then drain.",
-        "timerMinutes": 10
+        "title": "Keitä pasta",
+        "text": "Keitä täysjyväpasta juuri ja juuri kypsäksi. Ota pieni kupillinen keitinvettä talteen ja valuta pasta.",
+        "timerMinutes": 10,
+        "titleEn": "Cook the pasta",
+        "textEn": "Boil the whole-wheat pasta until just tender. Reserve a small cup of pasta water, then drain."
       },
       {
         "id": "turkey-tomato-pasta-s2",
-        "title": "Soften the onion",
-        "text": "Heat rapeseed oil in a large pan and cook the onion for 3 minutes.",
-        "timerMinutes": 3
+        "title": "Kuullota sipuli",
+        "text": "Kuumenna rypsiöljy suurella pannulla ja kypsennä sipulia kolme minuuttia.",
+        "timerMinutes": 3,
+        "titleEn": "Soften the onion",
+        "textEn": "Heat rapeseed oil in a large pan and cook the onion for 3 minutes."
       },
       {
         "id": "turkey-tomato-pasta-s3",
-        "title": "Brown the turkey",
-        "text": "Add turkey mince. Break it apart and cook until no pink remains, about 6–8 minutes.",
-        "timerMinutes": 7
+        "title": "Ruskista kalkkuna",
+        "text": "Lisää kalkkunajauheliha. Riko se muruksi ja paista 6–8 minuuttia, kunnes raakaa lihaa ei näy.",
+        "timerMinutes": 7,
+        "titleEn": "Brown the turkey",
+        "textEn": "Add turkey mince. Break it apart and cook until no pink remains, about 6–8 minutes."
       },
       {
         "id": "turkey-tomato-pasta-s4",
-        "title": "Build the sauce",
-        "text": "Add passata, spinach, pepper, garlic powder and dried herbs. Simmer for 3–5 minutes.",
-        "timerMinutes": 4
+        "title": "Valmista kastike",
+        "text": "Lisää paseerattu tomaatti, pinaatti, pippuri, valkosipulijauhe ja kuivatut yrtit. Hauduta 3–5 minuuttia.",
+        "timerMinutes": 4,
+        "titleEn": "Build the sauce",
+        "textEn": "Add passata, spinach, pepper, garlic powder and dried herbs. Simmer for 3–5 minutes."
       },
       {
         "id": "turkey-tomato-pasta-s5",
-        "title": "Combine",
-        "text": "Fold in the pasta. Add a splash of reserved pasta water if the sauce is too thick.",
-        "timerMinutes": 0
+        "title": "Yhdistä",
+        "text": "Sekoita pasta kastikkeeseen. Lisää tilkka keitinvettä, jos kastike on liian paksua.",
+        "timerMinutes": 0,
+        "titleEn": "Combine",
+        "textEn": "Fold in the pasta. Add a splash of reserved pasta water if the sauce is too thick."
       }
     ],
     "createdAt": "2026-07-22T12:00:00.000Z",
-    "updatedAt": "2026-07-22T12:00:00.000Z"
+    "updatedAt": "2026-07-22T18:00:00.000Z",
+    "titleEn": "Turkey Mince Tomato Pasta",
+    "descriptionEn": "Lean turkey mince, whole-wheat pasta, tomato and spinach in one fast pan sauce.",
+    "categoryEn": "Lunch & dinner",
+    "cuisineEn": "Everyday fitness",
+    "difficultyEn": "Easy",
+    "tagsEn": [
+      "lunch",
+      "dinner",
+      "pasta",
+      "high-protein",
+      "weekly-plan"
+    ],
+    "useIngredientNutrition": false,
+    "nutritionStatus": "fineli-sync-required",
+    "nutritionDisclaimerFi": "Suunnitelman ravintoarvo näytetään siihen asti, kunnes raaka-aineet on synkronoitu Finelin avoimesta rajapinnasta. Tuotemerkit, kypsennyshävikki ja annospainot voivat muuttaa toteutunutta arvoa.",
+    "notesEn": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace turkey mince with chicken mince, lean beef mince or crumbled tofu; use lentil/chickpea pasta for more fibre and protein; use frozen spinach instead of fresh."
   },
   {
     "id": "mealplan-red-lentil-chicken-soup",
     "slug": "red-lentil-chicken-soup",
-    "title": "Red Lentil Chicken Soup",
-    "description": "A filling one-pot soup with chicken, red lentils, tomato, carrot and spinach.",
-    "category": "Lunch & dinner",
-    "cuisine": "Everyday fitness",
-    "difficulty": "Easy",
+    "title": "Punainen linssi-broilerikeitto",
+    "description": "Täyttävä yhden kattilan keitto broilerista, punaisista linsseistä, tomaatista, porkkanasta ja pinaatista.",
+    "category": "Lounas ja päivällinen",
+    "cuisine": "Arjen fitness-ruoka",
+    "difficulty": "Helppo",
     "prepMinutes": 10,
     "cookMinutes": 25,
     "servings": 1,
     "tags": [
-      "lunch",
-      "dinner",
-      "soup",
-      "high-protein",
-      "high-fibre",
-      "weekly-plan"
+      "lounas",
+      "päivällinen",
+      "keitto",
+      "runsasproteiininen",
+      "runsaskuituinen",
+      "viikkosuunnitelma"
     ],
     "image": "/meal-plan-covers/red-lentil-chicken-soup.svg",
     "sourceUrl": "",
@@ -1239,213 +1042,168 @@
       "fat": 14,
       "fibre": 12
     },
-    "notes": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: For a vegetarian version, omit chicken and add 150 g drained beans or 200 g tofu; replace red lentils with split peas but allow a longer cooking time; use frozen soup vegetables.",
+    "notes": "Lähde: Home Recipes -sovellusta varten laadittu alkuperäinen ateriasuunnitelmaresepti; reseptiä ei ole kopioitu yhdestä verkkolähteestä. Suunnitelman ravintoarvo on tavoitearvio. Raaka-ainekohtaiset arvot voidaan päivittää suoraan THL:n Fineli-rajapinnasta. Korvaavat vaihtoehdot: Broilerin voi vaihtaa kalkkunaan, valkoiseen kalaan tai tofuun. Punaiset linssit voi vaihtaa keltaisiin linsseihin. Käytä vettä ja suolattomia mausteita, jos haluat pitää suolan mahdollisimman vähäisenä.",
     "ingredients": [
       {
         "id": "red-lentil-chicken-soup-i1",
-        "name": "Chicken breast",
+        "catalogId": "ingredient-broilerin-rintafilee-nahaton",
         "quantity": 160,
         "unit": "g",
+        "unitEn": "g",
         "grams": 160,
-        "note": "cut into small pieces",
-        "shoppingCategory": "Meat & fish",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 110,
-          "protein": 23,
-          "carbs": 0,
-          "fat": 1.5,
-          "fibre": 0
-        }
+        "note": "pieniksi paloiksi leikattuna",
+        "noteEn": "cut into small pieces"
       },
       {
         "id": "red-lentil-chicken-soup-i2",
-        "name": "Red lentils, dry",
+        "catalogId": "ingredient-punainen-linssi-kuiva",
         "quantity": 80,
         "unit": "g",
+        "unitEn": "g",
         "grams": 80,
-        "note": "rinsed",
-        "shoppingCategory": "Grains",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 350,
-          "protein": 25,
-          "carbs": 60,
-          "fat": 1.1,
-          "fibre": 11
-        }
+        "note": "huuhdeltuna",
+        "noteEn": "rinsed"
       },
       {
         "id": "red-lentil-chicken-soup-i3",
-        "name": "Crushed tomatoes",
+        "catalogId": "ingredient-tomaattimurska",
         "quantity": 200,
         "unit": "g",
+        "unitEn": "g",
         "grams": 200,
         "note": "",
-        "shoppingCategory": "Pantry",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 30,
-          "protein": 1.4,
-          "carbs": 5,
-          "fat": 0.2,
-          "fibre": 1.5
-        }
+        "noteEn": ""
       },
       {
         "id": "red-lentil-chicken-soup-i4",
-        "name": "Carrot",
+        "catalogId": "ingredient-porkkana",
         "quantity": 100,
         "unit": "g",
+        "unitEn": "g",
         "grams": 100,
-        "note": "diced",
-        "shoppingCategory": "Produce",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 41,
-          "protein": 0.9,
-          "carbs": 9.6,
-          "fat": 0.2,
-          "fibre": 2.8
-        }
+        "note": "kuutioituna",
+        "noteEn": "diced"
       },
       {
         "id": "red-lentil-chicken-soup-i5",
-        "name": "Onion",
+        "catalogId": "ingredient-sipuli",
         "quantity": 80,
         "unit": "g",
+        "unitEn": "g",
         "grams": 80,
-        "note": "chopped",
-        "shoppingCategory": "Produce",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 40,
-          "protein": 1.1,
-          "carbs": 9.3,
-          "fat": 0.1,
-          "fibre": 1.7
-        }
+        "note": "hienonnettuna",
+        "noteEn": "chopped"
       },
       {
         "id": "red-lentil-chicken-soup-i6",
-        "name": "Spinach",
+        "catalogId": "ingredient-pinaatti",
         "quantity": 100,
         "unit": "g",
+        "unitEn": "g",
         "grams": 100,
-        "note": "fresh or frozen",
-        "shoppingCategory": "Produce",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 23,
-          "protein": 2.9,
-          "carbs": 3.6,
-          "fat": 0.4,
-          "fibre": 2.2
-        }
+        "note": "tuore tai pakaste",
+        "noteEn": "fresh or frozen"
       },
       {
         "id": "red-lentil-chicken-soup-i7",
-        "name": "Rapeseed oil",
+        "catalogId": "ingredient-rypsioljy",
         "quantity": 5,
         "unit": "g",
+        "unitEn": "g",
         "grams": 5,
         "note": "",
-        "shoppingCategory": "Pantry",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 884,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 100,
-          "fibre": 0
-        }
+        "noteEn": ""
       },
       {
         "id": "red-lentil-chicken-soup-i8",
-        "name": "Water or low-salt broth",
+        "catalogId": "ingredient-vesi",
         "quantity": 500,
         "unit": "ml",
+        "unitEn": "ml",
         "grams": 500,
         "note": "",
-        "shoppingCategory": "Pantry",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 5,
-          "protein": 0.4,
-          "carbs": 0.5,
-          "fat": 0.1,
-          "fibre": 0
-        }
+        "noteEn": ""
       }
     ],
     "steps": [
       {
         "id": "red-lentil-chicken-soup-s1",
-        "title": "Prepare the base",
-        "text": "Heat rapeseed oil in a pot. Cook onion and carrot for 4–5 minutes.",
-        "timerMinutes": 5
+        "title": "Valmista pohja",
+        "text": "Kuumenna rypsiöljy kattilassa. Kypsennä sipulia ja porkkanaa 4–5 minuuttia.",
+        "timerMinutes": 5,
+        "titleEn": "Prepare the base",
+        "textEn": "Heat rapeseed oil in a pot. Cook onion and carrot for 4–5 minutes."
       },
       {
         "id": "red-lentil-chicken-soup-s2",
-        "title": "Add chicken",
-        "text": "Add the chicken pieces and stir for 3–4 minutes so the outside turns opaque.",
-        "timerMinutes": 4
+        "title": "Lisää broileri",
+        "text": "Lisää broileripalat ja sekoita 3–4 minuuttia, jotta niiden pinta vaalenee.",
+        "timerMinutes": 4,
+        "titleEn": "Add chicken",
+        "textEn": "Add the chicken pieces and stir for 3–4 minutes so the outside turns opaque."
       },
       {
         "id": "red-lentil-chicken-soup-s3",
-        "title": "Simmer",
-        "text": "Add lentils, crushed tomatoes, water or broth, pepper, paprika and garlic powder. Bring to a boil, then simmer gently for 15–18 minutes until the lentils and chicken are cooked.",
-        "timerMinutes": 17
+        "title": "Hauduta",
+        "text": "Lisää linssit, tomaattimurska, vesi tai liemi, pippuri, paprika ja valkosipulijauhe. Kuumenna kiehuvaksi ja hauduta hiljalleen 15–18 minuuttia, kunnes linssit ja broileri ovat kypsiä.",
+        "timerMinutes": 17,
+        "titleEn": "Simmer",
+        "textEn": "Add lentils, crushed tomatoes, water or broth, pepper, paprika and garlic powder. Bring to a boil, then simmer gently for 15–18 minutes until the lentils and chicken are cooked."
       },
       {
         "id": "red-lentil-chicken-soup-s4",
-        "title": "Add spinach",
-        "text": "Stir in the spinach and cook for 2 minutes. Add more water if you prefer a thinner soup.",
-        "timerMinutes": 2
+        "title": "Lisää pinaatti",
+        "text": "Sekoita pinaatti joukkoon ja kypsennä kaksi minuuttia. Lisää vettä, jos haluat ohuemman keiton.",
+        "timerMinutes": 2,
+        "titleEn": "Add spinach",
+        "textEn": "Stir in the spinach and cook for 2 minutes. Add more water if you prefer a thinner soup."
       },
       {
         "id": "red-lentil-chicken-soup-s5",
-        "title": "Check seasoning",
-        "text": "Taste before adding salt because broth can already contain a lot. Use iodised salt sparingly if needed.",
-        "timerMinutes": 0
+        "title": "Tarkista mausteet",
+        "text": "Maista ennen suolan lisäämistä, sillä liemi voi sisältää paljon suolaa. Käytä jodioitua suolaa vain vähän tarvittaessa.",
+        "timerMinutes": 0,
+        "titleEn": "Check seasoning",
+        "textEn": "Taste before adding salt because broth can already contain a lot. Use iodised salt sparingly if needed."
       }
     ],
     "createdAt": "2026-07-22T12:00:00.000Z",
-    "updatedAt": "2026-07-22T12:00:00.000Z"
+    "updatedAt": "2026-07-22T18:00:00.000Z",
+    "titleEn": "Red Lentil Chicken Soup",
+    "descriptionEn": "A filling one-pot soup with chicken, red lentils, tomato, carrot and spinach.",
+    "categoryEn": "Lunch & dinner",
+    "cuisineEn": "Everyday fitness",
+    "difficultyEn": "Easy",
+    "tagsEn": [
+      "lunch",
+      "dinner",
+      "soup",
+      "high-protein",
+      "high-fibre",
+      "weekly-plan"
+    ],
+    "useIngredientNutrition": false,
+    "nutritionStatus": "fineli-sync-required",
+    "nutritionDisclaimerFi": "Suunnitelman ravintoarvo näytetään siihen asti, kunnes raaka-aineet on synkronoitu Finelin avoimesta rajapinnasta. Tuotemerkit, kypsennyshävikki ja annospainot voivat muuttaa toteutunutta arvoa.",
+    "notesEn": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: For a vegetarian version, omit chicken and add 150 g drained beans or 200 g tofu; replace red lentils with split peas but allow a longer cooking time; use frozen soup vegetables."
   },
   {
     "id": "mealplan-tofu-quinoa-vegetable-wok",
     "slug": "tofu-quinoa-vegetable-wok",
-    "title": "Tofu Quinoa Vegetable Wok",
-    "description": "A plant-forward meal with tofu, quinoa, peas and a large portion of frozen vegetables.",
-    "category": "Lunch & dinner",
-    "cuisine": "Everyday fitness",
-    "difficulty": "Easy",
+    "title": "Tofu-kvinoa-kasviswokki",
+    "description": "Kasvispainotteinen ateria tofusta, kvinoasta, herneistä ja runsaasta pakastekasvismäärästä.",
+    "category": "Lounas ja päivällinen",
+    "cuisine": "Arjen fitness-ruoka",
+    "difficulty": "Helppo",
     "prepMinutes": 10,
     "cookMinutes": 15,
     "servings": 1,
     "tags": [
-      "lunch",
-      "dinner",
-      "vegetarian",
-      "high-fibre",
-      "weekly-plan"
+      "lounas",
+      "päivällinen",
+      "kasvisruoka",
+      "runsaskuituinen",
+      "viikkosuunnitelma"
     ],
     "image": "/meal-plan-covers/tofu-quinoa-vegetable-wok.svg",
     "sourceUrl": "",
@@ -1457,170 +1215,140 @@
       "fat": 26,
       "fibre": 12
     },
-    "notes": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace tofu with tempeh, soy strips or chicken; replace quinoa with brown rice, barley or whole-wheat noodles; use any 400 g mixture of frozen vegetables and peas.",
+    "notes": "Lähde: Home Recipes -sovellusta varten laadittu alkuperäinen ateriasuunnitelmaresepti; reseptiä ei ole kopioitu yhdestä verkkolähteestä. Suunnitelman ravintoarvo on tavoitearvio. Raaka-ainekohtaiset arvot voidaan päivittää suoraan THL:n Fineli-rajapinnasta. Korvaavat vaihtoehdot: Tofun voi vaihtaa tempeen, soijasuikaleisiin tai papuihin. Kvinoan voi vaihtaa täysjyväriisiin tai ohraan. Valitse pakastekasvissekoitus ilman valmiskastiketta.",
     "ingredients": [
       {
         "id": "tofu-quinoa-vegetable-wok-i1",
-        "name": "Firm tofu",
+        "catalogId": "ingredient-tofu-kiintea",
         "quantity": 200,
         "unit": "g",
+        "unitEn": "g",
         "grams": 200,
-        "note": "pressed and cubed",
-        "shoppingCategory": "Plant protein",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 140,
-          "protein": 16,
-          "carbs": 2,
-          "fat": 8,
-          "fibre": 1
-        }
+        "note": "kuivaksi paineltuna ja kuutioituna",
+        "noteEn": "pressed and cubed"
       },
       {
         "id": "tofu-quinoa-vegetable-wok-i2",
-        "name": "Quinoa, dry",
+        "catalogId": "ingredient-kvinoa-kuiva",
         "quantity": 80,
         "unit": "g",
+        "unitEn": "g",
         "grams": 80,
         "note": "",
-        "shoppingCategory": "Grains",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 368,
-          "protein": 14,
-          "carbs": 64,
-          "fat": 6,
-          "fibre": 7
-        }
+        "noteEn": ""
       },
       {
         "id": "tofu-quinoa-vegetable-wok-i3",
-        "name": "Frozen mixed vegetables",
+        "catalogId": "ingredient-kasvissekoitus-pakaste",
         "quantity": 300,
         "unit": "g",
+        "unitEn": "g",
         "grams": 300,
         "note": "",
-        "shoppingCategory": "Frozen",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 50,
-          "protein": 3,
-          "carbs": 8,
-          "fat": 0.5,
-          "fibre": 3
-        }
+        "noteEn": ""
       },
       {
         "id": "tofu-quinoa-vegetable-wok-i4",
-        "name": "Frozen peas",
+        "catalogId": "ingredient-herne-pakaste",
         "quantity": 100,
         "unit": "g",
+        "unitEn": "g",
         "grams": 100,
         "note": "",
-        "shoppingCategory": "Frozen",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 81,
-          "protein": 5.4,
-          "carbs": 14.5,
-          "fat": 0.4,
-          "fibre": 5.1
-        }
+        "noteEn": ""
       },
       {
         "id": "tofu-quinoa-vegetable-wok-i5",
-        "name": "Rapeseed oil",
+        "catalogId": "ingredient-rypsioljy",
         "quantity": 10,
         "unit": "g",
+        "unitEn": "g",
         "grams": 10,
         "note": "",
-        "shoppingCategory": "Pantry",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 884,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 100,
-          "fibre": 0
-        }
+        "noteEn": ""
       },
       {
         "id": "tofu-quinoa-vegetable-wok-i6",
-        "name": "Low-salt soy sauce",
+        "catalogId": "ingredient-soijakastike-vahasuolainen",
         "quantity": 15,
         "unit": "g",
+        "unitEn": "g",
         "grams": 15,
         "note": "",
-        "shoppingCategory": "Pantry",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 53,
-          "protein": 8.1,
-          "carbs": 4.9,
-          "fat": 0.6,
-          "fibre": 0.8
-        }
+        "noteEn": ""
       }
     ],
     "steps": [
       {
         "id": "tofu-quinoa-vegetable-wok-s1",
-        "title": "Cook the quinoa",
-        "text": "Rinse quinoa thoroughly, then simmer according to the package instructions, usually 12–15 minutes. Drain if necessary.",
-        "timerMinutes": 15
+        "title": "Keitä kvinoa",
+        "text": "Huuhtele kvinoa huolellisesti ja kypsennä pakkauksen ohjeen mukaan, yleensä 12–15 minuuttia. Valuta tarvittaessa.",
+        "timerMinutes": 15,
+        "titleEn": "Cook the quinoa",
+        "textEn": "Rinse quinoa thoroughly, then simmer according to the package instructions, usually 12–15 minutes. Drain if necessary."
       },
       {
         "id": "tofu-quinoa-vegetable-wok-s2",
-        "title": "Brown the tofu",
-        "text": "Heat half the rapeseed oil in a large pan. Cook tofu cubes on several sides for 6–8 minutes.",
-        "timerMinutes": 7
+        "title": "Ruskista tofu",
+        "text": "Kuumenna puolet rypsiöljystä suurella pannulla. Paista tofukuutioita usealta sivulta 6–8 minuuttia.",
+        "timerMinutes": 7,
+        "titleEn": "Brown the tofu",
+        "textEn": "Heat half the rapeseed oil in a large pan. Cook tofu cubes on several sides for 6–8 minutes."
       },
       {
         "id": "tofu-quinoa-vegetable-wok-s3",
-        "title": "Cook the vegetables",
-        "text": "Add the remaining oil, frozen mixed vegetables and peas. Stir-fry until hot and tender, about 6–8 minutes.",
-        "timerMinutes": 7
+        "title": "Kypsennä kasvikset",
+        "text": "Lisää loppu öljy, pakastekasvissekoitus ja herneet. Wokkaa 6–8 minuuttia, kunnes kasvikset ovat kuumia ja kypsiä.",
+        "timerMinutes": 7,
+        "titleEn": "Cook the vegetables",
+        "textEn": "Add the remaining oil, frozen mixed vegetables and peas. Stir-fry until hot and tender, about 6–8 minutes."
       },
       {
         "id": "tofu-quinoa-vegetable-wok-s4",
-        "title": "Season and combine",
-        "text": "Add soy sauce, garlic, ginger or chilli if desired. Fold in quinoa and heat through.",
-        "timerMinutes": 0
+        "title": "Mausta ja yhdistä",
+        "text": "Lisää soijakastike sekä halutessasi valkosipulia, inkivääriä tai chiliä. Sekoita kvinoa joukkoon ja kuumenna.",
+        "timerMinutes": 0,
+        "titleEn": "Season and combine",
+        "textEn": "Add soy sauce, garlic, ginger or chilli if desired. Fold in quinoa and heat through."
       }
     ],
     "createdAt": "2026-07-22T12:00:00.000Z",
-    "updatedAt": "2026-07-22T12:00:00.000Z"
+    "updatedAt": "2026-07-22T18:00:00.000Z",
+    "titleEn": "Tofu Quinoa Vegetable Wok",
+    "descriptionEn": "A plant-forward meal with tofu, quinoa, peas and a large portion of frozen vegetables.",
+    "categoryEn": "Lunch & dinner",
+    "cuisineEn": "Everyday fitness",
+    "difficultyEn": "Easy",
+    "tagsEn": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "high-fibre",
+      "weekly-plan"
+    ],
+    "useIngredientNutrition": false,
+    "nutritionStatus": "fineli-sync-required",
+    "nutritionDisclaimerFi": "Suunnitelman ravintoarvo näytetään siihen asti, kunnes raaka-aineet on synkronoitu Finelin avoimesta rajapinnasta. Tuotemerkit, kypsennyshävikki ja annospainot voivat muuttaa toteutunutta arvoa.",
+    "notesEn": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace tofu with tempeh, soy strips or chicken; replace quinoa with brown rice, barley or whole-wheat noodles; use any 400 g mixture of frozen vegetables and peas."
   },
   {
     "id": "mealplan-tuna-potato-cottage-cheese-bake",
     "slug": "tuna-potato-cottage-cheese-bake",
-    "title": "Tuna Potato Cottage Cheese Bake",
-    "description": "A compact high-protein bake using tuna, potatoes, cottage cheese, peas and egg.",
-    "category": "Lunch & dinner",
-    "cuisine": "Everyday fitness",
-    "difficulty": "Easy",
+    "title": "Tonnikala-peruna-raejuustovuoka",
+    "description": "Proteiinipitoinen uunivuoka tonnikalasta, perunasta, raejuustosta, herneistä ja kananmunasta.",
+    "category": "Lounas ja päivällinen",
+    "cuisine": "Arjen fitness-ruoka",
+    "difficulty": "Helppo",
     "prepMinutes": 10,
     "cookMinutes": 25,
     "servings": 1,
     "tags": [
-      "lunch",
-      "dinner",
-      "bake",
-      "high-protein",
-      "meal-prep",
-      "weekly-plan"
+      "lounas",
+      "päivällinen",
+      "uuniruoka",
+      "runsasproteiininen",
+      "ateriankokoaminen",
+      "viikkosuunnitelma"
     ],
     "image": "/meal-plan-covers/tuna-potato-cottage-cheese-bake.svg",
     "sourceUrl": "",
@@ -1632,176 +1360,149 @@
       "fat": 18,
       "fibre": 8
     },
-    "notes": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace tuna with cooked chicken, salmon leftovers or white beans; replace cottage cheese with lactose-free cottage cheese or thick soy-based cooking product plus extra tofu; use frozen diced potatoes to save time.",
+    "notes": "Lähde: Home Recipes -sovellusta varten laadittu alkuperäinen ateriasuunnitelmaresepti; reseptiä ei ole kopioitu yhdestä verkkolähteestä. Suunnitelman ravintoarvo on tavoitearvio. Raaka-ainekohtaiset arvot voidaan päivittää suoraan THL:n Fineli-rajapinnasta. Korvaavat vaihtoehdot: Tonnikalan voi vaihtaa loheen, kirjoloheen tai kypsään broileriin. Raejuuston voi vaihtaa rahkaan tai vähärasvaiseen tuorejuustoon. Lisää kasviksia esimerkiksi paprikasta tai pinaatista.",
     "ingredients": [
       {
         "id": "tuna-potato-cottage-cheese-bake-i1",
-        "name": "Tuna in water, drained",
+        "catalogId": "ingredient-tonnikala-vedessa-valutettu",
         "quantity": 150,
         "unit": "g",
+        "unitEn": "g",
         "grams": 150,
         "note": "",
-        "shoppingCategory": "Meat & fish",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 116,
-          "protein": 26,
-          "carbs": 0,
-          "fat": 1,
-          "fibre": 0
-        }
+        "noteEn": ""
       },
       {
         "id": "tuna-potato-cottage-cheese-bake-i2",
-        "name": "Potatoes",
+        "catalogId": "ingredient-peruna-kuorittu",
         "quantity": 300,
         "unit": "g",
+        "unitEn": "g",
         "grams": 300,
-        "note": "cubed",
-        "shoppingCategory": "Produce",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 77,
-          "protein": 2,
-          "carbs": 17,
-          "fat": 0.1,
-          "fibre": 2.2
-        }
+        "note": "kuutioituna",
+        "noteEn": "cubed"
       },
       {
         "id": "tuna-potato-cottage-cheese-bake-i3",
-        "name": "Low-fat cottage cheese",
+        "catalogId": "ingredient-raejuusto-vaharasvainen",
         "quantity": 200,
         "unit": "g",
+        "unitEn": "g",
         "grams": 200,
         "note": "",
-        "shoppingCategory": "Dairy & chilled",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 80,
-          "protein": 13,
-          "carbs": 3,
-          "fat": 1.5,
-          "fibre": 0
-        }
+        "noteEn": ""
       },
       {
         "id": "tuna-potato-cottage-cheese-bake-i4",
-        "name": "Frozen peas",
+        "catalogId": "ingredient-herne-pakaste",
         "quantity": 100,
         "unit": "g",
+        "unitEn": "g",
         "grams": 100,
         "note": "",
-        "shoppingCategory": "Frozen",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 81,
-          "protein": 5.4,
-          "carbs": 14.5,
-          "fat": 0.4,
-          "fibre": 5.1
-        }
+        "noteEn": ""
       },
       {
         "id": "tuna-potato-cottage-cheese-bake-i5",
-        "name": "Eggs",
+        "catalogId": "ingredient-kananmuna",
         "quantity": 1,
-        "unit": "pc",
+        "unit": "kpl",
+        "unitEn": "pc",
         "grams": 60,
         "note": "",
-        "shoppingCategory": "Dairy & chilled",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 143,
-          "protein": 12.6,
-          "carbs": 0.7,
-          "fat": 9.5,
-          "fibre": 0
-        }
+        "noteEn": ""
       },
       {
         "id": "tuna-potato-cottage-cheese-bake-i6",
-        "name": "Onion",
+        "catalogId": "ingredient-sipuli",
         "quantity": 80,
         "unit": "g",
+        "unitEn": "g",
         "grams": 80,
-        "note": "finely chopped",
-        "shoppingCategory": "Produce",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 40,
-          "protein": 1.1,
-          "carbs": 9.3,
-          "fat": 0.1,
-          "fibre": 1.7
-        }
+        "note": "hienoksi silputtuna",
+        "noteEn": "finely chopped"
       }
     ],
     "steps": [
       {
         "id": "tuna-potato-cottage-cheese-bake-s1",
-        "title": "Heat the oven",
-        "text": "Heat the oven to 210 °C conventional or 190 °C fan.",
-        "timerMinutes": 0
+        "title": "Kuumenna uuni",
+        "text": "Kuumenna uuni 210 °C:seen ylä- ja alalämmöllä tai 190 °C:seen kiertoilmalla.",
+        "timerMinutes": 0,
+        "titleEn": "Heat the oven",
+        "textEn": "Heat the oven to 210 °C conventional or 190 °C fan."
       },
       {
         "id": "tuna-potato-cottage-cheese-bake-s2",
-        "title": "Pre-cook the potatoes",
-        "text": "Microwave the potato cubes with a splash of water for 7–9 minutes, or boil until almost tender. Drain well.",
-        "timerMinutes": 8
+        "title": "Esikypsennä perunat",
+        "text": "Kypsennä perunakuutioita mikroaaltouunissa vesitilkan kanssa 7–9 minuuttia tai keitä lähes kypsiksi. Valuta hyvin.",
+        "timerMinutes": 8,
+        "titleEn": "Pre-cook the potatoes",
+        "textEn": "Microwave the potato cubes with a splash of water for 7–9 minutes, or boil until almost tender. Drain well."
       },
       {
         "id": "tuna-potato-cottage-cheese-bake-s3",
-        "title": "Mix the filling",
-        "text": "In a baking dish, mix tuna, cottage cheese, peas, egg, onion, pepper and dried herbs. Fold in the potatoes.",
-        "timerMinutes": 0
+        "title": "Sekoita täyte",
+        "text": "Sekoita uunivuoassa tonnikala, raejuusto, herneet, kananmuna, sipuli, pippuri ja kuivatut yrtit. Kääntele perunat joukkoon.",
+        "timerMinutes": 0,
+        "titleEn": "Mix the filling",
+        "textEn": "In a baking dish, mix tuna, cottage cheese, peas, egg, onion, pepper and dried herbs. Fold in the potatoes."
       },
       {
         "id": "tuna-potato-cottage-cheese-bake-s4",
-        "title": "Bake",
-        "text": "Bake until piping hot and set in the centre, about 18–22 minutes.",
-        "timerMinutes": 20
+        "title": "Paista",
+        "text": "Paista 18–22 minuuttia, kunnes vuoka on kauttaaltaan kuuma ja keskeltä hyytynyt.",
+        "timerMinutes": 20,
+        "titleEn": "Bake",
+        "textEn": "Bake until piping hot and set in the centre, about 18–22 minutes."
       },
       {
         "id": "tuna-potato-cottage-cheese-bake-s5",
-        "title": "Rest",
-        "text": "Let the bake stand for 3–5 minutes before eating.",
-        "timerMinutes": 4
+        "title": "Anna vetäytyä",
+        "text": "Anna vuoan seistä 3–5 minuuttia ennen syömistä.",
+        "timerMinutes": 4,
+        "titleEn": "Rest",
+        "textEn": "Let the bake stand for 3–5 minutes before eating."
       }
     ],
     "createdAt": "2026-07-22T12:00:00.000Z",
-    "updatedAt": "2026-07-22T12:00:00.000Z"
+    "updatedAt": "2026-07-22T18:00:00.000Z",
+    "titleEn": "Tuna Potato Cottage Cheese Bake",
+    "descriptionEn": "A compact high-protein bake using tuna, potatoes, cottage cheese, peas and egg.",
+    "categoryEn": "Lunch & dinner",
+    "cuisineEn": "Everyday fitness",
+    "difficultyEn": "Easy",
+    "tagsEn": [
+      "lunch",
+      "dinner",
+      "bake",
+      "high-protein",
+      "meal-prep",
+      "weekly-plan"
+    ],
+    "useIngredientNutrition": false,
+    "nutritionStatus": "fineli-sync-required",
+    "nutritionDisclaimerFi": "Suunnitelman ravintoarvo näytetään siihen asti, kunnes raaka-aineet on synkronoitu Finelin avoimesta rajapinnasta. Tuotemerkit, kypsennyshävikki ja annospainot voivat muuttaa toteutunutta arvoa.",
+    "notesEn": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace tuna with cooked chicken, salmon leftovers or white beans; replace cottage cheese with lactose-free cottage cheese or thick soy-based cooking product plus extra tofu; use frozen diced potatoes to save time."
   },
   {
     "id": "mealplan-sheet-pan-chicken-root-veg",
     "slug": "sheet-pan-chicken-root-veg",
-    "title": "Sheet-Pan Chicken Root Vegetables",
-    "description": "Chicken and frozen or fresh root vegetables roasted together, served with yogurt and salad.",
-    "category": "Lunch & dinner",
-    "cuisine": "Everyday fitness",
-    "difficulty": "Easy",
+    "title": "Pelti-broileri ja juurekset",
+    "description": "Broileri ja tuoreet tai pakastetut juurekset samalla pellillä, jogurtin ja salaatin kanssa.",
+    "category": "Lounas ja päivällinen",
+    "cuisine": "Arjen fitness-ruoka",
+    "difficulty": "Helppo",
     "prepMinutes": 10,
     "cookMinutes": 25,
     "servings": 1,
     "tags": [
-      "lunch",
-      "dinner",
-      "tray-bake",
-      "meal-prep",
-      "high-protein",
-      "weekly-plan"
+      "lounas",
+      "päivällinen",
+      "pellillä",
+      "ateriankokoaminen",
+      "runsasproteiininen",
+      "viikkosuunnitelma"
     ],
     "image": "/meal-plan-covers/sheet-pan-chicken-root-veg.svg",
     "sourceUrl": "",
@@ -1813,157 +1514,139 @@
       "fat": 22,
       "fibre": 9
     },
-    "notes": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace chicken with turkey fillet, lean pork tenderloin or firm tofu; replace root vegetables with potatoes plus carrots; replace Greek yogurt with skyr or a fortified unsweetened soy alternative.",
+    "notes": "Lähde: Home Recipes -sovellusta varten laadittu alkuperäinen ateriasuunnitelmaresepti; reseptiä ei ole kopioitu yhdestä verkkolähteestä. Suunnitelman ravintoarvo on tavoitearvio. Raaka-ainekohtaiset arvot voidaan päivittää suoraan THL:n Fineli-rajapinnasta. Korvaavat vaihtoehdot: Broilerin voi vaihtaa kalkkunaan, kalaan tai tofuun. Juuressekoituksessa voi käyttää porkkanaa, palsternakkaa, lanttua ja punajuurta. Jogurtin voi vaihtaa laktoosittomaan tai soijapohjaiseen vaihtoehtoon.",
     "ingredients": [
       {
         "id": "sheet-pan-chicken-root-veg-i1",
-        "name": "Chicken breast",
+        "catalogId": "ingredient-broilerin-rintafilee-nahaton",
         "quantity": 200,
         "unit": "g",
+        "unitEn": "g",
         "grams": 200,
-        "note": "whole fillet or large pieces",
-        "shoppingCategory": "Meat & fish",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 110,
-          "protein": 23,
-          "carbs": 0,
-          "fat": 1.5,
-          "fibre": 0
-        }
+        "note": "kokonaisena fileenä tai suurina paloina",
+        "noteEn": "whole fillet or large pieces"
       },
       {
         "id": "sheet-pan-chicken-root-veg-i2",
-        "name": "Root vegetable mix",
+        "catalogId": "ingredient-juuressekoitus-pakaste",
         "quantity": 350,
         "unit": "g",
+        "unitEn": "g",
         "grams": 350,
-        "note": "fresh or frozen",
-        "shoppingCategory": "Produce",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 50,
-          "protein": 1.2,
-          "carbs": 10,
-          "fat": 0.3,
-          "fibre": 3
-        }
+        "note": "tuore tai pakaste",
+        "noteEn": "fresh or frozen"
       },
       {
         "id": "sheet-pan-chicken-root-veg-i3",
-        "name": "Greek yogurt",
+        "catalogId": "ingredient-kreikkalainen-jogurtti-vaharasvainen",
         "quantity": 150,
         "unit": "g",
+        "unitEn": "g",
         "grams": 150,
-        "note": "plain, low-fat",
-        "shoppingCategory": "Dairy & chilled",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 60,
-          "protein": 10,
-          "carbs": 4,
-          "fat": 0.4,
-          "fibre": 0
-        }
+        "note": "maustamaton ja vähärasvainen",
+        "noteEn": "plain, low-fat"
       },
       {
         "id": "sheet-pan-chicken-root-veg-i4",
-        "name": "Salad vegetables",
+        "catalogId": "ingredient-salaattikasvikset",
         "quantity": 100,
         "unit": "g",
+        "unitEn": "g",
         "grams": 100,
         "note": "",
-        "shoppingCategory": "Produce",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 20,
-          "protein": 1,
-          "carbs": 4,
-          "fat": 0.2,
-          "fibre": 1.5
-        }
+        "noteEn": ""
       },
       {
         "id": "sheet-pan-chicken-root-veg-i5",
-        "name": "Rapeseed oil",
+        "catalogId": "ingredient-rypsioljy",
         "quantity": 10,
         "unit": "g",
+        "unitEn": "g",
         "grams": 10,
         "note": "",
-        "shoppingCategory": "Pantry",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 884,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 100,
-          "fibre": 0
-        }
+        "noteEn": ""
       }
     ],
     "steps": [
       {
         "id": "sheet-pan-chicken-root-veg-s1",
-        "title": "Heat the oven",
-        "text": "Heat the oven to 220 °C conventional or 200 °C fan.",
-        "timerMinutes": 0
+        "title": "Kuumenna uuni",
+        "text": "Kuumenna uuni 220 °C:seen ylä- ja alalämmöllä tai 200 °C:seen kiertoilmalla.",
+        "timerMinutes": 0,
+        "titleEn": "Heat the oven",
+        "textEn": "Heat the oven to 220 °C conventional or 200 °C fan."
       },
       {
         "id": "sheet-pan-chicken-root-veg-s2",
-        "title": "Season the tray",
-        "text": "Spread the root vegetables on a lined tray. Toss with rapeseed oil, pepper, paprika and garlic powder. Add the chicken and season it.",
-        "timerMinutes": 0
+        "title": "Mausta pelti",
+        "text": "Levitä juurekset leivinpaperilla vuoratulle pellille. Sekoita joukkoon rypsiöljy, pippuri, paprika ja valkosipulijauhe. Lisää broileri ja mausta se.",
+        "timerMinutes": 0,
+        "titleEn": "Season the tray",
+        "textEn": "Spread the root vegetables on a lined tray. Toss with rapeseed oil, pepper, paprika and garlic powder. Add the chicken and season it."
       },
       {
         "id": "sheet-pan-chicken-root-veg-s3",
-        "title": "Roast",
-        "text": "Roast for 20–25 minutes, turning the vegetables once, until the chicken is cooked through and the vegetables are browned.",
-        "timerMinutes": 23
+        "title": "Paahda",
+        "text": "Paahda 20–25 minuuttia ja käännä juurekset kerran. Broilerin tulee olla läpikypsää ja juuresten ruskistuneita.",
+        "timerMinutes": 23,
+        "titleEn": "Roast",
+        "textEn": "Roast for 20–25 minutes, turning the vegetables once, until the chicken is cooked through and the vegetables are browned."
       },
       {
         "id": "sheet-pan-chicken-root-veg-s4",
-        "title": "Prepare the sides",
-        "text": "While the tray cooks, wash and chop the salad vegetables. Stir pepper, herbs or lemon into the yogurt.",
-        "timerMinutes": 0
+        "title": "Valmistele lisukkeet",
+        "text": "Pese ja pilko salaattikasvikset paistamisen aikana. Sekoita jogurttiin pippuria, yrttejä tai sitruunaa.",
+        "timerMinutes": 0,
+        "titleEn": "Prepare the sides",
+        "textEn": "While the tray cooks, wash and chop the salad vegetables. Stir pepper, herbs or lemon into the yogurt."
       },
       {
         "id": "sheet-pan-chicken-root-veg-s5",
-        "title": "Serve",
-        "text": "Slice the chicken and serve it with the roasted vegetables, salad and yogurt sauce.",
-        "timerMinutes": 0
+        "title": "Tarjoa",
+        "text": "Viipaloi broileri ja tarjoa paahdettujen juuresten, salaatin ja jogurttikastikkeen kanssa.",
+        "timerMinutes": 0,
+        "titleEn": "Serve",
+        "textEn": "Slice the chicken and serve it with the roasted vegetables, salad and yogurt sauce."
       }
     ],
     "createdAt": "2026-07-22T12:00:00.000Z",
-    "updatedAt": "2026-07-22T12:00:00.000Z"
+    "updatedAt": "2026-07-22T18:00:00.000Z",
+    "titleEn": "Sheet-Pan Chicken Root Vegetables",
+    "descriptionEn": "Chicken and frozen or fresh root vegetables roasted together, served with yogurt and salad.",
+    "categoryEn": "Lunch & dinner",
+    "cuisineEn": "Everyday fitness",
+    "difficultyEn": "Easy",
+    "tagsEn": [
+      "lunch",
+      "dinner",
+      "tray-bake",
+      "meal-prep",
+      "high-protein",
+      "weekly-plan"
+    ],
+    "useIngredientNutrition": false,
+    "nutritionStatus": "fineli-sync-required",
+    "nutritionDisclaimerFi": "Suunnitelman ravintoarvo näytetään siihen asti, kunnes raaka-aineet on synkronoitu Finelin avoimesta rajapinnasta. Tuotemerkit, kypsennyshävikki ja annospainot voivat muuttaa toteutunutta arvoa.",
+    "notesEn": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace chicken with turkey fillet, lean pork tenderloin or firm tofu; replace root vegetables with potatoes plus carrots; replace Greek yogurt with skyr or a fortified unsweetened soy alternative."
   },
   {
     "id": "mealplan-beef-bean-chili-rice",
     "slug": "beef-bean-chili-rice",
-    "title": "Beef Bean Chili with Rice",
-    "description": "One modest red-meat meal balanced with beans, vegetables and rice.",
-    "category": "Lunch & dinner",
-    "cuisine": "Everyday fitness",
-    "difficulty": "Easy",
+    "title": "Naudanliha-papuchili riisillä",
+    "description": "Kohtuullinen punaista lihaa sisältävä ateria, jota tasapainottavat pavut, kasvikset ja riisi.",
+    "category": "Lounas ja päivällinen",
+    "cuisine": "Arjen fitness-ruoka",
+    "difficulty": "Helppo",
     "prepMinutes": 10,
     "cookMinutes": 25,
     "servings": 1,
     "tags": [
-      "lunch",
-      "dinner",
+      "lounas",
+      "päivällinen",
       "chili",
-      "high-fibre",
-      "meal-prep",
-      "weekly-plan"
+      "runsaskuituinen",
+      "ateriankokoaminen",
+      "viikkosuunnitelma"
     ],
     "image": "/meal-plan-covers/beef-bean-chili-rice.svg",
     "sourceUrl": "",
@@ -1975,195 +1658,159 @@
       "fat": 20,
       "fibre": 13
     },
-    "notes": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace half or all of the beef with extra beans, soy mince or lentils; replace rice with barley, quinoa or potatoes; use a frozen onion-pepper mix to reduce chopping.",
+    "notes": "Lähde: Home Recipes -sovellusta varten laadittu alkuperäinen ateriasuunnitelmaresepti; reseptiä ei ole kopioitu yhdestä verkkolähteestä. Suunnitelman ravintoarvo on tavoitearvio. Raaka-ainekohtaiset arvot voidaan päivittää suoraan THL:n Fineli-rajapinnasta. Korvaavat vaihtoehdot: Naudan jauhelihan voi vaihtaa kalkkunajauhelihaan, soijarouheeseen tai lisäpavuihin. Kidneypavut voi vaihtaa mustapapuihin. Riisin voi vaihtaa perunaan, ohraan tai kvinoaan.",
     "ingredients": [
       {
         "id": "beef-bean-chili-rice-i1",
-        "name": "Lean beef mince",
+        "catalogId": "ingredient-naudan-jauheliha-7-rasvaa",
         "quantity": 150,
         "unit": "g",
+        "unitEn": "g",
         "grams": 150,
-        "note": "prefer 5–10% fat",
-        "shoppingCategory": "Meat & fish",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 170,
-          "protein": 22,
-          "carbs": 0,
-          "fat": 9,
-          "fibre": 0
-        }
+        "note": "valitse 5–10 % rasvaa",
+        "noteEn": "prefer 5–10% fat"
       },
       {
         "id": "beef-bean-chili-rice-i2",
-        "name": "Kidney beans, drained",
+        "catalogId": "ingredient-kidneypapu-sailyke-valutettu",
         "quantity": 150,
         "unit": "g",
+        "unitEn": "g",
         "grams": 150,
-        "note": "rinsed",
-        "shoppingCategory": "Plant protein",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 100,
-          "protein": 7,
-          "carbs": 15,
-          "fat": 0.5,
-          "fibre": 6
-        }
+        "note": "huuhdeltuna",
+        "noteEn": "rinsed"
       },
       {
         "id": "beef-bean-chili-rice-i3",
-        "name": "Rice, dry",
+        "catalogId": "ingredient-riisi-pitkajyvainen-raaka",
         "quantity": 70,
         "unit": "g",
+        "unitEn": "g",
         "grams": 70,
         "note": "",
-        "shoppingCategory": "Grains",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 360,
-          "protein": 7,
-          "carbs": 79,
-          "fat": 0.7,
-          "fibre": 1.3
-        }
+        "noteEn": ""
       },
       {
         "id": "beef-bean-chili-rice-i4",
-        "name": "Crushed tomatoes",
+        "catalogId": "ingredient-tomaattimurska",
         "quantity": 200,
         "unit": "g",
+        "unitEn": "g",
         "grams": 200,
         "note": "",
-        "shoppingCategory": "Pantry",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 30,
-          "protein": 1.4,
-          "carbs": 5,
-          "fat": 0.2,
-          "fibre": 1.5
-        }
+        "noteEn": ""
       },
       {
         "id": "beef-bean-chili-rice-i5",
-        "name": "Onion",
+        "catalogId": "ingredient-sipuli",
         "quantity": 100,
         "unit": "g",
+        "unitEn": "g",
         "grams": 100,
-        "note": "chopped",
-        "shoppingCategory": "Produce",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 40,
-          "protein": 1.1,
-          "carbs": 9.3,
-          "fat": 0.1,
-          "fibre": 1.7
-        }
+        "note": "hienonnettuna",
+        "noteEn": "chopped"
       },
       {
         "id": "beef-bean-chili-rice-i6",
-        "name": "Sweetcorn",
+        "catalogId": "ingredient-maissi",
         "quantity": 100,
         "unit": "g",
+        "unitEn": "g",
         "grams": 100,
-        "note": "drained or frozen",
-        "shoppingCategory": "Frozen",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 86,
-          "protein": 3.4,
-          "carbs": 19,
-          "fat": 1.2,
-          "fibre": 2.7
-        }
+        "note": "valutettuna tai pakasteena",
+        "noteEn": "drained or frozen"
       },
       {
         "id": "beef-bean-chili-rice-i7",
-        "name": "Rapeseed oil",
+        "catalogId": "ingredient-rypsioljy",
         "quantity": 5,
         "unit": "g",
+        "unitEn": "g",
         "grams": 5,
         "note": "",
-        "shoppingCategory": "Pantry",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 884,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 100,
-          "fibre": 0
-        }
+        "noteEn": ""
       }
     ],
     "steps": [
       {
         "id": "beef-bean-chili-rice-s1",
-        "title": "Cook the rice",
-        "text": "Cook rice according to the package instructions.",
-        "timerMinutes": 15
+        "title": "Keitä riisi",
+        "text": "Kypsennä riisi pakkauksen ohjeen mukaan.",
+        "timerMinutes": 15,
+        "titleEn": "Cook the rice",
+        "textEn": "Cook rice according to the package instructions."
       },
       {
         "id": "beef-bean-chili-rice-s2",
-        "title": "Brown the beef",
-        "text": "Heat rapeseed oil in a saucepan. Add onion and beef, break up the mince and cook until browned, about 7–8 minutes.",
-        "timerMinutes": 8
+        "title": "Ruskista jauheliha",
+        "text": "Kuumenna rypsiöljy kattilassa. Lisää sipuli ja jauheliha, riko liha muruksi ja paista noin 7–8 minuuttia.",
+        "timerMinutes": 8,
+        "titleEn": "Brown the beef",
+        "textEn": "Heat rapeseed oil in a saucepan. Add onion and beef, break up the mince and cook until browned, about 7–8 minutes."
       },
       {
         "id": "beef-bean-chili-rice-s3",
-        "title": "Add the vegetables",
-        "text": "Stir in kidney beans, crushed tomatoes, sweetcorn, paprika, cumin and chilli to taste.",
-        "timerMinutes": 0
+        "title": "Lisää kasvikset",
+        "text": "Sekoita joukkoon kidneypavut, tomaattimurska, maissi, paprika, juustokumina ja chiliä maun mukaan.",
+        "timerMinutes": 0,
+        "titleEn": "Add the vegetables",
+        "textEn": "Stir in kidney beans, crushed tomatoes, sweetcorn, paprika, cumin and chilli to taste."
       },
       {
         "id": "beef-bean-chili-rice-s4",
-        "title": "Simmer",
-        "text": "Simmer uncovered for 10–12 minutes, stirring occasionally. Add water if it becomes too thick.",
-        "timerMinutes": 11
+        "title": "Hauduta",
+        "text": "Hauduta ilman kantta 10–12 minuuttia välillä sekoittaen. Lisää vettä, jos chili sakenee liikaa.",
+        "timerMinutes": 11,
+        "titleEn": "Simmer",
+        "textEn": "Simmer uncovered for 10–12 minutes, stirring occasionally. Add water if it becomes too thick."
       },
       {
         "id": "beef-bean-chili-rice-s5",
-        "title": "Serve",
-        "text": "Taste before adding salt. Serve the chili with rice.",
-        "timerMinutes": 0
+        "title": "Tarjoa",
+        "text": "Maista ennen suolan lisäämistä. Tarjoa chili riisin kanssa.",
+        "timerMinutes": 0,
+        "titleEn": "Serve",
+        "textEn": "Taste before adding salt. Serve the chili with rice."
       }
     ],
     "createdAt": "2026-07-22T12:00:00.000Z",
-    "updatedAt": "2026-07-22T12:00:00.000Z"
+    "updatedAt": "2026-07-22T18:00:00.000Z",
+    "titleEn": "Beef Bean Chili with Rice",
+    "descriptionEn": "One modest red-meat meal balanced with beans, vegetables and rice.",
+    "categoryEn": "Lunch & dinner",
+    "cuisineEn": "Everyday fitness",
+    "difficultyEn": "Easy",
+    "tagsEn": [
+      "lunch",
+      "dinner",
+      "chili",
+      "high-fibre",
+      "meal-prep",
+      "weekly-plan"
+    ],
+    "useIngredientNutrition": false,
+    "nutritionStatus": "fineli-sync-required",
+    "nutritionDisclaimerFi": "Suunnitelman ravintoarvo näytetään siihen asti, kunnes raaka-aineet on synkronoitu Finelin avoimesta rajapinnasta. Tuotemerkit, kypsennyshävikki ja annospainot voivat muuttaa toteutunutta arvoa.",
+    "notesEn": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace half or all of the beef with extra beans, soy mince or lentils; replace rice with barley, quinoa or potatoes; use a frozen onion-pepper mix to reduce chopping."
   },
   {
     "id": "mealplan-turkey-tortilla-wraps",
     "slug": "turkey-tortilla-wraps",
-    "title": "Turkey Tortilla Wraps",
-    "description": "Quick whole-wheat wraps with turkey mince, yogurt and plenty of crunchy vegetables.",
-    "category": "Lunch & dinner",
-    "cuisine": "Everyday fitness",
-    "difficulty": "Easy",
+    "title": "Kalkkunatäytteiset täysjyväwrapit",
+    "description": "Nopeat täysjyväwrapit kalkkunajauhelihalla, jogurtilla ja runsailla rapeilla kasviksilla.",
+    "category": "Lounas ja päivällinen",
+    "cuisine": "Arjen fitness-ruoka",
+    "difficulty": "Helppo",
     "prepMinutes": 10,
     "cookMinutes": 10,
     "servings": 1,
     "tags": [
-      "lunch",
-      "dinner",
-      "quick",
-      "portable",
-      "high-protein",
-      "weekly-plan"
+      "lounas",
+      "päivällinen",
+      "nopea",
+      "mukaan-otettava",
+      "runsasproteiininen",
+      "viikkosuunnitelma"
     ],
     "image": "/meal-plan-covers/turkey-tortilla-wraps.svg",
     "sourceUrl": "",
@@ -2175,170 +1822,141 @@
       "fat": 18,
       "fibre": 10
     },
-    "notes": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace turkey with chicken mince, lean beef, tofu crumble or beans; replace tortillas with rye bread or a rice bowl; use bagged salad and pre-cut vegetables for speed.",
+    "notes": "Lähde: Home Recipes -sovellusta varten laadittu alkuperäinen ateriasuunnitelmaresepti; reseptiä ei ole kopioitu yhdestä verkkolähteestä. Suunnitelman ravintoarvo on tavoitearvio. Raaka-ainekohtaiset arvot voidaan päivittää suoraan THL:n Fineli-rajapinnasta. Korvaavat vaihtoehdot: Kalkkunan voi vaihtaa broileriin, vähärasvaiseen naudanlihaan tai tofuun. Täysjyvätortillan voi vaihtaa ruiswrapiin. Jogurtin voi maustaa limellä, valkosipulilla tai chilillä.",
     "ingredients": [
       {
         "id": "turkey-tortilla-wraps-i1",
-        "name": "Turkey mince",
+        "catalogId": "ingredient-kalkkunajauheliha-vaharasvainen",
         "quantity": 180,
         "unit": "g",
+        "unitEn": "g",
         "grams": 180,
-        "note": "prefer a lean product",
-        "shoppingCategory": "Meat & fish",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 140,
-          "protein": 21,
-          "carbs": 0,
-          "fat": 6,
-          "fibre": 0
-        }
+        "note": "valitse vähärasvainen tuote",
+        "noteEn": "prefer a lean product"
       },
       {
         "id": "turkey-tortilla-wraps-i2",
-        "name": "Whole-wheat tortillas",
+        "catalogId": "ingredient-taysjyvatortilla",
         "quantity": 2,
-        "unit": "pcs",
+        "unit": "kpl",
+        "unitEn": "pcs",
         "grams": 120,
         "note": "",
-        "shoppingCategory": "Bakery",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 300,
-          "protein": 9,
-          "carbs": 50,
-          "fat": 7,
-          "fibre": 7
-        }
+        "noteEn": ""
       },
       {
         "id": "turkey-tortilla-wraps-i3",
-        "name": "Greek yogurt",
+        "catalogId": "ingredient-kreikkalainen-jogurtti-vaharasvainen",
         "quantity": 50,
         "unit": "g",
+        "unitEn": "g",
         "grams": 50,
-        "note": "plain",
-        "shoppingCategory": "Dairy & chilled",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 60,
-          "protein": 10,
-          "carbs": 4,
-          "fat": 0.4,
-          "fibre": 0
-        }
+        "note": "maustamaton",
+        "noteEn": "plain"
       },
       {
         "id": "turkey-tortilla-wraps-i4",
-        "name": "Lettuce",
+        "catalogId": "ingredient-lehtisalaatti",
         "quantity": 80,
         "unit": "g",
+        "unitEn": "g",
         "grams": 80,
-        "note": "shredded",
-        "shoppingCategory": "Produce",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 20,
-          "protein": 1,
-          "carbs": 4,
-          "fat": 0.2,
-          "fibre": 1.5
-        }
+        "note": "suikaloituna",
+        "noteEn": "shredded"
       },
       {
         "id": "turkey-tortilla-wraps-i5",
-        "name": "Tomato",
+        "catalogId": "ingredient-tomaatti",
         "quantity": 120,
         "unit": "g",
+        "unitEn": "g",
         "grams": 120,
-        "note": "diced",
-        "shoppingCategory": "Produce",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 18,
-          "protein": 0.9,
-          "carbs": 3.9,
-          "fat": 0.2,
-          "fibre": 1.2
-        }
+        "note": "kuutioituna",
+        "noteEn": "diced"
       },
       {
         "id": "turkey-tortilla-wraps-i6",
-        "name": "Cucumber",
+        "catalogId": "ingredient-kurkku",
         "quantity": 100,
         "unit": "g",
+        "unitEn": "g",
         "grams": 100,
-        "note": "diced",
-        "shoppingCategory": "Produce",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 15,
-          "protein": 0.7,
-          "carbs": 3.6,
-          "fat": 0.1,
-          "fibre": 0.5
-        }
+        "note": "kuutioituna",
+        "noteEn": "diced"
       }
     ],
     "steps": [
       {
         "id": "turkey-tortilla-wraps-s1",
-        "title": "Cook the turkey",
-        "text": "Cook turkey mince in a non-stick pan with paprika, cumin, garlic powder and pepper until browned and fully cooked, about 7–9 minutes.",
-        "timerMinutes": 8
+        "title": "Kypsennä kalkkuna",
+        "text": "Paista kalkkunajauheliha tarttumattomalla pannulla paprikan, juustokuminan, valkosipulijauheen ja pippurin kanssa 7–9 minuuttia, kunnes se on ruskistunut ja läpikypsää.",
+        "timerMinutes": 8,
+        "titleEn": "Cook the turkey",
+        "textEn": "Cook turkey mince in a non-stick pan with paprika, cumin, garlic powder and pepper until browned and fully cooked, about 7–9 minutes."
       },
       {
         "id": "turkey-tortilla-wraps-s2",
-        "title": "Prepare the vegetables",
-        "text": "Shred lettuce and dice tomato and cucumber while the turkey cooks.",
-        "timerMinutes": 0
+        "title": "Valmistele kasvikset",
+        "text": "Suikaloi salaatti sekä kuutioi tomaatti ja kurkku kalkkunan kypsyessä.",
+        "timerMinutes": 0,
+        "titleEn": "Prepare the vegetables",
+        "textEn": "Shred lettuce and dice tomato and cucumber while the turkey cooks."
       },
       {
         "id": "turkey-tortilla-wraps-s3",
-        "title": "Warm the tortillas",
-        "text": "Warm tortillas in a dry pan or microwave for 20–30 seconds so they fold without tearing.",
-        "timerMinutes": 0
+        "title": "Lämmitä tortillat",
+        "text": "Lämmitä tortilloja kuivalla pannulla tai mikroaaltouunissa 20–30 sekuntia, jotta ne taittuvat repeämättä.",
+        "timerMinutes": 0,
+        "titleEn": "Warm the tortillas",
+        "textEn": "Warm tortillas in a dry pan or microwave for 20–30 seconds so they fold without tearing."
       },
       {
         "id": "turkey-tortilla-wraps-s4",
-        "title": "Fill and roll",
-        "text": "Spread yogurt over each tortilla. Add turkey and vegetables, fold in the sides, then roll tightly.",
-        "timerMinutes": 0
+        "title": "Täytä ja rullaa",
+        "text": "Levitä jogurttia tortilloille. Lisää kalkkunajauheliha ja kasvikset, taita reunat sisään ja rullaa tiukasti.",
+        "timerMinutes": 0,
+        "titleEn": "Fill and roll",
+        "textEn": "Spread yogurt over each tortilla. Add turkey and vegetables, fold in the sides, then roll tightly."
       }
     ],
     "createdAt": "2026-07-22T12:00:00.000Z",
-    "updatedAt": "2026-07-22T12:00:00.000Z"
+    "updatedAt": "2026-07-22T18:00:00.000Z",
+    "titleEn": "Turkey Tortilla Wraps",
+    "descriptionEn": "Quick whole-wheat wraps with turkey mince, yogurt and plenty of crunchy vegetables.",
+    "categoryEn": "Lunch & dinner",
+    "cuisineEn": "Everyday fitness",
+    "difficultyEn": "Easy",
+    "tagsEn": [
+      "lunch",
+      "dinner",
+      "quick",
+      "portable",
+      "high-protein",
+      "weekly-plan"
+    ],
+    "useIngredientNutrition": false,
+    "nutritionStatus": "fineli-sync-required",
+    "nutritionDisclaimerFi": "Suunnitelman ravintoarvo näytetään siihen asti, kunnes raaka-aineet on synkronoitu Finelin avoimesta rajapinnasta. Tuotemerkit, kypsennyshävikki ja annospainot voivat muuttaa toteutunutta arvoa.",
+    "notesEn": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace turkey with chicken mince, lean beef, tofu crumble or beans; replace tortillas with rye bread or a rice bowl; use bagged salad and pre-cut vegetables for speed."
   },
   {
     "id": "mealplan-salmon-spinach-pasta-skillet",
     "slug": "salmon-spinach-pasta-skillet",
-    "title": "Salmon Spinach Pasta Skillet",
-    "description": "Salmon, whole-wheat pasta, peas, spinach and cottage cheese in a simple creamy skillet.",
-    "category": "Lunch & dinner",
-    "cuisine": "Everyday fitness",
-    "difficulty": "Easy",
+    "title": "Lohi-pinaattipasta pannulla",
+    "description": "Lohi, täysjyväpasta, herneet, pinaatti ja raejuusto helpossa kermaisessa pannuruoassa.",
+    "category": "Lounas ja päivällinen",
+    "cuisine": "Arjen fitness-ruoka",
+    "difficulty": "Helppo",
     "prepMinutes": 10,
     "cookMinutes": 15,
     "servings": 1,
     "tags": [
-      "lunch",
-      "dinner",
-      "fish",
+      "lounas",
+      "päivällinen",
+      "kala",
       "pasta",
-      "high-protein",
-      "weekly-plan"
+      "runsasproteiininen",
+      "viikkosuunnitelma"
     ],
     "image": "/meal-plan-covers/salmon-spinach-pasta-skillet.svg",
     "sourceUrl": "",
@@ -2350,137 +1968,119 @@
       "fat": 24,
       "fibre": 8
     },
-    "notes": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace salmon with rainbow trout, canned salmon or tuna; replace cottage cheese with skyr stirred in off heat; replace pasta with potatoes, barley or a pulse-based pasta.",
+    "notes": "Lähde: Home Recipes -sovellusta varten laadittu alkuperäinen ateriasuunnitelmaresepti; reseptiä ei ole kopioitu yhdestä verkkolähteestä. Suunnitelman ravintoarvo on tavoitearvio. Raaka-ainekohtaiset arvot voidaan päivittää suoraan THL:n Fineli-rajapinnasta. Korvaavat vaihtoehdot: Lohen voi vaihtaa kirjoloheen tai tonnikalaan. Raejuuston voi vaihtaa rahkaan tai vähärasvaiseen ruokakermaan. Täysjyväpasta voidaan vaihtaa papupastaan tai perunaan.",
     "ingredients": [
       {
         "id": "salmon-spinach-pasta-skillet-i1",
-        "name": "Salmon fillet",
+        "catalogId": "ingredient-lohifilee-raaka",
         "quantity": 150,
         "unit": "g",
+        "unitEn": "g",
         "grams": 150,
-        "note": "cut into large cubes",
-        "shoppingCategory": "Meat & fish",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 208,
-          "protein": 20,
-          "carbs": 0,
-          "fat": 13,
-          "fibre": 0
-        }
+        "note": "suuriksi kuutioiksi leikattuna",
+        "noteEn": "cut into large cubes"
       },
       {
         "id": "salmon-spinach-pasta-skillet-i2",
-        "name": "Whole-wheat pasta, dry",
+        "catalogId": "ingredient-taysjyvapasta-kuiva",
         "quantity": 85,
         "unit": "g",
+        "unitEn": "g",
         "grams": 85,
         "note": "",
-        "shoppingCategory": "Grains",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 350,
-          "protein": 13,
-          "carbs": 67,
-          "fat": 2.5,
-          "fibre": 8
-        }
+        "noteEn": ""
       },
       {
         "id": "salmon-spinach-pasta-skillet-i3",
-        "name": "Spinach",
+        "catalogId": "ingredient-pinaatti",
         "quantity": 100,
         "unit": "g",
+        "unitEn": "g",
         "grams": 100,
-        "note": "fresh or frozen",
-        "shoppingCategory": "Produce",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 23,
-          "protein": 2.9,
-          "carbs": 3.6,
-          "fat": 0.4,
-          "fibre": 2.2
-        }
+        "note": "tuore tai pakaste",
+        "noteEn": "fresh or frozen"
       },
       {
         "id": "salmon-spinach-pasta-skillet-i4",
-        "name": "Low-fat cottage cheese",
+        "catalogId": "ingredient-raejuusto-vaharasvainen",
         "quantity": 150,
         "unit": "g",
+        "unitEn": "g",
         "grams": 150,
         "note": "",
-        "shoppingCategory": "Dairy & chilled",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 80,
-          "protein": 13,
-          "carbs": 3,
-          "fat": 1.5,
-          "fibre": 0
-        }
+        "noteEn": ""
       },
       {
         "id": "salmon-spinach-pasta-skillet-i5",
-        "name": "Frozen peas",
+        "catalogId": "ingredient-herne-pakaste",
         "quantity": 100,
         "unit": "g",
+        "unitEn": "g",
         "grams": 100,
         "note": "",
-        "shoppingCategory": "Frozen",
-        "fineliFoodId": null,
-        "fineliFoodName": "",
-        "fineliMeasures": [],
-        "nutritionPer100g": {
-          "kcal": 81,
-          "protein": 5.4,
-          "carbs": 14.5,
-          "fat": 0.4,
-          "fibre": 5.1
-        }
+        "noteEn": ""
       }
     ],
     "steps": [
       {
         "id": "salmon-spinach-pasta-skillet-s1",
-        "title": "Cook the pasta",
-        "text": "Cook the pasta until just tender. Reserve about 100 ml pasta water, then drain.",
-        "timerMinutes": 10
+        "title": "Keitä pasta",
+        "text": "Keitä pasta juuri ja juuri kypsäksi. Ota noin 100 ml keitinvettä talteen ja valuta pasta.",
+        "timerMinutes": 10,
+        "titleEn": "Cook the pasta",
+        "textEn": "Cook the pasta until just tender. Reserve about 100 ml pasta water, then drain."
       },
       {
         "id": "salmon-spinach-pasta-skillet-s2",
-        "title": "Cook the salmon",
-        "text": "Place salmon in a non-stick skillet over medium heat. Cook gently for 5–7 minutes, turning once, until nearly cooked.",
-        "timerMinutes": 6
+        "title": "Kypsennä lohi",
+        "text": "Laita lohi tarttumattomalle pannulle keskilämmölle. Kypsennä varovasti 5–7 minuuttia ja käännä kerran, kunnes lohi on lähes kypsää.",
+        "timerMinutes": 6,
+        "titleEn": "Cook the salmon",
+        "textEn": "Place salmon in a non-stick skillet over medium heat. Cook gently for 5–7 minutes, turning once, until nearly cooked."
       },
       {
         "id": "salmon-spinach-pasta-skillet-s3",
-        "title": "Add vegetables",
-        "text": "Add peas and spinach. Cook until the peas are hot and the spinach has wilted, about 3–4 minutes.",
-        "timerMinutes": 4
+        "title": "Lisää kasvikset",
+        "text": "Lisää herneet ja pinaatti. Kypsennä 3–4 minuuttia, kunnes herneet ovat kuumia ja pinaatti painunut kasaan.",
+        "timerMinutes": 4,
+        "titleEn": "Add vegetables",
+        "textEn": "Add peas and spinach. Cook until the peas are hot and the spinach has wilted, about 3–4 minutes."
       },
       {
         "id": "salmon-spinach-pasta-skillet-s4",
-        "title": "Make it creamy",
-        "text": "Lower the heat. Fold in cottage cheese and a little pasta water; do not boil aggressively.",
-        "timerMinutes": 0
+        "title": "Tee kastikkeesta kermainen",
+        "text": "Laske lämpöä. Kääntele joukkoon raejuusto ja hieman pastavettä; älä keitä voimakkaasti.",
+        "timerMinutes": 0,
+        "titleEn": "Make it creamy",
+        "textEn": "Lower the heat. Fold in cottage cheese and a little pasta water; do not boil aggressively."
       },
       {
         "id": "salmon-spinach-pasta-skillet-s5",
-        "title": "Combine",
-        "text": "Add pasta, pepper, dill and lemon if available. Fold together and heat for 1–2 minutes.",
-        "timerMinutes": 2
+        "title": "Yhdistä",
+        "text": "Lisää pasta, pippuri sekä halutessasi tilliä ja sitruunaa. Sekoita ja kuumenna 1–2 minuuttia.",
+        "timerMinutes": 2,
+        "titleEn": "Combine",
+        "textEn": "Add pasta, pepper, dill and lemon if available. Fold together and heat for 1–2 minutes."
       }
     ],
     "createdAt": "2026-07-22T12:00:00.000Z",
-    "updatedAt": "2026-07-22T12:00:00.000Z"
+    "updatedAt": "2026-07-22T18:00:00.000Z",
+    "titleEn": "Salmon Spinach Pasta Skillet",
+    "descriptionEn": "Salmon, whole-wheat pasta, peas, spinach and cottage cheese in a simple creamy skillet.",
+    "categoryEn": "Lunch & dinner",
+    "cuisineEn": "Everyday fitness",
+    "difficultyEn": "Easy",
+    "tagsEn": [
+      "lunch",
+      "dinner",
+      "fish",
+      "pasta",
+      "high-protein",
+      "weekly-plan"
+    ],
+    "useIngredientNutrition": false,
+    "nutritionStatus": "fineli-sync-required",
+    "nutritionDisclaimerFi": "Suunnitelman ravintoarvo näytetään siihen asti, kunnes raaka-aineet on synkronoitu Finelin avoimesta rajapinnasta. Tuotemerkit, kypsennyshävikki ja annospainot voivat muuttaa toteutunutta arvoa.",
+    "notesEn": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace salmon with rainbow trout, canned salmon or tuna; replace cottage cheese with skyr stirred in off heat; replace pasta with potatoes, barley or a pulse-based pasta."
   }
 ]

@@ -2,7 +2,7 @@
 
 Home Recipes is a lightweight, local-first recipe book, cooking companion and weekly meal-planning app for a kitchen tablet, computer and phone on the same Wi-Fi network.
 
-This release is designed around a practical muscle-gain / gradual-fat-loss routine for a 93 kg user targeting 80–85 kg. It includes 14 easy weekly favourites, a seven-day rotation, sourced nutrition guidance, ingredient substitutions and a shared Sunday/Wednesday grocery cart.
+This release adds a central shared ingredient library and is designed around a practical muscle-gain / gradual-fat-loss routine for a 93 kg user targeting 80–85 kg. It includes 14 Finnish-language weekly favourites, a seven-day rotation, live Fineli nutrition synchronisation, S-kaupat/K-Ruoka product links, transparent recipe-price coverage and a shared Sunday/Wednesday grocery cart.
 
 The application remains suitable for the Huawei MediaPad T1 10 / T1-A21L generation of hardware. The production build includes a legacy JavaScript bundle, uses system fonts, keeps dependencies modest and avoids relying on modern CSS Grid for core layouts.
 
@@ -12,9 +12,11 @@ The application remains suitable for the Huawei MediaPad T1 10 / T1-A21L generat
 
 - Responsive recipe library with search, category and difficulty filters, favourites and sorting.
 - Fourteen complete weekly-plan recipes, all marked as favourites.
-- Detailed ingredients, grocery categories, preparation notes, timed cooking steps, covers, plan macros, source provenance and substitutions.
-- Recipe editor with image upload and Fineli search.
-- Scalable portions and a one-tap **Add to grocery cart** action.
+- Finnish recipe titles, descriptions, ingredients, notes, timed steps, grocery categories and tags, while preserving English fallback fields in the JSON.
+- Text-free responsive covers and robust image-area styling that no longer crops recipe labels or overlaps card controls.
+- Recipe editor with image upload, Fineli search, retailer links and saved price fields.
+- Central **Ingredients** view: update one ingredient once and every linked recipe immediately receives the same name, Fineli record, nutrition, shop links and price. Recipe quantities, units, gram weights and preparation notes remain recipe-specific.
+- Scalable portions, per-ingredient retailer shortcuts, price coverage, total price/per-serving calculation and a one-tap **Add to grocery cart** action.
 
 ### Weekly routine
 
@@ -43,6 +45,8 @@ The application remains suitable for the Huawei MediaPad T1 10 / T1-A21L generat
 - Full-screen cooking mode that shows every recipe step simultaneously.
 - Independent step timers with a traditional kitchen-timer sound, vibration where supported, pause/resume/reset and `+1 min`.
 - Finnish nutrition lookup through the open Fineli API maintained by THL.
+- One-click or command-line bulk synchronisation of every unique shared ingredient. The app writes the exact Fineli food ID, Finnish food name, household measures, per-100-g values, sync time and match provenance once into `data/ingredients.json`; linked recipes read that shared record automatically.
+- Conservative matching: an ingredient is not silently guessed when no sufficiently close Fineli result exists; unresolved foods remain listed for review.
 - Local Fineli food/search cache with stale-cache fallback and bounded atomic storage.
 - Local JSON recipe database with serialized atomic writes.
 
@@ -51,7 +55,8 @@ The application remains suitable for the Huawei MediaPad T1 10 / T1-A21L generat
 - Frontend: Vite, React 18, SCSS
 - Older-browser support: `@vitejs/plugin-legacy` and a fetch polyfill
 - Backend: Node.js and Express
-- Recipe storage: `data/recipes.json`
+- Recipe storage: `data/recipes.json` (recipe-level fields and ingredient usage amounts)
+- Shared ingredient storage: `data/ingredients.json` (names, Fineli data, nutrition, retailer links and prices)
 - Shared grocery cart: `data/shopping-cart.json`
 - Fineli cache: `data/fineli-cache.json`
 - Uploaded images: `uploads/`
@@ -133,16 +138,64 @@ Do not configure router port forwarding for port `8787`.
 
 The 2,290–2,410 kcal daily range is a structured starting point. It is not a personalised maintenance-calorie calculation because the app does not know height, age, sex, steps or training volume. Use consistency, body-weight trend, gym performance, hunger and recovery to decide whether later adjustment is needed.
 
+## Shared ingredient workflow
+
+Open **Ingredients** from the main navigation. The page contains the 47 unique seed ingredients and shows how many recipes use each one.
+
+Shared fields include:
+
+- Finnish and English names;
+- grocery category;
+- Fineli query, food ID, measures and per-100-g nutrition;
+- S-kaupat and K-Ruoka links;
+- selected product, price, store and observation date.
+
+Recipe-specific fields remain in `data/recipes.json`:
+
+- quantity and unit;
+- gram weight;
+- preparation note.
+
+For example, changing the saved price of **Rypsiöljy** once updates the cost calculation in all seven recipes that use it, without changing the amount of oil in any recipe. The recipe editor also links each row to a shared ingredient record; saving shared fields there updates the same central record.
+
 ## Recipe nutrition behavior
 
 The 14 weekly favourites contain two nutrition layers:
 
-1. `plannedNutritionPerServing`: the approximate macro estimate from the researched weekly plan.
-2. Ingredient snapshots: stored per-100-g values used by the normal calculator and editable through Fineli/manual fields.
+1. `plannedNutritionPerServing`: the approximate planning value from the supplied research plan.
+2. The linked record in `data/ingredients.json`: the food values used for exact ingredient calculations after a successful Fineli sync.
 
-Weekly favourites display the plan estimate by default so the routine and recipe pages agree. The recipe editor clearly labels this and provides **Use ingredient calculation** when you want the stored ingredient values to become primary.
+The supplied JSON initially keeps the researched plan estimate active and marks every ingredient as awaiting Fineli synchronisation. This is intentional: values are never presented as API-verified until the app has actually received and stored a Fineli food record.
 
-Nutrition estimates vary by brand, cooking loss, drained weight and product selection. Package labels and a current Fineli match are more specific than generic values.
+Run the synchronisation after installing the project:
+
+```bash
+npm run sync:fineli
+```
+
+To ignore fresh cache entries and request Fineli again:
+
+```bash
+npm run sync:fineli:fresh
+```
+
+The same operation is available inside **Nutrition Guide → Sync Fineli data**. A recipe switches to ingredient-based nutrition only when all its ingredients have resolved Fineli records. Partial or ambiguous matches remain visible for review instead of being guessed.
+
+Nutrition can still vary because of product brand, cooking loss, drained weight and edible portion. Fineli describes foods rather than a particular supermarket package, so package labels remain the best source for brand-specific values.
+
+
+## Retailer links and recipe pricing
+
+Every shared ingredient contains Finnish search links for both S-kaupat and K-Ruoka. When a specific product has been verified, the link can be replaced with its direct product page in **Ingredients** or from a linked recipe editor. The change applies to every recipe using that ingredient.
+
+Retail prices depend on the selected store, date, campaign and package. Home Recipes therefore does not invent or silently scrape a universal price. A saved price record contains its retailer, product, direct source URL, unit/package price, store and observation date. Only those saved records contribute to:
+
+- ingredient cost;
+- recipe total;
+- price per serving;
+- price coverage percentage.
+
+The seed data includes two verified examples to demonstrate the workflow. All other ingredients have working retailer searches and display **Price not saved** until a product and current price are reviewed.
 
 ## Grocery cart behavior
 
@@ -165,11 +218,19 @@ The cart does not use live push updates. Tap **Refresh** on another device to lo
 
 ## Data files
 
-### Recipes
+### Recipes and ingredient usage
 
 ```text
 data/recipes.json
 ```
+
+### Shared ingredient library
+
+```text
+data/ingredients.json
+```
+
+The recipe file stores each use of an ingredient by `catalogId`, together with that recipe's quantity, unit, gram weight and preparation note. The ingredient library stores the shared food identity, Fineli mapping, nutrition and retailer data.
 
 ### Shared grocery cart
 
@@ -189,7 +250,7 @@ data/fineli-cache.json
 uploads/
 ```
 
-Recipe and cart writes use temporary files followed by rename. Mutations are serialized to reduce the risk of simultaneous tablet/PC changes overwriting one another.
+Recipe, ingredient and cart writes use temporary files followed by rename. Mutations are serialized to reduce the risk of simultaneous tablet/PC changes overwriting one another.
 
 ## Back up an existing installation
 
@@ -197,11 +258,12 @@ Before replacing an older version:
 
 ```bash
 cp data/recipes.json ~/home-recipes-recipes-backup.json
+cp data/ingredients.json ~/home-recipes-ingredients-backup.json 2>/dev/null || true
 cp data/shopping-cart.json ~/home-recipes-cart-backup.json 2>/dev/null || true
 cp -r uploads ~/home-recipes-uploads-backup
 ```
 
-Restore personal recipes or uploads after extracting the new release. The supplied `data/recipes.json` contains the 14 meal-plan favourites, so merge rather than overwrite it when preserving an existing collection.
+Restore personal recipes, ingredients or uploads after extracting the new release. When Home Recipes opens an older 0.4.0-style recipe file containing full ingredient snapshots, it automatically creates shared ingredient records and replaces the snapshots with `catalogId` links. Back up the JSON files before the first launch.
 
 ## Fineli API and cache
 
@@ -250,6 +312,7 @@ GET    /api/nutrition/search?q=...
 GET    /api/nutrition/search?q=...&refresh=1
 GET    /api/nutrition/foods/:id
 GET    /api/nutrition/foods/:id?refresh=1
+POST   /api/nutrition/sync-recipes
 ```
 
 ## Tests
@@ -270,6 +333,9 @@ The suite covers:
 - Seven valid routine days
 - Sunday/Wednesday ingredient aggregation
 - Shared cart atomic persistence
+- Finnish recipe/ingredient completeness and retailer-link validation
+- Text-free responsive recipe-cover regression
+- Ingredient and recipe price calculations
 
 ## Project structure
 
@@ -278,6 +344,7 @@ home-recipes/
 ├── data/
 │   ├── fineli-cache.json
 │   ├── recipes.json
+│   ├── recipes.en-backup.json
 │   └── shopping-cart.json
 ├── public/
 │   ├── meal-plan-covers/
@@ -287,6 +354,7 @@ home-recipes/
 │   ├── cartStore.js
 │   ├── fineli.js
 │   ├── fineliCache.js
+│   ├── fineliRecipeSync.js
 │   ├── index.js
 │   └── recipeStore.js
 ├── src/
@@ -298,6 +366,8 @@ home-recipes/
 │   ├── utils/
 │   ├── App.jsx
 │   └── main.jsx
+├── scripts/
+│   └── sync-fineli-recipes.js
 ├── tests/
 ├── uploads/
 ├── ARCHITECTURE.md
@@ -309,7 +379,7 @@ home-recipes/
 
 ## Research and recipe provenance
 
-The recipes in this release are original Home Recipes meal-plan recipes created from the supplied meal-plan brief. They are not copied from a single online recipe page. Each recipe says this in **Finishing details**, includes recipe-specific substitutions, and treats nutrition as an approximate planning estimate.
+The recipes in this release are original Home Recipes meal-plan recipes created from the supplied seven-day Finnish meal-system research plan. They are not copied from a single online recipe page. The Finnish recipe dataset preserves the original English text in explicit `*En` fields. Plan macros remain labelled as estimates until the live Fineli synchronisation has populated verified ingredient records.
 
 The guide links directly to:
 

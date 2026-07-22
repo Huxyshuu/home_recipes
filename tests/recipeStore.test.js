@@ -7,7 +7,9 @@ import path from 'node:path';
 test('recipe store supports serialised CRUD with atomic JSON writes', async () => {
   const directory = await mkdtemp(path.join(os.tmpdir(), 'reseptikoti-'));
   const dataFile = path.join(directory, 'recipes.json');
+  const ingredientFile = path.join(directory, 'ingredients.json');
   process.env.RECIPE_DATA_FILE = dataFile;
+  process.env.INGREDIENT_DATA_FILE = ingredientFile;
   const store = await import(`../server/recipeStore.js?test=${Date.now()}`);
 
   try {
@@ -28,6 +30,7 @@ test('recipe store supports serialised CRUD with atomic JSON writes', async () =
     assert.doesNotThrow(() => JSON.parse(raw));
   } finally {
     delete process.env.RECIPE_DATA_FILE;
+    delete process.env.INGREDIENT_DATA_FILE;
     await rm(directory, { recursive: true, force: true });
   }
 });

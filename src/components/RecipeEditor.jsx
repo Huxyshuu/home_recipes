@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { api } from '../api/client';
 import { recipeNutrition, roundNutrition } from '../utils/nutrition';
 import Icon from './Icon';
@@ -7,8 +7,9 @@ import NutritionSearch from './NutritionSearch';
 function blankIngredient() {
   return {
     id: `local-${Date.now()}-${Math.random()}`,
-    name: '', quantity: 0, unit: 'g', grams: 0, note: '', shoppingCategory: 'Other',
-    fineliFoodId: null, fineliFoodName: '', fineliMeasures: [],
+    name: '', quantity: 0, unit: 'g', grams: 0, note: '', shoppingCategory: 'Muut',
+    fineliQuery: '', fineliPreferredTerms: [], fineliFoodId: null, fineliFoodName: '', fineliMeasures: [],
+    nutritionSource: null, retail: { sKaupatUrl: '', kRuokaUrl: '', selectedPrice: null },
     nutritionPer100g: { kcal: 0, protein: 0, carbs: 0, fat: 0, fibre: 0 },
   };
 }
@@ -19,7 +20,7 @@ function blankStep(index = 0) {
 
 function initialRecipe(recipe) {
   return recipe ? JSON.parse(JSON.stringify(recipe)) : {
-    title: '', description: '', category: 'Everyday', cuisine: 'Home cooking', difficulty: 'Easy',
+    title: '', description: '', category: 'Arki', cuisine: 'Kotiruoka', difficulty: 'Helppo',
     prepMinutes: 10, cookMinutes: 20, servings: 4, tags: [], image: '', sourceUrl: '', notes: '', favourite: false,
     slug: '', plannedNutritionPerServing: null, useIngredientNutrition: true,
     ingredients: [blankIngredient()], steps: [blankStep(0)],
@@ -33,7 +34,18 @@ export default function RecipeEditor({ recipe, onCancel, onSave }) {
   const [saving, setSaving] = useState(false);
   const [uploading, setUploading] = useState(false);
   const [error, setError] = useState('');
+  const [ingredientCatalog, setIngredientCatalog] = useState([]);
+  const [catalogLoading, setCatalogLoading] = useState(true);
   const nutrition = useMemo(() => recipeNutrition(form).perServing, [form]);
+
+  useEffect(() => {
+    let active = true;
+    api.listIngredients()
+      .then((items) => { if (active) setIngredientCatalog(items); })
+      .catch((requestError) => { if (active) setError(`Could not open the shared ingredient library: ${requestError.message}`); })
+      .finally(() => { if (active) setCatalogLoading(false); });
+    return () => { active = false; };
+  }, []);
 
   function patch(fields) {
     setForm((current) => ({ ...current, ...fields }));
@@ -43,6 +55,30 @@ export default function RecipeEditor({ recipe, onCancel, onSave }) {
     setForm((current) => ({
       ...current,
       ingredients: current.ingredients.map((ingredient, itemIndex) => itemIndex === index ? { ...ingredient, ...fields } : ingredient),
+    }));
+  }
+
+
+  function patchRetail(index, fields) {
+    setForm((current) => ({
+      ...current,
+      ingredients: current.ingredients.map((ingredient, itemIndex) => itemIndex === index ? {
+        ...ingredient,
+        retail: { ...(ingredient.retail || {}), ...fields },
+      } : ingredient),
+    }));
+  }
+
+  function patchSelectedPrice(index, fields) {
+    setForm((current) => ({
+      ...current,
+      ingredients: current.ingredients.map((ingredient, itemIndex) => itemIndex === index ? {
+        ...ingredient,
+        retail: {
+          ...(ingredient.retail || {}),
+          selectedPrice: { ...(ingredient.retail?.selectedPrice || {}), ...fields },
+        },
+      } : ingredient),
     }));
   }
 
@@ -56,6 +92,43 @@ export default function RecipeEditor({ recipe, onCancel, onSave }) {
     }));
   }
 
+
+  function chooseCatalogIngredient(index, catalogId) {
+    const selected = ingredientCatalog.find((item) => item.id === catalogId);
+    if (!selected) {
+      patchIngredient(index, { catalogId: '' });
+      return;
+    }
+    const current = form.ingredients[index];
+    patchIngredient(index, {
+      ...selected,
+      id: current.id,
+      catalogId: selected.id,
+      quantity: current.quantity,
+      unit: current.unit,
+      unitEn: current.unitEn,
+      grams: current.grams,
+      note: current.note,
+      noteEn: current.noteEn,
+    });
+  }
+
+  function ingredientDefinitionPayload(ingredient) {
+    return {
+      name: ingredient.name,
+      nameEn: ingredient.nameEn,
+      shoppingCategory: ingredient.shoppingCategory,
+      shoppingCategoryEn: ingredient.shoppingCategoryEn,
+      fineliQuery: ingredient.fineliQuery || ingredient.name,
+      fineliPreferredTerms: ingredient.fineliPreferredTerms || [],
+      fineliFoodId: ingredient.fineliFoodId,
+      fineliFoodName: ingredient.fineliFoodName,
+      fineliMeasures: ingredient.fineliMeasures || [],
+      nutritionSource: ingredient.nutritionSource,
+      retail: ingredient.retail,
+      nutritionPer100g: ingredient.nutritionPer100g,
+    };
+  }
 
   function applyFineliMeasure(index, measureCode) {
     const ingredient = form.ingredients[index];
@@ -108,8 +181,16 @@ export default function RecipeEditor({ recipe, onCancel, onSave }) {
     setSaving(true);
     setError('');
     try {
+      const linkedIngredients = [];
+      for (const ingredient of form.ingredients) {
+        const definition = ingredient.catalogId
+          ? await api.updateIngredient(ingredient.catalogId, ingredientDefinitionPayload(ingredient))
+          : await api.createIngredient(ingredientDefinitionPayload(ingredient));
+        linkedIngredients.push({ ...ingredient, catalogId: definition.id, ...definition, id: ingredient.id });
+      }
       await onSave({
         ...form,
+        ingredients: linkedIngredients,
         tags: tagText.split(',').map((tag) => tag.trim()).filter(Boolean),
       });
     } catch (saveError) {
@@ -137,7 +218,7 @@ export default function RecipeEditor({ recipe, onCancel, onSave }) {
             <label className="field full"><span>Short description</span><textarea rows="3" value={form.description} onChange={(event) => patch({ description: event.target.value })} placeholder="What makes this recipe worth cooking?" /></label>
             <label className="field"><span>Category</span><input value={form.category} onChange={(event) => patch({ category: event.target.value })} placeholder="Dinner" /></label>
             <label className="field"><span>Cuisine</span><input value={form.cuisine} onChange={(event) => patch({ cuisine: event.target.value })} placeholder="Finnish" /></label>
-            <label className="field"><span>Difficulty</span><select value={form.difficulty} onChange={(event) => patch({ difficulty: event.target.value })}><option>Easy</option><option>Medium</option><option>Advanced</option></select></label>
+            <label className="field"><span>Difficulty</span><select value={form.difficulty} onChange={(event) => patch({ difficulty: event.target.value })}><option>Helppo</option><option>Keskitaso</option><option>Vaativa</option></select></label>
             <label className="field"><span>Servings</span><input type="number" min="1" value={form.servings} onChange={(event) => patch({ servings: Number(event.target.value) })} /></label>
             <label className="field"><span>Preparation minutes</span><input type="number" min="0" value={form.prepMinutes} onChange={(event) => patch({ prepMinutes: Number(event.target.value) })} /></label>
             <label className="field"><span>Cooking minutes</span><input type="number" min="0" value={form.cookMinutes} onChange={(event) => patch({ cookMinutes: Number(event.target.value) })} /></label>
@@ -158,8 +239,9 @@ export default function RecipeEditor({ recipe, onCancel, onSave }) {
                   <strong>Ingredient {index + 1}</strong>
                   <button className="text-button danger" type="button" onClick={() => patch({ ingredients: form.ingredients.filter((_, itemIndex) => itemIndex !== index) })} disabled={form.ingredients.length === 1}><Icon name="trash" size={16} /> Remove</button>
                 </div>
+                <label className="shared-ingredient-picker field"><span>Shared ingredient record</span><select value={ingredient.catalogId || ''} onChange={(event) => chooseCatalogIngredient(index, event.target.value)} disabled={catalogLoading}><option value="">{catalogLoading ? 'Opening ingredient library…' : 'Create a new shared ingredient from this row'}</option>{ingredientCatalog.map((item) => <option key={item.id} value={item.id}>{item.name}{item.nameEn ? ` · ${item.nameEn}` : ''}</option>)}</select></label>
                 <div className="ingredient-fields">
-                  <label className="field ingredient-name"><span>Name</span><input value={ingredient.name} onChange={(event) => patchIngredient(index, { name: event.target.value })} placeholder="Potato" /></label>
+                  <label className="field ingredient-name"><span>Name (shared globally)</span><input value={ingredient.name} onChange={(event) => patchIngredient(index, { name: event.target.value })} placeholder="Potato" /></label>
                   <label className="field small"><span>Amount</span><input type="number" step="0.01" value={ingredient.quantity} onChange={(event) => patchIngredient(index, { quantity: Number(event.target.value) })} /></label>
                   <label className="field small"><span>Unit</span><input value={ingredient.unit} onChange={(event) => patchIngredient(index, { unit: event.target.value })} placeholder="g" /></label>
                   <label className="field small"><span>Weight (g)</span><input type="number" step="0.1" value={ingredient.grams} onChange={(event) => patchIngredient(index, { grams: Number(event.target.value) })} /></label>
@@ -167,8 +249,27 @@ export default function RecipeEditor({ recipe, onCancel, onSave }) {
                 </div>
                 <div className="ingredient-extra-fields">
                   <label className="field"><span>Preparation note</span><input value={ingredient.note} onChange={(event) => patchIngredient(index, { note: event.target.value })} placeholder="peeled and cubed" /></label>
-                  <label className="field shopping-category-field"><span>Grocery category</span><select value={ingredient.shoppingCategory || 'Other'} onChange={(event) => patchIngredient(index, { shoppingCategory: event.target.value })}><option>Produce</option><option>Meat & fish</option><option>Plant protein</option><option>Dairy & chilled</option><option>Frozen</option><option>Bakery</option><option>Grains</option><option>Nuts & seeds</option><option>Pantry</option><option>Other</option></select></label>
+                  <label className="field shopping-category-field"><span>Grocery category</span><select value={ingredient.shoppingCategory || 'Muut'} onChange={(event) => patchIngredient(index, { shoppingCategory: event.target.value })}><option>Hedelmät ja vihannekset</option><option>Liha ja kala</option><option>Kasviproteiinit</option><option>Maitotuotteet ja kylmätuotteet</option><option>Pakasteet</option><option>Leivät</option><option>Viljat ja kuiva-aineet</option><option>Pähkinät ja siemenet</option><option>Kuivakaappi</option><option>Muut</option></select></label>
                 </div>
+                <details className="retail-editor">
+                  <summary>Store links and price estimate</summary>
+                  <div className="retail-link-fields">
+                    <label className="field"><span>S-kaupat URL</span><input type="url" value={ingredient.retail?.sKaupatUrl || ''} onChange={(event) => patchRetail(index, { sKaupatUrl: event.target.value })} placeholder="https://www.s-kaupat.fi/…" /></label>
+                    <label className="field"><span>K-Ruoka URL</span><input type="url" value={ingredient.retail?.kRuokaUrl || ''} onChange={(event) => patchRetail(index, { kRuokaUrl: event.target.value })} placeholder="https://www.k-ruoka.fi/…" /></label>
+                  </div>
+                  <div className="retail-price-fields">
+                    <label className="field"><span>Retailer</span><input value={ingredient.retail?.selectedPrice?.retailer || ''} onChange={(event) => patchSelectedPrice(index, { retailer: event.target.value })} placeholder="K-Ruoka" /></label>
+                    <label className="field"><span>Product name</span><input value={ingredient.retail?.selectedPrice?.productName || ''} onChange={(event) => patchSelectedPrice(index, { productName: event.target.value })} /></label>
+                    <label className="field price-small"><span>Unit price €</span><input type="number" min="0" step="0.01" value={ingredient.retail?.selectedPrice?.unitPriceEur || ''} onChange={(event) => patchSelectedPrice(index, { unitPriceEur: Number(event.target.value) })} /></label>
+                    <label className="field price-small"><span>Per</span><select value={ingredient.retail?.selectedPrice?.priceUnit || 'kg'} onChange={(event) => patchSelectedPrice(index, { priceUnit: event.target.value })}><option value="kg">kg</option><option value="l">l</option><option value="pcs">piece</option></select></label>
+                    <label className="field price-small"><span>Package €</span><input type="number" min="0" step="0.01" value={ingredient.retail?.selectedPrice?.packagePriceEur || ''} onChange={(event) => patchSelectedPrice(index, { packagePriceEur: Number(event.target.value) })} /></label>
+                    <label className="field price-small"><span>Package size</span><input type="number" min="0" step="0.1" value={ingredient.retail?.selectedPrice?.packageSize || ''} onChange={(event) => patchSelectedPrice(index, { packageSize: Number(event.target.value) })} /></label>
+                    <label className="field price-small"><span>Unit</span><select value={ingredient.retail?.selectedPrice?.packageUnit || 'g'} onChange={(event) => patchSelectedPrice(index, { packageUnit: event.target.value })}><option>g</option><option>kg</option><option>ml</option><option>l</option><option value="pcs">pcs</option></select></label>
+                    <label className="field"><span>Store</span><input value={ingredient.retail?.selectedPrice?.store || ''} onChange={(event) => patchSelectedPrice(index, { store: event.target.value })} placeholder="K-Citymarket Iso Omena" /></label>
+                    <label className="field"><span>Checked date</span><input type="date" value={ingredient.retail?.selectedPrice?.observedAt || ''} onChange={(event) => patchSelectedPrice(index, { observedAt: event.target.value })} /></label>
+                  </div>
+                  <p className="retail-help">This is shared ingredient data. Saving the recipe updates the same store links and price in every recipe using this ingredient.</p>
+                </details>
                 {ingredient.fineliFoodName ? <div className="source-chip"><Icon name="check" size={15} /> Linked to {ingredient.fineliFoodName}</div> : null}
                 {(ingredient.fineliMeasures || []).length ? <label className="fineli-measure-picker"><span>Set weight from a Fineli household measure</span><select value="" onChange={(event) => applyFineliMeasure(index, event.target.value)}><option value="">Choose a measure…</option>{ingredient.fineliMeasures.map((measure) => <option key={measure.code} value={measure.code}>{measure.abbreviation} = {measure.grams} g</option>)}</select></label> : null}
                 <details className="manual-nutrition">

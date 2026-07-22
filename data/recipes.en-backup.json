@@ -1,0 +1,2486 @@
+[
+  {
+    "id": "mealplan-protein-overnight-oats",
+    "slug": "protein-overnight-oats",
+    "title": "Protein Overnight Oats",
+    "description": "A five-minute make-ahead breakfast with oats, skyr, whey, berries and seeds.",
+    "category": "Breakfast",
+    "cuisine": "Everyday fitness",
+    "difficulty": "Easy",
+    "prepMinutes": 5,
+    "cookMinutes": 0,
+    "servings": 1,
+    "tags": [
+      "breakfast",
+      "high-protein",
+      "meal-prep",
+      "quick",
+      "weekly-plan"
+    ],
+    "image": "/meal-plan-covers/protein-overnight-oats.svg",
+    "sourceUrl": "",
+    "favourite": true,
+    "plannedNutritionPerServing": {
+      "kcal": 560,
+      "protein": 47,
+      "carbs": 58,
+      "fat": 14,
+      "fibre": 11
+    },
+    "notes": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace skyr with lactose-free rahka/quark; use fortified soy yogurt plus a little extra whey for a dairy-free option; swap berries for chopped apple or pear.",
+    "ingredients": [
+      {
+        "id": "protein-overnight-oats-i1",
+        "name": "Rolled oats",
+        "quantity": 60,
+        "unit": "g",
+        "grams": 60,
+        "note": "",
+        "shoppingCategory": "Grains",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 370,
+          "protein": 13.5,
+          "carbs": 60,
+          "fat": 7,
+          "fibre": 10
+        }
+      },
+      {
+        "id": "protein-overnight-oats-i2",
+        "name": "Skyr",
+        "quantity": 200,
+        "unit": "g",
+        "grams": 200,
+        "note": "plain, low-fat",
+        "shoppingCategory": "Dairy & chilled",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 63,
+          "protein": 11,
+          "carbs": 4,
+          "fat": 0.2,
+          "fibre": 0
+        }
+      },
+      {
+        "id": "protein-overnight-oats-i3",
+        "name": "Whey protein",
+        "quantity": 30,
+        "unit": "g",
+        "grams": 30,
+        "note": "plain or vanilla",
+        "shoppingCategory": "Pantry",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 390,
+          "protein": 78,
+          "carbs": 8,
+          "fat": 6,
+          "fibre": 1
+        }
+      },
+      {
+        "id": "protein-overnight-oats-i4",
+        "name": "Frozen berries",
+        "quantity": 150,
+        "unit": "g",
+        "grams": 150,
+        "note": "",
+        "shoppingCategory": "Frozen",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 45,
+          "protein": 1,
+          "carbs": 8,
+          "fat": 0.5,
+          "fibre": 4
+        }
+      },
+      {
+        "id": "protein-overnight-oats-i5",
+        "name": "Chia seeds",
+        "quantity": 10,
+        "unit": "g",
+        "grams": 10,
+        "note": "",
+        "shoppingCategory": "Nuts & seeds",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 486,
+          "protein": 17,
+          "carbs": 42,
+          "fat": 31,
+          "fibre": 34
+        }
+      },
+      {
+        "id": "protein-overnight-oats-i6",
+        "name": "Milk or fortified soy drink",
+        "quantity": 150,
+        "unit": "ml",
+        "grams": 150,
+        "note": "",
+        "shoppingCategory": "Dairy & chilled",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 46,
+          "protein": 3.4,
+          "carbs": 4.8,
+          "fat": 1.5,
+          "fibre": 0
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "protein-overnight-oats-s1",
+        "title": "Combine the dry ingredients",
+        "text": "Add the oats, whey protein and chia seeds to a jar or lidded bowl.",
+        "timerMinutes": 0
+      },
+      {
+        "id": "protein-overnight-oats-s2",
+        "title": "Add the chilled ingredients",
+        "text": "Add skyr, milk or fortified soy drink, and the frozen berries. Stir until no dry whey pockets remain.",
+        "timerMinutes": 0
+      },
+      {
+        "id": "protein-overnight-oats-s3",
+        "title": "Chill",
+        "text": "Cover and refrigerate for at least 4 hours, preferably overnight.",
+        "timerMinutes": 240
+      },
+      {
+        "id": "protein-overnight-oats-s4",
+        "title": "Finish and eat",
+        "text": "Stir well. Add a splash of milk if it is too thick. Eat cold or microwave briefly in a microwave-safe bowl.",
+        "timerMinutes": 0
+      }
+    ],
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T12:00:00.000Z"
+  },
+  {
+    "id": "mealplan-savory-egg-rye-plate",
+    "slug": "savory-egg-rye-plate",
+    "title": "Savory Egg Rye Plate",
+    "description": "Eggs, rye bread, cottage cheese and raw vegetables for a fast protein-rich breakfast.",
+    "category": "Breakfast",
+    "cuisine": "Everyday fitness",
+    "difficulty": "Easy",
+    "prepMinutes": 10,
+    "cookMinutes": 8,
+    "servings": 1,
+    "tags": [
+      "breakfast",
+      "high-protein",
+      "quick",
+      "Finnish-staples",
+      "weekly-plan"
+    ],
+    "image": "/meal-plan-covers/savory-egg-rye-plate.svg",
+    "sourceUrl": "",
+    "favourite": true,
+    "plannedNutritionPerServing": {
+      "kcal": 520,
+      "protein": 38,
+      "carbs": 42,
+      "fat": 21,
+      "fibre": 9
+    },
+    "notes": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Use 250 g egg whites plus one whole egg for less fat; replace cottage cheese with skyr or rahka; replace rye bread with another whole-grain bread.",
+    "ingredients": [
+      {
+        "id": "savory-egg-rye-plate-i1",
+        "name": "Eggs",
+        "quantity": 3,
+        "unit": "pcs",
+        "grams": 180,
+        "note": "",
+        "shoppingCategory": "Dairy & chilled",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 143,
+          "protein": 12.6,
+          "carbs": 0.7,
+          "fat": 9.5,
+          "fibre": 0
+        }
+      },
+      {
+        "id": "savory-egg-rye-plate-i2",
+        "name": "Whole-grain rye bread",
+        "quantity": 3,
+        "unit": "slices",
+        "grams": 105,
+        "note": "",
+        "shoppingCategory": "Bakery",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 240,
+          "protein": 8.5,
+          "carbs": 43,
+          "fat": 3.5,
+          "fibre": 10
+        }
+      },
+      {
+        "id": "savory-egg-rye-plate-i3",
+        "name": "Low-fat cottage cheese",
+        "quantity": 150,
+        "unit": "g",
+        "grams": 150,
+        "note": "",
+        "shoppingCategory": "Dairy & chilled",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 80,
+          "protein": 13,
+          "carbs": 3,
+          "fat": 1.5,
+          "fibre": 0
+        }
+      },
+      {
+        "id": "savory-egg-rye-plate-i4",
+        "name": "Tomato",
+        "quantity": 150,
+        "unit": "g",
+        "grams": 150,
+        "note": "sliced",
+        "shoppingCategory": "Produce",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 18,
+          "protein": 0.9,
+          "carbs": 3.9,
+          "fat": 0.2,
+          "fibre": 1.2
+        }
+      },
+      {
+        "id": "savory-egg-rye-plate-i5",
+        "name": "Cucumber",
+        "quantity": 100,
+        "unit": "g",
+        "grams": 100,
+        "note": "sliced",
+        "shoppingCategory": "Produce",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 15,
+          "protein": 0.7,
+          "carbs": 3.6,
+          "fat": 0.1,
+          "fibre": 0.5
+        }
+      },
+      {
+        "id": "savory-egg-rye-plate-i6",
+        "name": "Apple",
+        "quantity": 1,
+        "unit": "pc",
+        "grams": 180,
+        "note": "",
+        "shoppingCategory": "Produce",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 52,
+          "protein": 0.3,
+          "carbs": 14,
+          "fat": 0.2,
+          "fibre": 2.4
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "savory-egg-rye-plate-s1",
+        "title": "Cook the eggs",
+        "text": "Boil the eggs for 7–8 minutes, or fry them in a non-stick pan until the whites are set.",
+        "timerMinutes": 8
+      },
+      {
+        "id": "savory-egg-rye-plate-s2",
+        "title": "Prepare the plate",
+        "text": "Toast the rye bread if preferred. Slice the tomato, cucumber and apple.",
+        "timerMinutes": 0
+      },
+      {
+        "id": "savory-egg-rye-plate-s3",
+        "title": "Assemble",
+        "text": "Serve the eggs with rye bread, cottage cheese, vegetables and apple. Season with pepper and only a small amount of iodised salt if needed.",
+        "timerMinutes": 0
+      }
+    ],
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T12:00:00.000Z"
+  },
+  {
+    "id": "mealplan-quark-oat-pancakes",
+    "slug": "quark-oat-pancakes",
+    "title": "Quark Oat Pancakes",
+    "description": "Simple blender pancakes using rahka, oats, eggs and banana, served with berries.",
+    "category": "Breakfast",
+    "cuisine": "Everyday fitness",
+    "difficulty": "Easy",
+    "prepMinutes": 5,
+    "cookMinutes": 10,
+    "servings": 1,
+    "tags": [
+      "breakfast",
+      "high-protein",
+      "quick",
+      "pan-fry",
+      "weekly-plan"
+    ],
+    "image": "/meal-plan-covers/quark-oat-pancakes.svg",
+    "sourceUrl": "",
+    "favourite": true,
+    "plannedNutritionPerServing": {
+      "kcal": 510,
+      "protein": 41,
+      "carbs": 50,
+      "fat": 13,
+      "fibre": 7
+    },
+    "notes": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace rahka with skyr or blended cottage cheese; replace banana with 100 g apple purée; use gluten-free oats when required.",
+    "ingredients": [
+      {
+        "id": "quark-oat-pancakes-i1",
+        "name": "Quark or rahka",
+        "quantity": 250,
+        "unit": "g",
+        "grams": 250,
+        "note": "plain, low-fat",
+        "shoppingCategory": "Dairy & chilled",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 68,
+          "protein": 12,
+          "carbs": 4,
+          "fat": 0.3,
+          "fibre": 0
+        }
+      },
+      {
+        "id": "quark-oat-pancakes-i2",
+        "name": "Rolled oats",
+        "quantity": 60,
+        "unit": "g",
+        "grams": 60,
+        "note": "",
+        "shoppingCategory": "Grains",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 370,
+          "protein": 13.5,
+          "carbs": 60,
+          "fat": 7,
+          "fibre": 10
+        }
+      },
+      {
+        "id": "quark-oat-pancakes-i3",
+        "name": "Eggs",
+        "quantity": 2,
+        "unit": "pcs",
+        "grams": 120,
+        "note": "",
+        "shoppingCategory": "Dairy & chilled",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 143,
+          "protein": 12.6,
+          "carbs": 0.7,
+          "fat": 9.5,
+          "fibre": 0
+        }
+      },
+      {
+        "id": "quark-oat-pancakes-i4",
+        "name": "Banana",
+        "quantity": 1,
+        "unit": "pc",
+        "grams": 120,
+        "note": "ripe",
+        "shoppingCategory": "Produce",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 89,
+          "protein": 1.1,
+          "carbs": 23,
+          "fat": 0.3,
+          "fibre": 2.6
+        }
+      },
+      {
+        "id": "quark-oat-pancakes-i5",
+        "name": "Frozen berries",
+        "quantity": 100,
+        "unit": "g",
+        "grams": 100,
+        "note": "",
+        "shoppingCategory": "Frozen",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 45,
+          "protein": 1,
+          "carbs": 8,
+          "fat": 0.5,
+          "fibre": 4
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "quark-oat-pancakes-s1",
+        "title": "Make the batter",
+        "text": "Blend or mash the quark, oats, eggs and banana until mostly smooth. Let the mixture stand for 2 minutes.",
+        "timerMinutes": 0
+      },
+      {
+        "id": "quark-oat-pancakes-s2",
+        "title": "Heat the pan",
+        "text": "Warm a non-stick pan over medium heat. Add a very light coating of rapeseed oil only if needed.",
+        "timerMinutes": 0
+      },
+      {
+        "id": "quark-oat-pancakes-s3",
+        "title": "Cook the first side",
+        "text": "Spoon the batter into 3–4 small pancakes. Cook until the edges look set and bubbles appear, about 3–4 minutes.",
+        "timerMinutes": 4
+      },
+      {
+        "id": "quark-oat-pancakes-s4",
+        "title": "Flip and finish",
+        "text": "Turn carefully and cook the second side for 2–3 minutes.",
+        "timerMinutes": 3
+      },
+      {
+        "id": "quark-oat-pancakes-s5",
+        "title": "Serve",
+        "text": "Microwave or thaw the berries and spoon them over the pancakes.",
+        "timerMinutes": 0
+      }
+    ],
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T12:00:00.000Z"
+  },
+  {
+    "id": "mealplan-skyr-muesli-fruit-bowl",
+    "slug": "skyr-muesli-fruit-bowl",
+    "title": "Skyr Muesli Fruit Bowl",
+    "description": "A no-cook breakfast bowl with skyr, oats or unsweetened muesli, fruit, berries and seeds.",
+    "category": "Breakfast",
+    "cuisine": "Everyday fitness",
+    "difficulty": "Easy",
+    "prepMinutes": 5,
+    "cookMinutes": 0,
+    "servings": 1,
+    "tags": [
+      "breakfast",
+      "high-protein",
+      "no-cook",
+      "quick",
+      "weekly-plan"
+    ],
+    "image": "/meal-plan-covers/skyr-muesli-fruit-bowl.svg",
+    "sourceUrl": "",
+    "favourite": true,
+    "plannedNutritionPerServing": {
+      "kcal": 500,
+      "protein": 38,
+      "carbs": 55,
+      "fat": 12,
+      "fibre": 8
+    },
+    "notes": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Use rahka or cottage cheese instead of skyr; use an apple or pear instead of banana; replace pumpkin seeds with 15–20 g walnuts or almonds.",
+    "ingredients": [
+      {
+        "id": "skyr-muesli-fruit-bowl-i1",
+        "name": "Skyr",
+        "quantity": 250,
+        "unit": "g",
+        "grams": 250,
+        "note": "plain, low-fat",
+        "shoppingCategory": "Dairy & chilled",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 63,
+          "protein": 11,
+          "carbs": 4,
+          "fat": 0.2,
+          "fibre": 0
+        }
+      },
+      {
+        "id": "skyr-muesli-fruit-bowl-i2",
+        "name": "Unsweetened muesli or rolled oats",
+        "quantity": 50,
+        "unit": "g",
+        "grams": 50,
+        "note": "",
+        "shoppingCategory": "Grains",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 370,
+          "protein": 13.5,
+          "carbs": 60,
+          "fat": 7,
+          "fibre": 10
+        }
+      },
+      {
+        "id": "skyr-muesli-fruit-bowl-i3",
+        "name": "Banana",
+        "quantity": 1,
+        "unit": "pc",
+        "grams": 120,
+        "note": "",
+        "shoppingCategory": "Produce",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 89,
+          "protein": 1.1,
+          "carbs": 23,
+          "fat": 0.3,
+          "fibre": 2.6
+        }
+      },
+      {
+        "id": "skyr-muesli-fruit-bowl-i4",
+        "name": "Frozen berries",
+        "quantity": 100,
+        "unit": "g",
+        "grams": 100,
+        "note": "",
+        "shoppingCategory": "Frozen",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 45,
+          "protein": 1,
+          "carbs": 8,
+          "fat": 0.5,
+          "fibre": 4
+        }
+      },
+      {
+        "id": "skyr-muesli-fruit-bowl-i5",
+        "name": "Pumpkin seeds",
+        "quantity": 15,
+        "unit": "g",
+        "grams": 15,
+        "note": "",
+        "shoppingCategory": "Nuts & seeds",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 559,
+          "protein": 30,
+          "carbs": 11,
+          "fat": 49,
+          "fibre": 6
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "skyr-muesli-fruit-bowl-s1",
+        "title": "Prepare the fruit",
+        "text": "Slice the banana. Thaw the berries briefly in the microwave if you do not want them frozen.",
+        "timerMinutes": 0
+      },
+      {
+        "id": "skyr-muesli-fruit-bowl-s2",
+        "title": "Build the bowl",
+        "text": "Add skyr to a bowl and top with muesli or oats, banana, berries and pumpkin seeds.",
+        "timerMinutes": 0
+      },
+      {
+        "id": "skyr-muesli-fruit-bowl-s3",
+        "title": "Adjust the texture",
+        "text": "Add a small splash of milk or fortified soy drink if you prefer a looser consistency.",
+        "timerMinutes": 0
+      }
+    ],
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T12:00:00.000Z"
+  },
+  {
+    "id": "mealplan-chicken-rice-broccoli-box",
+    "slug": "chicken-rice-broccoli-box",
+    "title": "Chicken Rice Broccoli Box",
+    "description": "The basic meal-prep box: lean chicken, rice, broccoli, carrot and rapeseed oil.",
+    "category": "Lunch & dinner",
+    "cuisine": "Everyday fitness",
+    "difficulty": "Easy",
+    "prepMinutes": 10,
+    "cookMinutes": 20,
+    "servings": 1,
+    "tags": [
+      "lunch",
+      "dinner",
+      "meal-prep",
+      "high-protein",
+      "weekly-plan"
+    ],
+    "image": "/meal-plan-covers/chicken-rice-broccoli-box.svg",
+    "sourceUrl": "",
+    "favourite": true,
+    "plannedNutritionPerServing": {
+      "kcal": 700,
+      "protein": 58,
+      "carbs": 72,
+      "fat": 16,
+      "fibre": 9
+    },
+    "notes": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace chicken with turkey, lean pork tenderloin or 200–250 g firm tofu; replace rice with 90 g dry whole-wheat pasta or about 350–400 g potatoes; use any frozen vegetable mix.",
+    "ingredients": [
+      {
+        "id": "chicken-rice-broccoli-box-i1",
+        "name": "Chicken breast",
+        "quantity": 200,
+        "unit": "g",
+        "grams": 200,
+        "note": "cut into bite-size pieces",
+        "shoppingCategory": "Meat & fish",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 110,
+          "protein": 23,
+          "carbs": 0,
+          "fat": 1.5,
+          "fibre": 0
+        }
+      },
+      {
+        "id": "chicken-rice-broccoli-box-i2",
+        "name": "Rice, dry",
+        "quantity": 90,
+        "unit": "g",
+        "grams": 90,
+        "note": "",
+        "shoppingCategory": "Grains",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 360,
+          "protein": 7,
+          "carbs": 79,
+          "fat": 0.7,
+          "fibre": 1.3
+        }
+      },
+      {
+        "id": "chicken-rice-broccoli-box-i3",
+        "name": "Broccoli",
+        "quantity": 250,
+        "unit": "g",
+        "grams": 250,
+        "note": "fresh or frozen",
+        "shoppingCategory": "Produce",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 34,
+          "protein": 2.8,
+          "carbs": 7,
+          "fat": 0.4,
+          "fibre": 2.6
+        }
+      },
+      {
+        "id": "chicken-rice-broccoli-box-i4",
+        "name": "Carrot",
+        "quantity": 100,
+        "unit": "g",
+        "grams": 100,
+        "note": "sliced",
+        "shoppingCategory": "Produce",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 41,
+          "protein": 0.9,
+          "carbs": 9.6,
+          "fat": 0.2,
+          "fibre": 2.8
+        }
+      },
+      {
+        "id": "chicken-rice-broccoli-box-i5",
+        "name": "Rapeseed oil",
+        "quantity": 10,
+        "unit": "g",
+        "grams": 10,
+        "note": "",
+        "shoppingCategory": "Pantry",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 884,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 100,
+          "fibre": 0
+        }
+      },
+      {
+        "id": "chicken-rice-broccoli-box-i6",
+        "name": "Low-salt soy sauce",
+        "quantity": 10,
+        "unit": "g",
+        "grams": 10,
+        "note": "optional",
+        "shoppingCategory": "Pantry",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 53,
+          "protein": 8.1,
+          "carbs": 4.9,
+          "fat": 0.6,
+          "fibre": 0.8
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "chicken-rice-broccoli-box-s1",
+        "title": "Cook the rice",
+        "text": "Rinse the rice. Cook it according to the package instructions, usually 12–15 minutes.",
+        "timerMinutes": 15
+      },
+      {
+        "id": "chicken-rice-broccoli-box-s2",
+        "title": "Season the chicken",
+        "text": "Mix the chicken with pepper, garlic powder and half of the soy sauce.",
+        "timerMinutes": 0
+      },
+      {
+        "id": "chicken-rice-broccoli-box-s3",
+        "title": "Cook the chicken",
+        "text": "Heat half the rapeseed oil in a pan. Cook the chicken, stirring, until browned and fully cooked through, about 8–10 minutes.",
+        "timerMinutes": 9
+      },
+      {
+        "id": "chicken-rice-broccoli-box-s4",
+        "title": "Cook the vegetables",
+        "text": "Steam or microwave the broccoli and carrot until tender but not mushy, about 5–7 minutes.",
+        "timerMinutes": 6
+      },
+      {
+        "id": "chicken-rice-broccoli-box-s5",
+        "title": "Pack the box",
+        "text": "Combine rice, chicken and vegetables. Add the remaining oil and soy sauce. Cool before covering if preparing ahead.",
+        "timerMinutes": 0
+      }
+    ],
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T12:00:00.000Z"
+  },
+  {
+    "id": "mealplan-oven-salmon-potatoes-peas",
+    "slug": "oven-salmon-potatoes-peas",
+    "title": "Oven Salmon Potatoes Peas Tray",
+    "description": "A straightforward salmon tray with potatoes, peas and a dill-yogurt sauce.",
+    "category": "Lunch & dinner",
+    "cuisine": "Everyday fitness",
+    "difficulty": "Easy",
+    "prepMinutes": 10,
+    "cookMinutes": 25,
+    "servings": 1,
+    "tags": [
+      "lunch",
+      "dinner",
+      "fish",
+      "tray-bake",
+      "weekly-plan"
+    ],
+    "image": "/meal-plan-covers/oven-salmon-potatoes-peas.svg",
+    "sourceUrl": "",
+    "favourite": true,
+    "plannedNutritionPerServing": {
+      "kcal": 670,
+      "protein": 42,
+      "carbs": 53,
+      "fat": 28,
+      "fibre": 10
+    },
+    "notes": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace salmon with rainbow trout, Arctic char or another oily fish; use 150–180 g white fish plus 10 g extra rapeseed oil; replace potatoes with 80–90 g dry barley or rice.",
+    "ingredients": [
+      {
+        "id": "oven-salmon-potatoes-peas-i1",
+        "name": "Salmon fillet",
+        "quantity": 180,
+        "unit": "g",
+        "grams": 180,
+        "note": "",
+        "shoppingCategory": "Meat & fish",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 208,
+          "protein": 20,
+          "carbs": 0,
+          "fat": 13,
+          "fibre": 0
+        }
+      },
+      {
+        "id": "oven-salmon-potatoes-peas-i2",
+        "name": "Potatoes",
+        "quantity": 350,
+        "unit": "g",
+        "grams": 350,
+        "note": "cut into 2 cm pieces",
+        "shoppingCategory": "Produce",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 77,
+          "protein": 2,
+          "carbs": 17,
+          "fat": 0.1,
+          "fibre": 2.2
+        }
+      },
+      {
+        "id": "oven-salmon-potatoes-peas-i3",
+        "name": "Frozen peas",
+        "quantity": 150,
+        "unit": "g",
+        "grams": 150,
+        "note": "",
+        "shoppingCategory": "Frozen",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 81,
+          "protein": 5.4,
+          "carbs": 14.5,
+          "fat": 0.4,
+          "fibre": 5.1
+        }
+      },
+      {
+        "id": "oven-salmon-potatoes-peas-i4",
+        "name": "Greek yogurt",
+        "quantity": 50,
+        "unit": "g",
+        "grams": 50,
+        "note": "plain, low-fat",
+        "shoppingCategory": "Dairy & chilled",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 60,
+          "protein": 10,
+          "carbs": 4,
+          "fat": 0.4,
+          "fibre": 0
+        }
+      },
+      {
+        "id": "oven-salmon-potatoes-peas-i5",
+        "name": "Rapeseed oil",
+        "quantity": 5,
+        "unit": "g",
+        "grams": 5,
+        "note": "",
+        "shoppingCategory": "Pantry",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 884,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 100,
+          "fibre": 0
+        }
+      },
+      {
+        "id": "oven-salmon-potatoes-peas-i6",
+        "name": "Dill",
+        "quantity": 1,
+        "unit": "tsp",
+        "grams": 2,
+        "note": "fresh or dried",
+        "shoppingCategory": "Produce",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 43,
+          "protein": 3.5,
+          "carbs": 7,
+          "fat": 1.1,
+          "fibre": 2.1
+        }
+      },
+      {
+        "id": "oven-salmon-potatoes-peas-i7",
+        "name": "Lemon juice",
+        "quantity": 1,
+        "unit": "tbsp",
+        "grams": 15,
+        "note": "",
+        "shoppingCategory": "Produce",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 22,
+          "protein": 0.4,
+          "carbs": 6.9,
+          "fat": 0.2,
+          "fibre": 0.3
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "oven-salmon-potatoes-peas-s1",
+        "title": "Heat the oven",
+        "text": "Heat the oven to 220 °C conventional or 200 °C fan.",
+        "timerMinutes": 0
+      },
+      {
+        "id": "oven-salmon-potatoes-peas-s2",
+        "title": "Start the potatoes",
+        "text": "Toss the potato pieces with rapeseed oil, pepper and a small pinch of iodised salt. Roast for 15 minutes.",
+        "timerMinutes": 15
+      },
+      {
+        "id": "oven-salmon-potatoes-peas-s3",
+        "title": "Add the salmon",
+        "text": "Move the potatoes aside. Add the salmon, season with pepper, half the dill and half the lemon juice, and bake for another 10–12 minutes until it flakes easily.",
+        "timerMinutes": 11
+      },
+      {
+        "id": "oven-salmon-potatoes-peas-s4",
+        "title": "Heat the peas",
+        "text": "Microwave or simmer the peas for 3–4 minutes, then drain.",
+        "timerMinutes": 4
+      },
+      {
+        "id": "oven-salmon-potatoes-peas-s5",
+        "title": "Make the sauce",
+        "text": "Mix Greek yogurt with the remaining dill and lemon juice. Serve with the salmon, potatoes and peas.",
+        "timerMinutes": 0
+      }
+    ],
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T12:00:00.000Z"
+  },
+  {
+    "id": "mealplan-turkey-tomato-pasta",
+    "slug": "turkey-tomato-pasta",
+    "title": "Turkey Mince Tomato Pasta",
+    "description": "Lean turkey mince, whole-wheat pasta, tomato and spinach in one fast pan sauce.",
+    "category": "Lunch & dinner",
+    "cuisine": "Everyday fitness",
+    "difficulty": "Easy",
+    "prepMinutes": 10,
+    "cookMinutes": 15,
+    "servings": 1,
+    "tags": [
+      "lunch",
+      "dinner",
+      "pasta",
+      "high-protein",
+      "weekly-plan"
+    ],
+    "image": "/meal-plan-covers/turkey-tomato-pasta.svg",
+    "sourceUrl": "",
+    "favourite": true,
+    "plannedNutritionPerServing": {
+      "kcal": 680,
+      "protein": 52,
+      "carbs": 70,
+      "fat": 18,
+      "fibre": 11
+    },
+    "notes": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace turkey mince with chicken mince, lean beef mince or crumbled tofu; use lentil/chickpea pasta for more fibre and protein; use frozen spinach instead of fresh.",
+    "ingredients": [
+      {
+        "id": "turkey-tomato-pasta-i1",
+        "name": "Turkey mince",
+        "quantity": 200,
+        "unit": "g",
+        "grams": 200,
+        "note": "prefer a lean product",
+        "shoppingCategory": "Meat & fish",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 140,
+          "protein": 21,
+          "carbs": 0,
+          "fat": 6,
+          "fibre": 0
+        }
+      },
+      {
+        "id": "turkey-tomato-pasta-i2",
+        "name": "Whole-wheat pasta, dry",
+        "quantity": 90,
+        "unit": "g",
+        "grams": 90,
+        "note": "",
+        "shoppingCategory": "Grains",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 350,
+          "protein": 13,
+          "carbs": 67,
+          "fat": 2.5,
+          "fibre": 8
+        }
+      },
+      {
+        "id": "turkey-tomato-pasta-i3",
+        "name": "Passata",
+        "quantity": 200,
+        "unit": "g",
+        "grams": 200,
+        "note": "",
+        "shoppingCategory": "Pantry",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 30,
+          "protein": 1.4,
+          "carbs": 5,
+          "fat": 0.2,
+          "fibre": 1.5
+        }
+      },
+      {
+        "id": "turkey-tomato-pasta-i4",
+        "name": "Onion",
+        "quantity": 100,
+        "unit": "g",
+        "grams": 100,
+        "note": "chopped",
+        "shoppingCategory": "Produce",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 40,
+          "protein": 1.1,
+          "carbs": 9.3,
+          "fat": 0.1,
+          "fibre": 1.7
+        }
+      },
+      {
+        "id": "turkey-tomato-pasta-i5",
+        "name": "Spinach",
+        "quantity": 100,
+        "unit": "g",
+        "grams": 100,
+        "note": "fresh or frozen",
+        "shoppingCategory": "Produce",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 23,
+          "protein": 2.9,
+          "carbs": 3.6,
+          "fat": 0.4,
+          "fibre": 2.2
+        }
+      },
+      {
+        "id": "turkey-tomato-pasta-i6",
+        "name": "Rapeseed oil",
+        "quantity": 5,
+        "unit": "g",
+        "grams": 5,
+        "note": "",
+        "shoppingCategory": "Pantry",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 884,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 100,
+          "fibre": 0
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "turkey-tomato-pasta-s1",
+        "title": "Cook the pasta",
+        "text": "Boil the whole-wheat pasta until just tender. Reserve a small cup of pasta water, then drain.",
+        "timerMinutes": 10
+      },
+      {
+        "id": "turkey-tomato-pasta-s2",
+        "title": "Soften the onion",
+        "text": "Heat rapeseed oil in a large pan and cook the onion for 3 minutes.",
+        "timerMinutes": 3
+      },
+      {
+        "id": "turkey-tomato-pasta-s3",
+        "title": "Brown the turkey",
+        "text": "Add turkey mince. Break it apart and cook until no pink remains, about 6–8 minutes.",
+        "timerMinutes": 7
+      },
+      {
+        "id": "turkey-tomato-pasta-s4",
+        "title": "Build the sauce",
+        "text": "Add passata, spinach, pepper, garlic powder and dried herbs. Simmer for 3–5 minutes.",
+        "timerMinutes": 4
+      },
+      {
+        "id": "turkey-tomato-pasta-s5",
+        "title": "Combine",
+        "text": "Fold in the pasta. Add a splash of reserved pasta water if the sauce is too thick.",
+        "timerMinutes": 0
+      }
+    ],
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T12:00:00.000Z"
+  },
+  {
+    "id": "mealplan-red-lentil-chicken-soup",
+    "slug": "red-lentil-chicken-soup",
+    "title": "Red Lentil Chicken Soup",
+    "description": "A filling one-pot soup with chicken, red lentils, tomato, carrot and spinach.",
+    "category": "Lunch & dinner",
+    "cuisine": "Everyday fitness",
+    "difficulty": "Easy",
+    "prepMinutes": 10,
+    "cookMinutes": 25,
+    "servings": 1,
+    "tags": [
+      "lunch",
+      "dinner",
+      "soup",
+      "high-protein",
+      "high-fibre",
+      "weekly-plan"
+    ],
+    "image": "/meal-plan-covers/red-lentil-chicken-soup.svg",
+    "sourceUrl": "",
+    "favourite": true,
+    "plannedNutritionPerServing": {
+      "kcal": 620,
+      "protein": 52,
+      "carbs": 54,
+      "fat": 14,
+      "fibre": 12
+    },
+    "notes": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: For a vegetarian version, omit chicken and add 150 g drained beans or 200 g tofu; replace red lentils with split peas but allow a longer cooking time; use frozen soup vegetables.",
+    "ingredients": [
+      {
+        "id": "red-lentil-chicken-soup-i1",
+        "name": "Chicken breast",
+        "quantity": 160,
+        "unit": "g",
+        "grams": 160,
+        "note": "cut into small pieces",
+        "shoppingCategory": "Meat & fish",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 110,
+          "protein": 23,
+          "carbs": 0,
+          "fat": 1.5,
+          "fibre": 0
+        }
+      },
+      {
+        "id": "red-lentil-chicken-soup-i2",
+        "name": "Red lentils, dry",
+        "quantity": 80,
+        "unit": "g",
+        "grams": 80,
+        "note": "rinsed",
+        "shoppingCategory": "Grains",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 350,
+          "protein": 25,
+          "carbs": 60,
+          "fat": 1.1,
+          "fibre": 11
+        }
+      },
+      {
+        "id": "red-lentil-chicken-soup-i3",
+        "name": "Crushed tomatoes",
+        "quantity": 200,
+        "unit": "g",
+        "grams": 200,
+        "note": "",
+        "shoppingCategory": "Pantry",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 30,
+          "protein": 1.4,
+          "carbs": 5,
+          "fat": 0.2,
+          "fibre": 1.5
+        }
+      },
+      {
+        "id": "red-lentil-chicken-soup-i4",
+        "name": "Carrot",
+        "quantity": 100,
+        "unit": "g",
+        "grams": 100,
+        "note": "diced",
+        "shoppingCategory": "Produce",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 41,
+          "protein": 0.9,
+          "carbs": 9.6,
+          "fat": 0.2,
+          "fibre": 2.8
+        }
+      },
+      {
+        "id": "red-lentil-chicken-soup-i5",
+        "name": "Onion",
+        "quantity": 80,
+        "unit": "g",
+        "grams": 80,
+        "note": "chopped",
+        "shoppingCategory": "Produce",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 40,
+          "protein": 1.1,
+          "carbs": 9.3,
+          "fat": 0.1,
+          "fibre": 1.7
+        }
+      },
+      {
+        "id": "red-lentil-chicken-soup-i6",
+        "name": "Spinach",
+        "quantity": 100,
+        "unit": "g",
+        "grams": 100,
+        "note": "fresh or frozen",
+        "shoppingCategory": "Produce",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 23,
+          "protein": 2.9,
+          "carbs": 3.6,
+          "fat": 0.4,
+          "fibre": 2.2
+        }
+      },
+      {
+        "id": "red-lentil-chicken-soup-i7",
+        "name": "Rapeseed oil",
+        "quantity": 5,
+        "unit": "g",
+        "grams": 5,
+        "note": "",
+        "shoppingCategory": "Pantry",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 884,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 100,
+          "fibre": 0
+        }
+      },
+      {
+        "id": "red-lentil-chicken-soup-i8",
+        "name": "Water or low-salt broth",
+        "quantity": 500,
+        "unit": "ml",
+        "grams": 500,
+        "note": "",
+        "shoppingCategory": "Pantry",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 5,
+          "protein": 0.4,
+          "carbs": 0.5,
+          "fat": 0.1,
+          "fibre": 0
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "red-lentil-chicken-soup-s1",
+        "title": "Prepare the base",
+        "text": "Heat rapeseed oil in a pot. Cook onion and carrot for 4–5 minutes.",
+        "timerMinutes": 5
+      },
+      {
+        "id": "red-lentil-chicken-soup-s2",
+        "title": "Add chicken",
+        "text": "Add the chicken pieces and stir for 3–4 minutes so the outside turns opaque.",
+        "timerMinutes": 4
+      },
+      {
+        "id": "red-lentil-chicken-soup-s3",
+        "title": "Simmer",
+        "text": "Add lentils, crushed tomatoes, water or broth, pepper, paprika and garlic powder. Bring to a boil, then simmer gently for 15–18 minutes until the lentils and chicken are cooked.",
+        "timerMinutes": 17
+      },
+      {
+        "id": "red-lentil-chicken-soup-s4",
+        "title": "Add spinach",
+        "text": "Stir in the spinach and cook for 2 minutes. Add more water if you prefer a thinner soup.",
+        "timerMinutes": 2
+      },
+      {
+        "id": "red-lentil-chicken-soup-s5",
+        "title": "Check seasoning",
+        "text": "Taste before adding salt because broth can already contain a lot. Use iodised salt sparingly if needed.",
+        "timerMinutes": 0
+      }
+    ],
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T12:00:00.000Z"
+  },
+  {
+    "id": "mealplan-tofu-quinoa-vegetable-wok",
+    "slug": "tofu-quinoa-vegetable-wok",
+    "title": "Tofu Quinoa Vegetable Wok",
+    "description": "A plant-forward meal with tofu, quinoa, peas and a large portion of frozen vegetables.",
+    "category": "Lunch & dinner",
+    "cuisine": "Everyday fitness",
+    "difficulty": "Easy",
+    "prepMinutes": 10,
+    "cookMinutes": 15,
+    "servings": 1,
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "high-fibre",
+      "weekly-plan"
+    ],
+    "image": "/meal-plan-covers/tofu-quinoa-vegetable-wok.svg",
+    "sourceUrl": "",
+    "favourite": true,
+    "plannedNutritionPerServing": {
+      "kcal": 640,
+      "protein": 36,
+      "carbs": 58,
+      "fat": 26,
+      "fibre": 12
+    },
+    "notes": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace tofu with tempeh, soy strips or chicken; replace quinoa with brown rice, barley or whole-wheat noodles; use any 400 g mixture of frozen vegetables and peas.",
+    "ingredients": [
+      {
+        "id": "tofu-quinoa-vegetable-wok-i1",
+        "name": "Firm tofu",
+        "quantity": 200,
+        "unit": "g",
+        "grams": 200,
+        "note": "pressed and cubed",
+        "shoppingCategory": "Plant protein",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 140,
+          "protein": 16,
+          "carbs": 2,
+          "fat": 8,
+          "fibre": 1
+        }
+      },
+      {
+        "id": "tofu-quinoa-vegetable-wok-i2",
+        "name": "Quinoa, dry",
+        "quantity": 80,
+        "unit": "g",
+        "grams": 80,
+        "note": "",
+        "shoppingCategory": "Grains",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 368,
+          "protein": 14,
+          "carbs": 64,
+          "fat": 6,
+          "fibre": 7
+        }
+      },
+      {
+        "id": "tofu-quinoa-vegetable-wok-i3",
+        "name": "Frozen mixed vegetables",
+        "quantity": 300,
+        "unit": "g",
+        "grams": 300,
+        "note": "",
+        "shoppingCategory": "Frozen",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 50,
+          "protein": 3,
+          "carbs": 8,
+          "fat": 0.5,
+          "fibre": 3
+        }
+      },
+      {
+        "id": "tofu-quinoa-vegetable-wok-i4",
+        "name": "Frozen peas",
+        "quantity": 100,
+        "unit": "g",
+        "grams": 100,
+        "note": "",
+        "shoppingCategory": "Frozen",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 81,
+          "protein": 5.4,
+          "carbs": 14.5,
+          "fat": 0.4,
+          "fibre": 5.1
+        }
+      },
+      {
+        "id": "tofu-quinoa-vegetable-wok-i5",
+        "name": "Rapeseed oil",
+        "quantity": 10,
+        "unit": "g",
+        "grams": 10,
+        "note": "",
+        "shoppingCategory": "Pantry",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 884,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 100,
+          "fibre": 0
+        }
+      },
+      {
+        "id": "tofu-quinoa-vegetable-wok-i6",
+        "name": "Low-salt soy sauce",
+        "quantity": 15,
+        "unit": "g",
+        "grams": 15,
+        "note": "",
+        "shoppingCategory": "Pantry",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 53,
+          "protein": 8.1,
+          "carbs": 4.9,
+          "fat": 0.6,
+          "fibre": 0.8
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "tofu-quinoa-vegetable-wok-s1",
+        "title": "Cook the quinoa",
+        "text": "Rinse quinoa thoroughly, then simmer according to the package instructions, usually 12–15 minutes. Drain if necessary.",
+        "timerMinutes": 15
+      },
+      {
+        "id": "tofu-quinoa-vegetable-wok-s2",
+        "title": "Brown the tofu",
+        "text": "Heat half the rapeseed oil in a large pan. Cook tofu cubes on several sides for 6–8 minutes.",
+        "timerMinutes": 7
+      },
+      {
+        "id": "tofu-quinoa-vegetable-wok-s3",
+        "title": "Cook the vegetables",
+        "text": "Add the remaining oil, frozen mixed vegetables and peas. Stir-fry until hot and tender, about 6–8 minutes.",
+        "timerMinutes": 7
+      },
+      {
+        "id": "tofu-quinoa-vegetable-wok-s4",
+        "title": "Season and combine",
+        "text": "Add soy sauce, garlic, ginger or chilli if desired. Fold in quinoa and heat through.",
+        "timerMinutes": 0
+      }
+    ],
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T12:00:00.000Z"
+  },
+  {
+    "id": "mealplan-tuna-potato-cottage-cheese-bake",
+    "slug": "tuna-potato-cottage-cheese-bake",
+    "title": "Tuna Potato Cottage Cheese Bake",
+    "description": "A compact high-protein bake using tuna, potatoes, cottage cheese, peas and egg.",
+    "category": "Lunch & dinner",
+    "cuisine": "Everyday fitness",
+    "difficulty": "Easy",
+    "prepMinutes": 10,
+    "cookMinutes": 25,
+    "servings": 1,
+    "tags": [
+      "lunch",
+      "dinner",
+      "bake",
+      "high-protein",
+      "meal-prep",
+      "weekly-plan"
+    ],
+    "image": "/meal-plan-covers/tuna-potato-cottage-cheese-bake.svg",
+    "sourceUrl": "",
+    "favourite": true,
+    "plannedNutritionPerServing": {
+      "kcal": 610,
+      "protein": 55,
+      "carbs": 50,
+      "fat": 18,
+      "fibre": 8
+    },
+    "notes": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace tuna with cooked chicken, salmon leftovers or white beans; replace cottage cheese with lactose-free cottage cheese or thick soy-based cooking product plus extra tofu; use frozen diced potatoes to save time.",
+    "ingredients": [
+      {
+        "id": "tuna-potato-cottage-cheese-bake-i1",
+        "name": "Tuna in water, drained",
+        "quantity": 150,
+        "unit": "g",
+        "grams": 150,
+        "note": "",
+        "shoppingCategory": "Meat & fish",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 116,
+          "protein": 26,
+          "carbs": 0,
+          "fat": 1,
+          "fibre": 0
+        }
+      },
+      {
+        "id": "tuna-potato-cottage-cheese-bake-i2",
+        "name": "Potatoes",
+        "quantity": 300,
+        "unit": "g",
+        "grams": 300,
+        "note": "cubed",
+        "shoppingCategory": "Produce",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 77,
+          "protein": 2,
+          "carbs": 17,
+          "fat": 0.1,
+          "fibre": 2.2
+        }
+      },
+      {
+        "id": "tuna-potato-cottage-cheese-bake-i3",
+        "name": "Low-fat cottage cheese",
+        "quantity": 200,
+        "unit": "g",
+        "grams": 200,
+        "note": "",
+        "shoppingCategory": "Dairy & chilled",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 80,
+          "protein": 13,
+          "carbs": 3,
+          "fat": 1.5,
+          "fibre": 0
+        }
+      },
+      {
+        "id": "tuna-potato-cottage-cheese-bake-i4",
+        "name": "Frozen peas",
+        "quantity": 100,
+        "unit": "g",
+        "grams": 100,
+        "note": "",
+        "shoppingCategory": "Frozen",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 81,
+          "protein": 5.4,
+          "carbs": 14.5,
+          "fat": 0.4,
+          "fibre": 5.1
+        }
+      },
+      {
+        "id": "tuna-potato-cottage-cheese-bake-i5",
+        "name": "Eggs",
+        "quantity": 1,
+        "unit": "pc",
+        "grams": 60,
+        "note": "",
+        "shoppingCategory": "Dairy & chilled",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 143,
+          "protein": 12.6,
+          "carbs": 0.7,
+          "fat": 9.5,
+          "fibre": 0
+        }
+      },
+      {
+        "id": "tuna-potato-cottage-cheese-bake-i6",
+        "name": "Onion",
+        "quantity": 80,
+        "unit": "g",
+        "grams": 80,
+        "note": "finely chopped",
+        "shoppingCategory": "Produce",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 40,
+          "protein": 1.1,
+          "carbs": 9.3,
+          "fat": 0.1,
+          "fibre": 1.7
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "tuna-potato-cottage-cheese-bake-s1",
+        "title": "Heat the oven",
+        "text": "Heat the oven to 210 °C conventional or 190 °C fan.",
+        "timerMinutes": 0
+      },
+      {
+        "id": "tuna-potato-cottage-cheese-bake-s2",
+        "title": "Pre-cook the potatoes",
+        "text": "Microwave the potato cubes with a splash of water for 7–9 minutes, or boil until almost tender. Drain well.",
+        "timerMinutes": 8
+      },
+      {
+        "id": "tuna-potato-cottage-cheese-bake-s3",
+        "title": "Mix the filling",
+        "text": "In a baking dish, mix tuna, cottage cheese, peas, egg, onion, pepper and dried herbs. Fold in the potatoes.",
+        "timerMinutes": 0
+      },
+      {
+        "id": "tuna-potato-cottage-cheese-bake-s4",
+        "title": "Bake",
+        "text": "Bake until piping hot and set in the centre, about 18–22 minutes.",
+        "timerMinutes": 20
+      },
+      {
+        "id": "tuna-potato-cottage-cheese-bake-s5",
+        "title": "Rest",
+        "text": "Let the bake stand for 3–5 minutes before eating.",
+        "timerMinutes": 4
+      }
+    ],
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T12:00:00.000Z"
+  },
+  {
+    "id": "mealplan-sheet-pan-chicken-root-veg",
+    "slug": "sheet-pan-chicken-root-veg",
+    "title": "Sheet-Pan Chicken Root Vegetables",
+    "description": "Chicken and frozen or fresh root vegetables roasted together, served with yogurt and salad.",
+    "category": "Lunch & dinner",
+    "cuisine": "Everyday fitness",
+    "difficulty": "Easy",
+    "prepMinutes": 10,
+    "cookMinutes": 25,
+    "servings": 1,
+    "tags": [
+      "lunch",
+      "dinner",
+      "tray-bake",
+      "meal-prep",
+      "high-protein",
+      "weekly-plan"
+    ],
+    "image": "/meal-plan-covers/sheet-pan-chicken-root-veg.svg",
+    "sourceUrl": "",
+    "favourite": true,
+    "plannedNutritionPerServing": {
+      "kcal": 660,
+      "protein": 55,
+      "carbs": 48,
+      "fat": 22,
+      "fibre": 9
+    },
+    "notes": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace chicken with turkey fillet, lean pork tenderloin or firm tofu; replace root vegetables with potatoes plus carrots; replace Greek yogurt with skyr or a fortified unsweetened soy alternative.",
+    "ingredients": [
+      {
+        "id": "sheet-pan-chicken-root-veg-i1",
+        "name": "Chicken breast",
+        "quantity": 200,
+        "unit": "g",
+        "grams": 200,
+        "note": "whole fillet or large pieces",
+        "shoppingCategory": "Meat & fish",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 110,
+          "protein": 23,
+          "carbs": 0,
+          "fat": 1.5,
+          "fibre": 0
+        }
+      },
+      {
+        "id": "sheet-pan-chicken-root-veg-i2",
+        "name": "Root vegetable mix",
+        "quantity": 350,
+        "unit": "g",
+        "grams": 350,
+        "note": "fresh or frozen",
+        "shoppingCategory": "Produce",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 50,
+          "protein": 1.2,
+          "carbs": 10,
+          "fat": 0.3,
+          "fibre": 3
+        }
+      },
+      {
+        "id": "sheet-pan-chicken-root-veg-i3",
+        "name": "Greek yogurt",
+        "quantity": 150,
+        "unit": "g",
+        "grams": 150,
+        "note": "plain, low-fat",
+        "shoppingCategory": "Dairy & chilled",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 60,
+          "protein": 10,
+          "carbs": 4,
+          "fat": 0.4,
+          "fibre": 0
+        }
+      },
+      {
+        "id": "sheet-pan-chicken-root-veg-i4",
+        "name": "Salad vegetables",
+        "quantity": 100,
+        "unit": "g",
+        "grams": 100,
+        "note": "",
+        "shoppingCategory": "Produce",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 20,
+          "protein": 1,
+          "carbs": 4,
+          "fat": 0.2,
+          "fibre": 1.5
+        }
+      },
+      {
+        "id": "sheet-pan-chicken-root-veg-i5",
+        "name": "Rapeseed oil",
+        "quantity": 10,
+        "unit": "g",
+        "grams": 10,
+        "note": "",
+        "shoppingCategory": "Pantry",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 884,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 100,
+          "fibre": 0
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "sheet-pan-chicken-root-veg-s1",
+        "title": "Heat the oven",
+        "text": "Heat the oven to 220 °C conventional or 200 °C fan.",
+        "timerMinutes": 0
+      },
+      {
+        "id": "sheet-pan-chicken-root-veg-s2",
+        "title": "Season the tray",
+        "text": "Spread the root vegetables on a lined tray. Toss with rapeseed oil, pepper, paprika and garlic powder. Add the chicken and season it.",
+        "timerMinutes": 0
+      },
+      {
+        "id": "sheet-pan-chicken-root-veg-s3",
+        "title": "Roast",
+        "text": "Roast for 20–25 minutes, turning the vegetables once, until the chicken is cooked through and the vegetables are browned.",
+        "timerMinutes": 23
+      },
+      {
+        "id": "sheet-pan-chicken-root-veg-s4",
+        "title": "Prepare the sides",
+        "text": "While the tray cooks, wash and chop the salad vegetables. Stir pepper, herbs or lemon into the yogurt.",
+        "timerMinutes": 0
+      },
+      {
+        "id": "sheet-pan-chicken-root-veg-s5",
+        "title": "Serve",
+        "text": "Slice the chicken and serve it with the roasted vegetables, salad and yogurt sauce.",
+        "timerMinutes": 0
+      }
+    ],
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T12:00:00.000Z"
+  },
+  {
+    "id": "mealplan-beef-bean-chili-rice",
+    "slug": "beef-bean-chili-rice",
+    "title": "Beef Bean Chili with Rice",
+    "description": "One modest red-meat meal balanced with beans, vegetables and rice.",
+    "category": "Lunch & dinner",
+    "cuisine": "Everyday fitness",
+    "difficulty": "Easy",
+    "prepMinutes": 10,
+    "cookMinutes": 25,
+    "servings": 1,
+    "tags": [
+      "lunch",
+      "dinner",
+      "chili",
+      "high-fibre",
+      "meal-prep",
+      "weekly-plan"
+    ],
+    "image": "/meal-plan-covers/beef-bean-chili-rice.svg",
+    "sourceUrl": "",
+    "favourite": true,
+    "plannedNutritionPerServing": {
+      "kcal": 690,
+      "protein": 49,
+      "carbs": 67,
+      "fat": 20,
+      "fibre": 13
+    },
+    "notes": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace half or all of the beef with extra beans, soy mince or lentils; replace rice with barley, quinoa or potatoes; use a frozen onion-pepper mix to reduce chopping.",
+    "ingredients": [
+      {
+        "id": "beef-bean-chili-rice-i1",
+        "name": "Lean beef mince",
+        "quantity": 150,
+        "unit": "g",
+        "grams": 150,
+        "note": "prefer 5–10% fat",
+        "shoppingCategory": "Meat & fish",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 170,
+          "protein": 22,
+          "carbs": 0,
+          "fat": 9,
+          "fibre": 0
+        }
+      },
+      {
+        "id": "beef-bean-chili-rice-i2",
+        "name": "Kidney beans, drained",
+        "quantity": 150,
+        "unit": "g",
+        "grams": 150,
+        "note": "rinsed",
+        "shoppingCategory": "Plant protein",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 100,
+          "protein": 7,
+          "carbs": 15,
+          "fat": 0.5,
+          "fibre": 6
+        }
+      },
+      {
+        "id": "beef-bean-chili-rice-i3",
+        "name": "Rice, dry",
+        "quantity": 70,
+        "unit": "g",
+        "grams": 70,
+        "note": "",
+        "shoppingCategory": "Grains",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 360,
+          "protein": 7,
+          "carbs": 79,
+          "fat": 0.7,
+          "fibre": 1.3
+        }
+      },
+      {
+        "id": "beef-bean-chili-rice-i4",
+        "name": "Crushed tomatoes",
+        "quantity": 200,
+        "unit": "g",
+        "grams": 200,
+        "note": "",
+        "shoppingCategory": "Pantry",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 30,
+          "protein": 1.4,
+          "carbs": 5,
+          "fat": 0.2,
+          "fibre": 1.5
+        }
+      },
+      {
+        "id": "beef-bean-chili-rice-i5",
+        "name": "Onion",
+        "quantity": 100,
+        "unit": "g",
+        "grams": 100,
+        "note": "chopped",
+        "shoppingCategory": "Produce",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 40,
+          "protein": 1.1,
+          "carbs": 9.3,
+          "fat": 0.1,
+          "fibre": 1.7
+        }
+      },
+      {
+        "id": "beef-bean-chili-rice-i6",
+        "name": "Sweetcorn",
+        "quantity": 100,
+        "unit": "g",
+        "grams": 100,
+        "note": "drained or frozen",
+        "shoppingCategory": "Frozen",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 86,
+          "protein": 3.4,
+          "carbs": 19,
+          "fat": 1.2,
+          "fibre": 2.7
+        }
+      },
+      {
+        "id": "beef-bean-chili-rice-i7",
+        "name": "Rapeseed oil",
+        "quantity": 5,
+        "unit": "g",
+        "grams": 5,
+        "note": "",
+        "shoppingCategory": "Pantry",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 884,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 100,
+          "fibre": 0
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "beef-bean-chili-rice-s1",
+        "title": "Cook the rice",
+        "text": "Cook rice according to the package instructions.",
+        "timerMinutes": 15
+      },
+      {
+        "id": "beef-bean-chili-rice-s2",
+        "title": "Brown the beef",
+        "text": "Heat rapeseed oil in a saucepan. Add onion and beef, break up the mince and cook until browned, about 7–8 minutes.",
+        "timerMinutes": 8
+      },
+      {
+        "id": "beef-bean-chili-rice-s3",
+        "title": "Add the vegetables",
+        "text": "Stir in kidney beans, crushed tomatoes, sweetcorn, paprika, cumin and chilli to taste.",
+        "timerMinutes": 0
+      },
+      {
+        "id": "beef-bean-chili-rice-s4",
+        "title": "Simmer",
+        "text": "Simmer uncovered for 10–12 minutes, stirring occasionally. Add water if it becomes too thick.",
+        "timerMinutes": 11
+      },
+      {
+        "id": "beef-bean-chili-rice-s5",
+        "title": "Serve",
+        "text": "Taste before adding salt. Serve the chili with rice.",
+        "timerMinutes": 0
+      }
+    ],
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T12:00:00.000Z"
+  },
+  {
+    "id": "mealplan-turkey-tortilla-wraps",
+    "slug": "turkey-tortilla-wraps",
+    "title": "Turkey Tortilla Wraps",
+    "description": "Quick whole-wheat wraps with turkey mince, yogurt and plenty of crunchy vegetables.",
+    "category": "Lunch & dinner",
+    "cuisine": "Everyday fitness",
+    "difficulty": "Easy",
+    "prepMinutes": 10,
+    "cookMinutes": 10,
+    "servings": 1,
+    "tags": [
+      "lunch",
+      "dinner",
+      "quick",
+      "portable",
+      "high-protein",
+      "weekly-plan"
+    ],
+    "image": "/meal-plan-covers/turkey-tortilla-wraps.svg",
+    "sourceUrl": "",
+    "favourite": true,
+    "plannedNutritionPerServing": {
+      "kcal": 620,
+      "protein": 45,
+      "carbs": 56,
+      "fat": 18,
+      "fibre": 10
+    },
+    "notes": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace turkey with chicken mince, lean beef, tofu crumble or beans; replace tortillas with rye bread or a rice bowl; use bagged salad and pre-cut vegetables for speed.",
+    "ingredients": [
+      {
+        "id": "turkey-tortilla-wraps-i1",
+        "name": "Turkey mince",
+        "quantity": 180,
+        "unit": "g",
+        "grams": 180,
+        "note": "prefer a lean product",
+        "shoppingCategory": "Meat & fish",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 140,
+          "protein": 21,
+          "carbs": 0,
+          "fat": 6,
+          "fibre": 0
+        }
+      },
+      {
+        "id": "turkey-tortilla-wraps-i2",
+        "name": "Whole-wheat tortillas",
+        "quantity": 2,
+        "unit": "pcs",
+        "grams": 120,
+        "note": "",
+        "shoppingCategory": "Bakery",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 300,
+          "protein": 9,
+          "carbs": 50,
+          "fat": 7,
+          "fibre": 7
+        }
+      },
+      {
+        "id": "turkey-tortilla-wraps-i3",
+        "name": "Greek yogurt",
+        "quantity": 50,
+        "unit": "g",
+        "grams": 50,
+        "note": "plain",
+        "shoppingCategory": "Dairy & chilled",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 60,
+          "protein": 10,
+          "carbs": 4,
+          "fat": 0.4,
+          "fibre": 0
+        }
+      },
+      {
+        "id": "turkey-tortilla-wraps-i4",
+        "name": "Lettuce",
+        "quantity": 80,
+        "unit": "g",
+        "grams": 80,
+        "note": "shredded",
+        "shoppingCategory": "Produce",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 20,
+          "protein": 1,
+          "carbs": 4,
+          "fat": 0.2,
+          "fibre": 1.5
+        }
+      },
+      {
+        "id": "turkey-tortilla-wraps-i5",
+        "name": "Tomato",
+        "quantity": 120,
+        "unit": "g",
+        "grams": 120,
+        "note": "diced",
+        "shoppingCategory": "Produce",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 18,
+          "protein": 0.9,
+          "carbs": 3.9,
+          "fat": 0.2,
+          "fibre": 1.2
+        }
+      },
+      {
+        "id": "turkey-tortilla-wraps-i6",
+        "name": "Cucumber",
+        "quantity": 100,
+        "unit": "g",
+        "grams": 100,
+        "note": "diced",
+        "shoppingCategory": "Produce",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 15,
+          "protein": 0.7,
+          "carbs": 3.6,
+          "fat": 0.1,
+          "fibre": 0.5
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "turkey-tortilla-wraps-s1",
+        "title": "Cook the turkey",
+        "text": "Cook turkey mince in a non-stick pan with paprika, cumin, garlic powder and pepper until browned and fully cooked, about 7–9 minutes.",
+        "timerMinutes": 8
+      },
+      {
+        "id": "turkey-tortilla-wraps-s2",
+        "title": "Prepare the vegetables",
+        "text": "Shred lettuce and dice tomato and cucumber while the turkey cooks.",
+        "timerMinutes": 0
+      },
+      {
+        "id": "turkey-tortilla-wraps-s3",
+        "title": "Warm the tortillas",
+        "text": "Warm tortillas in a dry pan or microwave for 20–30 seconds so they fold without tearing.",
+        "timerMinutes": 0
+      },
+      {
+        "id": "turkey-tortilla-wraps-s4",
+        "title": "Fill and roll",
+        "text": "Spread yogurt over each tortilla. Add turkey and vegetables, fold in the sides, then roll tightly.",
+        "timerMinutes": 0
+      }
+    ],
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T12:00:00.000Z"
+  },
+  {
+    "id": "mealplan-salmon-spinach-pasta-skillet",
+    "slug": "salmon-spinach-pasta-skillet",
+    "title": "Salmon Spinach Pasta Skillet",
+    "description": "Salmon, whole-wheat pasta, peas, spinach and cottage cheese in a simple creamy skillet.",
+    "category": "Lunch & dinner",
+    "cuisine": "Everyday fitness",
+    "difficulty": "Easy",
+    "prepMinutes": 10,
+    "cookMinutes": 15,
+    "servings": 1,
+    "tags": [
+      "lunch",
+      "dinner",
+      "fish",
+      "pasta",
+      "high-protein",
+      "weekly-plan"
+    ],
+    "image": "/meal-plan-covers/salmon-spinach-pasta-skillet.svg",
+    "sourceUrl": "",
+    "favourite": true,
+    "plannedNutritionPerServing": {
+      "kcal": 700,
+      "protein": 46,
+      "carbs": 68,
+      "fat": 24,
+      "fibre": 8
+    },
+    "notes": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace salmon with rainbow trout, canned salmon or tuna; replace cottage cheese with skyr stirred in off heat; replace pasta with potatoes, barley or a pulse-based pasta.",
+    "ingredients": [
+      {
+        "id": "salmon-spinach-pasta-skillet-i1",
+        "name": "Salmon fillet",
+        "quantity": 150,
+        "unit": "g",
+        "grams": 150,
+        "note": "cut into large cubes",
+        "shoppingCategory": "Meat & fish",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 208,
+          "protein": 20,
+          "carbs": 0,
+          "fat": 13,
+          "fibre": 0
+        }
+      },
+      {
+        "id": "salmon-spinach-pasta-skillet-i2",
+        "name": "Whole-wheat pasta, dry",
+        "quantity": 85,
+        "unit": "g",
+        "grams": 85,
+        "note": "",
+        "shoppingCategory": "Grains",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 350,
+          "protein": 13,
+          "carbs": 67,
+          "fat": 2.5,
+          "fibre": 8
+        }
+      },
+      {
+        "id": "salmon-spinach-pasta-skillet-i3",
+        "name": "Spinach",
+        "quantity": 100,
+        "unit": "g",
+        "grams": 100,
+        "note": "fresh or frozen",
+        "shoppingCategory": "Produce",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 23,
+          "protein": 2.9,
+          "carbs": 3.6,
+          "fat": 0.4,
+          "fibre": 2.2
+        }
+      },
+      {
+        "id": "salmon-spinach-pasta-skillet-i4",
+        "name": "Low-fat cottage cheese",
+        "quantity": 150,
+        "unit": "g",
+        "grams": 150,
+        "note": "",
+        "shoppingCategory": "Dairy & chilled",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 80,
+          "protein": 13,
+          "carbs": 3,
+          "fat": 1.5,
+          "fibre": 0
+        }
+      },
+      {
+        "id": "salmon-spinach-pasta-skillet-i5",
+        "name": "Frozen peas",
+        "quantity": 100,
+        "unit": "g",
+        "grams": 100,
+        "note": "",
+        "shoppingCategory": "Frozen",
+        "fineliFoodId": null,
+        "fineliFoodName": "",
+        "fineliMeasures": [],
+        "nutritionPer100g": {
+          "kcal": 81,
+          "protein": 5.4,
+          "carbs": 14.5,
+          "fat": 0.4,
+          "fibre": 5.1
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "salmon-spinach-pasta-skillet-s1",
+        "title": "Cook the pasta",
+        "text": "Cook the pasta until just tender. Reserve about 100 ml pasta water, then drain.",
+        "timerMinutes": 10
+      },
+      {
+        "id": "salmon-spinach-pasta-skillet-s2",
+        "title": "Cook the salmon",
+        "text": "Place salmon in a non-stick skillet over medium heat. Cook gently for 5–7 minutes, turning once, until nearly cooked.",
+        "timerMinutes": 6
+      },
+      {
+        "id": "salmon-spinach-pasta-skillet-s3",
+        "title": "Add vegetables",
+        "text": "Add peas and spinach. Cook until the peas are hot and the spinach has wilted, about 3–4 minutes.",
+        "timerMinutes": 4
+      },
+      {
+        "id": "salmon-spinach-pasta-skillet-s4",
+        "title": "Make it creamy",
+        "text": "Lower the heat. Fold in cottage cheese and a little pasta water; do not boil aggressively.",
+        "timerMinutes": 0
+      },
+      {
+        "id": "salmon-spinach-pasta-skillet-s5",
+        "title": "Combine",
+        "text": "Add pasta, pepper, dill and lemon if available. Fold together and heat for 1–2 minutes.",
+        "timerMinutes": 2
+      }
+    ],
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T12:00:00.000Z"
+  }
+]

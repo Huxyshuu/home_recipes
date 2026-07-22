@@ -1,0 +1,1879 @@
+[
+  {
+    "id": "ingredient-banaani-kuorittu",
+    "name": "Banaani, kuorittu",
+    "nameEn": "Banana",
+    "shoppingCategory": "Hedelmät ja vihannekset",
+    "shoppingCategoryEn": "Produce",
+    "fineliQuery": "banaani kuorittu",
+    "fineliPreferredTerms": [
+      "banaani"
+    ],
+    "fineliFoodId": 11049,
+    "fineliFoodName": "Banaani, kuorittu",
+    "fineliMeasures": [
+      {
+        "code": "KPL_S",
+        "name": "pieni (kpl)",
+        "abbreviation": "pieni kpl",
+        "grams": 100
+      },
+      {
+        "code": "KPL_M",
+        "name": "keskikokoinen (kpl)",
+        "abbreviation": "keskikokoinen kpl",
+        "grams": 125
+      },
+      {
+        "code": "KPL_L",
+        "name": "iso (kpl)",
+        "abbreviation": "iso kpl",
+        "grams": 150
+      },
+      {
+        "code": "PORTL",
+        "name": "iso annos",
+        "abbreviation": "iso annos",
+        "grams": 250
+      },
+      {
+        "code": "PORTM",
+        "name": "keskikokoinen annos",
+        "abbreviation": "keskikokoinen annos",
+        "grams": 125
+      },
+      {
+        "code": "PORTS",
+        "name": "pieni annos",
+        "abbreviation": "pieni annos",
+        "grams": 100
+      },
+      {
+        "code": "PORT1000KJ",
+        "name": "Annoksen koko, joka vastaa 1000kJ",
+        "abbreviation": "Annos 1000kJ",
+        "grams": 272.91
+      },
+      {
+        "code": "G",
+        "name": "gramma",
+        "abbreviation": "g",
+        "grams": 1
+      }
+    ],
+    "nutritionSource": {
+      "provider": "THL Fineli API",
+      "status": "verified-api",
+      "syncedAt": "2026-07-22T19:00:11.182Z",
+      "matchMethod": "manual-selection"
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Banaani",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Banaani",
+      "selectedPrice": {
+        "retailer": "S-kauppa",
+        "productName": "Chiquita banaani",
+        "sourceUrl": "https://www.s-kaupat.fi/tuote/chiquita-banaani/2000503600002",
+        "unitPriceEur": 1.89,
+        "priceUnit": "kg",
+        "packagePriceEur": 0.36,
+        "packageSize": 190,
+        "packageUnit": "g",
+        "store": "Prisma Itäkeskus",
+        "observedAt": "2026-07-22",
+        "note": "Irtotuotteen kappalehinta on arvio; kustannus lasketaan kilogrammahinnasta."
+      }
+    },
+    "nutritionPer100g": {
+      "kcal": 87.5,
+      "protein": 1.2,
+      "carbs": 18.3,
+      "fat": 0.4,
+      "fibre": 0
+    },
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T19:22:32.894Z"
+  },
+  {
+    "id": "ingredient-broilerin-rintafilee-nahaton",
+    "name": "Broilerin rintafilee, nahaton",
+    "nameEn": "Chicken breast",
+    "shoppingCategory": "Liha ja kala",
+    "shoppingCategoryEn": "Meat & fish",
+    "fineliQuery": "broilerin rintafilee nahaton",
+    "fineliPreferredTerms": [
+      "broileri",
+      "rintafilee"
+    ],
+    "fineliFoodId": 11565,
+    "fineliFoodName": "Broileri, rintafilee, nahaton, suikale, leike",
+    "fineliMeasures": [
+      {
+        "code": "PORTS",
+        "name": "pieni annos",
+        "abbreviation": "pieni annos",
+        "grams": 150
+      },
+      {
+        "code": "PORTL",
+        "name": "iso annos",
+        "abbreviation": "iso annos",
+        "grams": 250
+      },
+      {
+        "code": "PORTM",
+        "name": "keskikokoinen annos",
+        "abbreviation": "keskikokoinen annos",
+        "grams": 200
+      },
+      {
+        "code": "PORT1000KJ",
+        "name": "Annoksen koko, joka vastaa 1000kJ",
+        "abbreviation": "Annos 1000kJ",
+        "grams": 219.37
+      },
+      {
+        "code": "G",
+        "name": "gramma",
+        "abbreviation": "g",
+        "grams": 1
+      }
+    ],
+    "nutritionSource": {
+      "provider": "THL Fineli API",
+      "status": "verified-api",
+      "syncedAt": "2026-07-22T19:06:55.177Z",
+      "matchMethod": "manual-selection"
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=broiler+rintafilee",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=broilerin%20rintafilee",
+      "selectedPrice": {
+        "retailer": "K-kauppa",
+        "productName": "Kariniemen Kananpojan rintafilee maustamaton 4 kpl 600 g",
+        "sourceUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Kariniemen%20Kananpojan%20rintafilee%20maustamaton%204%20kpl%20600%20&tuote=kariniemen-kp-fileesuikale-400g-mton-6409100025212",
+        "unitPriceEur": 11.73,
+        "priceUnit": "kg",
+        "packagePriceEur": 4.69,
+        "packageSize": 400,
+        "packageUnit": "g",
+        "store": "K-Citymarket Easton",
+        "observedAt": "2026-07-22",
+        "note": ""
+      }
+    },
+    "nutritionPer100g": {
+      "kcal": 108.9,
+      "protein": 22.4,
+      "carbs": 0,
+      "fat": 2,
+      "fibre": 0
+    },
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T19:22:59.349Z"
+  },
+  {
+    "id": "ingredient-chiansiemen",
+    "name": "Chiansiemen",
+    "nameEn": "Chia seeds",
+    "shoppingCategory": "Pähkinät ja siemenet",
+    "shoppingCategoryEn": "Nuts & seeds",
+    "fineliQuery": "chiansiemen",
+    "fineliPreferredTerms": [
+      "chia"
+    ],
+    "fineliFoodId": 34847,
+    "fineliFoodName": "Chiansiemen",
+    "fineliMeasures": [
+      {
+        "code": "PORTL",
+        "name": "iso annos",
+        "abbreviation": "iso annos",
+        "grams": 30
+      },
+      {
+        "code": "PORTM",
+        "name": "keskikokoinen annos",
+        "abbreviation": "keskikokoinen annos",
+        "grams": 15
+      },
+      {
+        "code": "PORTS",
+        "name": "pieni annos",
+        "abbreviation": "pieni annos",
+        "grams": 5
+      },
+      {
+        "code": "TL",
+        "name": "teelusikka",
+        "abbreviation": "tl",
+        "grams": 3
+      },
+      {
+        "code": "RKL",
+        "name": "ruokalusikka",
+        "abbreviation": "rkl",
+        "grams": 10
+      },
+      {
+        "code": "DL",
+        "name": "desilitra",
+        "abbreviation": "dl",
+        "grams": 65
+      },
+      {
+        "code": "PORT1000KJ",
+        "name": "Annoksen koko, joka vastaa 1000kJ",
+        "abbreviation": "Annos 1000kJ",
+        "grams": 52.02
+      },
+      {
+        "code": "G",
+        "name": "gramma",
+        "abbreviation": "g",
+        "grams": 1
+      }
+    ],
+    "nutritionSource": {
+      "provider": "THL Fineli API",
+      "status": "verified-api",
+      "syncedAt": "2026-07-22T19:43:26.949Z",
+      "matchMethod": "manual-selection"
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=chia-siemen",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=chia-siemen",
+      "selectedPrice": {
+        "retailer": "S-kauppa",
+        "productName": "Foodin Chia-siemen luomu 250g",
+        "sourceUrl": "https://www.s-kaupat.fi/tuote/foodin-chia-siemen-luomu-250g/6430055214932",
+        "unitPriceEur": 15,
+        "priceUnit": "kg",
+        "packagePriceEur": 3.75,
+        "packageSize": 250,
+        "packageUnit": "g",
+        "store": "Prisma Itäkeskus",
+        "observedAt": "2026-07-22",
+        "note": ""
+      }
+    },
+    "nutritionPer100g": {
+      "kcal": 459.2,
+      "protein": 22.9,
+      "carbs": 0.2,
+      "fat": 33.9,
+      "fibre": 0
+    },
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T19:46:30.770Z"
+  },
+  {
+    "name": "Heraproteiinijauhe",
+    "shoppingCategory": "Kuivakaappi",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 390,
+      "protein": 78,
+      "carbs": 8,
+      "fat": 6,
+      "fibre": 1
+    },
+    "nameEn": "Whey protein",
+    "shoppingCategoryEn": "Pantry",
+    "fineliQuery": "heraproteiinijauhe maustamaton",
+    "fineliPreferredTerms": [
+      "heraproteiini"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Heraproteiinijauhe",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Heraproteiinijauhe",
+      "selectedPrice": null
+    },
+    "id": "ingredient-heraproteiinijauhe",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Herne, pakaste",
+    "shoppingCategory": "Pakasteet",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 81,
+      "protein": 5.4,
+      "carbs": 14.5,
+      "fat": 0.4,
+      "fibre": 5.1
+    },
+    "nameEn": "Frozen peas",
+    "shoppingCategoryEn": "Frozen",
+    "fineliQuery": "herne pakaste",
+    "fineliPreferredTerms": [
+      "herne"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Herne",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Herne",
+      "selectedPrice": null
+    },
+    "id": "ingredient-herne-pakaste",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Juuressekoitus, pakaste",
+    "shoppingCategory": "Hedelmät ja vihannekset",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 50,
+      "protein": 1.2,
+      "carbs": 10,
+      "fat": 0.3,
+      "fibre": 3
+    },
+    "nameEn": "Root vegetable mix",
+    "shoppingCategoryEn": "Produce",
+    "fineliQuery": "juuressekoitus pakaste",
+    "fineliPreferredTerms": [
+      "juures"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Juuressekoitus",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Juuressekoitus",
+      "selectedPrice": null
+    },
+    "id": "ingredient-juuressekoitus-pakaste",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Kalkkunajauheliha, vähärasvainen",
+    "shoppingCategory": "Liha ja kala",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 140,
+      "protein": 21,
+      "carbs": 0,
+      "fat": 6,
+      "fibre": 0
+    },
+    "nameEn": "Turkey mince",
+    "shoppingCategoryEn": "Meat & fish",
+    "fineliQuery": "kalkkunajauheliha vähärasvainen",
+    "fineliPreferredTerms": [
+      "kalkkuna",
+      "jauheliha"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Kalkkunajauheliha",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Kalkkunajauheliha",
+      "selectedPrice": null
+    },
+    "id": "ingredient-kalkkunajauheliha-vaharasvainen",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "id": "ingredient-kananmuna",
+    "name": "Kananmuna",
+    "nameEn": "Eggs",
+    "shoppingCategory": "Maitotuotteet ja kylmätuotteet",
+    "shoppingCategoryEn": "Dairy & chilled",
+    "fineliQuery": "kananmuna",
+    "fineliPreferredTerms": [
+      "kananmuna"
+    ],
+    "fineliFoodId": 8513,
+    "fineliFoodName": "Kananmuna, keitetty",
+    "fineliMeasures": [
+      {
+        "code": "KPL_M",
+        "name": "keskikokoinen (kpl)",
+        "abbreviation": "keskikokoinen kpl",
+        "grams": 55
+      },
+      {
+        "code": "PORTS",
+        "name": "pieni annos",
+        "abbreviation": "pieni annos",
+        "grams": 30
+      },
+      {
+        "code": "PORTM",
+        "name": "keskikokoinen annos",
+        "abbreviation": "keskikokoinen annos",
+        "grams": 60
+      },
+      {
+        "code": "PORTL",
+        "name": "iso annos",
+        "abbreviation": "iso annos",
+        "grams": 180
+      },
+      {
+        "code": "PORT1000KJ",
+        "name": "Annoksen koko, joka vastaa 1000kJ",
+        "abbreviation": "Annos 1000kJ",
+        "grams": 178.14
+      },
+      {
+        "code": "G",
+        "name": "gramma",
+        "abbreviation": "g",
+        "grams": 1
+      }
+    ],
+    "nutritionSource": {
+      "provider": "THL Fineli API",
+      "status": "verified-api",
+      "syncedAt": "2026-07-22T19:21:27.516Z",
+      "matchMethod": "manual-selection"
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Kananmuna",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Kananmuna",
+      "selectedPrice": {
+        "retailer": "S-kauppa",
+        "productName": "Kotimaista vapaan kanan munat M10",
+        "sourceUrl": "https://www.s-kaupat.fi/tuote/kotimaista-vapaan-kanan-munat-m10/6414893094918",
+        "unitPriceEur": 3.78,
+        "priceUnit": "kg",
+        "packagePriceEur": 2.19,
+        "packageSize": 10,
+        "packageUnit": "pcs",
+        "store": "Prisma Itäkeskus",
+        "observedAt": "2026-07-22",
+        "note": ""
+      }
+    },
+    "nutritionPer100g": {
+      "kcal": 134.1,
+      "protein": 12.6,
+      "carbs": 0.3,
+      "fat": 9.2,
+      "fibre": 0
+    },
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T19:46:38.247Z"
+  },
+  {
+    "name": "Kasvissekoitus, pakaste",
+    "shoppingCategory": "Pakasteet",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 50,
+      "protein": 3,
+      "carbs": 8,
+      "fat": 0.5,
+      "fibre": 3
+    },
+    "nameEn": "Frozen mixed vegetables",
+    "shoppingCategoryEn": "Frozen",
+    "fineliQuery": "kasvissekoitus pakaste",
+    "fineliPreferredTerms": [
+      "kasvissekoitus"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Kasvissekoitus",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Kasvissekoitus",
+      "selectedPrice": null
+    },
+    "id": "ingredient-kasvissekoitus-pakaste",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "id": "ingredient-kaurahiutale",
+    "name": "Kaurahiutale",
+    "nameEn": "Rolled oats",
+    "shoppingCategory": "Viljat ja kuiva-aineet",
+    "shoppingCategoryEn": "Grains",
+    "fineliQuery": "kaurahiutale",
+    "fineliPreferredTerms": [
+      "kaurahiutale"
+    ],
+    "fineliFoodId": 153,
+    "fineliFoodName": "Kaurahiutale",
+    "fineliMeasures": [
+      {
+        "code": "DL",
+        "name": "desilitra",
+        "abbreviation": "dl",
+        "grams": 40
+      },
+      {
+        "code": "RKL",
+        "name": "ruokalusikka",
+        "abbreviation": "rkl",
+        "grams": 6
+      },
+      {
+        "code": "PORTS",
+        "name": "pieni annos",
+        "abbreviation": "pieni annos",
+        "grams": 15
+      },
+      {
+        "code": "PORTM",
+        "name": "keskikokoinen annos",
+        "abbreviation": "keskikokoinen annos",
+        "grams": 25
+      },
+      {
+        "code": "PORTL",
+        "name": "iso annos",
+        "abbreviation": "iso annos",
+        "grams": 35
+      },
+      {
+        "code": "PORT1000KJ",
+        "name": "Annoksen koko, joka vastaa 1000kJ",
+        "abbreviation": "Annos 1000kJ",
+        "grams": 62.54
+      },
+      {
+        "code": "G",
+        "name": "gramma",
+        "abbreviation": "g",
+        "grams": 1
+      }
+    ],
+    "nutritionSource": {
+      "provider": "THL Fineli API",
+      "status": "verified-api",
+      "syncedAt": "2026-07-22T19:25:00.758Z",
+      "matchMethod": "manual-selection"
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Kaurahiutaleet",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Kaurahiutaleet",
+      "selectedPrice": {
+        "retailer": "K-Ruoka",
+        "productName": "Pirkka kaurahiutale 1 kg",
+        "sourceUrl": "https://www.s-kaupat.fi/tuote/kotimaista-kaurahiutale-1-kg/6415712000813",
+        "unitPriceEur": 0.97,
+        "priceUnit": "kg",
+        "packagePriceEur": 0.97,
+        "packageSize": 1,
+        "packageUnit": "kg",
+        "store": "Prisma Itäkeskus",
+        "observedAt": "2026-07-22",
+        "note": "Hintatilanne on kauppa- ja päiväkohtainen."
+      }
+    },
+    "nutritionPer100g": {
+      "kcal": 382,
+      "protein": 13.6,
+      "carbs": 60,
+      "fat": 7.2,
+      "fibre": 0
+    },
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T19:26:08.016Z"
+  },
+  {
+    "name": "Kidneypapu, säilyke, valutettu",
+    "shoppingCategory": "Kasviproteiinit",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 100,
+      "protein": 7,
+      "carbs": 15,
+      "fat": 0.5,
+      "fibre": 6
+    },
+    "nameEn": "Kidney beans, drained",
+    "shoppingCategoryEn": "Plant protein",
+    "fineliQuery": "kidneypapu säilyke valutettu",
+    "fineliPreferredTerms": [
+      "kidneypapu"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Kidneypapu",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Kidneypapu",
+      "selectedPrice": null
+    },
+    "id": "ingredient-kidneypapu-sailyke-valutettu",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Kreikkalainen jogurtti, vähärasvainen",
+    "shoppingCategory": "Maitotuotteet ja kylmätuotteet",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 60,
+      "protein": 10,
+      "carbs": 4,
+      "fat": 0.4,
+      "fibre": 0
+    },
+    "nameEn": "Greek yogurt",
+    "shoppingCategoryEn": "Dairy & chilled",
+    "fineliQuery": "kreikkalainen jogurtti vähärasvainen",
+    "fineliPreferredTerms": [
+      "jogurtti",
+      "kreikkalainen"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Kreikkalainen%20jogurtti",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Kreikkalainen%20jogurtti",
+      "selectedPrice": null
+    },
+    "id": "ingredient-kreikkalainen-jogurtti-vaharasvainen",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Kurkku",
+    "shoppingCategory": "Hedelmät ja vihannekset",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 15,
+      "protein": 0.7,
+      "carbs": 3.6,
+      "fat": 0.1,
+      "fibre": 0.5
+    },
+    "nameEn": "Cucumber",
+    "shoppingCategoryEn": "Produce",
+    "fineliQuery": "kurkku",
+    "fineliPreferredTerms": [
+      "kurkku"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Kurkku",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Kurkku",
+      "selectedPrice": null
+    },
+    "id": "ingredient-kurkku",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Kurpitsansiemen",
+    "shoppingCategory": "Pähkinät ja siemenet",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 559,
+      "protein": 30,
+      "carbs": 11,
+      "fat": 49,
+      "fibre": 6
+    },
+    "nameEn": "Pumpkin seeds",
+    "shoppingCategoryEn": "Nuts & seeds",
+    "fineliQuery": "kurpitsansiemen",
+    "fineliPreferredTerms": [
+      "kurpitsansiemen"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Kurpitsansiemen",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Kurpitsansiemen",
+      "selectedPrice": null
+    },
+    "id": "ingredient-kurpitsansiemen",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Kvinoa, kuiva",
+    "shoppingCategory": "Viljat ja kuiva-aineet",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 368,
+      "protein": 14,
+      "carbs": 64,
+      "fat": 6,
+      "fibre": 7
+    },
+    "nameEn": "Quinoa, dry",
+    "shoppingCategoryEn": "Grains",
+    "fineliQuery": "kvinoa kuiva",
+    "fineliPreferredTerms": [
+      "kvinoa"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Kvinoa",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Kvinoa",
+      "selectedPrice": null
+    },
+    "id": "ingredient-kvinoa-kuiva",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Lehtisalaatti",
+    "shoppingCategory": "Hedelmät ja vihannekset",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 20,
+      "protein": 1,
+      "carbs": 4,
+      "fat": 0.2,
+      "fibre": 1.5
+    },
+    "nameEn": "Lettuce",
+    "shoppingCategoryEn": "Produce",
+    "fineliQuery": "lehtisalaatti",
+    "fineliPreferredTerms": [
+      "salaatti"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Lehtisalaatti",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Lehtisalaatti",
+      "selectedPrice": null
+    },
+    "id": "ingredient-lehtisalaatti",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Lohifilee, raaka",
+    "shoppingCategory": "Liha ja kala",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 208,
+      "protein": 20,
+      "carbs": 0,
+      "fat": 13,
+      "fibre": 0
+    },
+    "nameEn": "Salmon fillet",
+    "shoppingCategoryEn": "Meat & fish",
+    "fineliQuery": "lohi filee raaka",
+    "fineliPreferredTerms": [
+      "lohi"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Lohifilee",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Lohifilee",
+      "selectedPrice": null
+    },
+    "id": "ingredient-lohifilee-raaka",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Maissi",
+    "shoppingCategory": "Pakasteet",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 86,
+      "protein": 3.4,
+      "carbs": 19,
+      "fat": 1.2,
+      "fibre": 2.7
+    },
+    "nameEn": "Sweetcorn",
+    "shoppingCategoryEn": "Frozen",
+    "fineliQuery": "maissi",
+    "fineliPreferredTerms": [
+      "maissi"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Maissi",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Maissi",
+      "selectedPrice": null
+    },
+    "id": "ingredient-maissi",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Maito, rasvaton",
+    "shoppingCategory": "Maitotuotteet ja kylmätuotteet",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 46,
+      "protein": 3.4,
+      "carbs": 4.8,
+      "fat": 1.5,
+      "fibre": 0
+    },
+    "nameEn": "Milk or fortified soy drink",
+    "shoppingCategoryEn": "Dairy & chilled",
+    "fineliQuery": "maito rasvaton",
+    "fineliPreferredTerms": [
+      "maito",
+      "rasvaton"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Maito",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Maito",
+      "selectedPrice": null
+    },
+    "id": "ingredient-maito-rasvaton",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Maitorahka, rasvaton",
+    "shoppingCategory": "Maitotuotteet ja kylmätuotteet",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 68,
+      "protein": 12,
+      "carbs": 4,
+      "fat": 0.3,
+      "fibre": 0
+    },
+    "nameEn": "Quark or rahka",
+    "shoppingCategoryEn": "Dairy & chilled",
+    "fineliQuery": "maitorahka rasvaton",
+    "fineliPreferredTerms": [
+      "rahka"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Maitorahka",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Maitorahka",
+      "selectedPrice": null
+    },
+    "id": "ingredient-maitorahka-rasvaton",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Marjasekoitus, pakaste",
+    "shoppingCategory": "Pakasteet",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 45,
+      "protein": 1,
+      "carbs": 8,
+      "fat": 0.5,
+      "fibre": 4
+    },
+    "nameEn": "Frozen berries",
+    "shoppingCategoryEn": "Frozen",
+    "fineliQuery": "marjasekoitus pakaste",
+    "fineliPreferredTerms": [
+      "marjasekoitus"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Marjasekoitus",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Marjasekoitus",
+      "selectedPrice": null
+    },
+    "id": "ingredient-marjasekoitus-pakaste",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Mysli, makeuttamaton",
+    "shoppingCategory": "Viljat ja kuiva-aineet",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 370,
+      "protein": 13.5,
+      "carbs": 60,
+      "fat": 7,
+      "fibre": 10
+    },
+    "nameEn": "Unsweetened muesli or rolled oats",
+    "shoppingCategoryEn": "Grains",
+    "fineliQuery": "mysli makeuttamaton",
+    "fineliPreferredTerms": [
+      "mysli"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Mysli",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Mysli",
+      "selectedPrice": null
+    },
+    "id": "ingredient-mysli-makeuttamaton",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Naudan jauheliha, 7 % rasvaa",
+    "shoppingCategory": "Liha ja kala",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 170,
+      "protein": 22,
+      "carbs": 0,
+      "fat": 9,
+      "fibre": 0
+    },
+    "nameEn": "Lean beef mince",
+    "shoppingCategoryEn": "Meat & fish",
+    "fineliQuery": "naudan jauheliha 7 rasvaa",
+    "fineliPreferredTerms": [
+      "naudan",
+      "jauheliha"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Naudan%20jauheliha",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Naudan%20jauheliha",
+      "selectedPrice": null
+    },
+    "id": "ingredient-naudan-jauheliha-7-rasvaa",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Omena",
+    "shoppingCategory": "Hedelmät ja vihannekset",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 52,
+      "protein": 0.3,
+      "carbs": 14,
+      "fat": 0.2,
+      "fibre": 2.4
+    },
+    "nameEn": "Apple",
+    "shoppingCategoryEn": "Produce",
+    "fineliQuery": "omena",
+    "fineliPreferredTerms": [
+      "omena"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Omena",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Omena",
+      "selectedPrice": null
+    },
+    "id": "ingredient-omena",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Parsakaali",
+    "shoppingCategory": "Hedelmät ja vihannekset",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 34,
+      "protein": 2.8,
+      "carbs": 7,
+      "fat": 0.4,
+      "fibre": 2.6
+    },
+    "nameEn": "Broccoli",
+    "shoppingCategoryEn": "Produce",
+    "fineliQuery": "parsakaali",
+    "fineliPreferredTerms": [
+      "parsakaali"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Parsakaali",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Parsakaali",
+      "selectedPrice": null
+    },
+    "id": "ingredient-parsakaali",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Paseerattu tomaatti",
+    "shoppingCategory": "Kuivakaappi",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 30,
+      "protein": 1.4,
+      "carbs": 5,
+      "fat": 0.2,
+      "fibre": 1.5
+    },
+    "nameEn": "Passata",
+    "shoppingCategoryEn": "Pantry",
+    "fineliQuery": "paseerattu tomaatti",
+    "fineliPreferredTerms": [
+      "tomaatti"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Paseerattu%20tomaatti",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Paseerattu%20tomaatti",
+      "selectedPrice": null
+    },
+    "id": "ingredient-paseerattu-tomaatti",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Peruna, kuorittu",
+    "shoppingCategory": "Hedelmät ja vihannekset",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 77,
+      "protein": 2,
+      "carbs": 17,
+      "fat": 0.1,
+      "fibre": 2.2
+    },
+    "nameEn": "Potatoes",
+    "shoppingCategoryEn": "Produce",
+    "fineliQuery": "peruna kuorittu",
+    "fineliPreferredTerms": [
+      "peruna"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Peruna",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Peruna",
+      "selectedPrice": null
+    },
+    "id": "ingredient-peruna-kuorittu",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Pinaatti",
+    "shoppingCategory": "Hedelmät ja vihannekset",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 23,
+      "protein": 2.9,
+      "carbs": 3.6,
+      "fat": 0.4,
+      "fibre": 2.2
+    },
+    "nameEn": "Spinach",
+    "shoppingCategoryEn": "Produce",
+    "fineliQuery": "pinaatti",
+    "fineliPreferredTerms": [
+      "pinaatti"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Pinaatti",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Pinaatti",
+      "selectedPrice": null
+    },
+    "id": "ingredient-pinaatti",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Porkkana",
+    "shoppingCategory": "Hedelmät ja vihannekset",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 41,
+      "protein": 0.9,
+      "carbs": 9.6,
+      "fat": 0.2,
+      "fibre": 2.8
+    },
+    "nameEn": "Carrot",
+    "shoppingCategoryEn": "Produce",
+    "fineliQuery": "porkkana",
+    "fineliPreferredTerms": [
+      "porkkana"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Porkkana",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Porkkana",
+      "selectedPrice": null
+    },
+    "id": "ingredient-porkkana",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Punainen linssi, kuiva",
+    "shoppingCategory": "Viljat ja kuiva-aineet",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 350,
+      "protein": 25,
+      "carbs": 60,
+      "fat": 1.1,
+      "fibre": 11
+    },
+    "nameEn": "Red lentils, dry",
+    "shoppingCategoryEn": "Grains",
+    "fineliQuery": "punainen linssi kuiva",
+    "fineliPreferredTerms": [
+      "linssi",
+      "punainen"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Punainen%20linssi",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Punainen%20linssi",
+      "selectedPrice": null
+    },
+    "id": "ingredient-punainen-linssi-kuiva",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Raejuusto, vähärasvainen",
+    "shoppingCategory": "Maitotuotteet ja kylmätuotteet",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 80,
+      "protein": 13,
+      "carbs": 3,
+      "fat": 1.5,
+      "fibre": 0
+    },
+    "nameEn": "Low-fat cottage cheese",
+    "shoppingCategoryEn": "Dairy & chilled",
+    "fineliQuery": "raejuusto vähärasvainen",
+    "fineliPreferredTerms": [
+      "raejuusto"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Raejuusto",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Raejuusto",
+      "selectedPrice": null
+    },
+    "id": "ingredient-raejuusto-vaharasvainen",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Riisi, pitkäjyväinen, raaka",
+    "shoppingCategory": "Viljat ja kuiva-aineet",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 360,
+      "protein": 7,
+      "carbs": 79,
+      "fat": 0.7,
+      "fibre": 1.3
+    },
+    "nameEn": "Rice, dry",
+    "shoppingCategoryEn": "Grains",
+    "fineliQuery": "riisi pitkäjyväinen raaka",
+    "fineliPreferredTerms": [
+      "riisi"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Riisi",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Riisi",
+      "selectedPrice": null
+    },
+    "id": "ingredient-riisi-pitkajyvainen-raaka",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Rypsiöljy",
+    "shoppingCategory": "Kuivakaappi",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 884,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 100,
+      "fibre": 0
+    },
+    "nameEn": "Rapeseed oil",
+    "shoppingCategoryEn": "Pantry",
+    "fineliQuery": "rypsiöljy",
+    "fineliPreferredTerms": [
+      "rypsiöljy"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Rypsi%C3%B6ljy",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Rypsi%C3%B6ljy",
+      "selectedPrice": null
+    },
+    "id": "ingredient-rypsioljy",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Salaattikasvikset",
+    "shoppingCategory": "Hedelmät ja vihannekset",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 20,
+      "protein": 1,
+      "carbs": 4,
+      "fat": 0.2,
+      "fibre": 1.5
+    },
+    "nameEn": "Salad vegetables",
+    "shoppingCategoryEn": "Produce",
+    "fineliQuery": "salaattisekoitus",
+    "fineliPreferredTerms": [
+      "salaatti"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Salaattikasvikset",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Salaattikasvikset",
+      "selectedPrice": null
+    },
+    "id": "ingredient-salaattikasvikset",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Sipuli",
+    "shoppingCategory": "Hedelmät ja vihannekset",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 40,
+      "protein": 1.1,
+      "carbs": 9.3,
+      "fat": 0.1,
+      "fibre": 1.7
+    },
+    "nameEn": "Onion",
+    "shoppingCategoryEn": "Produce",
+    "fineliQuery": "sipuli",
+    "fineliPreferredTerms": [
+      "sipuli"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Sipuli",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Sipuli",
+      "selectedPrice": null
+    },
+    "id": "ingredient-sipuli",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Sitruunamehu",
+    "shoppingCategory": "Hedelmät ja vihannekset",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 22,
+      "protein": 0.4,
+      "carbs": 6.9,
+      "fat": 0.2,
+      "fibre": 0.3
+    },
+    "nameEn": "Lemon juice",
+    "shoppingCategoryEn": "Produce",
+    "fineliQuery": "sitruunamehu",
+    "fineliPreferredTerms": [
+      "sitruuna"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Sitruunamehu",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Sitruunamehu",
+      "selectedPrice": null
+    },
+    "id": "ingredient-sitruunamehu",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Skyr, maustamaton",
+    "shoppingCategory": "Maitotuotteet ja kylmätuotteet",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 63,
+      "protein": 11,
+      "carbs": 4,
+      "fat": 0.2,
+      "fibre": 0
+    },
+    "nameEn": "Skyr",
+    "shoppingCategoryEn": "Dairy & chilled",
+    "fineliQuery": "skyr maustamaton",
+    "fineliPreferredTerms": [
+      "skyr",
+      "maustamaton"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Skyr",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Skyr",
+      "selectedPrice": null
+    },
+    "id": "ingredient-skyr-maustamaton",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Soijakastike, vähäsuolainen",
+    "shoppingCategory": "Kuivakaappi",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 53,
+      "protein": 8.1,
+      "carbs": 4.9,
+      "fat": 0.6,
+      "fibre": 0.8
+    },
+    "nameEn": "Low-salt soy sauce",
+    "shoppingCategoryEn": "Pantry",
+    "fineliQuery": "soijakastike vähäsuolainen",
+    "fineliPreferredTerms": [
+      "soijakastike"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Soijakastike",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Soijakastike",
+      "selectedPrice": null
+    },
+    "id": "ingredient-soijakastike-vahasuolainen",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Tilli",
+    "shoppingCategory": "Hedelmät ja vihannekset",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 43,
+      "protein": 3.5,
+      "carbs": 7,
+      "fat": 1.1,
+      "fibre": 2.1
+    },
+    "nameEn": "Dill",
+    "shoppingCategoryEn": "Produce",
+    "fineliQuery": "tilli",
+    "fineliPreferredTerms": [
+      "tilli"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Tilli",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Tilli",
+      "selectedPrice": null
+    },
+    "id": "ingredient-tilli",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Tofu, kiinteä",
+    "shoppingCategory": "Kasviproteiinit",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 140,
+      "protein": 16,
+      "carbs": 2,
+      "fat": 8,
+      "fibre": 1
+    },
+    "nameEn": "Firm tofu",
+    "shoppingCategoryEn": "Plant protein",
+    "fineliQuery": "tofu kiinteä",
+    "fineliPreferredTerms": [
+      "tofu"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Tofu",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Tofu",
+      "selectedPrice": null
+    },
+    "id": "ingredient-tofu-kiintea",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Tomaatti",
+    "shoppingCategory": "Hedelmät ja vihannekset",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 18,
+      "protein": 0.9,
+      "carbs": 3.9,
+      "fat": 0.2,
+      "fibre": 1.2
+    },
+    "nameEn": "Tomato",
+    "shoppingCategoryEn": "Produce",
+    "fineliQuery": "tomaatti",
+    "fineliPreferredTerms": [
+      "tomaatti"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Tomaatti",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Tomaatti",
+      "selectedPrice": null
+    },
+    "id": "ingredient-tomaatti",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Tomaattimurska",
+    "shoppingCategory": "Kuivakaappi",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 30,
+      "protein": 1.4,
+      "carbs": 5,
+      "fat": 0.2,
+      "fibre": 1.5
+    },
+    "nameEn": "Crushed tomatoes",
+    "shoppingCategoryEn": "Pantry",
+    "fineliQuery": "tomaattimurska",
+    "fineliPreferredTerms": [
+      "tomaatti"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Tomaattimurska",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Tomaattimurska",
+      "selectedPrice": null
+    },
+    "id": "ingredient-tomaattimurska",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Tonnikala vedessä, valutettu",
+    "shoppingCategory": "Liha ja kala",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 116,
+      "protein": 26,
+      "carbs": 0,
+      "fat": 1,
+      "fibre": 0
+    },
+    "nameEn": "Tuna in water, drained",
+    "shoppingCategoryEn": "Meat & fish",
+    "fineliQuery": "tonnikala vedessä valutettu",
+    "fineliPreferredTerms": [
+      "tonnikala"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Tonnikala%20vedess%C3%A4",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Tonnikala%20vedess%C3%A4",
+      "selectedPrice": null
+    },
+    "id": "ingredient-tonnikala-vedessa-valutettu",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Täysjyväpasta, kuiva",
+    "shoppingCategory": "Viljat ja kuiva-aineet",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 350,
+      "protein": 13,
+      "carbs": 67,
+      "fat": 2.5,
+      "fibre": 8
+    },
+    "nameEn": "Whole-wheat pasta, dry",
+    "shoppingCategoryEn": "Grains",
+    "fineliQuery": "täysjyväpasta kuiva",
+    "fineliPreferredTerms": [
+      "täysjyvä",
+      "pasta"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=T%C3%A4ysjyv%C3%A4pasta",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=T%C3%A4ysjyv%C3%A4pasta",
+      "selectedPrice": null
+    },
+    "id": "ingredient-taysjyvapasta-kuiva",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Täysjyväruisleipä",
+    "shoppingCategory": "Leivät",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 240,
+      "protein": 8.5,
+      "carbs": 43,
+      "fat": 3.5,
+      "fibre": 10
+    },
+    "nameEn": "Whole-grain rye bread",
+    "shoppingCategoryEn": "Bakery",
+    "fineliQuery": "ruisleipä täysjyvä",
+    "fineliPreferredTerms": [
+      "ruisleipä"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=T%C3%A4ysjyv%C3%A4ruisleip%C3%A4",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=T%C3%A4ysjyv%C3%A4ruisleip%C3%A4",
+      "selectedPrice": null
+    },
+    "id": "ingredient-taysjyvaruisleipa",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "name": "Täysjyvätortilla",
+    "shoppingCategory": "Leivät",
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
+    "nutritionPer100g": {
+      "kcal": 300,
+      "protein": 9,
+      "carbs": 50,
+      "fat": 7,
+      "fibre": 7
+    },
+    "nameEn": "Whole-wheat tortillas",
+    "shoppingCategoryEn": "Bakery",
+    "fineliQuery": "täysjyvätortilla",
+    "fineliPreferredTerms": [
+      "tortilla"
+    ],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": null
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=T%C3%A4ysjyv%C3%A4tortilla",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=T%C3%A4ysjyv%C3%A4tortilla",
+      "selectedPrice": null
+    },
+    "id": "ingredient-taysjyvatortilla",
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T18:00:00.000Z"
+  },
+  {
+    "id": "ingredient-vesi",
+    "name": "Vesi",
+    "nameEn": "Water or low-salt broth",
+    "shoppingCategory": "Kuivakaappi",
+    "shoppingCategoryEn": "Pantry",
+    "fineliQuery": "vesi",
+    "fineliPreferredTerms": [
+      "vesi"
+    ],
+    "fineliFoodId": 922,
+    "fineliFoodName": "Vesi, vesijohtovesi",
+    "fineliMeasures": [
+      {
+        "code": "DL",
+        "name": "desilitra",
+        "abbreviation": "dl",
+        "grams": 100
+      },
+      {
+        "code": "RKL",
+        "name": "ruokalusikka",
+        "abbreviation": "rkl",
+        "grams": 15
+      },
+      {
+        "code": "TL",
+        "name": "teelusikka",
+        "abbreviation": "tl",
+        "grams": 5
+      },
+      {
+        "code": "PORTS",
+        "name": "pieni annos",
+        "abbreviation": "pieni annos",
+        "grams": 170
+      },
+      {
+        "code": "PORTM",
+        "name": "keskikokoinen annos",
+        "abbreviation": "keskikokoinen annos",
+        "grams": 300
+      },
+      {
+        "code": "PORTL",
+        "name": "iso annos",
+        "abbreviation": "iso annos",
+        "grams": 500
+      },
+      {
+        "code": "G",
+        "name": "gramma",
+        "abbreviation": "g",
+        "grams": 1
+      }
+    ],
+    "nutritionSource": {
+      "provider": "THL Fineli API",
+      "status": "verified-api",
+      "syncedAt": "2026-07-22T19:47:19.321Z",
+      "matchMethod": "manual-selection"
+    },
+    "retail": {
+      "sKaupatUrl": "",
+      "kRuokaUrl": "",
+      "selectedPrice": null
+    },
+    "nutritionPer100g": {
+      "kcal": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "fibre": 0
+    },
+    "createdAt": "2026-07-22T12:00:00.000Z",
+    "updatedAt": "2026-07-22T19:47:36.898Z"
+  }
+]

@@ -197,7 +197,7 @@ async function fineliFetch(pathname) {
       const response = await fetch(`${FINELI_BASE}${pathname}`, {
         headers: {
           Accept: 'application/json',
-          'User-Agent': 'Home-Recipes/0.2 (private local recipe application)',
+          'User-Agent': 'Home-Recipes/0.4 (private local recipe application)',
         },
         signal: controller.signal,
       });

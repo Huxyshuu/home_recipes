@@ -3,6 +3,7 @@ import Icon from './Icon';
 import CookingMode from './CookingMode';
 import { formatQuantity, formatTime } from '../utils/format';
 import { nutritionCoverage, recipeNutrition, roundNutrition } from '../utils/nutrition';
+import { formatEuro, recipePrice } from '../utils/pricing';
 
 function progressKey(recipeId) {
   return `home-recipes-progress-${recipeId}`;
@@ -19,31 +20,20 @@ export default function RecipeDetail({ recipe, onClose, onEdit, onDelete, onFavo
   const [cooking, setCooking] = useState(false);
   const [checkedIngredients, setCheckedIngredients] = useState({});
   const [completedSteps, setCompletedSteps] = useState(() => {
-    try {
-      return readProgress(recipe.id);
-    } catch {
-      return {};
-    }
+    try { return readProgress(recipe.id); } catch { return {}; }
   });
   const scale = servings / Math.max(1, Number(recipe.servings || 1));
   const nutritionResult = useMemo(() => recipeNutrition(recipe), [recipe]);
+  const priceResult = useMemo(() => recipePrice(recipe, scale), [recipe, scale]);
   const nutrition = nutritionResult.perServing;
   const coverage = nutritionCoverage(recipe);
 
   useEffect(() => {
-    try {
-      localStorage.setItem(progressKey(recipe.id), JSON.stringify({ steps: completedSteps }));
-    } catch {
-      // Cooking remains usable when storage is unavailable or full.
-    }
+    try { localStorage.setItem(progressKey(recipe.id), JSON.stringify({ steps: completedSteps })); } catch { /* storage is optional */ }
   }, [completedSteps, recipe.id]);
 
   function closeCooking() {
-    try {
-      setCompletedSteps(readProgress(recipe.id));
-    } catch {
-      setCompletedSteps({});
-    }
+    try { setCompletedSteps(readProgress(recipe.id)); } catch { setCompletedSteps({}); }
     setCooking(false);
   }
 
@@ -76,6 +66,7 @@ export default function RecipeDetail({ recipe, onClose, onEdit, onDelete, onFavo
               <span><Icon name="clock" /> <strong>{formatTime(Number(recipe.prepMinutes || 0) + Number(recipe.cookMinutes || 0))}</strong><small>Total time</small></span>
               <span><Icon name="chef" /> <strong>{recipe.difficulty}</strong><small>Difficulty</small></span>
               <span><Icon name="flame" /> <strong>{roundNutrition(nutrition.kcal)} kcal</strong><small>{nutritionResult.source === 'planned' ? 'Plan estimate' : 'Per portion'}</small></span>
+              <span><Icon name="cart" /> <strong>{priceResult.complete ? formatEuro(priceResult.perServing) : priceResult.pricedIngredients ? `${priceResult.coverage}%` : '—'}</strong><small>{priceResult.complete ? 'Price / portion' : 'Price coverage'}</small></span>
             </div>
             <div className="detail-tags">{(recipe.tags || []).map((tag) => <span key={tag}>{tag}</span>)}</div>
             <div className="detail-primary-actions">
@@ -92,18 +83,26 @@ export default function RecipeDetail({ recipe, onClose, onEdit, onDelete, onFavo
               <div className="servings-control"><button type="button" onClick={() => setServings(Math.max(1, servings - 1))}>−</button><span><strong>{servings}</strong><small>portions</small></span><button type="button" onClick={() => setServings(servings + 1)}>+</button></div>
             </div>
             <div className="ingredient-checklist">
-              {(recipe.ingredients || []).map((ingredient) => (
-                <button className={checkedIngredients[ingredient.id] ? 'is-checked' : ''} key={ingredient.id} type="button" onClick={() => setCheckedIngredients((current) => ({ ...current, [ingredient.id]: !current[ingredient.id] }))}>
-                  <span className="check-box"><Icon name="check" size={15} /></span>
-                  <strong>{formatQuantity(Number(ingredient.quantity || 0) * scale)} {ingredient.unit}</strong>
-                  <span>{ingredient.name}{ingredient.note ? <small>{ingredient.note}</small> : null}</span>
-                </button>
-              ))}
+              {(recipe.ingredients || []).map((ingredient) => {
+                const priceLine = priceResult.lines.find((line) => line.ingredient.id === ingredient.id);
+                return <div className={`ingredient-item ${checkedIngredients[ingredient.id] ? 'is-checked' : ''}`} key={ingredient.id}>
+                  <button className="ingredient-toggle" type="button" onClick={() => setCheckedIngredients((current) => ({ ...current, [ingredient.id]: !current[ingredient.id] }))}>
+                    <span className="check-box"><Icon name="check" size={15} /></span>
+                    <strong>{formatQuantity(Number(ingredient.quantity || 0) * scale)} {ingredient.unit}</strong>
+                    <span>{ingredient.name}{ingredient.note ? <small>{ingredient.note}</small> : null}{ingredient.fineliFoodName ? <small className="fineli-inline">Fineli: {ingredient.fineliFoodName}</small> : null}</span>
+                  </button>
+                  <div className="ingredient-retail">
+                    <span className="ingredient-cost">{priceLine?.cost !== null && priceLine?.cost !== undefined ? formatEuro(priceLine.cost) : 'Price not saved'}</span>
+                    {ingredient.retail?.sKaupatUrl ? <a href={ingredient.retail.sKaupatUrl} target="_blank" rel="noreferrer">S-kaupat <Icon name="external" size={12} /></a> : null}
+                    {ingredient.retail?.kRuokaUrl ? <a href={ingredient.retail.kRuokaUrl} target="_blank" rel="noreferrer">K-Ruoka <Icon name="external" size={12} /></a> : null}
+                  </div>
+                </div>;
+              })}
             </div>
           </section>
 
           <aside className="nutrition-panel panel">
-            <div className="panel-heading"><div><span className="eyebrow">{nutritionResult.source === 'planned' ? 'Weekly-plan estimate' : 'Estimated'}</span><h2>Per portion</h2></div></div>
+            <div className="panel-heading"><div><span className="eyebrow">{nutritionResult.source === 'planned' ? 'Weekly-plan estimate' : 'Fineli ingredient calculation'}</span><h2>Per portion</h2></div></div>
             <div className="calorie-ring"><strong>{roundNutrition(nutrition.kcal)}</strong><span>kcal</span></div>
             <div className="macro-list">
               <div><span>Protein</span><strong>{roundNutrition(nutrition.protein, 1)} g</strong></div>
@@ -112,9 +111,14 @@ export default function RecipeDetail({ recipe, onClose, onEdit, onDelete, onFavo
               <div><span>Fibre</span><strong>{roundNutrition(nutrition.fibre, 1)} g</strong></div>
             </div>
             <div className="coverage-note"><span style={{ width: `${coverage}%` }} /><small>{coverage}% of ingredients have stored calorie data</small></div>
-            {nutritionResult.source === 'planned' ? (
-              <p className="source-note">The displayed macros are the fixed research-plan estimate supplied with this weekly favourite. Package brands and the ingredient snapshot can differ; edit the recipe to switch back to ingredient-based calculation.</p>
-            ) : <p className="source-note">Calculated from stored per-100-g ingredient values. Fineli-linked data remains editable.</p>}
+            {nutritionResult.source === 'planned' ? <p className="source-note">The research-plan estimate remains active until every ingredient has a reviewed Fineli match. Use Nutrition guide → Sync Fineli data to update the full collection.</p> : <p className="source-note">Calculated from the stored Fineli per-100-g values. The food name and sync source are shown per ingredient.</p>}
+            <div className="price-summary">
+              <span className="eyebrow">Retail estimate</span>
+              <div><span>{priceResult.complete ? 'Recipe total' : 'Priced subtotal'}</span><strong>{priceResult.pricedIngredients ? formatEuro(priceResult.total) : '—'}</strong></div>
+              <div><span>{priceResult.complete ? 'Per portion' : 'Covered cost / portion'}</span><strong>{priceResult.pricedIngredients ? formatEuro(priceResult.perServing) : '—'}</strong></div>
+              <div><span>Price coverage</span><strong>{priceResult.coverage}%</strong></div>
+              <p>{priceResult.complete ? 'All ingredients have a saved price.' : 'This is a partial subtotal, not the complete recipe price.'} Only saved product prices are counted; verify the selected store and observation date through the retailer links.</p>
+            </div>
           </aside>
 
           <section className="method-panel panel">

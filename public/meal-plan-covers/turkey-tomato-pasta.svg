@@ -1,1 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Turkey Mince Tomato Pasta"><defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#bfe3e1"/><stop offset="1" stop-color="#efc6df"/></linearGradient></defs><rect width="800" height="500" rx="36" fill="url(#g)"/><circle cx="675" cy="85" r="120" fill="#fff" opacity=".25"/><circle cx="720" cy="430" r="190" fill="#fff" opacity=".18"/><rect x="40" y="52" width="180" height="34" rx="17" fill="#fff" opacity=".72"/><text x="60" y="75" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#586f9e">WEEKLY FAVOURITE</text><text x="40" y="100" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#354052">Turkey Mince Tomato</text><text x="40" y="142" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#354052">Pasta</text><text x="42" y="448" font-family="Arial, sans-serif" font-size="18" fill="#354052" opacity=".75">Home Recipes meal plan</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Decorative recipe cover">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#bfd3ef"/><stop offset="1" stop-color="#ead9ed"/></linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#g)"/>
+  <circle cx="690" cy="70" r="128" fill="#fff8fb" opacity=".42"/>
+  <circle cx="746" cy="420" r="190" fill="#fff8fb" opacity=".30"/>
+  <circle cx="90" cy="80" r="42" fill="#6f8fc1" opacity=".16"/>
+  <g transform="translate(400 275)">
+    <ellipse cx="0" cy="64" rx="188" ry="44" fill="#ffffff" opacity=".28"/>
+    <path d="M-172,-20 C-155,105 -92,146 0,146 C92,146 155,105 172,-20 Z" fill="#fffafd" opacity=".94"/>
+    <ellipse cx="0" cy="-20" rx="172" ry="54" fill="#ffffff"/>
+    <ellipse cx="0" cy="-16" rx="142" ry="36" fill="#bfd3ef" opacity=".76"/>
+    <circle cx="-74" cy="-24" r="29" fill="#ead9ed" opacity=".9"/>
+    <circle cx="-12" cy="-4" r="34" fill="#6f8fc1" opacity=".55"/>
+    <circle cx="57" cy="-26" r="25" fill="#fff8fb" opacity=".95"/>
+    <path d="M78,-42 C110,-92 151,-84 142,-44 C119,-48 99,-38 78,-42Z" fill="#6f8fc1" opacity=".72"/>
+    <path d="M-101,-48 C-88,-94 -43,-102 -33,-62 C-57,-65 -78,-55 -101,-48Z" fill="#6f8fc1" opacity=".58"/>
+  </g>
+  <path d="M80 404 C150 350 205 354 276 405" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round" opacity=".18"/>
+</svg>

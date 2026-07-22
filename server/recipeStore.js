@@ -1,6 +1,11 @@
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
 import { randomUUID } from 'node:crypto';
+import {
+  ensureIngredientDefinitions,
+  hydrateIngredientUsage,
+  readIngredients,
+} from './ingredientStore.js';
 
 const ROOT = path.resolve(process.cwd());
 const DATA_FILE = process.env.RECIPE_DATA_FILE
@@ -33,37 +38,16 @@ function cleanNumber(value, fallback = 0) {
   return Number.isFinite(number) ? number : fallback;
 }
 
-
-function normaliseMeasure(measure = {}) {
-  return {
-    code: cleanText(measure.code),
-    name: cleanText(measure.name),
-    abbreviation: cleanText(measure.abbreviation),
-    grams: Math.max(0, cleanNumber(measure.grams, 0)),
-  };
-}
-
-function normaliseIngredient(ingredient = {}) {
+function normaliseIngredientUsage(ingredient = {}, definition = null) {
   return {
     id: cleanText(ingredient.id) || randomUUID(),
-    name: cleanText(ingredient.name),
+    catalogId: definition?.id || cleanText(ingredient.catalogId),
     quantity: cleanNumber(ingredient.quantity, 0),
     unit: cleanText(ingredient.unit, 'g'),
+    unitEn: cleanText(ingredient.unitEn),
     grams: cleanNumber(ingredient.grams, 0),
     note: cleanText(ingredient.note),
-    shoppingCategory: cleanText(ingredient.shoppingCategory, 'Other'),
-    fineliFoodId: ingredient.fineliFoodId ?? null,
-    fineliFoodName: cleanText(ingredient.fineliFoodName),
-    fineliMeasures: Array.isArray(ingredient.fineliMeasures)
-      ? ingredient.fineliMeasures.map(normaliseMeasure).filter((measure) => measure.abbreviation && measure.grams > 0)
-      : [],
-    nutritionPer100g: {
-      kcal: cleanNumber(ingredient.nutritionPer100g?.kcal, 0),
-      protein: cleanNumber(ingredient.nutritionPer100g?.protein, 0),
-      carbs: cleanNumber(ingredient.nutritionPer100g?.carbs, 0),
-      fat: cleanNumber(ingredient.nutritionPer100g?.fat, 0),
-      fibre: cleanNumber(ingredient.nutritionPer100g?.fibre, 0),
-    },
+    noteEn: cleanText(ingredient.noteEn),
   };
 }
 
@@ -75,15 +59,19 @@ function normaliseStep(step, index) {
   return {
     id: cleanText(step?.id) || randomUUID(),
     title: cleanText(step?.title, `Step ${index + 1}`),
+    titleEn: cleanText(step?.titleEn),
     text: cleanText(step?.text),
+    textEn: cleanText(step?.textEn),
     timerMinutes: cleanNumber(step?.timerMinutes, 0),
   };
 }
 
-export function normaliseRecipe(input = {}, existing = null) {
+export function normaliseRecipe(input = {}, existing = null, linkedDefinitions = []) {
   const now = new Date().toISOString();
   const ingredients = Array.isArray(input.ingredients)
-    ? input.ingredients.map(normaliseIngredient).filter((item) => item.name)
+    ? input.ingredients
+      .map((ingredient, index) => normaliseIngredientUsage(ingredient, linkedDefinitions[index]))
+      .filter((item) => item.catalogId)
     : [];
   const steps = Array.isArray(input.steps)
     ? input.steps.map(normaliseStep).filter((item) => item.text)
@@ -93,21 +81,30 @@ export function normaliseRecipe(input = {}, existing = null) {
     id: existing?.id || cleanText(input.id) || randomUUID(),
     slug: cleanText(input.slug),
     title: cleanText(input.title, 'Untitled recipe'),
+    titleEn: cleanText(input.titleEn),
     description: cleanText(input.description),
-    category: cleanText(input.category, 'Everyday'),
-    cuisine: cleanText(input.cuisine, 'Home cooking'),
-    difficulty: ['Easy', 'Medium', 'Advanced'].includes(input.difficulty)
+    descriptionEn: cleanText(input.descriptionEn),
+    category: cleanText(input.category, 'Arki'),
+    categoryEn: cleanText(input.categoryEn),
+    cuisine: cleanText(input.cuisine, 'Kotiruoka'),
+    cuisineEn: cleanText(input.cuisineEn),
+    difficulty: ['Helppo', 'Keskitaso', 'Vaativa', 'Easy', 'Medium', 'Advanced'].includes(input.difficulty)
       ? input.difficulty
-      : 'Easy',
+      : 'Helppo',
+    difficultyEn: cleanText(input.difficultyEn),
     prepMinutes: Math.max(0, cleanNumber(input.prepMinutes, 0)),
     cookMinutes: Math.max(0, cleanNumber(input.cookMinutes, 0)),
     servings: Math.max(1, cleanNumber(input.servings, 1)),
     tags: Array.isArray(input.tags)
       ? [...new Set(input.tags.map((tag) => cleanText(tag)).filter(Boolean))]
       : [],
+    tagsEn: Array.isArray(input.tagsEn)
+      ? [...new Set(input.tagsEn.map((tag) => cleanText(tag)).filter(Boolean))]
+      : [],
     image: cleanText(input.image, existing?.image || ''),
     sourceUrl: cleanText(input.sourceUrl),
     notes: cleanText(input.notes),
+    notesEn: cleanText(input.notesEn),
     favourite: Boolean(input.favourite),
     plannedNutritionPerServing: input.plannedNutritionPerServing ? {
       kcal: cleanNumber(input.plannedNutritionPerServing.kcal, 0),
@@ -117,6 +114,9 @@ export function normaliseRecipe(input = {}, existing = null) {
       fibre: cleanNumber(input.plannedNutritionPerServing.fibre ?? input.plannedNutritionPerServing.fiber ?? input.plannedNutritionPerServing.fiber_g, 0),
     } : null,
     useIngredientNutrition: Boolean(input.useIngredientNutrition),
+    nutritionStatus: cleanText(input.nutritionStatus),
+    nutritionDisclaimerFi: cleanText(input.nutritionDisclaimerFi),
+    fineliSyncedAt: cleanText(input.fineliSyncedAt),
     ingredients,
     steps,
     createdAt: existing?.createdAt || cleanText(input.createdAt, now),
@@ -124,7 +124,7 @@ export function normaliseRecipe(input = {}, existing = null) {
   };
 }
 
-export async function readRecipes() {
+export async function readRawRecipes() {
   await ensureStore();
   const raw = await fs.readFile(DATA_FILE, 'utf8');
   try {
@@ -135,37 +135,82 @@ export async function readRecipes() {
   }
 }
 
-async function writeRecipes(recipes) {
+async function migrateLegacyIngredientSnapshots(recipes, ingredients) {
+  const catalogIds = new Set(ingredients.map((ingredient) => ingredient.id));
+  const needsMigration = recipes.some((recipe) => (recipe.ingredients || []).some((ingredient) => !ingredient.catalogId || !catalogIds.has(ingredient.catalogId)));
+  if (!needsMigration) return recipes;
+
+  const migrated = [];
+  for (const recipe of recipes) {
+    const recipeIngredients = recipe.ingredients || [];
+    const linkedDefinitions = await ensureIngredientDefinitions(recipeIngredients);
+    migrated.push({
+      ...recipe,
+      ingredients: recipeIngredients.map((ingredient, index) => normaliseIngredientUsage(ingredient, linkedDefinitions[index])),
+    });
+  }
+  await writeRecipes(migrated);
+  return migrated;
+}
+
+export async function readRecipes() {
+  let [recipes, ingredients] = await Promise.all([readRawRecipes(), readIngredients()]);
+  recipes = await migrateLegacyIngredientSnapshots(recipes, ingredients);
+  ingredients = await readIngredients();
+  const catalog = new Map(ingredients.map((ingredient) => [ingredient.id, ingredient]));
+  return recipes.map((recipe) => ({
+    ...recipe,
+    ingredients: (recipe.ingredients || []).map((usage) => hydrateIngredientUsage(usage, catalog.get(usage.catalogId))),
+  }));
+}
+
+export async function writeRecipes(recipes) {
   await ensureStore();
   const temporaryFile = `${DATA_FILE}.tmp`;
   await fs.writeFile(temporaryFile, `${JSON.stringify(recipes, null, 2)}\n`, 'utf8');
   await fs.rename(temporaryFile, DATA_FILE);
 }
 
+async function linkRecipeIngredients(input) {
+  const ingredients = Array.isArray(input.ingredients) ? input.ingredients : [];
+  return ensureIngredientDefinitions(ingredients);
+}
+
 export function createRecipe(input) {
   return serialiseMutation(async () => {
-    const recipes = await readRecipes();
-    const recipe = normaliseRecipe(input);
+    const recipes = await readRawRecipes();
+    const linkedDefinitions = await linkRecipeIngredients(input);
+    const recipe = normaliseRecipe(input, null, linkedDefinitions);
     recipes.unshift(recipe);
     await writeRecipes(recipes);
-    return recipe;
+    const catalog = new Map((await readIngredients()).map((ingredient) => [ingredient.id, ingredient]));
+    return {
+      ...recipe,
+      ingredients: recipe.ingredients.map((usage) => hydrateIngredientUsage(usage, catalog.get(usage.catalogId))),
+    };
   });
 }
 
 export function updateRecipe(id, input) {
   return serialiseMutation(async () => {
-    const recipes = await readRecipes();
+    const recipes = await readRawRecipes();
     const index = recipes.findIndex((recipe) => recipe.id === id);
     if (index === -1) return null;
-    recipes[index] = normaliseRecipe({ ...recipes[index], ...input }, recipes[index]);
+    const merged = { ...recipes[index], ...input };
+    const linkedDefinitions = await linkRecipeIngredients(merged);
+    recipes[index] = normaliseRecipe(merged, recipes[index], linkedDefinitions);
     await writeRecipes(recipes);
-    return recipes[index];
+    const catalog = new Map((await readIngredients()).map((ingredient) => [ingredient.id, ingredient]));
+    return {
+      ...recipes[index],
+      ingredients: recipes[index].ingredients.map((usage) => hydrateIngredientUsage(usage, catalog.get(usage.catalogId))),
+    };
   });
 }
 
 export function deleteRecipe(id) {
   return serialiseMutation(async () => {
-    const recipes = await readRecipes();
+    const recipes = await readRawRecipes();
     const next = recipes.filter((recipe) => recipe.id !== id);
     if (next.length === recipes.length) return false;
     await writeRecipes(next);

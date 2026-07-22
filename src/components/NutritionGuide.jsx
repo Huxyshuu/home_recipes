@@ -1,9 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Icon from './Icon';
 import SourceLinks from './SourceLinks';
+import { api } from '../api/client';
 import { nutritionGuide, researchSources } from '../data/mealPlan';
 
-export default function NutritionGuide() {
+export default function NutritionGuide({ onRecipesUpdated }) {
+  const [syncing, setSyncing] = useState(false);
+  const [syncResult, setSyncResult] = useState(null);
+  const [syncError, setSyncError] = useState('');
+
+  async function syncFineli(forceRefresh = false) {
+    setSyncing(true);
+    setSyncError('');
+    try {
+      const result = await api.syncRecipeNutrition({ forceRefresh });
+      setSyncResult(result);
+      await onRecipesUpdated?.();
+    } catch (error) {
+      setSyncError(error.message);
+    } finally {
+      setSyncing(false);
+    }
+  }
+
   return (
     <main className="page guide-page">
       <section className="guide-hero">
@@ -17,6 +36,24 @@ export default function NutritionGuide() {
           <strong>Consistency → protein → food quality</strong>
           <small>Then adjust total food using your trend and recovery</small>
         </div>
+      </section>
+
+      <section className="fineli-sync-panel panel">
+        <div className="fineli-sync-copy">
+          <span className="eyebrow">THL Fineli open data</span>
+          <h2>Update all 14 recipes from the live Finnish food database</h2>
+          <p>The Finnish ingredient names are already prepared for matching. This replaces legacy per-100-g estimates with values returned by the Fineli API and switches fully matched recipes to ingredient-based nutrition.</p>
+          <small>Internet is required. Ambiguous or missing foods are left unchanged and listed for review instead of being guessed.</small>
+        </div>
+        <div className="fineli-sync-actions">
+          <button className="button button-primary" type="button" onClick={() => syncFineli(false)} disabled={syncing}><Icon name="refresh" size={18} /> {syncing ? 'Synchronising…' : 'Sync Fineli data'}</button>
+          <button className="button button-secondary" type="button" onClick={() => syncFineli(true)} disabled={syncing}>Force fresh API data</button>
+        </div>
+        {syncResult ? <div className={`sync-result ${syncResult.unresolvedUniqueIngredients ? 'has-warning' : 'is-success'}`}>
+          <Icon name={syncResult.unresolvedUniqueIngredients ? 'info' : 'check'} size={19} />
+          <div><strong>{syncResult.resolvedUniqueIngredients}/{syncResult.uniqueIngredients} unique ingredients matched</strong><p>{syncResult.updatedIngredientOccurrences} recipe ingredient entries updated. {syncResult.unresolvedUniqueIngredients ? `${syncResult.unresolvedUniqueIngredients} need manual review.` : 'All recipes now use Fineli ingredient values.'}</p>{syncResult.unresolved?.length ? <details><summary>Show unresolved ingredients</summary><ul>{syncResult.unresolved.map((entry) => <li key={`${entry.name}-${entry.query}`}><strong>{entry.name}</strong>: {entry.reason}</li>)}</ul></details> : null}</div>
+        </div> : null}
+        {syncError ? <p className="form-error">{syncError}</p> : null}
       </section>
 
       <section className="guide-disclaimer panel">
