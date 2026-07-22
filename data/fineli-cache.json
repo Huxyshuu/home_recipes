@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-22T19:47:19.312Z",
+  "updatedAt": "2026-07-22T20:01:27.690Z",
   "foods": {
     "153": {
       "food": {
@@ -63,6 +63,62 @@
       "cachedAt": "2026-07-22T19:25:00.754Z",
       "refreshedAt": "2026-07-22T19:25:00.754Z",
       "lastAccessedAt": "2026-07-22T19:25:00.754Z"
+    },
+    "313": {
+      "food": {
+        "id": 313,
+        "name": "Pakastekasvissekoitus, keittojuures, porkkana, lanttu, juuriselleri, purjo",
+        "type": "Koostettu elintarvike",
+        "baseAmountGrams": 100,
+        "measures": [
+          {
+            "code": "DL",
+            "name": "desilitra",
+            "abbreviation": "dl",
+            "grams": 60
+          },
+          {
+            "code": "PORTS",
+            "name": "pieni annos",
+            "abbreviation": "pieni annos",
+            "grams": 50
+          },
+          {
+            "code": "PORTM",
+            "name": "keskikokoinen annos",
+            "abbreviation": "keskikokoinen annos",
+            "grams": 80
+          },
+          {
+            "code": "PORTL",
+            "name": "iso annos",
+            "abbreviation": "iso annos",
+            "grams": 110
+          },
+          {
+            "code": "PORT1000KJ",
+            "name": "Annoksen koko, joka vastaa 1000kJ",
+            "abbreviation": "Annos 1000kJ",
+            "grams": 702.89
+          },
+          {
+            "code": "G",
+            "name": "gramma",
+            "abbreviation": "g",
+            "grams": 1
+          }
+        ],
+        "nutritionPer100g": {
+          "kcal": 34,
+          "protein": 1.1,
+          "carbs": 5.4,
+          "fat": 0.2,
+          "fibre": 0
+        }
+      },
+      "cachedAt": "2026-07-22T20:01:27.689Z",
+      "refreshedAt": "2026-07-22T20:01:27.689Z",
+      "lastAccessedAt": "2026-07-22T20:01:27.689Z"
     },
     "922": {
       "food": {
@@ -406,6 +462,62 @@
       "refreshedAt": "2026-07-22T19:06:55.173Z",
       "lastAccessedAt": "2026-07-22T19:06:55.173Z"
     },
+    "34229": {
+      "food": {
+        "id": 34229,
+        "name": "Herne, vihreä, pakaste",
+        "type": "Raaka-aine",
+        "baseAmountGrams": 100,
+        "measures": [
+          {
+            "code": "DL",
+            "name": "desilitra",
+            "abbreviation": "dl",
+            "grams": 60
+          },
+          {
+            "code": "PORTL",
+            "name": "iso annos",
+            "abbreviation": "iso annos",
+            "grams": 65
+          },
+          {
+            "code": "PORTM",
+            "name": "keskikokoinen annos",
+            "abbreviation": "keskikokoinen annos",
+            "grams": 45
+          },
+          {
+            "code": "PORTS",
+            "name": "pieni annos",
+            "abbreviation": "pieni annos",
+            "grams": 25
+          },
+          {
+            "code": "PORT1000KJ",
+            "name": "Annoksen koko, joka vastaa 1000kJ",
+            "abbreviation": "Annos 1000kJ",
+            "grams": 327.24
+          },
+          {
+            "code": "G",
+            "name": "gramma",
+            "abbreviation": "g",
+            "grams": 1
+          }
+        ],
+        "nutritionPer100g": {
+          "kcal": 73,
+          "protein": 5.1,
+          "carbs": 9.4,
+          "fat": 0.9,
+          "fibre": 0
+        }
+      },
+      "cachedAt": "2026-07-22T19:54:44.767Z",
+      "refreshedAt": "2026-07-22T19:54:44.767Z",
+      "lastAccessedAt": "2026-07-22T19:54:44.767Z"
+    },
     "34847": {
       "food": {
         "id": 34847,
@@ -473,9 +585,830 @@
       "cachedAt": "2026-07-22T19:43:26.945Z",
       "refreshedAt": "2026-07-22T19:43:26.945Z",
       "lastAccessedAt": "2026-07-22T19:43:26.945Z"
+    },
+    "34997": {
+      "food": {
+        "id": 34997,
+        "name": "Ateriankorvike, heraproteiinijauhe, n. 90 % proteiinia",
+        "type": "Raaka-aine",
+        "baseAmountGrams": 100,
+        "measures": [
+          {
+            "code": "PORTL",
+            "name": "iso annos",
+            "abbreviation": "iso annos",
+            "grams": 30
+          },
+          {
+            "code": "PORTM",
+            "name": "keskikokoinen annos",
+            "abbreviation": "keskikokoinen annos",
+            "grams": 25
+          },
+          {
+            "code": "PORTS",
+            "name": "pieni annos",
+            "abbreviation": "pieni annos",
+            "grams": 20
+          },
+          {
+            "code": "PORT1000KJ",
+            "name": "Annoksen koko, joka vastaa 1000kJ",
+            "abbreviation": "Annos 1000kJ",
+            "grams": 58.51
+          },
+          {
+            "code": "G",
+            "name": "gramma",
+            "abbreviation": "g",
+            "grams": 1
+          }
+        ],
+        "nutritionPer100g": {
+          "kcal": 408.3,
+          "protein": 90,
+          "carbs": 4,
+          "fat": 3,
+          "fibre": 0
+        }
+      },
+      "cachedAt": "2026-07-22T19:53:28.082Z",
+      "refreshedAt": "2026-07-22T19:53:28.082Z",
+      "lastAccessedAt": "2026-07-22T19:53:28.082Z"
     }
   },
   "queries": {
+    "juuressekoitus pakaste": {
+      "query": "juuressekoitus pakaste",
+      "results": [
+        {
+          "id": 32158,
+          "name": "Pakastekasvissekoitus, juuressekoitus",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32186,
+          "name": "Pakastekasvissekoitus, amerikansekoitus, porkkana-parsakaali-papu-paprika-maissi",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32155,
+          "name": "Pakastekasvissekoitus, aurinkokasvikset, porkkana-papu",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32152,
+          "name": "Pakastekasvissekoitus, grillatut vihannekset, suolaa ja öljyä, (kypsentämätön)",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 396,
+          "name": "Pakastekasvissekoitus, herne-maissi-paprika",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 3700,
+          "name": "Pakastekasvissekoitus, herne-maissi-paprikasekoitus, keitetty",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32156,
+          "name": "Pakastekasvissekoitus, herne-maissi-porkkana",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32157,
+          "name": "Pakastekasvissekoitus, kartanon kasvikset, parsakaali-porkkana-paprika",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 313,
+          "name": "Pakastekasvissekoitus, keittojuures, porkkana, lanttu, juuriselleri, purjo",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32173,
+          "name": "Pakastekasvissekoitus, keskiarvo, keitetty, suolaton",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32159,
+          "name": "Pakastekasvissekoitus, kruunusekoitus, parsakaali-porkkana-kukkakaali",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32161,
+          "name": "Pakastekasvissekoitus, maalaiskasvikset, porkkana-papu-palsternakka",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32170,
+          "name": "Pakastekasvissekoitus, parsakaali-maissi-porkkana",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32162,
+          "name": "Pakastekasvissekoitus, parsakaali-porkkana-vesikastanja",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32165,
+          "name": "Pakastekasvissekoitus, patajuurekset, porkkana-lanttu-sipuli",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32166,
+          "name": "Pakastekasvissekoitus, peruna-keittovihannes",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 30259,
+          "name": "Pakastekasvissekoitus, peruna-sipulisekoitus",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 30599,
+          "name": "Pakastekasvissekoitus, peruna-sipulisekoitus, paistettu",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32167,
+          "name": "Pakastekasvissekoitus, pomodoro, tomaatti-kasvis",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32171,
+          "name": "Pakastekasvissekoitus, porkkana-papu-herne-kukkakaali",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 33565,
+          "name": "Pakastekasvissekoitus, porkkana-papu-parsakaali-kukkakaali",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 30260,
+          "name": "Peruna-sipulilaatikko, pakastesekoitus, kasvirasvakerma 15 %",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 34229,
+          "name": "Herne, vihreä, pakaste",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 31790,
+          "name": "Kakku, daim-kakku, almondy, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31791,
+          "name": "Kakku, juustokakku, almondy, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31789,
+          "name": "Kakku, mantelitorttu, almondy, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31636,
+          "name": "Kakku, muffini, luontaisesti gluteeniton, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31575,
+          "name": "Kakku, mutakakku, kostea suklaakakku, frödinge, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31787,
+          "name": "Karjalanpiirakka, cocktail-riisipiirakka, moilas, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31786,
+          "name": "Karjalanpiirakka, pirkka, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31784,
+          "name": "Karjalanpiirakka, pirkka parhaat, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 35611,
+          "name": "Männynherkkutatti, pakaste",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34228,
+          "name": "Pinaatti, pakaste",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32556,
+          "name": "Pinaattikeitto, apetit, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32557,
+          "name": "Pinaattikeitto, pirkka, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31809,
+          "name": "Pulla, pirkka/x-tra, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 846,
+          "name": "Puna-ahven, punasimppu, pakaste",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33568,
+          "name": "Pähkinä-hedelmä-sekoitus",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33569,
+          "name": "Pähkinäsekoitus, suolaton",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34872,
+          "name": "Pähkinäsekoitus, suolaton, paahdettu",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33579,
+          "name": "Pähkinäsekoitus, suolattu",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 207,
+          "name": "Ranskanperunavalmiste, pakaste",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 826,
+          "name": "Seiti, pakaste",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32966,
+          "name": "Sekaleipä, fitnesspalat, leipäaitta, lidl, vehnäjauho, siemensekoitus",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 34668,
+          "name": "Siemensekoitus",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 30664,
+          "name": "Suolapähkinä-hedelmä-sekoitus",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31794,
+          "name": "Täytekakku, kinuskikakku, frödinge, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31793,
+          "name": "Täytekakku, mansikkakakku, frödinge, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31792,
+          "name": "Täytekakku, marenkikakku, frödinge, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31795,
+          "name": "Täytekakku, suklaakakku, frödinge, pakaste",
+          "type": "Koostettu elintarvike"
+        }
+      ],
+      "cachedAt": "2026-07-22T20:00:20.627Z",
+      "lastAccessedAt": "2026-07-22T20:00:20.627Z"
+    },
+    "herne pakaste": {
+      "query": "herne pakaste",
+      "results": [
+        {
+          "id": 396,
+          "name": "Pakastekasvissekoitus, herne-maissi-paprika",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 3700,
+          "name": "Pakastekasvissekoitus, herne-maissi-paprikasekoitus, keitetty",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32156,
+          "name": "Pakastekasvissekoitus, herne-maissi-porkkana",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 34229,
+          "name": "Herne, vihreä, pakaste",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32171,
+          "name": "Pakastekasvissekoitus, porkkana-papu-herne-kukkakaali",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 7514,
+          "name": "Ateriasalaatti, kanasalaatti, riisi, herne, maustekurkku, purjo, ei kastiketta",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 8051,
+          "name": "Ateriasalaatti, savukalasalaatti, raejuusto-herne, ei kastiketta",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32397,
+          "name": "Ateriasalaatti, tonnikalasalaatti, makaroni, vihersalaatti, herne-maissi-paprika",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32147,
+          "name": "Herne, keitetty, suolaton",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 34244,
+          "name": "Herne, sokeriherne, tuore",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 371,
+          "name": "Herne, vihreä, kuivattu",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 370,
+          "name": "Herne, vihreä, tuore",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34236,
+          "name": "Herneenverso",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 29222,
+          "name": "Hernekeitto, kasvishernekeitto",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 29305,
+          "name": "Hernekeitto, keskirasvainen naudanliha",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 7010,
+          "name": "Hernekeitto, keskirasvainen sianliha",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 33459,
+          "name": "Hernekeitto, naudanpaistijauheliha",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 35223,
+          "name": "Hernekeitto, sika-nautajauheliha",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 11070,
+          "name": "Hernekeitto, säilyke, laimennettu, sianliha",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 11041,
+          "name": "Hernekeitto, säilyke, laimentamaton, sianliha",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 3703,
+          "name": "Hernemuhennos, kuivatut herneet",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 3701,
+          "name": "Hernemuhennos, maito, tuoreet herneet",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 29035,
+          "name": "Hernesosekeitto, vesi, valkoviini",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32995,
+          "name": "Jauheliha-riisipata, sika-nauta, paprika, herne",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31790,
+          "name": "Kakku, daim-kakku, almondy, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31791,
+          "name": "Kakku, juustokakku, almondy, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31789,
+          "name": "Kakku, mantelitorttu, almondy, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31636,
+          "name": "Kakku, muffini, luontaisesti gluteeniton, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31575,
+          "name": "Kakku, mutakakku, kostea suklaakakku, frödinge, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31787,
+          "name": "Karjalanpiirakka, cocktail-riisipiirakka, moilas, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31786,
+          "name": "Karjalanpiirakka, pirkka, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31784,
+          "name": "Karjalanpiirakka, pirkka parhaat, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 29034,
+          "name": "Kasvissosekeitto, herne-porkkana-maissi, kasvirasvakerma",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 35611,
+          "name": "Männynherkkutatti, pakaste",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32186,
+          "name": "Pakastekasvissekoitus, amerikansekoitus, porkkana-parsakaali-papu-paprika-maissi",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32155,
+          "name": "Pakastekasvissekoitus, aurinkokasvikset, porkkana-papu",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32152,
+          "name": "Pakastekasvissekoitus, grillatut vihannekset, suolaa ja öljyä, (kypsentämätön)",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32158,
+          "name": "Pakastekasvissekoitus, juuressekoitus",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32157,
+          "name": "Pakastekasvissekoitus, kartanon kasvikset, parsakaali-porkkana-paprika",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 313,
+          "name": "Pakastekasvissekoitus, keittojuures, porkkana, lanttu, juuriselleri, purjo",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32173,
+          "name": "Pakastekasvissekoitus, keskiarvo, keitetty, suolaton",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32159,
+          "name": "Pakastekasvissekoitus, kruunusekoitus, parsakaali-porkkana-kukkakaali",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32161,
+          "name": "Pakastekasvissekoitus, maalaiskasvikset, porkkana-papu-palsternakka",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32170,
+          "name": "Pakastekasvissekoitus, parsakaali-maissi-porkkana",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32162,
+          "name": "Pakastekasvissekoitus, parsakaali-porkkana-vesikastanja",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32165,
+          "name": "Pakastekasvissekoitus, patajuurekset, porkkana-lanttu-sipuli",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32166,
+          "name": "Pakastekasvissekoitus, peruna-keittovihannes",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 30259,
+          "name": "Pakastekasvissekoitus, peruna-sipulisekoitus",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 30599,
+          "name": "Pakastekasvissekoitus, peruna-sipulisekoitus, paistettu",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32167,
+          "name": "Pakastekasvissekoitus, pomodoro, tomaatti-kasvis",
+          "type": "Koostettu elintarvike"
+        }
+      ],
+      "cachedAt": "2026-07-22T19:54:35.850Z",
+      "lastAccessedAt": "2026-07-22T19:54:35.850Z"
+    },
+    "heraproteiinijauhe maustamaton": {
+      "query": "heraproteiinijauhe maustamaton",
+      "results": [
+        {
+          "id": 34990,
+          "name": "Ateriankorvike, heraproteiinijauhe, 74 % proteiinia",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34991,
+          "name": "Ateriankorvike, heraproteiinijauhe, 85 % proteiinia",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 35013,
+          "name": "Ateriankorvike, heraproteiinijauhe, n. 40 % proteiinia",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34997,
+          "name": "Ateriankorvike, heraproteiinijauhe, n. 90 % proteiinia",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32623,
+          "name": "Ateriankorvike, drinkmix, juomajauhe, naturdiet",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32624,
+          "name": "Ateriankorvike, drinkmix, juomajauhe ja vesi, naturdiet",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 35003,
+          "name": "Ateriankorvike, heraproteiinivälipalajauhe, profeel, 44 % proteiinia",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32653,
+          "name": "Ateriankorvike, hot and cold mocca, juomajauhe, nutrilett",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32654,
+          "name": "Ateriankorvike, hot and cold mocca, juomajauhe ja vesi, nutrilett",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 35492,
+          "name": "Ateriankorvike, keittojauhe, cambridge",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32648,
+          "name": "Ateriankorvike, keittojauhe, nutrilett",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32630,
+          "name": "Ateriankorvike, keittojauhe, parsa/kala/kana/sieni, easy diet",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32644,
+          "name": "Ateriankorvike, keittojauhe, parsakaali/basilika/couscous, allevo",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32642,
+          "name": "Ateriankorvike, keittojauhe, peruna/purjo, allevo",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32632,
+          "name": "Ateriankorvike, keittojauhe, tomaatti/texmex/thai, easy diet",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32657,
+          "name": "Ateriankorvike, keittojauhe, tuotekeskiarvo",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 35493,
+          "name": "Ateriankorvike, keittojauhe ja vesi, cambridge",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32658,
+          "name": "Ateriankorvike, keittojauhe ja vesi, keskiarvo",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32649,
+          "name": "Ateriankorvike, keittojauhe ja vesi, nutrilett",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32631,
+          "name": "Ateriankorvike, keittojauhe ja vesi, parsa/kala/kana/sieni, easy diet",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32645,
+          "name": "Ateriankorvike, keittojauhe ja vesi, parsakaali, basilika, couscous, allevo",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32643,
+          "name": "Ateriankorvike, keittojauhe ja vesi, peruna/purjo, allevo",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32633,
+          "name": "Ateriankorvike, keittojauhe ja vesi, tomaatti/texmex/thai, easy diet",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32638,
+          "name": "Ateriankorvike, pirtelö, juomajauhe, allevo",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32651,
+          "name": "Ateriankorvike, pirtelö, juomajauhe, nutrilett",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32659,
+          "name": "Ateriankorvike, pirtelö, juomajauhe, tuotekeskiarvo",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32639,
+          "name": "Ateriankorvike, pirtelö, juomajauhe ja vesi, allevo",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32660,
+          "name": "Ateriankorvike, pirtelö, juomajauhe ja vesi, keskiarvo",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32652,
+          "name": "Ateriankorvike, pirtelö, juomajauhe ja vesi, nutrilett",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32667,
+          "name": "Ateriankorvike, proteiinijuomajauhe, gnld, 49 % proteiinia",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 29975,
+          "name": "Ateriankorvike, proteiinijuomajauhe, herbalife formula 1, 35 % proteiinia",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32675,
+          "name": "Ateriankorvike, proteiinijuomajauhe, nutrishake, gnld, 55 % proteiinia",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32640,
+          "name": "Ateriankorvike, smoothie, juomajauhe, allevo",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32628,
+          "name": "Ateriankorvike, smoothie, juomajauhe, easy diet",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32636,
+          "name": "Ateriankorvike, smoothie, juomajauhe, nutrifast",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32661,
+          "name": "Ateriankorvike, smoothie, juomajauhe, tuotekeskiarvo",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32641,
+          "name": "Ateriankorvike, smoothie, juomajauhe ja vesi, allevo",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32629,
+          "name": "Ateriankorvike, smoothie, juomajauhe ja vesi, easy diet",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32662,
+          "name": "Ateriankorvike, smoothie, juomajauhe ja vesi, keskiarvo",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32637,
+          "name": "Ateriankorvike, smoothie, juomajauhe ja vesi, nutrifast",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 34996,
+          "name": "Ateriankorvike, soijaproteiinijauhe, n. 80 % proteiinia",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 35495,
+          "name": "Ateriankorvike, spaghetti bolognese, jauhe, cambridge",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34493,
+          "name": "Ateriasalaatti, itämainen nuudelisalaatti, riisinuudeli, jauheliha",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32168,
+          "name": "Bearnaisekastike, kastikejauheesta, tuotekeskiarvo",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32163,
+          "name": "Bearnaisekastikejauhe, kastikeainekset, campbell's/blå band",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32153,
+          "name": "Bearnaisekastikejauhe, kastikeainekset, knorr",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 7074,
+          "name": "Canneloni, sika-nautajauhelihatäyte",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32404,
+          "name": "Dippikastikejauhe, maidoton, kastikeainekset",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32403,
+          "name": "Dippikastikejauhe, sisältää maitoa, kastikeainekset",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34982,
+          "name": "Hampurilainen, jauhelihapihvi, pekoni, vehnäsämpylä",
+          "type": "Koostettu elintarvike"
+        }
+      ],
+      "cachedAt": "2026-07-22T19:52:39.981Z",
+      "lastAccessedAt": "2026-07-22T19:52:39.981Z"
+    },
     "vesi": {
       "query": "vesi",
       "results": [

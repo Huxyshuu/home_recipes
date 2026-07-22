@@ -1335,10 +1335,15 @@
     "id": "mealplan-tuna-potato-cottage-cheese-bake",
     "slug": "tuna-potato-cottage-cheese-bake",
     "title": "Tonnikala-peruna-raejuustovuoka",
+    "titleEn": "Tuna Potato Cottage Cheese Bake",
     "description": "Proteiinipitoinen uunivuoka tonnikalasta, perunasta, raejuustosta, herneistä ja kananmunasta.",
+    "descriptionEn": "A compact high-protein bake using tuna, potatoes, cottage cheese, peas and egg.",
     "category": "Lounas ja päivällinen",
+    "categoryEn": "Lunch & dinner",
     "cuisine": "Arjen fitness-ruoka",
+    "cuisineEn": "Everyday fitness",
     "difficulty": "Helppo",
+    "difficultyEn": "Easy",
     "prepMinutes": 10,
     "cookMinutes": 25,
     "servings": 1,
@@ -1350,8 +1355,18 @@
       "ateriankokoaminen",
       "viikkosuunnitelma"
     ],
+    "tagsEn": [
+      "lunch",
+      "dinner",
+      "bake",
+      "high-protein",
+      "meal-prep",
+      "weekly-plan"
+    ],
     "image": "/meal-plan-covers/tuna-potato-cottage-cheese-bake.svg",
     "sourceUrl": "",
+    "notes": "Lähde: Home Recipes -sovellusta varten laadittu alkuperäinen ateriasuunnitelmaresepti; reseptiä ei ole kopioitu yhdestä verkkolähteestä. Suunnitelman ravintoarvo on tavoitearvio. Raaka-ainekohtaiset arvot voidaan päivittää suoraan THL:n Fineli-rajapinnasta. Korvaavat vaihtoehdot: Tonnikalan voi vaihtaa loheen, kirjoloheen tai kypsään broileriin. Raejuuston voi vaihtaa rahkaan tai vähärasvaiseen tuorejuustoon. Lisää kasviksia esimerkiksi paprikasta tai pinaatista.",
+    "notesEn": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace tuna with cooked chicken, salmon leftovers or white beans; replace cottage cheese with lactose-free cottage cheese or thick soy-based cooking product plus extra tofu; use frozen diced potatoes to save time.",
     "favourite": true,
     "plannedNutritionPerServing": {
       "kcal": 610,
@@ -1360,7 +1375,10 @@
       "fat": 18,
       "fibre": 8
     },
-    "notes": "Lähde: Home Recipes -sovellusta varten laadittu alkuperäinen ateriasuunnitelmaresepti; reseptiä ei ole kopioitu yhdestä verkkolähteestä. Suunnitelman ravintoarvo on tavoitearvio. Raaka-ainekohtaiset arvot voidaan päivittää suoraan THL:n Fineli-rajapinnasta. Korvaavat vaihtoehdot: Tonnikalan voi vaihtaa loheen, kirjoloheen tai kypsään broileriin. Raejuuston voi vaihtaa rahkaan tai vähärasvaiseen tuorejuustoon. Lisää kasviksia esimerkiksi paprikasta tai pinaatista.",
+    "useIngredientNutrition": false,
+    "nutritionStatus": "fineli-sync-required",
+    "nutritionDisclaimerFi": "Suunnitelman ravintoarvo näytetään siihen asti, kunnes raaka-aineet on synkronoitu Finelin avoimesta rajapinnasta. Tuotemerkit, kypsennyshävikki ja annospainot voivat muuttaa toteutunutta arvoa.",
+    "fineliSyncedAt": "",
     "ingredients": [
       {
         "id": "tuna-potato-cottage-cheese-bake-i1",
@@ -1427,63 +1445,46 @@
       {
         "id": "tuna-potato-cottage-cheese-bake-s1",
         "title": "Kuumenna uuni",
-        "text": "Kuumenna uuni 210 °C:seen ylä- ja alalämmöllä tai 190 °C:seen kiertoilmalla.",
-        "timerMinutes": 0,
         "titleEn": "Heat the oven",
-        "textEn": "Heat the oven to 210 °C conventional or 190 °C fan."
+        "text": "Kuumenna uuni 210 °C:seen ylä- ja alalämmöllä tai 190 °C:seen kiertoilmalla.",
+        "textEn": "Heat the oven to 210 °C conventional or 190 °C fan.",
+        "timerMinutes": 0
       },
       {
         "id": "tuna-potato-cottage-cheese-bake-s2",
         "title": "Esikypsennä perunat",
-        "text": "Kypsennä perunakuutioita mikroaaltouunissa vesitilkan kanssa 7–9 minuuttia tai keitä lähes kypsiksi. Valuta hyvin.",
-        "timerMinutes": 8,
         "titleEn": "Pre-cook the potatoes",
-        "textEn": "Microwave the potato cubes with a splash of water for 7–9 minutes, or boil until almost tender. Drain well."
+        "text": "Kypsennä perunakuutioita mikroaaltouunissa vesitilkan kanssa 7–9 minuuttia tai keitä lähes kypsiksi. Valuta hyvin.",
+        "textEn": "Microwave the potato cubes with a splash of water for 7–9 minutes, or boil until almost tender. Drain well.",
+        "timerMinutes": 8
       },
       {
         "id": "tuna-potato-cottage-cheese-bake-s3",
         "title": "Sekoita täyte",
-        "text": "Sekoita uunivuoassa tonnikala, raejuusto, herneet, kananmuna, sipuli, pippuri ja kuivatut yrtit. Kääntele perunat joukkoon.",
-        "timerMinutes": 0,
         "titleEn": "Mix the filling",
-        "textEn": "In a baking dish, mix tuna, cottage cheese, peas, egg, onion, pepper and dried herbs. Fold in the potatoes."
+        "text": "Sekoita uunivuoassa tonnikala, raejuusto, herneet, kananmuna, sipuli, pippuri ja kuivatut yrtit. Kääntele perunat joukkoon.",
+        "textEn": "In a baking dish, mix tuna, cottage cheese, peas, egg, onion, pepper and dried herbs. Fold in the potatoes.",
+        "timerMinutes": 0
       },
       {
         "id": "tuna-potato-cottage-cheese-bake-s4",
         "title": "Paista",
-        "text": "Paista 18–22 minuuttia, kunnes vuoka on kauttaaltaan kuuma ja keskeltä hyytynyt.",
-        "timerMinutes": 20,
         "titleEn": "Bake",
-        "textEn": "Bake until piping hot and set in the centre, about 18–22 minutes."
+        "text": "Paista 18–22 minuuttia, kunnes vuoka on kauttaaltaan kuuma ja keskeltä hyytynyt.",
+        "textEn": "Bake until piping hot and set in the centre, about 18–22 minutes.",
+        "timerMinutes": 20
       },
       {
         "id": "tuna-potato-cottage-cheese-bake-s5",
         "title": "Anna vetäytyä",
-        "text": "Anna vuoan seistä 3–5 minuuttia ennen syömistä.",
-        "timerMinutes": 4,
         "titleEn": "Rest",
-        "textEn": "Let the bake stand for 3–5 minutes before eating."
+        "text": "Anna vuoan seistä 3–5 minuuttia ennen syömistä.",
+        "textEn": "Let the bake stand for 3–5 minutes before eating.",
+        "timerMinutes": 4
       }
     ],
     "createdAt": "2026-07-22T12:00:00.000Z",
-    "updatedAt": "2026-07-22T18:00:00.000Z",
-    "titleEn": "Tuna Potato Cottage Cheese Bake",
-    "descriptionEn": "A compact high-protein bake using tuna, potatoes, cottage cheese, peas and egg.",
-    "categoryEn": "Lunch & dinner",
-    "cuisineEn": "Everyday fitness",
-    "difficultyEn": "Easy",
-    "tagsEn": [
-      "lunch",
-      "dinner",
-      "bake",
-      "high-protein",
-      "meal-prep",
-      "weekly-plan"
-    ],
-    "useIngredientNutrition": false,
-    "nutritionStatus": "fineli-sync-required",
-    "nutritionDisclaimerFi": "Suunnitelman ravintoarvo näytetään siihen asti, kunnes raaka-aineet on synkronoitu Finelin avoimesta rajapinnasta. Tuotemerkit, kypsennyshävikki ja annospainot voivat muuttaa toteutunutta arvoa.",
-    "notesEn": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace tuna with cooked chicken, salmon leftovers or white beans; replace cottage cheese with lactose-free cottage cheese or thick soy-based cooking product plus extra tofu; use frozen diced potatoes to save time."
+    "updatedAt": "2026-07-22T19:56:26.721Z"
   },
   {
     "id": "mealplan-sheet-pan-chicken-root-veg",
