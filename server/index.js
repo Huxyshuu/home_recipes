@@ -61,7 +61,7 @@ app.use('/api/nutrition', (_request, response, next) => {
 });
 
 app.get('/api/health', (_request, response) => {
-  response.json({ status: 'ok', service: 'Home Recipes', time: new Date().toISOString() });
+  response.json({ status: 'ok', service: 'LettuceCook', time: new Date().toISOString() });
 });
 
 app.get('/api/ingredients', async (_request, response, next) => {
@@ -220,7 +220,7 @@ try {
 } catch {
   app.get('/', (_request, response) => {
     response.status(503).send(
-      '<h1>Home Recipes API is running</h1><p>Run <code>npm run build</code> before opening the production interface.</p>',
+      '<h1>LettuceCook API is running</h1><p>Run <code>npm run build</code> before opening the production interface.</p>',
     );
   });
 }
@@ -236,6 +236,6 @@ app.use((error, _request, response, _next) => {
 });
 
 app.listen(PORT, HOST, () => {
-  console.log(`Home Recipes is available at http://${HOST}:${PORT}`);
+  console.log(`LettuceCook is available at http://${HOST}:${PORT}`);
   console.log(`On another device, open http://<this-computer-ip>:${PORT}`);
 });

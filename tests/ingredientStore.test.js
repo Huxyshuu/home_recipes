@@ -5,7 +5,7 @@ import os from 'node:os';
 import path from 'node:path';
 
 test('one shared ingredient update is hydrated into every linked recipe', async () => {
-  const directory = await mkdtemp(path.join(os.tmpdir(), 'home-recipes-ingredients-'));
+  const directory = await mkdtemp(path.join(os.tmpdir(), 'lettucecook-ingredients-'));
   process.env.RECIPE_DATA_FILE = path.join(directory, 'recipes.json');
   process.env.INGREDIENT_DATA_FILE = path.join(directory, 'ingredients.json');
   const token = Date.now();

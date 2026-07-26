@@ -1,6 +1,6 @@
 {
-  "name": "Home Recipes",
-  "short_name": "Recipes",
+  "name": "LettuceCook",
+  "short_name": "LettuceCook",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f8f2f8",

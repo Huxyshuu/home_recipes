@@ -63,7 +63,7 @@ function PasswordLogin({ onSignedIn }) {
       <section className="auth-card panel">
         <span className="auth-mark"><Icon name="chef" size={30} /></span>
         <span className="eyebrow">Private kitchen</span>
-        <h1>Open Home Recipes</h1>
+        <h1>Open LettuceCook</h1>
         <p>Enter the shared password once. This device will stay signed in until you sign out, clear browser data, or the Firebase session is revoked.</p>
         <form onSubmit={submit} className="auth-form">
           <label className="field">

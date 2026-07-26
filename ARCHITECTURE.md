@@ -1,4 +1,4 @@
-# Home Recipes architecture — v0.5.0
+# LettuceCook architecture — v0.6.0
 
 ## Runtime selection
 

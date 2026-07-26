@@ -7,7 +7,7 @@ Use this checklist after reading the main README.
 - [ ] Create a Firebase project.
 - [ ] Register a Web app.
 - [ ] Enable Authentication → Email/Password.
-- [ ] Create one Home Recipes user.
+- [ ] Create one LettuceCook user.
 - [ ] Copy that user's UID.
 - [ ] Create Cloud Firestore.
 - [ ] Choose a Firestore region suitable for your use.

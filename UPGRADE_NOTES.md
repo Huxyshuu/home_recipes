@@ -1,4 +1,14 @@
-# Upgrade notes — v0.4.1 to v0.5.0
+# Upgrade notes — LettuceCook v0.6.0
+
+## Rebrand and data compatibility
+
+The application is now named **LettuceCook**. Existing Firestore collections, recipe IDs, ingredient IDs, retailer records, Cloudinary image URLs, and local JSON files remain compatible and are not renamed or deleted.
+
+Browser cooking-progress keys now use the `lettucecook-progress-` prefix. Old `home-recipes-progress-` entries are intentionally left untouched; they contain only temporary checkbox progress and can be removed through browser site-data settings.
+
+## Mobile navigation
+
+On screens up to 760 px wide, the desktop navigation is replaced by a fixed bottom toolbar. Recipes, Routine, Ingredients, and Cart are always visible. Guide, Swaps, Stats, Add recipe, and Sign out are available through More.
 
 ## No destructive local migration
 
@@ -37,4 +47,4 @@ Existing local SVG and `/uploads/...` references continue to work locally. New u
 
 ## Lock file
 
-The release archive omits the old v0.4.1 `package-lock.json` because it does not contain the new Firebase dependency. Run `npm install` once and commit the newly generated lock file before using `npm ci` or automated deployment.
+The release archive omits the older `package-lock.json` because it does not contain the new Firebase dependency. Run `npm install` once and commit the newly generated lock file before using `npm ci` or automated deployment.

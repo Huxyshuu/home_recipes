@@ -1,5 +1,28 @@
 # Changelog
 
+## 0.6.0 — LettuceCook rebrand and responsive mobile navigation
+
+### Added
+
+- LettuceCook name, leaf logo, PWA metadata, and installable application icon.
+- Fixed mobile bottom toolbar for Recipes, Routine, Ingredients, Cart, and More.
+- Mobile More sheet containing Guide, Swaps, Stats, Add recipe, and Sign out.
+- Safe-area-aware spacing for modern phone displays.
+- Automated branding and responsive-navigation tests.
+
+### Changed
+
+- Renamed package, server service identity, Firestore helper names, Cloudinary tags, browser-storage keys, temporary test paths, documentation, and recipe source notes from Home Recipes to LettuceCook.
+- Reworked phone layouts while preserving the existing desktop appearance and colour system.
+- Improved tablet header spacing and navigation sizing.
+- Updated Express to 4.22.2, Compression to 1.8.1, Vite to 6.4.3, and PostCSS to 8.5.23.
+- Package version is now 0.6.0.
+
+### Preserved
+
+- Firebase Authentication and persistent per-device login.
+- Cloud Firestore data, Cloudinary image uploads, URL routing, browser Back/Forward navigation, local JSON mode, Fineli integration, retailer links, meal planning, cooking timers, and shared ingredients.
+
 ## 0.5.0 — Firebase cloud website, persistent authentication, and URL routing
 
 ### Added
@@ -34,7 +57,7 @@
 
 ### Deployment note
 
-`firestore.rules` contains a deliberate UID placeholder and must not be deployed until it is replaced with the UID of the single Home Recipes Firebase user.
+`firestore.rules` contains a deliberate UID placeholder and must not be deployed until it is replaced with the UID of the single LettuceCook Firebase user.
 
 ## 0.4.1 — Shared ingredient library
 

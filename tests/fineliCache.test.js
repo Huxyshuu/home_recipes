@@ -6,7 +6,7 @@ import { mkdtemp, readFile, rm } from 'node:fs/promises';
 import { createFineliCache } from '../server/fineliCache.js';
 
 test('Fineli cache stores food details and search results with atomic JSON output', async () => {
-  const directory = await mkdtemp(path.join(os.tmpdir(), 'home-recipes-fineli-'));
+  const directory = await mkdtemp(path.join(os.tmpdir(), 'lettucecook-fineli-'));
   const filePath = path.join(directory, 'fineli-cache.json');
   const cache = createFineliCache({ filePath, maxFoods: 2, maxQueries: 2 });
 

@@ -3,7 +3,7 @@ import Icon from './Icon';
 import { formatQuantity } from '../utils/format';
 
 function progressKey(recipeId) {
-  return `home-recipes-progress-${recipeId}`;
+  return `lettucecook-progress-${recipeId}`;
 }
 
 function legacyProgressKey(recipeId) {

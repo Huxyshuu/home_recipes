@@ -6,7 +6,7 @@ import { nutritionCoverage, recipeNutrition, roundNutrition } from '../utils/nut
 import { formatEuro, recipePrice } from '../utils/pricing';
 
 function progressKey(recipeId) {
-  return `home-recipes-progress-${recipeId}`;
+  return `lettucecook-progress-${recipeId}`;
 }
 
 function readProgress(recipeId) {

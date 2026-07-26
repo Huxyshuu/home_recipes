@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="LettuceCook app icon">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#7899c9"/>
@@ -6,6 +6,7 @@
     </linearGradient>
   </defs>
   <rect width="128" height="128" rx="28" fill="url(#bg)"/>
-  <path d="M36 39h56v14H36zM42 56h44v37c0 8-6 14-14 14H56c-8 0-14-6-14-14z" fill="#fffafd"/>
-  <path d="M51 28c0 8 6 9 6 16M66 24c0 9 7 11 7 20M81 29c0 7 5 9 5 15" fill="none" stroke="#f5dfeb" stroke-width="7" stroke-linecap="round"/>
+  <path d="M101 27C67 28 39 39 27 61c-12 22-1 42 20 46 26 5 46-14 54-80Z" fill="#fffafd"/>
+  <path d="M34 99c12-22 29-38 53-52" fill="none" stroke="#7d9dcc" stroke-width="8" stroke-linecap="round"/>
+  <path d="M50 82c1-10-2-19-8-26M65 68c9 1 17 4 23 9" fill="none" stroke="#d9a5c1" stroke-width="7" stroke-linecap="round"/>
 </svg>

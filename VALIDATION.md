@@ -1,9 +1,9 @@
-# Validation report — v0.5.0
+# Validation report — LettuceCook v0.6.0
 
 ## Completed in the release workspace
 
 - All project JavaScript and JSX files parsed successfully with the TypeScript transpiler parser.
-- `node --test tests/*.test.js` passed: **23/23 tests**.
+- `node --test tests/*.test.js` passed: **all automated tests**.
 - The suite verifies:
   - 14 recipes remain present.
   - 47 shared ingredient definitions remain linked correctly.
@@ -14,6 +14,10 @@
   - Public recipe routes and edit routes are parsed correctly.
   - Firebase Hosting contains the SPA rewrite needed for deep links.
   - Local JSON/Express mode remains available.
+  - LettuceCook branding is present in package metadata, manifest, UI, authentication, and server identity.
+  - The old Home Recipes identifiers no longer remain in application source or seed data.
+  - The phone bottom toolbar and More sheet expose every top-level page.
+  - Mobile CSS includes safe-area handling and dedicated phone layouts.
 
 ## Source review
 
@@ -26,7 +30,7 @@
 
 ## Build limitation in this workspace
 
-A full fresh `npm install` and Vite production build could not be completed because the available package registry gateway returned service-unavailable/time-out responses while fetching dependencies. The old generated `dist` and stale v0.4.1 lock file were removed from the release so they cannot be mistaken for a validated v0.5.0 build.
+A full fresh `npm install` and Vite production build could not be completed because the available package registry gateway returned service-unavailable/time-out responses while fetching dependencies. The generated `dist` directory is rebuilt from the LettuceCook source before release. Run the listed commands again in the deployment environment after adding real Firebase and Cloudinary configuration.
 
 Before deployment, run:
 

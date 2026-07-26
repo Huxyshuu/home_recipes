@@ -6,7 +6,7 @@ The 14 recipes and seven-day routine originate from the supplied **Seven day Fin
 
 ## Fineli
 
-Home Recipes stores Finnish search terms, selected Fineli food IDs, Finnish food names, household measures, per-100-g nutrition, synchronization timestamps, and match methods in the shared ingredient catalog.
+LettuceCook stores Finnish search terms, selected Fineli food IDs, Finnish food names, household measures, per-100-g nutrition, synchronization timestamps, and match methods in the shared ingredient catalog.
 
 - Local mode uses the server-side Fineli implementation and cache.
 - Cloud mode uses the browser adapter or the optional HTTPS proxy configured with `VITE_FINELI_PROXY_URL`.

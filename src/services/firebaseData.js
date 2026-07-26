@@ -6,7 +6,7 @@ import { getFirebaseClient } from './firebaseClient';
 import { getFineliFoodBrowser, searchFineliBrowser } from './fineliBrowser';
 import { withRetailerLinkFallbacks } from '../utils/retailerLinks';
 
-const BOOTSTRAP_VERSION = '0.5.0';
+const BOOTSTRAP_VERSION = '0.6.0';
 let bootstrapPromise = null;
 
 function cleanClone(value) {
@@ -15,7 +15,7 @@ function cleanClone(value) {
 
 function randomId() {
   if (globalThis.crypto?.randomUUID) return globalThis.crypto.randomUUID();
-  return `hr-${Date.now()}-${Math.random().toString(16).slice(2)}`;
+  return `lc-${Date.now()}-${Math.random().toString(16).slice(2)}`;
 }
 
 function cleanText(value, fallback = '') {
@@ -282,7 +282,7 @@ async function uploadToCloudinary(file) {
   const body = new FormData();
   body.append('file', file);
   body.append('upload_preset', unsignedUploadPreset);
-  body.append('tags', 'home-recipes');
+  body.append('tags', 'lettucecook');
   const response = await fetch(`https://api.cloudinary.com/v1_1/${encodeURIComponent(cloudName)}/image/upload`, {
     method: 'POST',
     body,

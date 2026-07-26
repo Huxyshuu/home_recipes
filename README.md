@@ -1,10 +1,20 @@
-# Home Recipes
+# LettuceCook
 
-Home Recipes is a cloud-first personal recipe book for the Finnish meal plan in this repository. The main deployment uses **Firebase Hosting**, **Firebase Authentication**, **Cloud Firestore**, and **Cloudinary**, so the same recipes, shared ingredients, grocery cart, nutrition data, prices, and images are available from a phone or computer anywhere with internet access.
+LettuceCook is a cloud-first personal recipe book for the Finnish meal plan in this repository. The main deployment uses **Firebase Hosting**, **Firebase Authentication**, **Cloud Firestore**, and **Cloudinary**, so the same recipes, shared ingredients, grocery cart, nutrition data, prices, and images are available from a phone or computer anywhere with internet access.
 
 The original local JSON/Express mode remains available for development, offline work, and use on a home network.
 
-## What version 0.5.0 adds
+## What version 0.6.0 adds
+
+- Complete rebrand from Home Recipes to **LettuceCook** across the interface, package metadata, PWA manifest, server identity, Firestore helpers, Cloudinary tags, browser-storage keys, documentation, and seed notes.
+- A dedicated phone navigation system: four primary tabs in a fixed bottom toolbar plus a compact More sheet for Guide, Swaps, Stats, Add recipe, and Sign out.
+- Responsive refinements for small phones, larger phones, tablets, and desktops without changing the established blue-and-pink visual style.
+- Safer mobile spacing for notches and home indicators through CSS safe-area insets.
+- Improved phone layouts for recipe cards, filters, detail pages, editor actions, routine cards, guide cards, grocery cart groups, and authentication.
+- A lettuce-leaf brand mark and installable PWA icon.
+- Updated patched dependency versions for Express, Compression, Vite, and PostCSS.
+
+## Cloud foundation retained from version 0.5.0
 
 - A public Firebase-hosted single-page application.
 - Password-only login screen backed by one Firebase Email/Password account.
@@ -43,7 +53,7 @@ npm install
 npm test
 ```
 
-The repository intentionally does not include a generated lock file in the release archive. The first `npm install` generates one for the environment that installs the Firebase dependency.
+Run `npm install` after extracting the project. If a lock file is not present, npm generates one; commit that generated `package-lock.json` before using `npm ci` or automated deployment.
 
 ### 2. Create the Firebase project
 
@@ -51,7 +61,7 @@ In the Firebase console:
 
 1. Create a project.
 2. Open **Authentication → Sign-in method** and enable **Email/Password**.
-3. Open **Authentication → Users** and create exactly one user, such as `home-recipes@example.com`, with the password you want to type in the app.
+3. Open **Authentication → Users** and create exactly one user, such as `lettucecook@example.com`, with the password you want to type in the app.
 4. Copy that user's Firebase **UID**.
 5. Open `firestore.rules` and replace `REPLACE_WITH_FIREBASE_AUTH_UID` with the copied UID.
 6. Create a Cloud Firestore database.
@@ -75,7 +85,7 @@ VITE_FIREBASE_PROJECT_ID=your-project
 VITE_FIREBASE_STORAGE_BUCKET=your-project.firebasestorage.app
 VITE_FIREBASE_MESSAGING_SENDER_ID=...
 VITE_FIREBASE_APP_ID=...
-VITE_FIREBASE_SHARED_EMAIL=home-recipes@example.com
+VITE_FIREBASE_SHARED_EMAIL=lettucecook@example.com
 
 VITE_CLOUDINARY_CLOUD_NAME=...
 VITE_CLOUDINARY_UNSIGNED_UPLOAD_PRESET=...
@@ -86,7 +96,7 @@ Do not commit `.env.local`.
 
 ### 4. Configure Cloudinary
 
-Create an **unsigned upload preset** in Cloudinary and put its name in `.env.local`. Restrict the preset to the Home Recipes use case:
+Create an **unsigned upload preset** in Cloudinary and put its name in `.env.local`. Restrict the preset to the LettuceCook use case:
 
 - Accept only JPEG, PNG, and WebP.
 - Set a sensible maximum file size; the app also enforces 8 MB.
@@ -202,7 +212,7 @@ npm run build:local
 The included rules deny all access unless the request is authenticated as the exact UID entered in `firestore.rules`:
 
 ```text
-request.auth.uid == '<your single Home Recipes user UID>'
+request.auth.uid == '<your single LettuceCook user UID>'
 ```
 
 Do not deploy the placeholder rule unchanged. Firebase Authentication alone is not a substitute for Firestore rules.
@@ -213,7 +223,7 @@ The existing ingredient records keep their Finnish search terms, Fineli IDs, mea
 
 - Local mode uses the Express Fineli integration and cache.
 - Cloud mode can call Fineli from the browser.
-- If the browser is blocked by CORS or a network policy, set `VITE_FINELI_PROXY_URL` to a compatible HTTPS proxy based on the existing Home Recipes nutrition endpoints.
+- If the browser is blocked by CORS or a network policy, set `VITE_FINELI_PROXY_URL` to a compatible HTTPS proxy based on the existing LettuceCook nutrition endpoints.
 - A bulk sync reports unresolved ingredients rather than silently assigning an uncertain match.
 
 Nutrition and retailer prices remain snapshots and should be reviewed when exact label-level accuracy matters.
@@ -249,10 +259,10 @@ The suite checks recipe integrity, shared ingredient links and propagation, reta
 After reviewing the release:
 
 ```bash
-git checkout -b firebase-cloud-v0.5.0
+git checkout -b lettucecook-v0.6.0
 git add .
 git commit -m "Add Firebase cloud deployment, persistent auth and URL routing"
-git push -u origin firebase-cloud-v0.5.0
+git push -u origin lettucecook-v0.6.0
 ```
 
 Deploy from that branch manually with `npm run deploy:firebase`. For automated GitHub deployments, run `firebase init hosting:github` after the first manual deployment and follow Firebase's prompts to add the repository secret and generated workflow.

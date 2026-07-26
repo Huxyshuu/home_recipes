@@ -5,7 +5,7 @@ import os from 'node:os';
 import path from 'node:path';
 
 test('shared grocery cart persists atomically', async () => {
-  const directory = await mkdtemp(path.join(os.tmpdir(), 'home-recipes-cart-'));
+  const directory = await mkdtemp(path.join(os.tmpdir(), 'lettucecook-cart-'));
   const dataFile = path.join(directory, 'shopping-cart.json');
   process.env.CART_DATA_FILE = dataFile;
   const store = await import(`../server/cartStore.js?test=${Date.now()}`);

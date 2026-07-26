@@ -7,7 +7,7 @@ import { createFineliCache } from '../server/fineliCache.js';
 import { getFineliFood, searchFineli } from '../server/fineli.js';
 
 test('Fineli service caches searches and selected food details', async () => {
-  const directory = await mkdtemp(path.join(os.tmpdir(), 'home-recipes-service-'));
+  const directory = await mkdtemp(path.join(os.tmpdir(), 'lettucecook-service-'));
   const cache = createFineliCache({ filePath: path.join(directory, 'cache.json') });
   const originalFetch = global.fetch;
   let searchCalls = 0;

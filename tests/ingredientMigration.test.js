@@ -5,7 +5,7 @@ import os from 'node:os';
 import path from 'node:path';
 
 test('legacy embedded ingredient snapshots migrate to shared catalog links on first read', async () => {
-  const directory = await mkdtemp(path.join(os.tmpdir(), 'home-recipes-migration-'));
+  const directory = await mkdtemp(path.join(os.tmpdir(), 'lettucecook-migration-'));
   const recipeFile = path.join(directory, 'recipes.json');
   const ingredientFile = path.join(directory, 'ingredients.json');
   await writeFile(recipeFile, JSON.stringify([{

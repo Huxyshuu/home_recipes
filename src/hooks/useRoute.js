@@ -60,7 +60,7 @@ export function useRoute() {
 
   const navigate = useCallback((path, { replace = false } = {}) => {
     const nextPath = normalisePath(path);
-    const state = { homeRecipesNavigation: true, from: window.location.pathname };
+    const state = { lettuceCookNavigation: true, from: window.location.pathname };
     if (replace) window.history.replaceState(state, '', nextPath);
     else window.history.pushState(state, '', nextPath);
     setLocationKey(`${window.location.pathname}${window.location.search}`);
@@ -68,7 +68,7 @@ export function useRoute() {
   }, []);
 
   const closeToPreviousOr = useCallback((fallback = '/') => {
-    if (window.history.state?.homeRecipesNavigation) {
+    if (window.history.state?.lettuceCookNavigation) {
       window.history.back();
       return;
     }
