@@ -7,10 +7,11 @@ async function read(path) {
 }
 
 test('public build includes Firebase authentication, Firestore and Cloudinary adapters', async () => {
-  const [pkg, authGate, firebaseData, rules] = await Promise.all([
+  const [pkg, authGate, firebaseData, imageCompression, rules] = await Promise.all([
     read('package.json'),
     read('src/auth/AuthGate.jsx'),
     read('src/services/firebaseData.js'),
+    read('src/utils/imageCompression.js'),
     read('firestore.rules'),
   ]);
   assert.match(pkg, /"firebase"/);
@@ -19,6 +20,9 @@ test('public build includes Firebase authentication, Firestore and Cloudinary ad
   assert.match(authGate, /browser data/);
   assert.match(firebaseData, /collection\(db, 'recipes'\)/);
   assert.match(firebaseData, /api\.cloudinary\.com/);
+  assert.match(imageCompression, /image\/webp/);
+  assert.match(imageCompression, /1600/);
+  assert.match(imageCompression, /toBlob/);
   assert.match(rules, /request\.auth\.uid/);
 });
 

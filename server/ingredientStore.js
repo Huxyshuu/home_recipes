@@ -1,6 +1,7 @@
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
 import { randomUUID } from 'node:crypto';
+import { withRetailerLinkFallbacks } from '../src/utils/retailerLinks.js';
 
 const ROOT = path.resolve(process.cwd());
 const DATA_FILE = process.env.INGREDIENT_DATA_FILE
@@ -71,19 +72,21 @@ function normaliseSelectedPrice(price = null) {
   };
 }
 
-function normaliseRetail(retail = {}) {
+function normaliseRetail(retail = {}, ingredientName = '') {
+  const links = withRetailerLinkFallbacks(ingredientName, retail);
   return {
-    sKaupatUrl: cleanText(retail.sKaupatUrl),
-    kRuokaUrl: cleanText(retail.kRuokaUrl),
-    selectedPrice: normaliseSelectedPrice(retail.selectedPrice),
+    sKaupatUrl: cleanText(links.sKaupatUrl),
+    kRuokaUrl: cleanText(links.kRuokaUrl),
+    selectedPrice: normaliseSelectedPrice(links.selectedPrice),
   };
 }
 
 export function normaliseIngredientDefinition(input = {}, existing = null) {
   const now = new Date().toISOString();
+  const name = cleanText(input.name, existing?.name || 'Nimetön ainesosa');
   return {
     id: existing?.id || cleanText(input.id) || randomUUID(),
-    name: cleanText(input.name, existing?.name || 'Nimetön ainesosa'),
+    name,
     nameEn: cleanText(input.nameEn, existing?.nameEn || ''),
     shoppingCategory: cleanText(input.shoppingCategory, existing?.shoppingCategory || 'Muut'),
     shoppingCategoryEn: cleanText(input.shoppingCategoryEn, existing?.shoppingCategoryEn || ''),
@@ -102,7 +105,7 @@ export function normaliseIngredientDefinition(input = {}, existing = null) {
       syncedAt: cleanText(input.nutritionSource.syncedAt),
       matchMethod: cleanText(input.nutritionSource.matchMethod),
     } : (existing?.nutritionSource || null),
-    retail: input.retail !== undefined ? normaliseRetail(input.retail) : (existing?.retail || normaliseRetail()),
+    retail: normaliseRetail(input.retail !== undefined ? input.retail : existing?.retail, name),
     nutritionPer100g: {
       kcal: cleanNumber(input.nutritionPer100g?.kcal, existing?.nutritionPer100g?.kcal || 0),
       protein: cleanNumber(input.nutritionPer100g?.protein, existing?.nutritionPer100g?.protein || 0),
@@ -120,7 +123,11 @@ export async function readIngredients() {
   const raw = await fs.readFile(DATA_FILE, 'utf8');
   try {
     const parsed = JSON.parse(raw);
-    return Array.isArray(parsed) ? parsed : [];
+    if (!Array.isArray(parsed)) return [];
+    return parsed.map((ingredient) => ({
+      ...ingredient,
+      retail: normaliseRetail(ingredient.retail, ingredient.name),
+    }));
   } catch (error) {
     throw new Error(`Could not parse data/ingredients.json: ${error.message}`);
   }

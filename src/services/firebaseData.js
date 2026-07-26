@@ -4,6 +4,7 @@ import seedCart from '../../data/shopping-cart.json';
 import { runtimeConfig } from '../config/runtime';
 import { getFirebaseClient } from './firebaseClient';
 import { getFineliFoodBrowser, searchFineliBrowser } from './fineliBrowser';
+import { withRetailerLinkFallbacks } from '../utils/retailerLinks';
 
 const BOOTSTRAP_VERSION = '0.5.0';
 let bootstrapPromise = null;
@@ -37,11 +38,13 @@ function normaliseName(value) {
 
 function normaliseIngredient(input = {}, existing = null) {
   const now = new Date().toISOString();
+  const name = cleanText(input.name, existing?.name || 'Nimetön ainesosa');
+  const retail = withRetailerLinkFallbacks(name, input.retail ?? existing?.retail);
   return cleanClone({
     ...existing,
     ...input,
     id: existing?.id || cleanText(input.id) || randomId(),
-    name: cleanText(input.name, existing?.name || 'Nimetön ainesosa'),
+    name,
     nameEn: cleanText(input.nameEn, existing?.nameEn || ''),
     shoppingCategory: cleanText(input.shoppingCategory, existing?.shoppingCategory || 'Muut'),
     shoppingCategoryEn: cleanText(input.shoppingCategoryEn, existing?.shoppingCategoryEn || ''),
@@ -51,7 +54,7 @@ function normaliseIngredient(input = {}, existing = null) {
     fineliFoodName: cleanText(input.fineliFoodName, existing?.fineliFoodName || ''),
     fineliMeasures: Array.isArray(input.fineliMeasures) ? input.fineliMeasures : (existing?.fineliMeasures || []),
     nutritionSource: input.nutritionSource ?? existing?.nutritionSource ?? null,
-    retail: input.retail ?? existing?.retail ?? { sKaupatUrl: '', kRuokaUrl: '', selectedPrice: null },
+    retail,
     nutritionPer100g: {
       kcal: cleanNumber(input.nutritionPer100g?.kcal, existing?.nutritionPer100g?.kcal || 0),
       protein: cleanNumber(input.nutritionPer100g?.protein, existing?.nutritionPer100g?.protein || 0),
@@ -128,8 +131,16 @@ function normaliseRecipe(input = {}, existing = null) {
   });
 }
 
+
+function ingredientWithDefaults(ingredient = {}) {
+  return {
+    ...ingredient,
+    retail: withRetailerLinkFallbacks(ingredient.name, ingredient.retail),
+  };
+}
+
 function hydrateRecipes(recipes, ingredients) {
-  const catalog = new Map(ingredients.map((ingredient) => [ingredient.id, ingredient]));
+  const catalog = new Map(ingredients.map(ingredientWithDefaults).map((ingredient) => [ingredient.id, ingredient]));
   return recipes.map((recipe) => ({
     ...recipe,
     ingredients: (recipe.ingredients || []).map((usage) => {
@@ -149,7 +160,7 @@ function ingredientsWithUsage(ingredients, recipes) {
       if (!list.some((entry) => entry.id === recipe.id)) list.push({ id: recipe.id, title: recipe.title, slug: recipe.slug });
     });
   });
-  return ingredients.map((ingredient) => ({
+  return ingredients.map(ingredientWithDefaults).map((ingredient) => ({
     ...ingredient,
     usedInRecipes: usage.get(ingredient.id) || [],
     usageCount: (usage.get(ingredient.id) || []).length,
@@ -188,7 +199,7 @@ async function loadCollections() {
     fs.getDocs(fs.collection(db, 'ingredients')),
   ]);
   const recipes = recipeSnapshot.docs.map((item) => ({ id: item.id, ...item.data() }));
-  const ingredients = ingredientSnapshot.docs.map((item) => ({ id: item.id, ...item.data() }));
+  const ingredients = ingredientSnapshot.docs.map((item) => ingredientWithDefaults({ id: item.id, ...item.data() }));
   return { recipes, ingredients };
 }
 
@@ -214,7 +225,7 @@ function subscribePair(onValue, onError, projector) {
       emit();
     }, onError);
     unsubIngredients = fs.onSnapshot(fs.collection(db, 'ingredients'), (snapshot) => {
-      ingredients = snapshot.docs.map((item) => ({ id: item.id, ...item.data() }));
+      ingredients = snapshot.docs.map((item) => ingredientWithDefaults({ id: item.id, ...item.data() }));
       ingredientsReady = true;
       emit();
     }, onError);

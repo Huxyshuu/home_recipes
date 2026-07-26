@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { api } from '../api/client';
 import { recipeNutrition, roundNutrition } from '../utils/nutrition';
+import { formatBytes, prepareRecipeImage } from '../utils/imageCompression';
 import Icon from './Icon';
 import NutritionSearch from './NutritionSearch';
 
@@ -33,6 +34,7 @@ export default function RecipeEditor({ recipe, onCancel, onSave }) {
   const [nutritionIndex, setNutritionIndex] = useState(null);
   const [saving, setSaving] = useState(false);
   const [uploading, setUploading] = useState(false);
+  const [uploadSummary, setUploadSummary] = useState('');
   const [error, setError] = useState('');
   const [ingredientCatalog, setIngredientCatalog] = useState([]);
   const [catalogLoading, setCatalogLoading] = useState(true);
@@ -149,16 +151,28 @@ export default function RecipeEditor({ recipe, onCancel, onSave }) {
   }
 
   async function uploadImage(event) {
-    const file = event.target.files?.[0];
+    const input = event.target;
+    const file = input.files?.[0];
     if (!file) return;
     setUploading(true);
     setError('');
+    setUploadSummary('');
     try {
-      const result = await api.uploadImage(file);
+      const prepared = await prepareRecipeImage(file);
+      const result = await api.uploadImage(prepared.file);
       patch({ image: result.url });
+      if (prepared.converted) {
+        const reduction = prepared.originalBytes > 0
+          ? Math.max(0, Math.round((1 - prepared.outputBytes / prepared.originalBytes) * 100))
+          : 0;
+        setUploadSummary(`Uploaded as WebP: ${formatBytes(prepared.originalBytes)} → ${formatBytes(prepared.outputBytes)}${reduction ? ` (${reduction}% smaller)` : ''}.`);
+      } else {
+        setUploadSummary(`Uploaded without browser compression. ${prepared.warning || ''}`.trim());
+      }
     } catch (uploadError) {
       setError(uploadError.message);
     } finally {
+      input.value = '';
       setUploading(false);
     }
   }
@@ -226,7 +240,7 @@ export default function RecipeEditor({ recipe, onCancel, onSave }) {
           </div>
           <div className="cover-upload">
             <div className="cover-preview">{form.image ? <img src={form.image} alt="Recipe cover preview" /> : <Icon name="image" size={38} />}</div>
-            <div><strong>Cover image</strong><p>JPEG, PNG or WebP, up to 8 MB.</p><label className="button button-secondary file-button"><Icon name="image" size={17} /> {uploading ? 'Uploading…' : 'Choose image'}<input type="file" accept="image/*" onChange={uploadImage} disabled={uploading} /></label></div>
+            <div><strong>Cover image</strong><p>JPEG, PNG or WebP, up to 8 MB. Large images are resized to 1600 px and converted to compressed WebP before upload.</p><label className="button button-secondary file-button"><Icon name="image" size={17} /> {uploading ? 'Compressing and uploading…' : 'Choose image'}<input type="file" accept="image/jpeg,image/png,image/webp" onChange={uploadImage} disabled={uploading} /></label>{uploadSummary ? <p className="upload-summary" role="status">{uploadSummary}</p> : null}</div>
           </div>
         </section>
 

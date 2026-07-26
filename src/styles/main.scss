@@ -876,3 +876,8 @@ button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-
 @media (max-width: 420px) {
   .session-button { width: 34px; min-width: 34px; height: 34px; }
 }
+
+.upload-summary {
+  color: $ink !important;
+  font-weight: 600;
+}
