@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-22T20:01:27.690Z",
+  "updatedAt": "2026-07-24T14:55:09.761Z",
   "foods": {
     "153": {
       "food": {
@@ -119,6 +119,74 @@
       "cachedAt": "2026-07-22T20:01:27.689Z",
       "refreshedAt": "2026-07-22T20:01:27.689Z",
       "lastAccessedAt": "2026-07-22T20:01:27.689Z"
+    },
+    "535": {
+      "food": {
+        "id": 535,
+        "name": "Rypsiöljy",
+        "type": "Raaka-aine",
+        "baseAmountGrams": 100,
+        "measures": [
+          {
+            "code": "DL",
+            "name": "desilitra",
+            "abbreviation": "dl",
+            "grams": 90
+          },
+          {
+            "code": "RKL",
+            "name": "ruokalusikka",
+            "abbreviation": "rkl",
+            "grams": 13.5
+          },
+          {
+            "code": "TL",
+            "name": "teelusikka",
+            "abbreviation": "tl",
+            "grams": 4.5
+          },
+          {
+            "code": "PORTS",
+            "name": "pieni annos",
+            "abbreviation": "pieni annos",
+            "grams": 10
+          },
+          {
+            "code": "PORTM",
+            "name": "keskikokoinen annos",
+            "abbreviation": "keskikokoinen annos",
+            "grams": 25
+          },
+          {
+            "code": "PORTL",
+            "name": "iso annos",
+            "abbreviation": "iso annos",
+            "grams": 40
+          },
+          {
+            "code": "PORT1000KJ",
+            "name": "Annoksen koko, joka vastaa 1000kJ",
+            "abbreviation": "Annos 1000kJ",
+            "grams": 27.03
+          },
+          {
+            "code": "G",
+            "name": "gramma",
+            "abbreviation": "g",
+            "grams": 1
+          }
+        ],
+        "nutritionPer100g": {
+          "kcal": 883.9,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 100,
+          "fibre": 0
+        }
+      },
+      "cachedAt": "2026-07-24T14:53:16.809Z",
+      "refreshedAt": "2026-07-24T14:53:16.809Z",
+      "lastAccessedAt": "2026-07-24T14:53:16.809Z"
     },
     "922": {
       "food": {
@@ -462,6 +530,74 @@
       "refreshedAt": "2026-07-22T19:06:55.173Z",
       "lastAccessedAt": "2026-07-22T19:06:55.173Z"
     },
+    "29211": {
+      "food": {
+        "id": 29211,
+        "name": "Maito, rasvaton, ei lisätty d-vitamiinia, luomu",
+        "type": "Raaka-aine",
+        "baseAmountGrams": 100,
+        "measures": [
+          {
+            "code": "DL",
+            "name": "desilitra",
+            "abbreviation": "dl",
+            "grams": 100
+          },
+          {
+            "code": "RKL",
+            "name": "ruokalusikka",
+            "abbreviation": "rkl",
+            "grams": 15
+          },
+          {
+            "code": "TL",
+            "name": "teelusikka",
+            "abbreviation": "tl",
+            "grams": 5
+          },
+          {
+            "code": "PORTL",
+            "name": "iso annos",
+            "abbreviation": "iso annos",
+            "grams": 400
+          },
+          {
+            "code": "PORTM",
+            "name": "keskikokoinen annos",
+            "abbreviation": "keskikokoinen annos",
+            "grams": 200
+          },
+          {
+            "code": "PORTS",
+            "name": "pieni annos",
+            "abbreviation": "pieni annos",
+            "grams": 150
+          },
+          {
+            "code": "PORT1000KJ",
+            "name": "Annoksen koko, joka vastaa 1000kJ",
+            "abbreviation": "Annos 1000kJ",
+            "grams": 706.11
+          },
+          {
+            "code": "G",
+            "name": "gramma",
+            "abbreviation": "g",
+            "grams": 1
+          }
+        ],
+        "nutritionPer100g": {
+          "kcal": 33.8,
+          "protein": 3.1,
+          "carbs": 4.9,
+          "fat": 0.1,
+          "fibre": 0
+        }
+      },
+      "cachedAt": "2026-07-24T14:48:06.387Z",
+      "refreshedAt": "2026-07-24T14:48:06.387Z",
+      "lastAccessedAt": "2026-07-24T14:48:06.387Z"
+    },
     "34229": {
       "food": {
         "id": 34229,
@@ -517,6 +653,290 @@
       "cachedAt": "2026-07-22T19:54:44.767Z",
       "refreshedAt": "2026-07-22T19:54:44.767Z",
       "lastAccessedAt": "2026-07-22T19:54:44.767Z"
+    },
+    "34588": {
+      "food": {
+        "id": 34588,
+        "name": "Skyr, keinotekoisesti makeutettu, rasvaa 2 %",
+        "type": "Raaka-aine",
+        "baseAmountGrams": 100,
+        "measures": [
+          {
+            "code": "DL",
+            "name": "desilitra",
+            "abbreviation": "dl",
+            "grams": 100
+          },
+          {
+            "code": "RKL",
+            "name": "ruokalusikka",
+            "abbreviation": "rkl",
+            "grams": 15
+          },
+          {
+            "code": "TL",
+            "name": "teelusikka",
+            "abbreviation": "tl",
+            "grams": 5
+          },
+          {
+            "code": "PORTS",
+            "name": "pieni annos",
+            "abbreviation": "pieni annos",
+            "grams": 85
+          },
+          {
+            "code": "PORTM",
+            "name": "keskikokoinen annos",
+            "abbreviation": "keskikokoinen annos",
+            "grams": 170
+          },
+          {
+            "code": "PORTL",
+            "name": "iso annos",
+            "abbreviation": "iso annos",
+            "grams": 340
+          },
+          {
+            "code": "KPL_VALM",
+            "name": "Valmistaja (kpl)",
+            "abbreviation": "Valmistaja (kpl)",
+            "grams": 170
+          },
+          {
+            "code": "PORT1000KJ",
+            "name": "Annoksen koko, joka vastaa 1000kJ",
+            "abbreviation": "Annos 1000kJ",
+            "grams": 303.3
+          },
+          {
+            "code": "G",
+            "name": "gramma",
+            "abbreviation": "g",
+            "grams": 1
+          }
+        ],
+        "nutritionPer100g": {
+          "kcal": 78.8,
+          "protein": 9.8,
+          "carbs": 4.3,
+          "fat": 2,
+          "fibre": 0
+        }
+      },
+      "cachedAt": "2026-07-24T14:43:15.703Z",
+      "refreshedAt": "2026-07-24T14:43:15.703Z",
+      "lastAccessedAt": "2026-07-24T14:43:15.703Z"
+    },
+    "34611": {
+      "food": {
+        "id": 34611,
+        "name": "Jogurtti, maustamaton, kreikkalainen, rasvaa 7 %, laktoositon",
+        "type": "Raaka-aine",
+        "baseAmountGrams": 100,
+        "measures": [
+          {
+            "code": "DL",
+            "name": "desilitra",
+            "abbreviation": "dl",
+            "grams": 100
+          },
+          {
+            "code": "RKL",
+            "name": "ruokalusikka",
+            "abbreviation": "rkl",
+            "grams": 15
+          },
+          {
+            "code": "TL",
+            "name": "teelusikka",
+            "abbreviation": "tl",
+            "grams": 5
+          },
+          {
+            "code": "PORTL",
+            "name": "iso annos",
+            "abbreviation": "iso annos",
+            "grams": 250
+          },
+          {
+            "code": "PORTM",
+            "name": "keskikokoinen annos",
+            "abbreviation": "keskikokoinen annos",
+            "grams": 200
+          },
+          {
+            "code": "PORTS",
+            "name": "pieni annos",
+            "abbreviation": "pieni annos",
+            "grams": 150
+          },
+          {
+            "code": "PORT1000KJ",
+            "name": "Annoksen koko, joka vastaa 1000kJ",
+            "abbreviation": "Annos 1000kJ",
+            "grams": 223.16
+          },
+          {
+            "code": "G",
+            "name": "gramma",
+            "abbreviation": "g",
+            "grams": 1
+          }
+        ],
+        "nutritionPer100g": {
+          "kcal": 107.1,
+          "protein": 8.1,
+          "carbs": 2.9,
+          "fat": 7,
+          "fibre": 0
+        }
+      },
+      "cachedAt": "2026-07-24T14:55:09.760Z",
+      "refreshedAt": "2026-07-24T14:55:09.760Z",
+      "lastAccessedAt": "2026-07-24T14:55:09.760Z"
+    },
+    "34620": {
+      "food": {
+        "id": 34620,
+        "name": "Jogurtti, maustettu, valio kreikkalainen, rasvaa 6 %, laktoositon",
+        "type": "Raaka-aine",
+        "baseAmountGrams": 100,
+        "measures": [
+          {
+            "code": "DL",
+            "name": "desilitra",
+            "abbreviation": "dl",
+            "grams": 100
+          },
+          {
+            "code": "RKL",
+            "name": "ruokalusikka",
+            "abbreviation": "rkl",
+            "grams": 15
+          },
+          {
+            "code": "TL",
+            "name": "teelusikka",
+            "abbreviation": "tl",
+            "grams": 5
+          },
+          {
+            "code": "KPL_VALM",
+            "name": "Valmistaja (kpl)",
+            "abbreviation": "Valmistaja (kpl)",
+            "grams": 150
+          },
+          {
+            "code": "PORTM",
+            "name": "keskikokoinen annos",
+            "abbreviation": "keskikokoinen annos",
+            "grams": 150
+          },
+          {
+            "code": "PORTL",
+            "name": "iso annos",
+            "abbreviation": "iso annos",
+            "grams": 200
+          },
+          {
+            "code": "PORTS",
+            "name": "pieni annos",
+            "abbreviation": "pieni annos",
+            "grams": 100
+          },
+          {
+            "code": "PORT1000KJ",
+            "name": "Annoksen koko, joka vastaa 1000kJ",
+            "abbreviation": "Annos 1000kJ",
+            "grams": 184.05
+          },
+          {
+            "code": "G",
+            "name": "gramma",
+            "abbreviation": "g",
+            "grams": 1
+          }
+        ],
+        "nutritionPer100g": {
+          "kcal": 129.8,
+          "protein": 5.4,
+          "carbs": 13.2,
+          "fat": 6,
+          "fibre": 0
+        }
+      },
+      "cachedAt": "2026-07-24T14:54:28.201Z",
+      "refreshedAt": "2026-07-24T14:54:28.201Z",
+      "lastAccessedAt": "2026-07-24T14:54:28.201Z"
+    },
+    "34634": {
+      "food": {
+        "id": 34634,
+        "name": "Jogurtti, maustamaton, a+ kreikkalainen, rasvaa 2 %, laktoositon, d-vit 0,8 ug",
+        "type": "Raaka-aine",
+        "baseAmountGrams": 100,
+        "measures": [
+          {
+            "code": "DL",
+            "name": "desilitra",
+            "abbreviation": "dl",
+            "grams": 100
+          },
+          {
+            "code": "RKL",
+            "name": "ruokalusikka",
+            "abbreviation": "rkl",
+            "grams": 15
+          },
+          {
+            "code": "TL",
+            "name": "teelusikka",
+            "abbreviation": "tl",
+            "grams": 5
+          },
+          {
+            "code": "PORTL",
+            "name": "iso annos",
+            "abbreviation": "iso annos",
+            "grams": 250
+          },
+          {
+            "code": "PORTM",
+            "name": "keskikokoinen annos",
+            "abbreviation": "keskikokoinen annos",
+            "grams": 200
+          },
+          {
+            "code": "PORTS",
+            "name": "pieni annos",
+            "abbreviation": "pieni annos",
+            "grams": 150
+          },
+          {
+            "code": "PORT1000KJ",
+            "name": "Annoksen koko, joka vastaa 1000kJ",
+            "abbreviation": "Annos 1000kJ",
+            "grams": 410.91
+          },
+          {
+            "code": "G",
+            "name": "gramma",
+            "abbreviation": "g",
+            "grams": 1
+          }
+        ],
+        "nutritionPer100g": {
+          "kcal": 58.1,
+          "protein": 5.8,
+          "carbs": 4,
+          "fat": 2,
+          "fibre": 0
+        }
+      },
+      "cachedAt": "2026-07-24T14:54:57.269Z",
+      "refreshedAt": "2026-07-24T14:54:57.269Z",
+      "lastAccessedAt": "2026-07-24T14:54:57.269Z"
     },
     "34847": {
       "food": {
@@ -638,6 +1058,1737 @@
     }
   },
   "queries": {
+    "kreikkalainen jogurtti vähärasvainen": {
+      "query": "kreikkalainen jogurtti vähärasvainen",
+      "results": [
+        {
+          "id": 34618,
+          "name": "Jogurtti, juotava, rasvaa 2 %, valio kreikkalainen, laktoositon, d-vit 1 ug",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34634,
+          "name": "Jogurtti, maustamaton, a+ kreikkalainen, rasvaa 2 %, laktoositon, d-vit 0,8 ug",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34611,
+          "name": "Jogurtti, maustamaton, kreikkalainen, rasvaa 7 %, laktoositon",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34619,
+          "name": "Jogurtti, maustettu, valio kreikkalainen, rasvaa 4,7 %, laktoositon",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34620,
+          "name": "Jogurtti, maustettu, valio kreikkalainen, rasvaa 6 %, laktoositon",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32201,
+          "name": "Jogurtti, turkkilainen/kreikkalainen, rasvaa 10 %",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34635,
+          "name": "Jogurtti, turkkilainen/kreikkalainen, rasvaa 10 %, laktoositon",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33696,
+          "name": "Jogurtti, ab-kerrosluonnonjogurtti, rasvaa 3,3 %, probiootteja",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34637,
+          "name": "Jogurtti, ihana rahkaisa jogurtti, arla, rasvaa 1,4%, 0,4 ug d-vit., laktoositon",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33910,
+          "name": "Jogurtti, juotava, actimel, rasvaa 1,5 %, d-vit 0,75 ug, prob",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33911,
+          "name": "Jogurtti, juotava, actimel, rasvaton, keinot.mak, d-vit 0,75 ug, prob",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34790,
+          "name": "Jogurtti, juotava, benecol tehojuoma, rasvaa 2,1 %, kasvistanoleja",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34786,
+          "name": "Jogurtti, juotava, benecol tehojuoma aurinkoinen, rasvaa 2,1 %, kasvistanoleja",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32600,
+          "name": "Jogurtti, juotava, danonino dino, rasvaa 1,6 %, d-vitamiinia 0,9 ug",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34653,
+          "name": "Jogurtti, juotava, danup drink, rasvaa 0,8%",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34613,
+          "name": "Jogurtti, juotava, gefilus smoothie, rasvaa 1,4 %, laktoositon, d-vit. 1,5 ug",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33703,
+          "name": "Jogurtti, juotava, jogurttijuoma, rasvaa 0,9%, probiootteja",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 29089,
+          "name": "Jogurtti, juotava, rasvaa 0,1 %",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 30452,
+          "name": "Jogurtti, juotava, rasvaa 0,1 %, vl",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34606,
+          "name": "Jogurtti, juotava, rasvaa 1,7 %, valio play, laktoositon, d-vit 1,5 ug",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34650,
+          "name": "Jogurtti, juotava, rasvaton, keinotekoisesti makeutettu",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33129,
+          "name": "Jogurtti, lohkeava luonnonjogurtti, rasvaa 5,5 %, laktoositon",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34642,
+          "name": "Jogurtti, luonto+ rahkajogurtti, arla, rasvaa 1,2%, ab, 0,5 ug d-vit, laktoosit.",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33298,
+          "name": "Jogurtti, marjamysli, a+, rasvaa 3,5 %, laktoositon, d-vit 0,9 ug",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34630,
+          "name": "Jogurtti, maustamaton, a+, rasvaa 2,5 %, laktoositon, d-vit 1 ug",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32735,
+          "name": "Jogurtti, maustamaton, a+, rasvaa 2,5 %, vl, d-vit 1 ug",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33042,
+          "name": "Jogurtti, maustamaton, a+, rasvaa 4 %, laktoositon, d-vit 1 ug",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33295,
+          "name": "Jogurtti, maustamaton, a+, rasvaton, vl, d-vit 1 ug",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33697,
+          "name": "Jogurtti, maustamaton, ab, rasvaa 2,5 %, probiootteja",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33698,
+          "name": "Jogurtti, maustamaton, ab, rasvaton, probiootteja",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32136,
+          "name": "Jogurtti, maustamaton, activia, rasvaa 3,4 %, probiootteja",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32088,
+          "name": "Jogurtti, maustamaton, bulgarian, rasvaa 3,5 %, d-vit 1 ug",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 620,
+          "name": "Jogurtti, maustamaton, bulgarian, rasvaa 3,9%",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34638,
+          "name": "Jogurtti, maustamaton, luomu, rasvaa 3 %",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 11736,
+          "name": "Jogurtti, maustamaton, rasvaa 1,5 %",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33162,
+          "name": "Jogurtti, maustamaton, rasvaa 2,5 %",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34636,
+          "name": "Jogurtti, maustamaton, rasvaa 2,5 %, luomu, laktoositon",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 619,
+          "name": "Jogurtti, maustamaton, rasvaa 2,5 %, vl",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34656,
+          "name": "Jogurtti, maustamaton, rasvaa 4 %, laktoositon, probiootteja",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32598,
+          "name": "Jogurtti, maustamaton, rasvaton",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33284,
+          "name": "Jogurtti, maustamaton, rasvaton, laktoositon, d-vit 1 ug",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 637,
+          "name": "Jogurtti, maustamaton, rasvaton, vl, d-vit 0,5 ug",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33727,
+          "name": "Jogurtti, maustamaton, reducol, rasvaa 2,5%, vl, kasvisteroli ja -stanoli, prob.",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33714,
+          "name": "Jogurtti, maustettu, a+, rasvaa 3,2 %, laktoositon, d-vit 1 ug",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32145,
+          "name": "Jogurtti, maustettu, a+, rasvaton, vl, d-vit 1 ug",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34631,
+          "name": "Jogurtti, maustettu, a+ lisäaineeton jogurtti, rasvaa 3 %, laktoositon",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33760,
+          "name": "Jogurtti, maustettu, a+ vilja, rasvaa 2 %, laktoositon, d-vit 1 ug",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33695,
+          "name": "Jogurtti, maustettu, ab, rasvaa 2,7 %, vl, probiootteja",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33700,
+          "name": "Jogurtti, maustettu, ab, rasvaton, probiootteja",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34652,
+          "name": "Jogurtti, maustettu, activia kevyt, rasvaton, osittain keinot. makeutettu, prob.",
+          "type": "Raaka-aine"
+        }
+      ],
+      "cachedAt": "2026-07-24T14:54:22.302Z",
+      "lastAccessedAt": "2026-07-24T14:54:22.302Z"
+    },
+    "rypsiöljy": {
+      "query": "rypsiöljy",
+      "results": [
+        {
+          "id": 535,
+          "name": "Rypsiöljy",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 11695,
+          "name": "Rypsiöljy, kylmäpuristettu",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32567,
+          "name": "Juusto, oltermanni rypsi, rasvaa 24 %, rypsiöljy",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32431,
+          "name": "Kasviöljyvalmiste, juokseva, 80 %, sunnuntai, rypsiöljy",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 31615,
+          "name": "Keksi, kaurakeksi, jyväshyvä luonnonhyvät, rypsiöljy",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 11685,
+          "name": "Paistoöljy, palmuöljy 50 %, palmuydinöljy 25 %, rypsiöljy 25 %",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34932,
+          "name": "Rasvaseoslevite 70 %, creme bonjour voi & rypsiöljy, normaalisuolainen",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32688,
+          "name": "Salaatti, perunasalaatti, oliivi-rypsiöljy, ei majoneesia",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31656,
+          "name": "Keksi, rypsiöljypohjainen keksi, tuotekeskiarvo",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 29233,
+          "name": "Munkki, paistettu rypsiöljyssä",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 531,
+          "name": "Ruokaöljy teollisuuskäyttöön, 70 % rypsiöljyä, 30 % palmuöljyä",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32485,
+          "name": "Salaatinkastike, hunaja-sinappi, felix, rypsiöljypohjainen, rasvaa 36 %",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32179,
+          "name": "Salaatinkastike, kartanon, kevyt, saarioinen, rypsiöljypohjainen, rasvaa 23 %",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32480,
+          "name": "Salaatinkastike, kartanon, saarioinen, rypsiöljypohjainen, rasvaa 39 %",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32483,
+          "name": "Salaatinkastike, kreikkalainen-, felix, rypsiöljypohjainen, rasvaa 25 %",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32178,
+          "name": "Salaatinkastike, ranskalainen, saarioinen, rypsiöljypohjainen, rasvaa 47 %",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32482,
+          "name": "Salaatinkastike, talon-, felix, rypsiöljypohjainen, rasvaa 20 %",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32177,
+          "name": "Salaatinkastike, thousand island, kevyt, felix, rypsiöljypohjainen, rasvaa 15 %",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 31837,
+          "name": "Sekaleipä, oululainen reilu täysjyväviipaleet, fazer, rypsiöljyä",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 34565,
+          "name": "Ateriasalaatti, bataatti-fetajuustosalaatti, öljykastike",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 34499,
+          "name": "Ateriasalaatti, halloumisalaatti, granaattiomena, öljykastike",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 3365,
+          "name": "Ateriasalaatti, juustosalaatti, kotijuusto, öljykastike",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32908,
+          "name": "Ateriasalaatti, kalkkunasalaatti, pasta, öljykastike",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 3329,
+          "name": "Ateriasalaatti, kreikkalainen, fetajuustosalaatti, öljykastike",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 34501,
+          "name": "Ateriasalaatti, kuskussalaatti, halloumi, öljykastike",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32914,
+          "name": "Ateriasalaatti, kuskussalaatti, vuohenjuusto, öljykastike",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32923,
+          "name": "Ateriasalaatti, lohisalaatti, avokado, parsa, öljykastike",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32922,
+          "name": "Ateriasalaatti, lohisalaatti, kananmuna, appelsiini, parsakaali, öljykastike",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 34696,
+          "name": "Ateriasalaatti, makkara-perunasalaatti, chorizo, öljykastike",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 34500,
+          "name": "Ateriasalaatti, mansikka-halloumisalaatti, öljykastike",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32915,
+          "name": "Ateriasalaatti, mozzarellasalaatti, tomaatti, basilika, öljykastike",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32916,
+          "name": "Ateriasalaatti, nizzan salaatti, kananmuna, peruna, anjovis, öljykastike",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32910,
+          "name": "Ateriasalaatti, paahtopaistisalaatti, perunaa, öljykastike",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 29023,
+          "name": "Ateriasalaatti, pasta-mäti-katkarapusalaatti, avokadoa, öljykastike",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32927,
+          "name": "Ateriasalaatti, vuohenjuustosalaatti, keitetty punajuuri, öljykastike",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32930,
+          "name": "Ateriasalaatti, vuohenjuustosalaatti, päärynä, tomaatti, öljykastike",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 540,
+          "name": "Auringonkukkaöljy",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33091,
+          "name": "Avokadoöljy",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 7510,
+          "name": "Broileri, öljykastikkeessa, grillattu",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 33363,
+          "name": "Broilerifilee, marinoitu, paistettu öljyssä",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 28989,
+          "name": "Graavilohi, lohicarpaccio, sitruunaa ja öljyä",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 29228,
+          "name": "Juusto, fetajuusto, vuohenmaito, öljyssä",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33120,
+          "name": "Juusto, salaattijuusto, rasvaa 22 %, lehmänmaito, öljyssä",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 35006,
+          "name": "Kasviöljyvalmiste, juokseva, 70 %, keskiarvo",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32354,
+          "name": "Kasviöljyvalmiste, juokseva, 80 %, keiju rypsi",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32553,
+          "name": "Kasviöljyvalmiste, juokseva, 80 %, tuotekeskiarvo",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32348,
+          "name": "Kasviöljyvalmiste, juokseva, 82 %, becel",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32344,
+          "name": "Kasviöljyvalmiste, juokseva, 82 %, flora culinesse",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 191,
+          "name": "Kauramakaroni, keitetty, öljyä, suolaton",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 34140,
+          "name": "Kookosöljy",
+          "type": "Raaka-aine"
+        }
+      ],
+      "cachedAt": "2026-07-24T14:53:14.977Z",
+      "lastAccessedAt": "2026-07-24T14:53:14.977Z"
+    },
+    "maito rasvaton": {
+      "query": "maito rasvaton",
+      "results": [
+        {
+          "id": 32855,
+          "name": "Blini, rasvaton maito",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 1165,
+          "name": "Hillopiirakka, pullapohja, rasvaton maito",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32282,
+          "name": "Hillopiirakka, pullapohja, rasvaton maito, fruktoosilla makeutettu",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 29071,
+          "name": "Kaakaojuoma, kylmä, rasvaton maito, sokeroitu",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 33438,
+          "name": "Kahvi, caffe latte, makeuttamaton, rasvaton maito",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 29091,
+          "name": "Kahvi, cappuccino, makeuttamaton, rasvaton maito",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32890,
+          "name": "Kalakastike, kalamuhennos, maitopohjainen, rasvaton maito",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32883,
+          "name": "Kasviskastike, punajuurikastike, rasvaton maito",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 30161,
+          "name": "Kaurapuuro, rasvaton maito, suolaa",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 34684,
+          "name": "Kaurapuuro, rasvaton maito, suolaton",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 34889,
+          "name": "Kaurapuuro, rasvaton maito ja vesi, suolaa",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 34886,
+          "name": "Kaurapuuro, rasvaton maito ja vesi, suolaton",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32881,
+          "name": "Kinkkukastike, maitopohjainen, saunapalvikinkku, rasvaton maito",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 29763,
+          "name": "Korppu, sokerikorppu, rasvaton maito, teollinen",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32898,
+          "name": "Lanttulaatikko, rasvaton maito",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 606,
+          "name": "Maito, rasvaton, d-vitamiinia 1 ug",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 29211,
+          "name": "Maito, rasvaton, ei lisätty d-vitamiinia, luomu",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 29090,
+          "name": "Maito, rasvaton, keitetty",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 30423,
+          "name": "Maito, rasvaton, laktoositon maitojuoma, d-vitamiinia 1 ug",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33791,
+          "name": "Maito, rasvaton, laktoositon maitojuoma, valio eila, d-vitamiinia 2 ug",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 31888,
+          "name": "Maito, rasvaton, valio plus, d-vitamiinia 2 ug",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34862,
+          "name": "Maito, rasvaton, valio profeel voimamaitojuoma, d-vitamiinia 1 ug, laktoositon",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 11145,
+          "name": "Maito, rasvaton, vl, d-vitamiinia 1 ug",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32878,
+          "name": "Maitokastike, valkokastike, rasvaton maito, rasva-jauhosuurus",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 34965,
+          "name": "Makaronilaatikko, liha-makaronilaatikko, broileri, rasvaton maito,tumma makaroni",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 34956,
+          "name": "Makaronilaatikko, liha-makaronilaatikko, naudanliha, rasvaton maito, tumma",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 34674,
+          "name": "Makaronilaatikko, liha-makaronilaatikko, naudanpaisti, rasvaton maito",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 34954,
+          "name": "Makaronilaatikko, liha-makaronilaatikko, naudanpaisti, rasvaton maito, tumma",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 34673,
+          "name": "Makaronilaatikko, liha-makaronilaatikko, sika-nauta, rasvaton maito",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 34955,
+          "name": "Makaronilaatikko, liha-makaronilaatikko, sika-nauta, rasvaton maito, tumma",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31695,
+          "name": "Makean piirakan pullapohja, rasvaton maito",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32851,
+          "name": "Maksalaatikko, ohraryynit, rasvaton maito",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32853,
+          "name": "Maksalaatikko, rasvaton maito",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 1162,
+          "name": "Marjapiirakka, pullapohja, rasvaton maito",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32320,
+          "name": "Marjapiirakka, pullapohja, rasvaton maito, fruktoosilla makeutettu",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32323,
+          "name": "Marjapiirakka, pullapohja, rasvaton maito, keinotekoisesti makeutettu",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32316,
+          "name": "Marjapiirakka, pullapohja, rasvaton maito, sokeriton",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32926,
+          "name": "Munkki, rasvaton maito, kotitekoinen",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32906,
+          "name": "Nokkosohukainen, rasvaton maito",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32823,
+          "name": "Ohukainen, rasvaton maito",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32828,
+          "name": "Pannukakku, rasvaton maito",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32918,
+          "name": "Perunaohukainen, rasvaton maito",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 30367,
+          "name": "Perunasose, rasvaton maito",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31703,
+          "name": "Piirakan pullapohja, rasvaton maito, fruktoosilla makeutettu",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31706,
+          "name": "Piirakan pullapohja, rasvaton maito, keinotekoisesti makeutettu",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31698,
+          "name": "Piirakan pullapohja, rasvaton maito, sokeriton",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32841,
+          "name": "Pinaattikohokas, rasvaton maito",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32901,
+          "name": "Pinaattiohukainen, rasvaton maito",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32989,
+          "name": "Porkkana-riisipiirakka, voitaikina, rasvaton maito",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31751,
+          "name": "Rahkamarjapiirakka, pullapohja, rasvaton maito",
+          "type": "Koostettu elintarvike"
+        }
+      ],
+      "cachedAt": "2026-07-24T14:47:04.583Z",
+      "lastAccessedAt": "2026-07-24T14:47:04.583Z"
+    },
+    "marja": {
+      "query": "marja",
+      "results": [
+        {
+          "id": 454,
+          "name": "Marja, keskiarvo",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 35593,
+          "name": "Marja-aronia, kuivattu, marja-aroniajauhe",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 1343,
+          "name": "Marja-raparperipiirakka, pehmeä",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 35592,
+          "name": "Marja-aronia",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 450,
+          "name": "Marjahillo, keskiarvo",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 4420,
+          "name": "Marjahyytelö, marjat, hyytelösokeri",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 478,
+          "name": "Marjajuoma, nektari, marjapitoisuus 50 %",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32416,
+          "name": "Marjajuoma, proviva, keskiarvo, probiootteja",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 11587,
+          "name": "Marjajuoma, ruusunmarja, pro viva, kauraa ja probiootteja",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 6009,
+          "name": "Marjamaito",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 1344,
+          "name": "Marjapiirakka, fruktoosilla makeutettu, pehmeä",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 1305,
+          "name": "Marjapiirakka, muro/pullapohja, keskiarvo",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 1179,
+          "name": "Marjapiirakka, muropohja",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32328,
+          "name": "Marjapiirakka, muropohja, fruktoosilla makeutettu",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31985,
+          "name": "Marjapiirakka, muropohja, gluteeniton, vehnätärkkelystä",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32329,
+          "name": "Marjapiirakka, muropohja, keinotekoisesti makeutettu",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 1180,
+          "name": "Marjapiirakka, muropohja, kermaviilitäyte",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31986,
+          "name": "Marjapiirakka, muropohja, luontaisesti gluteeniton",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32327,
+          "name": "Marjapiirakka, muropohja, sokeriton",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 33009,
+          "name": "Marjapiirakka, muropohja ja taikinakansi",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 33855,
+          "name": "Marjapiirakka, mustikkapiiras, fazer",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32326,
+          "name": "Marjapiirakka, piimätaikinapohja",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31987,
+          "name": "Marjapiirakka, pullapohja, gluteeniton, vehnätärkkelys ja maito",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32330,
+          "name": "Marjapiirakka, pullapohja, kananmunaton",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 1161,
+          "name": "Marjapiirakka, pullapohja, kevytmaito",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32321,
+          "name": "Marjapiirakka, pullapohja, kevytmaito, fruktoosilla makeutettu",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32324,
+          "name": "Marjapiirakka, pullapohja, kevytmaito, keinotekoisesti makeutettu",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32318,
+          "name": "Marjapiirakka, pullapohja, kevytmaito, sokeriton",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31988,
+          "name": "Marjapiirakka, pullapohja, luontaisesti gluteeniton, maito",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 1162,
+          "name": "Marjapiirakka, pullapohja, rasvaton maito",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32320,
+          "name": "Marjapiirakka, pullapohja, rasvaton maito, fruktoosilla makeutettu",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32323,
+          "name": "Marjapiirakka, pullapohja, rasvaton maito, keinotekoisesti makeutettu",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32316,
+          "name": "Marjapiirakka, pullapohja, rasvaton maito, sokeriton",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 1163,
+          "name": "Marjapiirakka, pullapohja, täysmaito",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32322,
+          "name": "Marjapiirakka, pullapohja, täysmaito, fruktoosilla makeutettu",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32325,
+          "name": "Marjapiirakka, pullapohja, täysmaito, keinotekoisesti makeutettu",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32319,
+          "name": "Marjapiirakka, pullapohja, täysmaito, sokeriton",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32280,
+          "name": "Marjapiirakka, pullapohja, vesi",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32331,
+          "name": "Marjapiirakka, pullapohja, vesi, maidoton, kananmunaton",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 1015,
+          "name": "Marjapiirakka, rukiinen, marjasurvos, ruiskuori",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 29077,
+          "name": "Marjapiirakka, tuorejuustotäyte, pohjassa öljy",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32891,
+          "name": "Marjapiirakka/marjapaistos, muropohja ja taikinakansi, ei kananmunaa",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 33897,
+          "name": "Marjasose, 100 % marjoja, makeuttamaton",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31539,
+          "name": "Marjasose, sokeriton, c-vitaminoitu",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 11470,
+          "name": "Marjasose, teollinen lastenruoka, tuotekeskiarvo",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 4415,
+          "name": "Marjatalkkuna",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 4412,
+          "name": "Marjavaahto, marjat, kerma, muna",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 1268,
+          "name": "Graham-marjapuuro, vesi, puolukka, sokeri, suola",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 33298,
+          "name": "Jogurtti, marjamysli, a+, rasvaa 3,5 %, laktoositon, d-vit 0,9 ug",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32015,
+          "name": "Kaurapuuro, marja-hedelmä, elovena",
+          "type": "Koostettu elintarvike"
+        }
+      ],
+      "cachedAt": "2026-07-24T14:45:54.313Z",
+      "lastAccessedAt": "2026-07-24T14:45:54.313Z"
+    },
+    "marjasekoitus": {
+      "query": "marjasekoitus",
+      "results": [
+        {
+          "id": 32186,
+          "name": "Pakastekasvissekoitus, amerikansekoitus, porkkana-parsakaali-papu-paprika-maissi",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32155,
+          "name": "Pakastekasvissekoitus, aurinkokasvikset, porkkana-papu",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32152,
+          "name": "Pakastekasvissekoitus, grillatut vihannekset, suolaa ja öljyä, (kypsentämätön)",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 396,
+          "name": "Pakastekasvissekoitus, herne-maissi-paprika",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 3700,
+          "name": "Pakastekasvissekoitus, herne-maissi-paprikasekoitus, keitetty",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32156,
+          "name": "Pakastekasvissekoitus, herne-maissi-porkkana",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32158,
+          "name": "Pakastekasvissekoitus, juuressekoitus",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32157,
+          "name": "Pakastekasvissekoitus, kartanon kasvikset, parsakaali-porkkana-paprika",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 313,
+          "name": "Pakastekasvissekoitus, keittojuures, porkkana, lanttu, juuriselleri, purjo",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32173,
+          "name": "Pakastekasvissekoitus, keskiarvo, keitetty, suolaton",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32159,
+          "name": "Pakastekasvissekoitus, kruunusekoitus, parsakaali-porkkana-kukkakaali",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32161,
+          "name": "Pakastekasvissekoitus, maalaiskasvikset, porkkana-papu-palsternakka",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32170,
+          "name": "Pakastekasvissekoitus, parsakaali-maissi-porkkana",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32162,
+          "name": "Pakastekasvissekoitus, parsakaali-porkkana-vesikastanja",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32165,
+          "name": "Pakastekasvissekoitus, patajuurekset, porkkana-lanttu-sipuli",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32166,
+          "name": "Pakastekasvissekoitus, peruna-keittovihannes",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 30259,
+          "name": "Pakastekasvissekoitus, peruna-sipulisekoitus",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 30599,
+          "name": "Pakastekasvissekoitus, peruna-sipulisekoitus, paistettu",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32167,
+          "name": "Pakastekasvissekoitus, pomodoro, tomaatti-kasvis",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32171,
+          "name": "Pakastekasvissekoitus, porkkana-papu-herne-kukkakaali",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 33565,
+          "name": "Pakastekasvissekoitus, porkkana-papu-parsakaali-kukkakaali",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 30260,
+          "name": "Peruna-sipulilaatikko, pakastesekoitus, kasvirasvakerma 15 %",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 33568,
+          "name": "Pähkinä-hedelmä-sekoitus",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33569,
+          "name": "Pähkinäsekoitus, suolaton",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34872,
+          "name": "Pähkinäsekoitus, suolaton, paahdettu",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33579,
+          "name": "Pähkinäsekoitus, suolattu",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32966,
+          "name": "Sekaleipä, fitnesspalat, leipäaitta, lidl, vehnäjauho, siemensekoitus",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 34668,
+          "name": "Siemensekoitus",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 30664,
+          "name": "Suolapähkinä-hedelmä-sekoitus",
+          "type": "Koostettu elintarvike"
+        }
+      ],
+      "cachedAt": "2026-07-24T14:45:37.688Z",
+      "lastAccessedAt": "2026-07-24T14:45:37.688Z"
+    },
+    "marjasekoitus pakaste": {
+      "query": "marjasekoitus pakaste",
+      "results": [
+        {
+          "id": 32186,
+          "name": "Pakastekasvissekoitus, amerikansekoitus, porkkana-parsakaali-papu-paprika-maissi",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32155,
+          "name": "Pakastekasvissekoitus, aurinkokasvikset, porkkana-papu",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32152,
+          "name": "Pakastekasvissekoitus, grillatut vihannekset, suolaa ja öljyä, (kypsentämätön)",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 396,
+          "name": "Pakastekasvissekoitus, herne-maissi-paprika",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 3700,
+          "name": "Pakastekasvissekoitus, herne-maissi-paprikasekoitus, keitetty",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32156,
+          "name": "Pakastekasvissekoitus, herne-maissi-porkkana",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32158,
+          "name": "Pakastekasvissekoitus, juuressekoitus",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32157,
+          "name": "Pakastekasvissekoitus, kartanon kasvikset, parsakaali-porkkana-paprika",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 313,
+          "name": "Pakastekasvissekoitus, keittojuures, porkkana, lanttu, juuriselleri, purjo",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32173,
+          "name": "Pakastekasvissekoitus, keskiarvo, keitetty, suolaton",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32159,
+          "name": "Pakastekasvissekoitus, kruunusekoitus, parsakaali-porkkana-kukkakaali",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32161,
+          "name": "Pakastekasvissekoitus, maalaiskasvikset, porkkana-papu-palsternakka",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32170,
+          "name": "Pakastekasvissekoitus, parsakaali-maissi-porkkana",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32162,
+          "name": "Pakastekasvissekoitus, parsakaali-porkkana-vesikastanja",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32165,
+          "name": "Pakastekasvissekoitus, patajuurekset, porkkana-lanttu-sipuli",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32166,
+          "name": "Pakastekasvissekoitus, peruna-keittovihannes",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 30259,
+          "name": "Pakastekasvissekoitus, peruna-sipulisekoitus",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 30599,
+          "name": "Pakastekasvissekoitus, peruna-sipulisekoitus, paistettu",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32167,
+          "name": "Pakastekasvissekoitus, pomodoro, tomaatti-kasvis",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32171,
+          "name": "Pakastekasvissekoitus, porkkana-papu-herne-kukkakaali",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 33565,
+          "name": "Pakastekasvissekoitus, porkkana-papu-parsakaali-kukkakaali",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 30260,
+          "name": "Peruna-sipulilaatikko, pakastesekoitus, kasvirasvakerma 15 %",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 34229,
+          "name": "Herne, vihreä, pakaste",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 31790,
+          "name": "Kakku, daim-kakku, almondy, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31791,
+          "name": "Kakku, juustokakku, almondy, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31789,
+          "name": "Kakku, mantelitorttu, almondy, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31636,
+          "name": "Kakku, muffini, luontaisesti gluteeniton, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31575,
+          "name": "Kakku, mutakakku, kostea suklaakakku, frödinge, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31787,
+          "name": "Karjalanpiirakka, cocktail-riisipiirakka, moilas, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31786,
+          "name": "Karjalanpiirakka, pirkka, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31784,
+          "name": "Karjalanpiirakka, pirkka parhaat, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 35611,
+          "name": "Männynherkkutatti, pakaste",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34228,
+          "name": "Pinaatti, pakaste",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32556,
+          "name": "Pinaattikeitto, apetit, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 32557,
+          "name": "Pinaattikeitto, pirkka, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31809,
+          "name": "Pulla, pirkka/x-tra, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 846,
+          "name": "Puna-ahven, punasimppu, pakaste",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33568,
+          "name": "Pähkinä-hedelmä-sekoitus",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33569,
+          "name": "Pähkinäsekoitus, suolaton",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34872,
+          "name": "Pähkinäsekoitus, suolaton, paahdettu",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33579,
+          "name": "Pähkinäsekoitus, suolattu",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 207,
+          "name": "Ranskanperunavalmiste, pakaste",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 826,
+          "name": "Seiti, pakaste",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32966,
+          "name": "Sekaleipä, fitnesspalat, leipäaitta, lidl, vehnäjauho, siemensekoitus",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 34668,
+          "name": "Siemensekoitus",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 30664,
+          "name": "Suolapähkinä-hedelmä-sekoitus",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31794,
+          "name": "Täytekakku, kinuskikakku, frödinge, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31793,
+          "name": "Täytekakku, mansikkakakku, frödinge, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31792,
+          "name": "Täytekakku, marenkikakku, frödinge, pakaste",
+          "type": "Koostettu elintarvike"
+        },
+        {
+          "id": 31795,
+          "name": "Täytekakku, suklaakakku, frödinge, pakaste",
+          "type": "Koostettu elintarvike"
+        }
+      ],
+      "cachedAt": "2026-07-24T14:44:56.201Z",
+      "lastAccessedAt": "2026-07-24T14:44:56.201Z"
+    },
+    "skyr": {
+      "query": "skyr",
+      "results": [
+        {
+          "id": 34585,
+          "name": "Skyr, maustamaton, rasvaa <0,5 %",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34593,
+          "name": "Skyr, maustamaton, rasvaa 4 %",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34587,
+          "name": "Skyr, keinotekoisesti makeutettu, rasvaa <0,5 %",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34588,
+          "name": "Skyr, keinotekoisesti makeutettu, rasvaa 2 %",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34586,
+          "name": "Skyr, makeutettu sokerilla, rasvaa <0,5 %",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34589,
+          "name": "Skyr, makeutettu sokerilla ja stevialla, rasvaa <0,5 %",
+          "type": "Raaka-aine"
+        }
+      ],
+      "cachedAt": "2026-07-24T14:43:01.575Z",
+      "lastAccessedAt": "2026-07-24T14:43:01.575Z"
+    },
+    "skyr maustamaton": {
+      "query": "skyr maustamaton",
+      "results": [
+        {
+          "id": 34585,
+          "name": "Skyr, maustamaton, rasvaa <0,5 %",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34593,
+          "name": "Skyr, maustamaton, rasvaa 4 %",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34630,
+          "name": "Jogurtti, maustamaton, a+, rasvaa 2,5 %, laktoositon, d-vit 1 ug",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32735,
+          "name": "Jogurtti, maustamaton, a+, rasvaa 2,5 %, vl, d-vit 1 ug",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33042,
+          "name": "Jogurtti, maustamaton, a+, rasvaa 4 %, laktoositon, d-vit 1 ug",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33295,
+          "name": "Jogurtti, maustamaton, a+, rasvaton, vl, d-vit 1 ug",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34634,
+          "name": "Jogurtti, maustamaton, a+ kreikkalainen, rasvaa 2 %, laktoositon, d-vit 0,8 ug",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33697,
+          "name": "Jogurtti, maustamaton, ab, rasvaa 2,5 %, probiootteja",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33698,
+          "name": "Jogurtti, maustamaton, ab, rasvaton, probiootteja",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32136,
+          "name": "Jogurtti, maustamaton, activia, rasvaa 3,4 %, probiootteja",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32088,
+          "name": "Jogurtti, maustamaton, bulgarian, rasvaa 3,5 %, d-vit 1 ug",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 620,
+          "name": "Jogurtti, maustamaton, bulgarian, rasvaa 3,9%",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34611,
+          "name": "Jogurtti, maustamaton, kreikkalainen, rasvaa 7 %, laktoositon",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34638,
+          "name": "Jogurtti, maustamaton, luomu, rasvaa 3 %",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 11736,
+          "name": "Jogurtti, maustamaton, rasvaa 1,5 %",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33162,
+          "name": "Jogurtti, maustamaton, rasvaa 2,5 %",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34636,
+          "name": "Jogurtti, maustamaton, rasvaa 2,5 %, luomu, laktoositon",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 619,
+          "name": "Jogurtti, maustamaton, rasvaa 2,5 %, vl",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34656,
+          "name": "Jogurtti, maustamaton, rasvaa 4 %, laktoositon, probiootteja",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32598,
+          "name": "Jogurtti, maustamaton, rasvaton",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33284,
+          "name": "Jogurtti, maustamaton, rasvaton, laktoositon, d-vit 1 ug",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 637,
+          "name": "Jogurtti, maustamaton, rasvaton, vl, d-vit 0,5 ug",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33727,
+          "name": "Jogurtti, maustamaton, reducol, rasvaa 2,5%, vl, kasvisteroli ja -stanoli, prob.",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33596,
+          "name": "Kaurajuoma, maustamaton, tuotekeskiarvo",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32885,
+          "name": "Kaurajuoma, nordic, maustamaton, lisätty kalsiumia ja d-vitamiinia",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 35190,
+          "name": "Kauravalmiste, hapatettu, maustamaton, yosa greek style, probiootteja",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 32562,
+          "name": "Kauravalmiste, hapatettu, maustamaton, yosa naturell, probiootteja",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 35634,
+          "name": "Kauravalmiste, hapatettu, oatly havregurt, maustamaton, vitaminoitu",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 35633,
+          "name": "Kauravalmiste, hapatettu, oddlygood kaurapohjainen gurtti, maustamaton, vitamin.",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34909,
+          "name": "Nyhtökaura, maustamaton, nude",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 622,
+          "name": "Rahka, maitorahka, maustamaton, rasvaa <0,5 %",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 11156,
+          "name": "Rahka, maitorahka, maustamaton, rasvaa <0,5 %, vl",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33179,
+          "name": "Rahka, maitorahka, maustamaton, rasvaa 0,3 %, laktoositon",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34602,
+          "name": "Rahka, maitorahka, maustamaton, rasvaa 0,3 %, proteiinia 12 %, laktoositon",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34592,
+          "name": "Rahka, maitorahka, maustamaton, rasvaa 2,3 %, vl",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34591,
+          "name": "Rahka, maustamaton, kermarahka, rasvaa 10 %",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 35171,
+          "name": "Rahka, maustamaton, kermarahka, rasvaa 4,3 %",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34590,
+          "name": "Rahka, rahkajogurtti, maustamaton, rasvaa 0,9 %",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 11687,
+          "name": "Riisijuoma, maustamaton",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33600,
+          "name": "Riisijuoma, maustamaton, tuotekeskiarvo",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34587,
+          "name": "Skyr, keinotekoisesti makeutettu, rasvaa <0,5 %",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34588,
+          "name": "Skyr, keinotekoisesti makeutettu, rasvaa 2 %",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34586,
+          "name": "Skyr, makeutettu sokerilla, rasvaa <0,5 %",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34589,
+          "name": "Skyr, makeutettu sokerilla ja stevialla, rasvaa <0,5 %",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33122,
+          "name": "Soijajuoma, alpro maustamaton, kalsiumia ja vitamiineja",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33132,
+          "name": "Soijajuoma, gogreen maustamaton, kalsiumia",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33597,
+          "name": "Soijajuoma, maustamaton, tuotekeskiarvo",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 33125,
+          "name": "Soijajuoma, pirkka luomu maustamaton",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 31525,
+          "name": "Soijavälipala, alpro, hapatettu, maustamaton, rasvaa 2,3 %, kalsium, vitaminoitu",
+          "type": "Raaka-aine"
+        },
+        {
+          "id": 34974,
+          "name": "Soijavälipala, alpro go on, hapatettu, maustamaton, rasvaa 3,6 %",
+          "type": "Raaka-aine"
+        }
+      ],
+      "cachedAt": "2026-07-24T14:41:45.480Z",
+      "lastAccessedAt": "2026-07-24T14:41:45.480Z"
+    },
     "juuressekoitus pakaste": {
       "query": "juuressekoitus pakaste",
       "results": [

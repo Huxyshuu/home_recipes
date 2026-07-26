@@ -3,10 +3,15 @@
     "id": "mealplan-protein-overnight-oats",
     "slug": "protein-overnight-oats",
     "title": "Proteiinipitoinen tuorepuuro",
+    "titleEn": "Protein Overnight Oats",
     "description": "Viidessä minuutissa koottava aamiainen kaurasta, skyristä, heraproteiinista, marjoista ja siemenistä.",
+    "descriptionEn": "A five-minute make-ahead breakfast with oats, skyr, whey, berries and seeds.",
     "category": "Aamiainen",
+    "categoryEn": "Breakfast",
     "cuisine": "Arjen fitness-ruoka",
+    "cuisineEn": "Everyday fitness",
     "difficulty": "Helppo",
+    "difficultyEn": "Easy",
     "prepMinutes": 5,
     "cookMinutes": 0,
     "servings": 1,
@@ -17,8 +22,17 @@
       "nopea",
       "viikkosuunnitelma"
     ],
-    "image": "/meal-plan-covers/protein-overnight-oats.svg",
+    "tagsEn": [
+      "breakfast",
+      "high-protein",
+      "meal-prep",
+      "quick",
+      "weekly-plan"
+    ],
+    "image": "/uploads/1785066398596-ee75fabf-ec19-4136-83c1-499b5abfad85.jpg",
     "sourceUrl": "",
+    "notes": "Lähde: Home Recipes -sovellusta varten laadittu alkuperäinen ateriasuunnitelmaresepti; reseptiä ei ole kopioitu yhdestä verkkolähteestä. Suunnitelman ravintoarvo on tavoitearvio. Raaka-ainekohtaiset arvot voidaan päivittää suoraan THL:n Fineli-rajapinnasta. Korvaavat vaihtoehdot: Vaihda skyr laktoosittomaan maitorahkaan. Maidottomassa versiossa käytä proteiinilla täydennettyä soijajogurttia ja tarvittaessa hieman enemmän heraproteiinia. Marjat voi vaihtaa pilkottuun omenaan tai päärynään.",
+    "notesEn": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace skyr with lactose-free rahka/quark; use fortified soy yogurt plus a little extra whey for a dairy-free option; swap berries for chopped apple or pear.",
     "favourite": true,
     "plannedNutritionPerServing": {
       "kcal": 560,
@@ -27,7 +41,10 @@
       "fat": 14,
       "fibre": 11
     },
-    "notes": "Lähde: Home Recipes -sovellusta varten laadittu alkuperäinen ateriasuunnitelmaresepti; reseptiä ei ole kopioitu yhdestä verkkolähteestä. Suunnitelman ravintoarvo on tavoitearvio. Raaka-ainekohtaiset arvot voidaan päivittää suoraan THL:n Fineli-rajapinnasta. Korvaavat vaihtoehdot: Vaihda skyr laktoosittomaan maitorahkaan. Maidottomassa versiossa käytä proteiinilla täydennettyä soijajogurttia ja tarvittaessa hieman enemmän heraproteiinia. Marjat voi vaihtaa pilkottuun omenaan tai päärynään.",
+    "useIngredientNutrition": false,
+    "nutritionStatus": "fineli-sync-required",
+    "nutritionDisclaimerFi": "Suunnitelman ravintoarvo näytetään siihen asti, kunnes raaka-aineet on synkronoitu Finelin avoimesta rajapinnasta. Tuotemerkit, kypsennyshävikki ja annospainot voivat muuttaa toteutunutta arvoa.",
+    "fineliSyncedAt": "",
     "ingredients": [
       {
         "id": "protein-overnight-oats-i1",
@@ -94,54 +111,38 @@
       {
         "id": "protein-overnight-oats-s1",
         "title": "Yhdistä kuivat aineet",
-        "text": "Lisää kaurahiutaleet, heraproteiinijauhe ja chiansiemenet kannelliseen purkkiin tai kulhoon.",
-        "timerMinutes": 0,
         "titleEn": "Combine the dry ingredients",
-        "textEn": "Add the oats, whey protein and chia seeds to a jar or lidded bowl."
+        "text": "Lisää kaurahiutaleet, heraproteiinijauhe ja chiansiemenet kannelliseen purkkiin tai kulhoon.",
+        "textEn": "Add the oats, whey protein and chia seeds to a jar or lidded bowl.",
+        "timerMinutes": 0
       },
       {
         "id": "protein-overnight-oats-s2",
         "title": "Lisää kylmät ainekset",
-        "text": "Lisää skyr, rasvaton maito ja pakastemarjat. Sekoita huolellisesti, kunnes heraproteiinijauhetta ei jää kuiviksi paakuiksi.",
-        "timerMinutes": 0,
         "titleEn": "Add the chilled ingredients",
-        "textEn": "Add skyr, milk or fortified soy drink, and the frozen berries. Stir until no dry whey pockets remain."
+        "text": "Lisää skyr, rasvaton maito ja pakastemarjat. Sekoita huolellisesti, kunnes heraproteiinijauhetta ei jää kuiviksi paakuiksi.",
+        "textEn": "Add skyr, milk or fortified soy drink, and the frozen berries. Stir until no dry whey pockets remain.",
+        "timerMinutes": 0
       },
       {
         "id": "protein-overnight-oats-s3",
         "title": "Anna tekeytyä",
-        "text": "Peitä ja nosta jääkaappiin vähintään neljäksi tunniksi, mieluiten yön yli.",
-        "timerMinutes": 240,
         "titleEn": "Chill",
-        "textEn": "Cover and refrigerate for at least 4 hours, preferably overnight."
+        "text": "Peitä ja nosta jääkaappiin vähintään neljäksi tunniksi, mieluiten yön yli.",
+        "textEn": "Cover and refrigerate for at least 4 hours, preferably overnight.",
+        "timerMinutes": 240
       },
       {
         "id": "protein-overnight-oats-s4",
         "title": "Viimeistele ja nauti",
-        "text": "Sekoita hyvin. Lisää tilkka maitoa, jos puuro on liian paksua. Syö kylmänä tai lämmitä lyhyesti mikroaaltouunin kestävässä kulhossa.",
-        "timerMinutes": 0,
         "titleEn": "Finish and eat",
-        "textEn": "Stir well. Add a splash of milk if it is too thick. Eat cold or microwave briefly in a microwave-safe bowl."
+        "text": "Sekoita hyvin. Lisää tilkka maitoa, jos puuro on liian paksua. Syö kylmänä tai lämmitä lyhyesti mikroaaltouunin kestävässä kulhossa.",
+        "textEn": "Stir well. Add a splash of milk if it is too thick. Eat cold or microwave briefly in a microwave-safe bowl.",
+        "timerMinutes": 0
       }
     ],
     "createdAt": "2026-07-22T12:00:00.000Z",
-    "updatedAt": "2026-07-22T18:00:00.000Z",
-    "titleEn": "Protein Overnight Oats",
-    "descriptionEn": "A five-minute make-ahead breakfast with oats, skyr, whey, berries and seeds.",
-    "categoryEn": "Breakfast",
-    "cuisineEn": "Everyday fitness",
-    "difficultyEn": "Easy",
-    "tagsEn": [
-      "breakfast",
-      "high-protein",
-      "meal-prep",
-      "quick",
-      "weekly-plan"
-    ],
-    "useIngredientNutrition": false,
-    "nutritionStatus": "fineli-sync-required",
-    "nutritionDisclaimerFi": "Suunnitelman ravintoarvo näytetään siihen asti, kunnes raaka-aineet on synkronoitu Finelin avoimesta rajapinnasta. Tuotemerkit, kypsennyshävikki ja annospainot voivat muuttaa toteutunutta arvoa.",
-    "notesEn": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace skyr with lactose-free rahka/quark; use fortified soy yogurt plus a little extra whey for a dairy-free option; swap berries for chopped apple or pear."
+    "updatedAt": "2026-07-26T11:46:42.527Z"
   },
   {
     "id": "mealplan-savory-egg-rye-plate",
@@ -1490,10 +1491,15 @@
     "id": "mealplan-sheet-pan-chicken-root-veg",
     "slug": "sheet-pan-chicken-root-veg",
     "title": "Pelti-broileri ja juurekset",
+    "titleEn": "Sheet-Pan Chicken Root Vegetables",
     "description": "Broileri ja tuoreet tai pakastetut juurekset samalla pellillä, jogurtin ja salaatin kanssa.",
+    "descriptionEn": "Chicken and frozen or fresh root vegetables roasted together, served with yogurt and salad.",
     "category": "Lounas ja päivällinen",
+    "categoryEn": "Lunch & dinner",
     "cuisine": "Arjen fitness-ruoka",
+    "cuisineEn": "Everyday fitness",
     "difficulty": "Helppo",
+    "difficultyEn": "Easy",
     "prepMinutes": 10,
     "cookMinutes": 25,
     "servings": 1,
@@ -1505,8 +1511,18 @@
       "runsasproteiininen",
       "viikkosuunnitelma"
     ],
-    "image": "/meal-plan-covers/sheet-pan-chicken-root-veg.svg",
+    "tagsEn": [
+      "lunch",
+      "dinner",
+      "tray-bake",
+      "meal-prep",
+      "high-protein",
+      "weekly-plan"
+    ],
+    "image": "/uploads/1785066430046-9f1ca113-9ef7-429e-951e-207e978b0b6c.jpg",
     "sourceUrl": "",
+    "notes": "Lähde: Home Recipes -sovellusta varten laadittu alkuperäinen ateriasuunnitelmaresepti; reseptiä ei ole kopioitu yhdestä verkkolähteestä. Suunnitelman ravintoarvo on tavoitearvio. Raaka-ainekohtaiset arvot voidaan päivittää suoraan THL:n Fineli-rajapinnasta. Korvaavat vaihtoehdot: Broilerin voi vaihtaa kalkkunaan, kalaan tai tofuun. Juuressekoituksessa voi käyttää porkkanaa, palsternakkaa, lanttua ja punajuurta. Jogurtin voi vaihtaa laktoosittomaan tai soijapohjaiseen vaihtoehtoon.",
+    "notesEn": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace chicken with turkey fillet, lean pork tenderloin or firm tofu; replace root vegetables with potatoes plus carrots; replace Greek yogurt with skyr or a fortified unsweetened soy alternative.",
     "favourite": true,
     "plannedNutritionPerServing": {
       "kcal": 660,
@@ -1515,7 +1531,10 @@
       "fat": 22,
       "fibre": 9
     },
-    "notes": "Lähde: Home Recipes -sovellusta varten laadittu alkuperäinen ateriasuunnitelmaresepti; reseptiä ei ole kopioitu yhdestä verkkolähteestä. Suunnitelman ravintoarvo on tavoitearvio. Raaka-ainekohtaiset arvot voidaan päivittää suoraan THL:n Fineli-rajapinnasta. Korvaavat vaihtoehdot: Broilerin voi vaihtaa kalkkunaan, kalaan tai tofuun. Juuressekoituksessa voi käyttää porkkanaa, palsternakkaa, lanttua ja punajuurta. Jogurtin voi vaihtaa laktoosittomaan tai soijapohjaiseen vaihtoehtoon.",
+    "useIngredientNutrition": false,
+    "nutritionStatus": "fineli-sync-required",
+    "nutritionDisclaimerFi": "Suunnitelman ravintoarvo näytetään siihen asti, kunnes raaka-aineet on synkronoitu Finelin avoimesta rajapinnasta. Tuotemerkit, kypsennyshävikki ja annospainot voivat muuttaa toteutunutta arvoa.",
+    "fineliSyncedAt": "",
     "ingredients": [
       {
         "id": "sheet-pan-chicken-root-veg-i1",
@@ -1572,63 +1591,46 @@
       {
         "id": "sheet-pan-chicken-root-veg-s1",
         "title": "Kuumenna uuni",
-        "text": "Kuumenna uuni 220 °C:seen ylä- ja alalämmöllä tai 200 °C:seen kiertoilmalla.",
-        "timerMinutes": 0,
         "titleEn": "Heat the oven",
-        "textEn": "Heat the oven to 220 °C conventional or 200 °C fan."
+        "text": "Kuumenna uuni 220 °C:seen ylä- ja alalämmöllä tai 200 °C:seen kiertoilmalla.",
+        "textEn": "Heat the oven to 220 °C conventional or 200 °C fan.",
+        "timerMinutes": 0
       },
       {
         "id": "sheet-pan-chicken-root-veg-s2",
         "title": "Mausta pelti",
-        "text": "Levitä juurekset leivinpaperilla vuoratulle pellille. Sekoita joukkoon rypsiöljy, pippuri, paprika ja valkosipulijauhe. Lisää broileri ja mausta se.",
-        "timerMinutes": 0,
         "titleEn": "Season the tray",
-        "textEn": "Spread the root vegetables on a lined tray. Toss with rapeseed oil, pepper, paprika and garlic powder. Add the chicken and season it."
+        "text": "Levitä juurekset leivinpaperilla vuoratulle pellille. Sekoita joukkoon rypsiöljy, pippuri, paprika ja valkosipulijauhe. Lisää broileri ja mausta se.",
+        "textEn": "Spread the root vegetables on a lined tray. Toss with rapeseed oil, pepper, paprika and garlic powder. Add the chicken and season it.",
+        "timerMinutes": 0
       },
       {
         "id": "sheet-pan-chicken-root-veg-s3",
         "title": "Paahda",
-        "text": "Paahda 20–25 minuuttia ja käännä juurekset kerran. Broilerin tulee olla läpikypsää ja juuresten ruskistuneita.",
-        "timerMinutes": 23,
         "titleEn": "Roast",
-        "textEn": "Roast for 20–25 minutes, turning the vegetables once, until the chicken is cooked through and the vegetables are browned."
+        "text": "Paahda 20–25 minuuttia ja käännä juurekset kerran. Broilerin tulee olla läpikypsää ja juuresten ruskistuneita.",
+        "textEn": "Roast for 20–25 minutes, turning the vegetables once, until the chicken is cooked through and the vegetables are browned.",
+        "timerMinutes": 23
       },
       {
         "id": "sheet-pan-chicken-root-veg-s4",
         "title": "Valmistele lisukkeet",
-        "text": "Pese ja pilko salaattikasvikset paistamisen aikana. Sekoita jogurttiin pippuria, yrttejä tai sitruunaa.",
-        "timerMinutes": 0,
         "titleEn": "Prepare the sides",
-        "textEn": "While the tray cooks, wash and chop the salad vegetables. Stir pepper, herbs or lemon into the yogurt."
+        "text": "Pese ja pilko salaattikasvikset paistamisen aikana. Sekoita jogurttiin pippuria, yrttejä tai sitruunaa.",
+        "textEn": "While the tray cooks, wash and chop the salad vegetables. Stir pepper, herbs or lemon into the yogurt.",
+        "timerMinutes": 0
       },
       {
         "id": "sheet-pan-chicken-root-veg-s5",
         "title": "Tarjoa",
-        "text": "Viipaloi broileri ja tarjoa paahdettujen juuresten, salaatin ja jogurttikastikkeen kanssa.",
-        "timerMinutes": 0,
         "titleEn": "Serve",
-        "textEn": "Slice the chicken and serve it with the roasted vegetables, salad and yogurt sauce."
+        "text": "Viipaloi broileri ja tarjoa paahdettujen juuresten, salaatin ja jogurttikastikkeen kanssa.",
+        "textEn": "Slice the chicken and serve it with the roasted vegetables, salad and yogurt sauce.",
+        "timerMinutes": 0
       }
     ],
     "createdAt": "2026-07-22T12:00:00.000Z",
-    "updatedAt": "2026-07-22T18:00:00.000Z",
-    "titleEn": "Sheet-Pan Chicken Root Vegetables",
-    "descriptionEn": "Chicken and frozen or fresh root vegetables roasted together, served with yogurt and salad.",
-    "categoryEn": "Lunch & dinner",
-    "cuisineEn": "Everyday fitness",
-    "difficultyEn": "Easy",
-    "tagsEn": [
-      "lunch",
-      "dinner",
-      "tray-bake",
-      "meal-prep",
-      "high-protein",
-      "weekly-plan"
-    ],
-    "useIngredientNutrition": false,
-    "nutritionStatus": "fineli-sync-required",
-    "nutritionDisclaimerFi": "Suunnitelman ravintoarvo näytetään siihen asti, kunnes raaka-aineet on synkronoitu Finelin avoimesta rajapinnasta. Tuotemerkit, kypsennyshävikki ja annospainot voivat muuttaa toteutunutta arvoa.",
-    "notesEn": "Source: Original Home Recipes meal-plan recipe created for this app; it is not copied from a single online recipe. Nutrition is an approximate planning estimate and varies by brand. Substitutions: Replace chicken with turkey fillet, lean pork tenderloin or firm tofu; replace root vegetables with potatoes plus carrots; replace Greek yogurt with skyr or a fortified unsweetened soy alternative."
+    "updatedAt": "2026-07-26T11:47:11.461Z"
   },
   {
     "id": "mealplan-beef-bean-chili-rice",

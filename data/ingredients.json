@@ -170,7 +170,7 @@
       "fibre": 0
     },
     "createdAt": "2026-07-22T12:00:00.000Z",
-    "updatedAt": "2026-07-22T19:22:59.349Z"
+    "updatedAt": "2026-07-26T11:47:11.436Z"
   },
   {
     "id": "ingredient-chiansiemen",
@@ -265,7 +265,7 @@
       "fibre": 0
     },
     "createdAt": "2026-07-22T12:00:00.000Z",
-    "updatedAt": "2026-07-22T19:46:30.770Z"
+    "updatedAt": "2026-07-26T11:46:42.517Z"
   },
   {
     "id": "ingredient-heraproteiinijauhe",
@@ -342,7 +342,7 @@
       "fibre": 0
     },
     "createdAt": "2026-07-22T12:00:00.000Z",
-    "updatedAt": "2026-07-22T19:54:13.374Z"
+    "updatedAt": "2026-07-26T11:46:42.507Z"
   },
   {
     "id": "ingredient-herne-pakaste",
@@ -508,7 +508,7 @@
       "fibre": 0
     },
     "createdAt": "2026-07-22T12:00:00.000Z",
-    "updatedAt": "2026-07-22T20:01:45.580Z"
+    "updatedAt": "2026-07-26T11:47:11.442Z"
   },
   {
     "name": "Kalkkunajauheliha, vähärasvainen",
@@ -747,7 +747,7 @@
       "fibre": 0
     },
     "createdAt": "2026-07-22T12:00:00.000Z",
-    "updatedAt": "2026-07-22T19:26:08.016Z"
+    "updatedAt": "2026-07-26T11:46:42.492Z"
   },
   {
     "name": "Kidneypapu, säilyke, valutettu",
@@ -783,38 +783,100 @@
     "updatedAt": "2026-07-22T18:00:00.000Z"
   },
   {
+    "id": "ingredient-kreikkalainen-jogurtti-vaharasvainen",
     "name": "Kreikkalainen jogurtti, vähärasvainen",
-    "shoppingCategory": "Maitotuotteet ja kylmätuotteet",
-    "fineliFoodId": null,
-    "fineliFoodName": "",
-    "fineliMeasures": [],
-    "nutritionPer100g": {
-      "kcal": 60,
-      "protein": 10,
-      "carbs": 4,
-      "fat": 0.4,
-      "fibre": 0
-    },
     "nameEn": "Greek yogurt",
+    "shoppingCategory": "Maitotuotteet ja kylmätuotteet",
     "shoppingCategoryEn": "Dairy & chilled",
     "fineliQuery": "kreikkalainen jogurtti vähärasvainen",
     "fineliPreferredTerms": [
       "jogurtti",
       "kreikkalainen"
     ],
+    "fineliFoodId": 34611,
+    "fineliFoodName": "Jogurtti, maustamaton, kreikkalainen, rasvaa 7 %, laktoositon",
+    "fineliMeasures": [
+      {
+        "code": "DL",
+        "name": "desilitra",
+        "abbreviation": "dl",
+        "grams": 100
+      },
+      {
+        "code": "RKL",
+        "name": "ruokalusikka",
+        "abbreviation": "rkl",
+        "grams": 15
+      },
+      {
+        "code": "TL",
+        "name": "teelusikka",
+        "abbreviation": "tl",
+        "grams": 5
+      },
+      {
+        "code": "PORTL",
+        "name": "iso annos",
+        "abbreviation": "iso annos",
+        "grams": 250
+      },
+      {
+        "code": "PORTM",
+        "name": "keskikokoinen annos",
+        "abbreviation": "keskikokoinen annos",
+        "grams": 200
+      },
+      {
+        "code": "PORTS",
+        "name": "pieni annos",
+        "abbreviation": "pieni annos",
+        "grams": 150
+      },
+      {
+        "code": "PORT1000KJ",
+        "name": "Annoksen koko, joka vastaa 1000kJ",
+        "abbreviation": "Annos 1000kJ",
+        "grams": 223.16
+      },
+      {
+        "code": "G",
+        "name": "gramma",
+        "abbreviation": "g",
+        "grams": 1
+      }
+    ],
     "nutritionSource": {
-      "provider": "legacy-plan-estimate",
-      "status": "pending-fineli-sync",
-      "syncedAt": null
+      "provider": "THL Fineli API",
+      "status": "verified-api",
+      "syncedAt": "2026-07-24T14:55:09.765Z",
+      "matchMethod": "manual-selection"
     },
     "retail": {
       "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Kreikkalainen%20jogurtti",
       "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Kreikkalainen%20jogurtti",
-      "selectedPrice": null
+      "selectedPrice": {
+        "retailer": "S-kauppa",
+        "productName": "Arla Lempi Kreikkalainen 300 g 6% laktoositon jogurtti",
+        "sourceUrl": "https://www.s-kaupat.fi/tuote/arla-lempi-kreikkalainen-300-g-6-laktoositon-jogurtti/6413300019667",
+        "unitPriceEur": 4.63,
+        "priceUnit": "kg",
+        "packagePriceEur": 1.39,
+        "packageSize": 300,
+        "packageUnit": "g",
+        "store": "Prisma Itäkeskus",
+        "observedAt": "2026-07-24",
+        "note": ""
+      }
     },
-    "id": "ingredient-kreikkalainen-jogurtti-vaharasvainen",
+    "nutritionPer100g": {
+      "kcal": 92,
+      "protein": 5.2,
+      "carbs": 3.7,
+      "fat": 6,
+      "fibre": 0
+    },
     "createdAt": "2026-07-22T12:00:00.000Z",
-    "updatedAt": "2026-07-22T18:00:00.000Z"
+    "updatedAt": "2026-07-26T11:47:11.447Z"
   },
   {
     "name": "Kurkku",
@@ -1015,38 +1077,100 @@
     "updatedAt": "2026-07-22T18:00:00.000Z"
   },
   {
+    "id": "ingredient-maito-rasvaton",
     "name": "Maito, rasvaton",
-    "shoppingCategory": "Maitotuotteet ja kylmätuotteet",
-    "fineliFoodId": null,
-    "fineliFoodName": "",
-    "fineliMeasures": [],
-    "nutritionPer100g": {
-      "kcal": 46,
-      "protein": 3.4,
-      "carbs": 4.8,
-      "fat": 1.5,
-      "fibre": 0
-    },
     "nameEn": "Milk or fortified soy drink",
+    "shoppingCategory": "Maitotuotteet ja kylmätuotteet",
     "shoppingCategoryEn": "Dairy & chilled",
     "fineliQuery": "maito rasvaton",
     "fineliPreferredTerms": [
       "maito",
       "rasvaton"
     ],
+    "fineliFoodId": 29211,
+    "fineliFoodName": "Maito, rasvaton, ei lisätty d-vitamiinia, luomu",
+    "fineliMeasures": [
+      {
+        "code": "DL",
+        "name": "desilitra",
+        "abbreviation": "dl",
+        "grams": 100
+      },
+      {
+        "code": "RKL",
+        "name": "ruokalusikka",
+        "abbreviation": "rkl",
+        "grams": 15
+      },
+      {
+        "code": "TL",
+        "name": "teelusikka",
+        "abbreviation": "tl",
+        "grams": 5
+      },
+      {
+        "code": "PORTL",
+        "name": "iso annos",
+        "abbreviation": "iso annos",
+        "grams": 400
+      },
+      {
+        "code": "PORTM",
+        "name": "keskikokoinen annos",
+        "abbreviation": "keskikokoinen annos",
+        "grams": 200
+      },
+      {
+        "code": "PORTS",
+        "name": "pieni annos",
+        "abbreviation": "pieni annos",
+        "grams": 150
+      },
+      {
+        "code": "PORT1000KJ",
+        "name": "Annoksen koko, joka vastaa 1000kJ",
+        "abbreviation": "Annos 1000kJ",
+        "grams": 706.11
+      },
+      {
+        "code": "G",
+        "name": "gramma",
+        "abbreviation": "g",
+        "grams": 1
+      }
+    ],
     "nutritionSource": {
-      "provider": "legacy-plan-estimate",
-      "status": "pending-fineli-sync",
-      "syncedAt": null
+      "provider": "THL Fineli API",
+      "status": "verified-api",
+      "syncedAt": "2026-07-24T14:48:06.391Z",
+      "matchMethod": "manual-selection"
     },
     "retail": {
       "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Maito",
       "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Maito",
-      "selectedPrice": null
+      "selectedPrice": {
+        "retailer": "",
+        "productName": "Kotimaista rasvaton maito 1l",
+        "sourceUrl": "https://www.s-kaupat.fi/tuote/kotimaista-rasvaton-maito-1l/6415712506032",
+        "unitPriceEur": 0.85,
+        "priceUnit": "l",
+        "packagePriceEur": 0.85,
+        "packageSize": 1,
+        "packageUnit": "l",
+        "store": "Prisma Itäkeskus",
+        "observedAt": "2026-07-24",
+        "note": ""
+      }
     },
-    "id": "ingredient-maito-rasvaton",
+    "nutritionPer100g": {
+      "kcal": 33,
+      "protein": 3.4,
+      "carbs": 4.9,
+      "fat": 0,
+      "fibre": 0
+    },
     "createdAt": "2026-07-22T12:00:00.000Z",
-    "updatedAt": "2026-07-22T18:00:00.000Z"
+    "updatedAt": "2026-07-26T11:46:42.521Z"
   },
   {
     "name": "Maitorahka, rasvaton",
@@ -1082,37 +1206,50 @@
     "updatedAt": "2026-07-22T18:00:00.000Z"
   },
   {
+    "id": "ingredient-marjasekoitus-pakaste",
     "name": "Marjasekoitus, pakaste",
-    "shoppingCategory": "Pakasteet",
-    "fineliFoodId": null,
-    "fineliFoodName": "",
-    "fineliMeasures": [],
-    "nutritionPer100g": {
-      "kcal": 45,
-      "protein": 1,
-      "carbs": 8,
-      "fat": 0.5,
-      "fibre": 4
-    },
     "nameEn": "Frozen berries",
+    "shoppingCategory": "Pakasteet",
     "shoppingCategoryEn": "Frozen",
     "fineliQuery": "marjasekoitus pakaste",
     "fineliPreferredTerms": [
       "marjasekoitus"
     ],
+    "fineliFoodId": null,
+    "fineliFoodName": "",
+    "fineliMeasures": [],
     "nutritionSource": {
       "provider": "legacy-plan-estimate",
       "status": "pending-fineli-sync",
-      "syncedAt": null
+      "syncedAt": "",
+      "matchMethod": ""
     },
     "retail": {
       "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Marjasekoitus",
       "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Marjasekoitus",
-      "selectedPrice": null
+      "selectedPrice": {
+        "retailer": "S-kauppa",
+        "productName": "Xtra marjasekoitus 500 g pakaste",
+        "sourceUrl": "https://www.s-kaupat.fi/tuote/xtra-marjasekoitus-500-g-pakaste/7340191153615",
+        "unitPriceEur": 7.3,
+        "priceUnit": "kg",
+        "packagePriceEur": 3.65,
+        "packageSize": 500,
+        "packageUnit": "g",
+        "store": "Prisma Itäkeskus",
+        "observedAt": "2026-07-24",
+        "note": ""
+      }
     },
-    "id": "ingredient-marjasekoitus-pakaste",
+    "nutritionPer100g": {
+      "kcal": 56,
+      "protein": 1.1,
+      "carbs": 9.9,
+      "fat": 0,
+      "fibre": 5.8
+    },
     "createdAt": "2026-07-22T12:00:00.000Z",
-    "updatedAt": "2026-07-22T18:00:00.000Z"
+    "updatedAt": "2026-07-26T11:46:42.512Z"
   },
   {
     "name": "Mysli, makeuttamaton",
@@ -1482,44 +1619,124 @@
     "updatedAt": "2026-07-22T18:00:00.000Z"
   },
   {
+    "id": "ingredient-rypsioljy",
     "name": "Rypsiöljy",
-    "shoppingCategory": "Kuivakaappi",
-    "fineliFoodId": null,
-    "fineliFoodName": "",
-    "fineliMeasures": [],
-    "nutritionPer100g": {
-      "kcal": 884,
-      "protein": 0,
-      "carbs": 0,
-      "fat": 100,
-      "fibre": 0
-    },
     "nameEn": "Rapeseed oil",
+    "shoppingCategory": "Kuivakaappi",
     "shoppingCategoryEn": "Pantry",
     "fineliQuery": "rypsiöljy",
     "fineliPreferredTerms": [
       "rypsiöljy"
     ],
+    "fineliFoodId": 535,
+    "fineliFoodName": "Rypsiöljy",
+    "fineliMeasures": [
+      {
+        "code": "DL",
+        "name": "desilitra",
+        "abbreviation": "dl",
+        "grams": 90
+      },
+      {
+        "code": "RKL",
+        "name": "ruokalusikka",
+        "abbreviation": "rkl",
+        "grams": 13.5
+      },
+      {
+        "code": "TL",
+        "name": "teelusikka",
+        "abbreviation": "tl",
+        "grams": 4.5
+      },
+      {
+        "code": "PORTS",
+        "name": "pieni annos",
+        "abbreviation": "pieni annos",
+        "grams": 10
+      },
+      {
+        "code": "PORTM",
+        "name": "keskikokoinen annos",
+        "abbreviation": "keskikokoinen annos",
+        "grams": 25
+      },
+      {
+        "code": "PORTL",
+        "name": "iso annos",
+        "abbreviation": "iso annos",
+        "grams": 40
+      },
+      {
+        "code": "PORT1000KJ",
+        "name": "Annoksen koko, joka vastaa 1000kJ",
+        "abbreviation": "Annos 1000kJ",
+        "grams": 27.03
+      },
+      {
+        "code": "G",
+        "name": "gramma",
+        "abbreviation": "g",
+        "grams": 1
+      }
+    ],
     "nutritionSource": {
-      "provider": "legacy-plan-estimate",
-      "status": "pending-fineli-sync",
-      "syncedAt": null
+      "provider": "THL Fineli API",
+      "status": "verified-api",
+      "syncedAt": "2026-07-24T14:53:16.813Z",
+      "matchMethod": "manual-selection"
     },
     "retail": {
       "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Rypsi%C3%B6ljy",
       "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Rypsi%C3%B6ljy",
-      "selectedPrice": null
+      "selectedPrice": {
+        "retailer": "S-kauppa",
+        "productName": "Kotimaista 900ml rypsiöljy",
+        "sourceUrl": "https://www.s-kaupat.fi/tuote/kotimaista-900ml-rypsioljy/6438348001511",
+        "unitPriceEur": 3.88,
+        "priceUnit": "l",
+        "packagePriceEur": 3.49,
+        "packageSize": 900,
+        "packageUnit": "ml",
+        "store": "Prisma Itäkeskus",
+        "observedAt": "2026-07-24",
+        "note": ""
+      }
     },
-    "id": "ingredient-rypsioljy",
+    "nutritionPer100g": {
+      "kcal": 883.9,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 100,
+      "fibre": 0
+    },
     "createdAt": "2026-07-22T12:00:00.000Z",
-    "updatedAt": "2026-07-22T18:00:00.000Z"
+    "updatedAt": "2026-07-26T11:47:11.456Z"
   },
   {
+    "id": "ingredient-salaattikasvikset",
     "name": "Salaattikasvikset",
+    "nameEn": "Salad vegetables",
     "shoppingCategory": "Hedelmät ja vihannekset",
+    "shoppingCategoryEn": "Produce",
+    "fineliQuery": "salaattisekoitus",
+    "fineliPreferredTerms": [
+      "salaatti"
+    ],
     "fineliFoodId": null,
     "fineliFoodName": "",
     "fineliMeasures": [],
+    "nutritionSource": {
+      "provider": "legacy-plan-estimate",
+      "status": "pending-fineli-sync",
+      "syncedAt": "",
+      "matchMethod": ""
+    },
+    "retail": {
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Salaattikasvikset",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Salaattikasvikset",
+      "selectedPrice": null
+    },
     "nutritionPer100g": {
       "kcal": 20,
       "protein": 1,
@@ -1527,25 +1744,8 @@
       "fat": 0.2,
       "fibre": 1.5
     },
-    "nameEn": "Salad vegetables",
-    "shoppingCategoryEn": "Produce",
-    "fineliQuery": "salaattisekoitus",
-    "fineliPreferredTerms": [
-      "salaatti"
-    ],
-    "nutritionSource": {
-      "provider": "legacy-plan-estimate",
-      "status": "pending-fineli-sync",
-      "syncedAt": null
-    },
-    "retail": {
-      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Salaattikasvikset",
-      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Salaattikasvikset",
-      "selectedPrice": null
-    },
-    "id": "ingredient-salaattikasvikset",
     "createdAt": "2026-07-22T12:00:00.000Z",
-    "updatedAt": "2026-07-22T18:00:00.000Z"
+    "updatedAt": "2026-07-26T11:47:11.452Z"
   },
   {
     "id": "ingredient-sipuli",
@@ -1615,38 +1815,106 @@
     "updatedAt": "2026-07-22T18:00:00.000Z"
   },
   {
-    "name": "Skyr, maustamaton",
-    "shoppingCategory": "Maitotuotteet ja kylmätuotteet",
-    "fineliFoodId": null,
-    "fineliFoodName": "",
-    "fineliMeasures": [],
-    "nutritionPer100g": {
-      "kcal": 63,
-      "protein": 11,
-      "carbs": 4,
-      "fat": 0.2,
-      "fibre": 0
-    },
+    "id": "ingredient-skyr-maustamaton",
+    "name": "Skyr",
     "nameEn": "Skyr",
+    "shoppingCategory": "Maitotuotteet ja kylmätuotteet",
     "shoppingCategoryEn": "Dairy & chilled",
-    "fineliQuery": "skyr maustamaton",
+    "fineliQuery": "skyr",
     "fineliPreferredTerms": [
       "skyr",
       "maustamaton"
     ],
+    "fineliFoodId": 34588,
+    "fineliFoodName": "Skyr, keinotekoisesti makeutettu, rasvaa 2 %",
+    "fineliMeasures": [
+      {
+        "code": "DL",
+        "name": "desilitra",
+        "abbreviation": "dl",
+        "grams": 100
+      },
+      {
+        "code": "RKL",
+        "name": "ruokalusikka",
+        "abbreviation": "rkl",
+        "grams": 15
+      },
+      {
+        "code": "TL",
+        "name": "teelusikka",
+        "abbreviation": "tl",
+        "grams": 5
+      },
+      {
+        "code": "PORTS",
+        "name": "pieni annos",
+        "abbreviation": "pieni annos",
+        "grams": 85
+      },
+      {
+        "code": "PORTM",
+        "name": "keskikokoinen annos",
+        "abbreviation": "keskikokoinen annos",
+        "grams": 170
+      },
+      {
+        "code": "PORTL",
+        "name": "iso annos",
+        "abbreviation": "iso annos",
+        "grams": 340
+      },
+      {
+        "code": "KPL_VALM",
+        "name": "Valmistaja (kpl)",
+        "abbreviation": "Valmistaja (kpl)",
+        "grams": 170
+      },
+      {
+        "code": "PORT1000KJ",
+        "name": "Annoksen koko, joka vastaa 1000kJ",
+        "abbreviation": "Annos 1000kJ",
+        "grams": 303.3
+      },
+      {
+        "code": "G",
+        "name": "gramma",
+        "abbreviation": "g",
+        "grams": 1
+      }
+    ],
     "nutritionSource": {
-      "provider": "legacy-plan-estimate",
-      "status": "pending-fineli-sync",
-      "syncedAt": null
+      "provider": "THL Fineli API",
+      "status": "verified-api",
+      "syncedAt": "2026-07-24T14:43:15.707Z",
+      "matchMethod": "manual-selection"
     },
     "retail": {
       "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Skyr",
       "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Skyr",
-      "selectedPrice": null
+      "selectedPrice": {
+        "retailer": "S-kauppa",
+        "productName": "Isey Skyr Wanhanajan vanilja maitovalmiste laktoositon 2% 400g",
+        "sourceUrl": "https://www.s-kaupat.fi/tuote/isey-skyr-wanhanajan-vanilja-maitovalmiste-laktoositon-2-400g/5690527983303",
+        "unitPriceEur": 6.73,
+        "priceUnit": "kg",
+        "packagePriceEur": 2.69,
+        "packageSize": 400,
+        "packageUnit": "g",
+        "store": "Prisma Itäkeskus",
+        "observedAt": "2026-07-24",
+        "note": ""
+      }
     },
-    "id": "ingredient-skyr-maustamaton",
+    "nutritionPer100g": {
+      "kcal": 71,
+      "protein": 9.2,
+      "carbs": 3.8,
+      "fat": 2.1,
+      "fibre": 0
+    },
     "createdAt": "2026-07-22T12:00:00.000Z",
-    "updatedAt": "2026-07-22T18:00:00.000Z"
+    "updatedAt": "2026-07-26T11:46:42.502Z"
   },
   {
     "name": "Soijakastike, vähäsuolainen",
