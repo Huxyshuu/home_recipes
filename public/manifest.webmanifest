@@ -11,5 +11,7 @@
       "sizes": "any",
       "type": "image/svg+xml"
     }
-  ]
+  ],
+  "scope": "/",
+  "description": "A private cloud recipe book with Finnish nutrition, grocery planning, and shared ingredients."
 }

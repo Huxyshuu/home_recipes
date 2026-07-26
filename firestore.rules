@@ -1,0 +1,16 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Replace this value with the UID of the single Email/Password account
+    // created for Home Recipes in Firebase Authentication.
+    function isHomeRecipesUser() {
+      return request.auth != null
+        && request.auth.uid == 'tOyDoVR3F7NEzSuBG8luDqOgUlm1';
+    }
+
+    match /{document=**} {
+      allow read, write: if isHomeRecipesUser();
+    }
+  }
+}

@@ -1,36 +1,40 @@
-# Upgrade notes — Home Recipes 0.4.1
+# Upgrade notes — v0.4.1 to v0.5.0
 
-## Shared ingredient library
+## No destructive local migration
 
-Version 0.4.1 adds `data/ingredients.json` as the single editable list for shared ingredient information. Open **Ingredients** in the app to change nutrition, Fineli mapping, store links or price once for every recipe using that ingredient.
+The existing `data/recipes.json`, `data/ingredients.json`, `data/shopping-cart.json`, and local uploads remain usable. `npm run dev` and `npm run lan` deliberately force local mode.
 
-Recipe-specific quantity, unit, gram weight and preparation notes remain separate.
+## Moving the current data into Firestore
 
-## Upgrade
+1. Configure Firebase and Cloudinary as described in `README.md`.
+2. Replace the UID placeholder in `firestore.rules`.
+3. Deploy with `npm run deploy:firebase`.
+4. Log in once.
 
-```bash
-unzip home-recipes-v0.4.1-shared-ingredients.zip
-cd home_recipes
-npm install
-npm test
-npm run lan
+When `meta/bootstrap` is absent, the application uploads the bundled seed data to Firestore in one batch. It does not seed again after the marker exists.
+
+If you already created Firestore documents manually, create `meta/bootstrap` before opening the app or review the automatic import behavior first.
+
+## Authentication model
+
+The UI asks only for a password, but the implementation uses one Firebase Email/Password user whose email is set in `VITE_FIREBASE_SHARED_EMAIL`. Existing users must create this account in Firebase Authentication; the application does not create accounts or expose registration.
+
+The session is persisted locally per browser/device. Signing out or clearing browser site data removes that remembered login.
+
+## Security-rule action required
+
+Change this value before deployment:
+
+```text
+REPLACE_WITH_FIREBASE_AUTH_UID
 ```
 
-Back up both data files before replacing an existing installation:
+Use the exact UID from Firebase Authentication. Leaving the placeholder prevents all cloud database access, which is safer than accidentally making the database public.
 
-```bash
-cp data/recipes.json ~/home-recipes-recipes-backup.json
-cp data/ingredients.json ~/home-recipes-ingredients-backup.json 2>/dev/null || true
-```
+## Images
 
-An older recipe file that still embeds complete ingredient records is automatically migrated on first load. Home Recipes creates unique shared definitions and links each recipe occurrence using `catalogId`.
+Existing local SVG and `/uploads/...` references continue to work locally. New uploads in Firebase mode use Cloudinary. To make an old local upload public, upload it again through the recipe editor or move it to Cloudinary and update the recipe URL.
 
-## Editing ingredients
+## Lock file
 
-1. Open **Ingredients**.
-2. Search for the ingredient.
-3. Update the Fineli selection, nutrition, S/K links or price.
-4. Save the shared ingredient.
-5. Every linked recipe uses the update immediately.
-
-The recipe editor also includes a **Shared ingredient record** selector. Shared fields changed there are saved globally when the recipe is saved.
+The release archive omits the old v0.4.1 `package-lock.json` because it does not contain the new Firebase dependency. Run `npm install` once and commit the newly generated lock file before using `npm ci` or automated deployment.

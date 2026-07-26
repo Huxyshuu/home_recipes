@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import Icon from './Icon';
 import { formatCartQuantity, shoppingCategoryOrder } from '../utils/shopping';
 
-export default function GroceryCart({ cart, loading, error, onRefresh, onToggle, onRemove, onClearChecked, onClearAll }) {
+export default function GroceryCart({ cart, loading, error, onRefresh, onToggle, onRemove, onClearChecked, onClearAll, backend = 'local' }) {
   const grouped = useMemo(() => {
     const result = {};
     (cart.items || []).forEach((item) => {
@@ -68,7 +68,7 @@ export default function GroceryCart({ cart, loading, error, onRefresh, onToggle,
         ))}
       </section> : null}
 
-      <footer className="cart-sync-note"><Icon name="refresh" size={16} /> The list is stored by the local Home Recipes server. Tap Refresh on another device to see the latest checks.</footer>
+      <footer className="cart-sync-note"><Icon name="refresh" size={16} /> {backend === 'firebase' ? 'The cart syncs automatically through Firebase on every signed-in device.' : 'The list is stored by the local Home Recipes server. Tap Refresh on another device to see the latest checks.'}</footer>
     </main>
   );
 }

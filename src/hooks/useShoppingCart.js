@@ -29,9 +29,14 @@ export function useShoppingCart() {
     }
   }, [applyCart]);
 
-  useEffect(() => {
-    refresh();
-  }, [refresh]);
+  useEffect(() => api.subscribeCart((next) => {
+    applyCart(next);
+    setLoading(false);
+    setError('');
+  }, (requestError) => {
+    setError(requestError.message);
+    setLoading(false);
+  }), [applyCart]);
 
   const commit = useCallback((updater) => {
     const nextCart = typeof updater === 'function' ? updater(cartRef.current) : updater;
@@ -51,7 +56,7 @@ export function useShoppingCart() {
         try {
           applyCart(await api.getCart());
         } catch {
-          // Keep the optimistic list visible if the server is entirely unavailable.
+          // Keep the optimistic list visible if the backend is unavailable.
         }
       }
       throw requestError;

@@ -19,8 +19,16 @@ export function useRecipes() {
   }, []);
 
   useEffect(() => {
-    refresh();
-  }, [refresh]);
+    setLoading(true);
+    setError('');
+    return api.subscribeRecipes((items) => {
+      setRecipes(items);
+      setLoading(false);
+    }, (requestError) => {
+      setError(requestError.message);
+      setLoading(false);
+    });
+  }, []);
 
   const save = useCallback(async (recipe) => {
     const saved = recipe.id

@@ -1,79 +1,157 @@
 # Home Recipes
 
-Home Recipes is a lightweight, local-first recipe book, cooking companion and weekly meal-planning app for a kitchen tablet, computer and phone on the same Wi-Fi network.
+Home Recipes is a cloud-first personal recipe book for the Finnish meal plan in this repository. The main deployment uses **Firebase Hosting**, **Firebase Authentication**, **Cloud Firestore**, and **Cloudinary**, so the same recipes, shared ingredients, grocery cart, nutrition data, prices, and images are available from a phone or computer anywhere with internet access.
 
-This release adds a central shared ingredient library and is designed around a practical muscle-gain / gradual-fat-loss routine for a 93 kg user targeting 80–85 kg. It includes 14 Finnish-language weekly favourites, a seven-day rotation, live Fineli nutrition synchronisation, S-kaupat/K-Ruoka product links, transparent recipe-price coverage and a shared Sunday/Wednesday grocery cart.
+The original local JSON/Express mode remains available for development, offline work, and use on a home network.
 
-The application remains suitable for the Huawei MediaPad T1 10 / T1-A21L generation of hardware. The production build includes a legacy JavaScript bundle, uses system fonts, keeps dependencies modest and avoids relying on modern CSS Grid for core layouts.
+## What version 0.5.0 adds
 
-## What is included
+- A public Firebase-hosted single-page application.
+- Password-only login screen backed by one Firebase Email/Password account.
+- Persistent login on each device through Firebase local authentication persistence.
+- Cloud Firestore as the primary recipe, ingredient, and cart database.
+- Real-time updates between signed-in devices.
+- Cloudinary image uploads in cloud mode.
+- Direct URL routes for every recipe, for example `/recipes/mealplan-protein-overnight-oats`.
+- Normal browser history: links, refresh, deep links, and the Back button work as expected.
+- Automatic first-login import of the repository's 14 recipes, 47 shared ingredients, and current grocery cart.
+- The complete local Express/JSON backend is retained.
 
-### Recipe library
+## Cloud and local architecture
 
-- Responsive recipe library with search, category and difficulty filters, favourites and sorting.
-- Fourteen complete weekly-plan recipes, all marked as favourites.
-- Finnish recipe titles, descriptions, ingredients, notes, timed steps, grocery categories and tags, while preserving English fallback fields in the JSON.
-- Text-free responsive covers and robust image-area styling that no longer crops recipe labels or overlaps card controls.
-- Recipe editor with image upload, Fineli search, retailer links and saved price fields.
-- Central **Ingredients** view: update one ingredient once and every linked recipe immediately receives the same name, Fineli record, nutrition, shop links and price. Recipe quantities, units, gram weights and preparation notes remain recipe-specific.
-- Scalable portions, per-ingredient retailer shortcuts, price coverage, total price/per-serving calculation and a one-tap **Add to grocery cart** action.
+| Concern | Public cloud mode | Local mode |
+|---|---|---|
+| Website | Firebase Hosting | Express serves the Vite build |
+| Authentication | Firebase Email/Password | None |
+| Recipes | Firestore `recipes` collection | `data/recipes.json` |
+| Shared ingredients | Firestore `ingredients` collection | `data/ingredients.json` |
+| Grocery cart | Firestore `appState/sharedCart` | `data/shopping-cart.json` |
+| Recipe images | Cloudinary | `uploads/` |
+| Live updates | Firestore listeners | Local API refresh |
+| Fineli | Browser request or optional proxy | Local server cache/proxy |
 
-### Weekly routine
+The central ingredient library remains the source of truth. A recipe stores only the ingredient reference, amount, unit, gram weight, and recipe-specific preparation note. Updating nutrition, retailer links, or price for one shared ingredient updates every recipe that uses it.
 
-- Seven-day meal rotation with breakfast, lunch, dinner, a skyr snack and a whey/banana training snack.
-- Approximate daily calories, protein, carbohydrate, fat and fibre.
-- Sunday and Wednesday shopping windows.
-- One-tap combined carts that aggregate repeated ingredients.
+## Public deployment setup
 
-### Nutrition guide and substitutions
+### 1. Install the project
 
-- Compact guide cards for energy, protein, carbohydrate, fat, fibre, Finnish micronutrient considerations and foods to limit.
-- Direct links to the sports-nutrition position paper, Nordic Nutrition Recommendations 2023, Finnish Food Authority pages and Fineli.
-- Ingredient substitution cards for animal protein, fish, vegetarian protein, carbohydrate bases, vegetables and dairy/plant alternatives.
-- A clear note that the weekly calorie level is a starting template, not an individually calculated medical diet.
-
-### Shared grocery cart
-
-- Cart stored in `data/shopping-cart.json` by the local server.
-- Accessible from the tablet, PC or phone on the same network.
-- Ingredient aggregation by name and unit.
-- Grocery-department grouping, check-off state, source-meal notes, remove checked and clear-all controls.
-- Refresh button for seeing changes made on another device.
-
-### Cooking and nutrition tools
-
-- Full-screen cooking mode that shows every recipe step simultaneously.
-- Independent step timers with a traditional kitchen-timer sound, vibration where supported, pause/resume/reset and `+1 min`.
-- Finnish nutrition lookup through the open Fineli API maintained by THL.
-- One-click or command-line bulk synchronisation of every unique shared ingredient. The app writes the exact Fineli food ID, Finnish food name, household measures, per-100-g values, sync time and match provenance once into `data/ingredients.json`; linked recipes read that shared record automatically.
-- Conservative matching: an ingredient is not silently guessed when no sufficiently close Fineli result exists; unresolved foods remain listed for review.
-- Local Fineli food/search cache with stale-cache fallback and bounded atomic storage.
-- Local JSON recipe database with serialized atomic writes.
-
-## Technology
-
-- Frontend: Vite, React 18, SCSS
-- Older-browser support: `@vitejs/plugin-legacy` and a fetch polyfill
-- Backend: Node.js and Express
-- Recipe storage: `data/recipes.json` (recipe-level fields and ingredient usage amounts)
-- Shared ingredient storage: `data/ingredients.json` (names, Fineli data, nutrition, retailer links and prices)
-- Shared grocery cart: `data/shopping-cart.json`
-- Fineli cache: `data/fineli-cache.json`
-- Uploaded images: `uploads/`
-
-## Requirements
-
-Install Node.js 18.18 or newer on the computer that hosts the application. Node.js 20 LTS or newer is recommended.
-
-The tablet and phone only need a browser.
-
-## Install
+Requirements: Node.js 18.18 or newer.
 
 ```bash
 npm install
+npm test
 ```
 
-## Development mode
+The repository intentionally does not include a generated lock file in the release archive. The first `npm install` generates one for the environment that installs the Firebase dependency.
+
+### 2. Create the Firebase project
+
+In the Firebase console:
+
+1. Create a project.
+2. Open **Authentication → Sign-in method** and enable **Email/Password**.
+3. Open **Authentication → Users** and create exactly one user, such as `home-recipes@example.com`, with the password you want to type in the app.
+4. Copy that user's Firebase **UID**.
+5. Open `firestore.rules` and replace `REPLACE_WITH_FIREBASE_AUTH_UID` with the copied UID.
+6. Create a Cloud Firestore database.
+7. Add a Web app in **Project settings → Your apps** and copy its configuration values.
+
+The app never stores the password in source code or an environment file. The email address is configured in the frontend, while Firebase verifies the password.
+
+### 3. Configure the environment
+
+```bash
+cp .env.example .env.local
+```
+
+Fill in `.env.local`:
+
+```dotenv
+VITE_DATA_BACKEND=firebase
+VITE_FIREBASE_API_KEY=...
+VITE_FIREBASE_AUTH_DOMAIN=your-project.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=your-project
+VITE_FIREBASE_STORAGE_BUCKET=your-project.firebasestorage.app
+VITE_FIREBASE_MESSAGING_SENDER_ID=...
+VITE_FIREBASE_APP_ID=...
+VITE_FIREBASE_SHARED_EMAIL=home-recipes@example.com
+
+VITE_CLOUDINARY_CLOUD_NAME=...
+VITE_CLOUDINARY_UNSIGNED_UPLOAD_PRESET=...
+VITE_FINELI_PROXY_URL=
+```
+
+Do not commit `.env.local`.
+
+### 4. Configure Cloudinary
+
+Create an **unsigned upload preset** in Cloudinary and put its name in `.env.local`. Restrict the preset to the Home Recipes use case:
+
+- Accept only JPEG, PNG, and WebP.
+- Set a sensible maximum file size; the app also enforces 8 MB.
+- Restrict uploads to a dedicated folder or preset policy.
+- Do not put a Cloudinary API secret in the browser application.
+
+Unsigned uploads are convenient for a small private app, but the preset identifier is visible in the built frontend. For a larger multi-user service, replace this with signed uploads through a trusted backend or serverless function.
+
+### 5. Select the Firebase project
+
+Install and authenticate the Firebase CLI:
+
+```bash
+npm install --global firebase-tools
+firebase login
+cp .firebaserc.example .firebaserc
+```
+
+Edit `.firebaserc` and replace `YOUR_FIREBASE_PROJECT_ID`.
+
+### 6. Deploy
+
+```bash
+npm run deploy:firebase
+```
+
+This performs a production Vite build and deploys Hosting, Firestore rules, and indexes. Firebase Hosting rewrites every route to `index.html`, so direct links such as `/recipes/<id>` continue working after refresh.
+
+The first successful login initializes an empty Firestore database from the repository data. It creates:
+
+- 14 recipe documents
+- 47 shared ingredient documents
+- the current shared grocery cart
+- `meta/bootstrap`, which prevents duplicate seeding
+
+After that first import, Firestore is the cloud source of truth. Editing the JSON seed files does not overwrite an already initialized cloud database.
+
+## Password and remembered login
+
+The login screen asks only for the shared password. Internally, it signs into the single email account configured through `VITE_FIREBASE_SHARED_EMAIL`.
+
+Firebase authentication persistence is explicitly set to browser-local storage. Therefore, the password is normally requested once per browser profile/device. Login is requested again after signing out, clearing site data, using private browsing, revoking the session, or deleting the Firebase user.
+
+Use the **Sign out** control in the header on a shared or lost device.
+
+## URL routes
+
+| URL | View |
+|---|---|
+| `/` | Recipe library |
+| `/recipes/:id` | Recipe detail |
+| `/recipes/:id/edit` | Recipe editor |
+| `/recipes/new` | New recipe |
+| `/routine` | Seven-day routine |
+| `/ingredients` | Shared ingredient library |
+| `/guide` | Nutrition and Fineli tools |
+| `/substitutions` | Ingredient substitutions |
+| `/cart` | Grocery cart |
+| `/stats` | Statistics |
+
+Routing uses the browser History API. Opening a recipe creates a history entry, closing it returns to the previous page when possible, and the browser Back/Forward buttons follow the user's actual path through the app.
+
+## Running locally
+
+### Local JSON development mode
 
 ```bash
 npm run dev
@@ -81,239 +159,82 @@ npm run dev
 
 This starts:
 
-- Vite frontend: `http://localhost:5173`
-- Express API: `http://localhost:8787`
+- Vite on `http://localhost:5173`
+- Express API on `http://localhost:8787`
 
-The old tablet should use the production build because Vite's development client expects a more modern browser.
+`npm run dev` is an alias for `npm run dev:local`, which forces the local backend even when `.env.local` contains Firebase settings.
 
-## Run on the local Wi-Fi network
+### Test the cloud frontend locally
+
+With Firebase values in `.env.local`:
+
+```bash
+npm run dev:cloud
+```
+
+This uses the real Firebase project and Cloudinary configuration while serving the frontend from Vite.
+
+### Production-style local/LAN mode
 
 ```bash
 npm run lan
 ```
 
-The complete app is then served from port `8787`.
+Then open:
 
-Find the host computer's local IP address.
+```text
+http://localhost:8787
+```
 
-### Ubuntu / Linux
+Another device on the same network can use `http://<computer-LAN-IP>:8787`. The local server has an SPA fallback, so routed recipe URLs work there too.
+
+### Build commands
 
 ```bash
-hostname -I
+npm run build:cloud
+npm run build:local
 ```
 
-### Windows PowerShell
+`build:cloud` uses `.env.local` and Firebase. `build:local` uses `.env.lan`, which explicitly selects the JSON backend.
 
-```powershell
-ipconfig
-```
+## Firestore security
 
-Open the address on the tablet or phone, for example:
+The included rules deny all access unless the request is authenticated as the exact UID entered in `firestore.rules`:
 
 ```text
-http://192.168.1.45:8787
+request.auth.uid == '<your single Home Recipes user UID>'
 ```
 
-Replace the example with the host computer's actual Wi-Fi address. All devices must be on the same local network, and the host computer must remain powered on.
+Do not deploy the placeholder rule unchanged. Firebase Authentication alone is not a substitute for Firestore rules.
 
-### Restrict Ubuntu's firewall rule to the home network
+## Fineli notes
 
-For an address such as `192.168.1.45`, a common subnet is `192.168.1.0/24`:
+The existing ingredient records keep their Finnish search terms, Fineli IDs, measures, nutrition values, source status, and synchronization timestamps.
 
-```bash
-sudo ufw allow from 192.168.1.0/24 to any port 8787 proto tcp
-sudo ufw status numbered
-```
+- Local mode uses the Express Fineli integration and cache.
+- Cloud mode can call Fineli from the browser.
+- If the browser is blocked by CORS or a network policy, set `VITE_FINELI_PROXY_URL` to a compatible HTTPS proxy based on the existing Home Recipes nutrition endpoints.
+- A bulk sync reports unresolved ingredients rather than silently assigning an uncertain match.
 
-Do not configure router port forwarding for port `8787`.
+Nutrition and retailer prices remain snapshots and should be reviewed when exact label-level accuracy matters.
 
-## Using the meal routine
-
-1. Open **Routine**.
-2. Use **Create this cart** under Sunday shop before the week begins.
-3. Open **Cart** on your phone and check groceries off in the store.
-4. On Wednesday, create the Wednesday cart for the second half of the week.
-5. Open any routine meal to see full ingredients, substitutions and cooking steps.
-6. Put **Whey + Banana** before or after lifting. On a non-training day with low appetite, that is the first optional item to remove.
-
-The 2,290–2,410 kcal daily range is a structured starting point. It is not a personalised maintenance-calorie calculation because the app does not know height, age, sex, steps or training volume. Use consistency, body-weight trend, gym performance, hunger and recovery to decide whether later adjustment is needed.
-
-## Shared ingredient workflow
-
-Open **Ingredients** from the main navigation. The page contains the 47 unique seed ingredients and shows how many recipes use each one.
-
-Shared fields include:
-
-- Finnish and English names;
-- grocery category;
-- Fineli query, food ID, measures and per-100-g nutrition;
-- S-kaupat and K-Ruoka links;
-- selected product, price, store and observation date.
-
-Recipe-specific fields remain in `data/recipes.json`:
-
-- quantity and unit;
-- gram weight;
-- preparation note.
-
-For example, changing the saved price of **Rypsiöljy** once updates the cost calculation in all seven recipes that use it, without changing the amount of oil in any recipe. The recipe editor also links each row to a shared ingredient record; saving shared fields there updates the same central record.
-
-## Recipe nutrition behavior
-
-The 14 weekly favourites contain two nutrition layers:
-
-1. `plannedNutritionPerServing`: the approximate planning value from the supplied research plan.
-2. The linked record in `data/ingredients.json`: the food values used for exact ingredient calculations after a successful Fineli sync.
-
-The supplied JSON initially keeps the researched plan estimate active and marks every ingredient as awaiting Fineli synchronisation. This is intentional: values are never presented as API-verified until the app has actually received and stored a Fineli food record.
-
-Run the synchronisation after installing the project:
-
-```bash
-npm run sync:fineli
-```
-
-To ignore fresh cache entries and request Fineli again:
-
-```bash
-npm run sync:fineli:fresh
-```
-
-The same operation is available inside **Nutrition Guide → Sync Fineli data**. A recipe switches to ingredient-based nutrition only when all its ingredients have resolved Fineli records. Partial or ambiguous matches remain visible for review instead of being guessed.
-
-Nutrition can still vary because of product brand, cooking loss, drained weight and edible portion. Fineli describes foods rather than a particular supermarket package, so package labels remain the best source for brand-specific values.
-
-
-## Retailer links and recipe pricing
-
-Every shared ingredient contains Finnish search links for both S-kaupat and K-Ruoka. When a specific product has been verified, the link can be replaced with its direct product page in **Ingredients** or from a linked recipe editor. The change applies to every recipe using that ingredient.
-
-Retail prices depend on the selected store, date, campaign and package. Home Recipes therefore does not invent or silently scrape a universal price. A saved price record contains its retailer, product, direct source URL, unit/package price, store and observation date. Only those saved records contribute to:
-
-- ingredient cost;
-- recipe total;
-- price per serving;
-- price coverage percentage.
-
-The seed data includes two verified examples to demonstrate the workflow. All other ingredients have working retailer searches and display **Price not saved** until a product and current price are reviewed.
-
-## Grocery cart behavior
-
-The shared cart file is:
+## Data model
 
 ```text
-data/shopping-cart.json
+recipes/{recipeId}
+  ingredient usages: catalogId, quantity, unit, grams, recipe note
+
+ingredients/{ingredientId}
+  shared names, Fineli data, nutrition, retailer URLs, selected price
+
+appState/sharedCart
+  shared grocery cart
+
+meta/bootstrap
+  cloud database initialization marker
 ```
 
-When a routine cart is built:
-
-- repeated ingredients are combined when their canonical name and unit match;
-- meal sources are retained for context;
-- items are grouped by grocery department;
-- the current cart is replaced after confirmation.
-
-Adding an individual recipe merges its ingredients into the existing cart. Portion changes in the recipe detail scale the added quantities.
-
-The cart does not use live push updates. Tap **Refresh** on another device to load the latest checks.
-
-## Data files
-
-### Recipes and ingredient usage
-
-```text
-data/recipes.json
-```
-
-### Shared ingredient library
-
-```text
-data/ingredients.json
-```
-
-The recipe file stores each use of an ingredient by `catalogId`, together with that recipe's quantity, unit, gram weight and preparation note. The ingredient library stores the shared food identity, Fineli mapping, nutrition and retailer data.
-
-### Shared grocery cart
-
-```text
-data/shopping-cart.json
-```
-
-### Fineli cache
-
-```text
-data/fineli-cache.json
-```
-
-### Uploaded images
-
-```text
-uploads/
-```
-
-Recipe, ingredient and cart writes use temporary files followed by rename. Mutations are serialized to reduce the risk of simultaneous tablet/PC changes overwriting one another.
-
-## Back up an existing installation
-
-Before replacing an older version:
-
-```bash
-cp data/recipes.json ~/home-recipes-recipes-backup.json
-cp data/ingredients.json ~/home-recipes-ingredients-backup.json 2>/dev/null || true
-cp data/shopping-cart.json ~/home-recipes-cart-backup.json 2>/dev/null || true
-cp -r uploads ~/home-recipes-uploads-backup
-```
-
-Restore personal recipes, ingredients or uploads after extracting the new release. When Home Recipes opens an older 0.4.0-style recipe file containing full ingredient snapshots, it automatically creates shared ingredient records and replaces the snapshots with `catalogId` links. Back up the JSON files before the first launch.
-
-## Fineli API and cache
-
-The Express server is the only part that contacts Fineli. This avoids direct browser cross-origin and older-TLS problems on the tablet.
-
-Documented endpoints used include:
-
-```text
-GET https://fineli.fi/fineli/api/v1/foods?q=omena
-GET https://fineli.fi/fineli/api/v1/foods/11060
-GET https://fineli.fi/fineli/api/v1/components/
-```
-
-Food details primarily use:
-
-```text
-energyKcal
-protein
-carbohydrate
-fat
-fiber
-```
-
-Current cache rules:
-
-```text
-Maximum selected foods: 250
-Maximum saved searches: 100
-Search freshness: 30 days
-Food-detail freshness: 180 days
-```
-
-## Local API
-
-```text
-GET    /api/health
-GET    /api/recipes
-POST   /api/recipes
-PUT    /api/recipes/:id
-DELETE /api/recipes/:id
-GET    /api/cart
-PUT    /api/cart
-POST   /api/uploads
-GET    /api/nutrition/cache?q=...
-GET    /api/nutrition/search?q=...
-GET    /api/nutrition/search?q=...&refresh=1
-GET    /api/nutrition/foods/:id
-GET    /api/nutrition/foods/:id?refresh=1
-POST   /api/nutrition/sync-recipes
-```
+Recipe documents do not duplicate shared ingredient nutrition or price records. The frontend joins recipes and ingredients in real time.
 
 ## Tests
 
@@ -321,76 +242,21 @@ POST   /api/nutrition/sync-recipes
 npm test
 ```
 
-The suite covers:
+The suite checks recipe integrity, shared ingredient links and propagation, retail data, nutrition behavior, routing, Firebase architecture, Cloudinary upload support, Firebase Hosting rewrites, and preservation of local mode.
 
-- Recipe nutrition calculations
-- Fineli search and food-detail normalization
-- Fineli cache reuse and atomic persistence
-- Concurrent recipe JSON writes
-- Nested-form regression prevention
-- All-step cooking mode and audible timer logic
-- Fourteen complete meal-plan recipe records
-- Seven valid routine days
-- Sunday/Wednesday ingredient aggregation
-- Shared cart atomic persistence
-- Finnish recipe/ingredient completeness and retailer-link validation
-- Text-free responsive recipe-cover regression
-- Ingredient and recipe price calculations
+## Updating the GitHub repository
 
-## Project structure
+After reviewing the release:
 
-```text
-home-recipes/
-├── data/
-│   ├── fineli-cache.json
-│   ├── recipes.json
-│   ├── recipes.en-backup.json
-│   └── shopping-cart.json
-├── public/
-│   ├── meal-plan-covers/
-│   ├── app-icon.svg
-│   └── manifest.webmanifest
-├── server/
-│   ├── cartStore.js
-│   ├── fineli.js
-│   ├── fineliCache.js
-│   ├── fineliRecipeSync.js
-│   ├── index.js
-│   └── recipeStore.js
-├── src/
-│   ├── api/
-│   ├── components/
-│   ├── data/mealPlan.js
-│   ├── hooks/
-│   ├── styles/
-│   ├── utils/
-│   ├── App.jsx
-│   └── main.jsx
-├── scripts/
-│   └── sync-fineli-recipes.js
-├── tests/
-├── uploads/
-├── ARCHITECTURE.md
-├── CHANGELOG.md
-├── index.html
-├── package.json
-└── vite.config.js
+```bash
+git checkout -b firebase-cloud-v0.5.0
+git add .
+git commit -m "Add Firebase cloud deployment, persistent auth and URL routing"
+git push -u origin firebase-cloud-v0.5.0
 ```
 
-## Research and recipe provenance
+Deploy from that branch manually with `npm run deploy:firebase`. For automated GitHub deployments, run `firebase init hosting:github` after the first manual deployment and follow Firebase's prompts to add the repository secret and generated workflow.
 
-The recipes in this release are original Home Recipes meal-plan recipes created from the supplied seven-day Finnish meal-system research plan. They are not copied from a single online recipe page. The Finnish recipe dataset preserves the original English text in explicit `*En` fields. Plan macros remain labelled as estimates until the live Fineli synchronisation has populated verified ingredient records.
+## Attribution
 
-The guide links directly to:
-
-- Academy of Nutrition and Dietetics / Dietitians of Canada / ACSM position paper on nutrition and athletic performance
-- Nordic Nutrition Recommendations 2023
-- Finnish Food Authority adult nutrition guidance
-- Finnish Food Authority pages on salt, iodine and vitamin D
-- THL Fineli open-data information
-
-## Licence and attribution
-
-Application code: MIT.
-
-Fineli data is separate third-party data provided by the Finnish Institute for Health and Welfare (THL) under CC BY 4.0. Fineli is a registered trademark of THL; this application is not produced, endorsed or operated by THL.
+Fineli data is provided by the Finnish Institute for Health and Welfare under CC BY 4.0. Fineli is a registered trademark of THL. See `docs/DATA_SOURCES.md` for recipe, nutrition, and retail-data provenance.

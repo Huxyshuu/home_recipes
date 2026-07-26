@@ -74,11 +74,14 @@ export default function IngredientLibrary({ onIngredientsUpdated }) {
     }
   }
 
-  useEffect(() => {
-    refresh(null);
-    // The first load intentionally runs only once.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  useEffect(() => api.subscribeIngredients((items) => {
+    setIngredients(items);
+    setLoading(false);
+    setError('');
+  }, (requestError) => {
+    setError(requestError.message);
+    setLoading(false);
+  }), []);
 
   const filtered = useMemo(() => {
     const needle = search.trim().toLocaleLowerCase('fi-FI');

@@ -16,13 +16,27 @@ import { recipeNutrition } from './utils/nutrition';
 import { todayGreeting } from './utils/format';
 import { buildShoppingWindowItems } from './utils/shopping';
 import { shoppingWindows } from './data/mealPlan';
+import { recipeEditPath, recipePath, useRoute, viewPath } from './hooks/useRoute';
+import { useAuth } from './auth/AuthGate';
+
+function RouteNotFound({ onHome }) {
+  return (
+    <main className="page">
+      <section className="empty-state panel route-empty-state">
+        <span className="empty-icon"><Icon name="book" size={36} /></span>
+        <h1>That page is not in the recipe book</h1>
+        <p>The recipe may have been removed, or the address may be incomplete.</p>
+        <button className="button button-primary" type="button" onClick={onHome}>Open all recipes</button>
+      </section>
+    </main>
+  );
+}
 
 export default function App() {
   const { recipes, loading, error, refresh, save, remove } = useRecipes();
   const shoppingCart = useShoppingCart();
-  const [view, setView] = useState('library');
-  const [selected, setSelected] = useState(null);
-  const [editing, setEditing] = useState(null);
+  const { route, navigate, closeToPreviousOr } = useRoute();
+  const { mode, logout } = useAuth();
   const [search, setSearch] = useState('');
   const [category, setCategory] = useState('All');
   const [difficulty, setDifficulty] = useState('All');
@@ -30,6 +44,7 @@ export default function App() {
   const [sort, setSort] = useState('newest');
   const [notice, setNotice] = useState('');
 
+  const selected = route.recipeId ? recipes.find((recipe) => recipe.id === route.recipeId) || null : null;
   const categories = useMemo(() => ['All', ...new Set(recipes.map((recipe) => recipe.category).filter(Boolean))], [recipes]);
   const difficulties = useMemo(() => ['All', ...new Set(recipes.map((recipe) => recipe.difficulty).filter(Boolean))], [recipes]);
 
@@ -55,11 +70,10 @@ export default function App() {
     const totalKcal = recipes.reduce((sum, recipe) => sum + recipeNutrition(recipe).perServing.kcal, 0);
     return {
       recipes: recipes.length,
-      categories: Math.max(0, categories.length - 1),
       favourites: recipes.filter((recipe) => recipe.favourite).length,
       averageKcal: recipes.length ? Math.round(totalKcal / recipes.length) : 0,
     };
-  }, [recipes, categories.length]);
+  }, [recipes]);
 
   function showNotice(message) {
     setNotice(message);
@@ -67,22 +81,21 @@ export default function App() {
   }
 
   async function saveRecipe(recipe) {
+    const existed = Boolean(recipe.id);
     const saved = await save(recipe);
-    setEditing(null);
-    setSelected(saved);
-    showNotice(recipe.id ? 'Recipe updated.' : 'Recipe added to your kitchen.');
+    navigate(recipePath(saved.id), { replace: true });
+    showNotice(existed ? 'Recipe updated.' : 'Recipe added to your kitchen.');
   }
 
   async function deleteRecipe(id) {
     await remove(id);
-    setSelected(null);
+    navigate('/', { replace: true });
     showNotice('Recipe deleted.');
   }
 
   async function toggleFavourite(recipe) {
     try {
-      const saved = await save({ ...recipe, favourite: !recipe.favourite });
-      if (selected?.id === saved.id) setSelected(saved);
+      await save({ ...recipe, favourite: !recipe.favourite });
     } catch (requestError) {
       showNotice(requestError.message);
     }
@@ -104,26 +117,24 @@ export default function App() {
     try {
       const items = buildShoppingWindowItems(recipes, windowId);
       await shoppingCart.replace(config.title, items);
-      setSelected(null);
-      setView('cart');
+      navigate('/cart');
       showNotice(`${config.title} created with ${items.length} combined ingredients.`);
     } catch (requestError) {
       showNotice(requestError.message);
     }
   }
 
-  if (editing !== null) {
-    return <RecipeEditor recipe={editing || null} onCancel={() => setEditing(null)} onSave={saveRecipe} />;
+  if (route.name === 'recipe-new') {
+    return <RecipeEditor recipe={null} onCancel={() => closeToPreviousOr('/')} onSave={saveRecipe} />;
   }
 
-  function renderView() {
-    if (view === 'ingredients') return <IngredientLibrary onIngredientsUpdated={refresh} />;
-    if (view === 'routine') return <RoutinePage recipes={recipes} onOpenRecipe={setSelected} onBuildCart={buildRoutineCart} />;
-    if (view === 'guide') return <NutritionGuide onRecipesUpdated={refresh} />;
-    if (view === 'substitutions') return <SubstitutionsPage />;
-    if (view === 'cart') return <GroceryCart cart={shoppingCart.cart} loading={shoppingCart.loading} error={shoppingCart.error} onRefresh={shoppingCart.refresh} onToggle={shoppingCart.toggle} onRemove={shoppingCart.remove} onClearChecked={shoppingCart.clearChecked} onClearAll={shoppingCart.clearAll} />;
-    if (view === 'stats') return <StatsDashboard recipes={recipes} />;
+  if (route.name === 'recipe-edit') {
+    if (loading) return <div className="editor-shell"><div className="loading-state panel"><span className="spinner" /><p>Opening the recipe editor…</p></div></div>;
+    if (!selected) return <RouteNotFound onHome={() => navigate('/', { replace: true })} />;
+    return <RecipeEditor recipe={selected} onCancel={() => closeToPreviousOr(recipePath(selected.id))} onSave={saveRecipe} />;
+  }
 
+  function renderLibrary() {
     return (
       <main className="page library-page">
         <section className="library-hero">
@@ -156,26 +167,55 @@ export default function App() {
 
         <section className="library-heading">
           <div><span className="eyebrow">Kitchen collection</span><h2>{filtered.length === recipes.length ? 'All recipes' : `${filtered.length} matching recipes`}</h2></div>
-          <button className="button button-primary mobile-add" type="button" onClick={() => setEditing(false)}><Icon name="plus" size={17} /> Add</button>
+          <button className="button button-primary mobile-add" type="button" onClick={() => navigate('/recipes/new')}><Icon name="plus" size={17} /> Add</button>
         </section>
 
-        {loading ? <div className="loading-state panel"><span className="spinner" /><p>Opening your recipe book…</p></div> : null}
-        {error ? <div className="error-state panel"><Icon name="info" size={26} /><div><strong>Could not load the recipe file</strong><p>{error}</p><button className="button button-secondary" type="button" onClick={refresh}>Try again</button></div></div> : null}
-        {!loading && !error ? <RecipeGrid recipes={filtered} onOpen={setSelected} onFavourite={toggleFavourite} onAddToCart={addRecipeToCart} onAdd={() => setEditing(false)} /> : null}
+        {loading ? <div className="loading-state panel"><span className="spinner" /><p>{mode === 'firebase' ? 'Opening the cloud recipe book…' : 'Opening your recipe book…'}</p></div> : null}
+        {error ? <div className="error-state panel"><Icon name="info" size={26} /><div><strong>Could not load the recipe database</strong><p>{error}</p><button className="button button-secondary" type="button" onClick={refresh}>Try again</button></div></div> : null}
+        {!loading && !error ? <RecipeGrid recipes={filtered} onOpen={(recipe) => navigate(recipePath(recipe.id))} onFavourite={toggleFavourite} onAddToCart={addRecipeToCart} onAdd={() => navigate('/recipes/new')} /> : null}
 
         <footer className="app-footer">
           <span>Nutrition data integration: Finnish Institute for Health and Welfare, Fineli (CC BY 4.0).</span>
-          <span>Local-first · Shared grocery cart · Designed for the kitchen tablet</span>
+          <span>{mode === 'firebase' ? 'Firebase cloud sync · Cloudinary images · Available anywhere' : 'Local JSON mode · Shared on the home network'}</span>
         </footer>
       </main>
     );
   }
 
+  function renderView() {
+    if (route.name === 'not-found') return <RouteNotFound onHome={() => navigate('/', { replace: true })} />;
+    if (route.view === 'ingredients') return <IngredientLibrary onIngredientsUpdated={refresh} />;
+    if (route.view === 'routine') return <RoutinePage recipes={recipes} onOpenRecipe={(recipe) => navigate(recipePath(recipe.id))} onBuildCart={buildRoutineCart} />;
+    if (route.view === 'guide') return <NutritionGuide onRecipesUpdated={refresh} />;
+    if (route.view === 'substitutions') return <SubstitutionsPage />;
+    if (route.view === 'cart') return <GroceryCart cart={shoppingCart.cart} loading={shoppingCart.loading} error={shoppingCart.error} onRefresh={shoppingCart.refresh} onToggle={shoppingCart.toggle} onRemove={shoppingCart.remove} onClearChecked={shoppingCart.clearChecked} onClearAll={shoppingCart.clearAll} backend={mode} />;
+    if (route.view === 'stats') return <StatsDashboard recipes={recipes} />;
+    return renderLibrary();
+  }
+
+  const detailMissing = route.name === 'recipe-detail' && !loading && !selected;
+
   return (
     <div className="app-shell">
-      <Header view={view} onChangeView={(next) => { setView(next); setSelected(null); }} onAdd={() => setEditing(false)} cartCount={shoppingCart.cart.items.length} />
-      {renderView()}
-      {selected ? <RecipeDetail recipe={selected} onClose={() => setSelected(null)} onEdit={(recipe) => setEditing(recipe)} onDelete={deleteRecipe} onFavourite={toggleFavourite} onAddToCart={addRecipeToCart} /> : null}
+      <Header
+        view={route.view}
+        onChangeView={(next) => navigate(viewPath(next))}
+        onAdd={() => navigate('/recipes/new')}
+        cartCount={shoppingCart.cart.items.length}
+        backend={mode}
+        onLogout={mode === 'firebase' ? logout : null}
+      />
+      {detailMissing ? <RouteNotFound onHome={() => navigate('/', { replace: true })} /> : renderView()}
+      {route.name === 'recipe-detail' && selected ? (
+        <RecipeDetail
+          recipe={selected}
+          onClose={() => closeToPreviousOr('/')}
+          onEdit={(recipe) => navigate(recipeEditPath(recipe.id))}
+          onDelete={deleteRecipe}
+          onFavourite={toggleFavourite}
+          onAddToCart={addRecipeToCart}
+        />
+      ) : null}
       {notice ? <div className="toast"><Icon name="check" size={18} /> {notice}</div> : null}
     </div>
   );

@@ -2278,8 +2278,8 @@
       "matchMethod": "manual-selection"
     },
     "retail": {
-      "sKaupatUrl": "",
-      "kRuokaUrl": "",
+      "sKaupatUrl": "https://www.s-kaupat.fi/hakutulokset?queryString=Vesi",
+      "kRuokaUrl": "https://www.k-ruoka.fi/kauppa/tuotehaku?haku=Vesi",
       "selectedPrice": null
     },
     "nutritionPer100g": {

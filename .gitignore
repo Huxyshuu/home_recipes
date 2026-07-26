@@ -5,3 +5,10 @@ npm-debug.log*
 uploads/*
 !uploads/.gitkeep
 data/*.tmp
+
+# Local cloud credentials/configuration
+.env.local
+.env.*.local
+.firebaserc
+.firebase/
+firebase-debug.log*
